@@ -48,7 +48,8 @@ public class Startup
             app.UseSwaggerUI();
         }
 
-        app.UseInitializer();
+        // Startup.Configure is synchronous; finish seeding before accepting requests.
+        app.UseInitializer().GetAwaiter().GetResult();
         app.UseEndpoints(endpoints => endpoints.MapControllers());
     }
 }

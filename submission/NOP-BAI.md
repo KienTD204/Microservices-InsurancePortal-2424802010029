@@ -8,7 +8,7 @@ https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029
 
 Repository **public**, giảng viên có thể mở và clone mà không cần được cấp quyền đọc riêng. Source đã push và đối chiếu commit local/remote. Hướng dẫn chạy ở README-LAB.md, báo cáo và bằng chứng ở submission/.
 
-Chưa gửi lời mời collaborator: không xác định được tài khoản GitHub từ email caotxuan@gmail.com qua GitHub search. Nếu giảng viên yêu cầu thêm tên trong Collaborators, sinh viên vào Settings > Collaborators > Add people và chọn đúng tài khoản GitHub của thầy; không chọn người khác chỉ vì tên giống nhau.
+Đã gửi lời mời collaborator đến tài khoản **caotxuan** do sinh viên cung cấp, đang chờ thầy chấp nhận. Bằng chứng: `evidence/teacher-invitation.json`. GitHub cấp quyền collaborator chuẩn `write` cho repository cá nhân; repository public vẫn đọc/clone được ngay.
 
 ## Upload lên elearning
 
@@ -24,4 +24,4 @@ Có thể nộp ZIP chứa bốn backup khi elearning chỉ cho một file; dùn
 - 46 test case đạt. Bốn database được backup và thử restore thành công.
 - Luồng sản phẩm, đăng nhập/JWT, báo giá, tạo/xem hợp đồng, search và tạo tài khoản thanh toán qua RabbitMQ đã kiểm tra.
 - DocumentService chỉ là scaffold; chức năng chứng chỉ PDF chưa được upstream cung cấp. Cảnh báo bảo mật dependency còn được giữ trong báo cáo.
-- Không báo cáo đã gửi email, mời collaborator, upload elearning hoặc đạt CI khi chưa có bằng chứng tương ứng. Xem tab Actions để kiểm tra CI; log local và CI được phân biệt.
+- Lời mời collaborator đã gửi; việc chấp nhận thuộc tài khoản của thầy. Upload elearning vẫn do sinh viên thực hiện. Xem tab Actions và `evidence/ci-status.json` để kiểm tra kết quả CI; log local và CI được phân biệt.
