@@ -1,0 +1,554 @@
+﻿2026-10-11T10:56:00.1476877Z Current runner version: '2.337.0'
+2026-10-11T10:56:00.1492210Z ##[group]Runner Image Provisioner
+2026-10-11T10:56:00.1492777Z Hosted Compute Agent
+2026-10-11T10:56:00.1493119Z Version: 20261002.596
+2026-10-11T10:56:00.1493478Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-11T10:56:00.1493940Z Build Date: 2026-10-02T22:28:27Z
+2026-10-11T10:56:00.1494388Z Worker ID: {1e83a5d8-4b89-49ee-a1c3-6030079d851f}
+2026-10-11T10:56:00.1494826Z Region: southcentralus
+2026-10-11T10:56:00.1495160Z Cloud: Azure
+2026-10-11T10:56:00.1495466Z ##[endgroup]
+2026-10-11T10:56:00.1496210Z ##[group]Operating System
+2026-10-11T10:56:00.1496589Z Ubuntu
+2026-10-11T10:56:00.1496926Z 24.04.5
+2026-10-11T10:56:00.1497236Z LTS
+2026-10-11T10:56:00.1497540Z ##[endgroup]
+2026-10-11T10:56:00.1497896Z ##[group]Runner Image
+2026-10-11T10:56:00.1498295Z Image: ubuntu-24.04
+2026-10-11T10:56:00.1498646Z Version: 20261004.327.1
+2026-10-11T10:56:00.1499363Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-11T10:56:00.1500478Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-11T10:56:00.1501044Z ##[endgroup]
+2026-10-11T10:56:00.1501969Z ##[group]GITHUB_TOKEN Permissions
+2026-10-11T10:56:00.1503269Z Contents: read
+2026-10-11T10:56:00.1503644Z Metadata: read
+2026-10-11T10:56:00.1504016Z Packages: read
+2026-10-11T10:56:00.1504336Z ##[endgroup]
+2026-10-11T10:56:00.1505574Z Secret source: Actions
+2026-10-11T10:56:00.1506103Z Cache mode: write
+2026-10-11T10:56:00.1506670Z Prepare workflow directory
+2026-10-11T10:56:00.1728477Z Prepare all required actions
+2026-10-11T10:56:00.1757860Z Getting action download info
+2026-10-11T10:56:00.4042692Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-11T10:56:00.4878756Z Download action repository 'actions/setup-dotnet@v4' (SHA:67a3573c9a986a3f9c594539f4ab511d57bb3ce9)
+2026-10-11T10:56:01.0359644Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-11T10:56:01.2148370Z Complete job name: validate
+2026-10-11T10:56:01.2613515Z ##[group]Run actions/checkout@v4
+2026-10-11T10:56:01.2613970Z with:
+2026-10-11T10:56:01.2614347Z   repository: KienTD204/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:01.2616693Z   token: ***
+2026-10-11T10:56:01.2616972Z   ssh-strict: true
+2026-10-11T10:56:01.2617256Z   ssh-user: git
+2026-10-11T10:56:01.2617546Z   persist-credentials: true
+2026-10-11T10:56:01.2617859Z   clean: true
+2026-10-11T10:56:01.2618151Z   sparse-checkout-cone-mode: true
+2026-10-11T10:56:01.2618482Z   fetch-depth: 1
+2026-10-11T10:56:01.2618762Z   fetch-tags: false
+2026-10-11T10:56:01.2619049Z   show-progress: true
+2026-10-11T10:56:01.2619342Z   lfs: false
+2026-10-11T10:56:01.2619741Z   submodules: false
+2026-10-11T10:56:01.2620034Z   set-safe-directory: true
+2026-10-11T10:56:01.2620355Z   allow-unsafe-pr-checkout: false
+2026-10-11T10:56:01.2620752Z env:
+2026-10-11T10:56:01.2621081Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:56:01.2621511Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:56:01.2621892Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:56:01.2622245Z ##[endgroup]
+2026-10-11T10:56:01.3291838Z Syncing repository: KienTD204/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:01.3293129Z ##[group]Getting Git version info
+2026-10-11T10:56:01.3293841Z Working directory is '/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029'
+2026-10-11T10:56:01.3294735Z [command]/usr/bin/git version
+2026-10-11T10:56:01.3380684Z git version 2.55.0
+2026-10-11T10:56:01.3382302Z ##[endgroup]
+2026-10-11T10:56:01.3387685Z Temporarily overriding HOME='/home/runner/work/_temp/707f6cd1-b047-4c8d-bd91-c7fa83640aa1' before making global git config changes
+2026-10-11T10:56:01.3389021Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T10:56:01.3391212Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:01.3436591Z Deleting the contents of '/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029'
+2026-10-11T10:56:01.3451388Z ##[group]Initializing the repository
+2026-10-11T10:56:01.3453797Z [command]/usr/bin/git init /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:01.3602098Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-11T10:56:01.3602923Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-11T10:56:01.3604858Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-11T10:56:01.3605334Z hint: call:
+2026-10-11T10:56:01.3605705Z hint:
+2026-10-11T10:56:01.3606208Z hint: 	git config --global init.defaultBranch <name>
+2026-10-11T10:56:01.3606844Z hint:
+2026-10-11T10:56:01.3607409Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-11T10:56:01.3608264Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-11T10:56:01.3608938Z hint:
+2026-10-11T10:56:01.3609326Z hint: 	git branch -m <name>
+2026-10-11T10:56:01.3609930Z hint:
+2026-10-11T10:56:01.3610496Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-11T10:56:01.3611909Z Initialized empty Git repository in /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/.git/
+2026-10-11T10:56:01.3617434Z [command]/usr/bin/git remote add origin https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:01.3718119Z ##[endgroup]
+2026-10-11T10:56:01.3718846Z ##[group]Disabling automatic garbage collection
+2026-10-11T10:56:01.3725347Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-11T10:56:01.3805088Z ##[endgroup]
+2026-10-11T10:56:01.3805845Z ##[group]Setting up auth
+2026-10-11T10:56:01.3811715Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T10:56:01.3858925Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T10:56:01.4423256Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T10:56:01.4450680Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T10:56:01.4615957Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T10:56:01.4642412Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T10:56:01.4804282Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-11T10:56:01.4835937Z ##[endgroup]
+2026-10-11T10:56:01.4836593Z ##[group]Fetching the repository
+2026-10-11T10:56:01.4841895Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +af1cedb9b766fb38f9c9d4bfcb6d14a06c89ebb5:refs/remotes/origin/student/lab4
+2026-10-11T10:56:02.2339440Z From https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:56:02.2341091Z  * [new ref]         af1cedb9b766fb38f9c9d4bfcb6d14a06c89ebb5 -> origin/student/lab4
+2026-10-11T10:56:02.2343815Z ##[endgroup]
+2026-10-11T10:56:02.2344970Z ##[group]Determining the checkout info
+2026-10-11T10:56:02.2349237Z ##[endgroup]
+2026-10-11T10:56:02.2350069Z [command]/usr/bin/git sparse-checkout disable
+2026-10-11T10:56:02.2392727Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-11T10:56:02.2418603Z ##[group]Checking out the ref
+2026-10-11T10:56:02.2421179Z [command]/usr/bin/git checkout --progress --force -B student/lab4 refs/remotes/origin/student/lab4
+2026-10-11T10:56:02.2776262Z Switched to a new branch 'student/lab4'
+2026-10-11T10:56:02.2780663Z branch 'student/lab4' set up to track 'origin/student/lab4'.
+2026-10-11T10:56:02.2786726Z ##[endgroup]
+2026-10-11T10:56:02.2816350Z [command]/usr/bin/git log -1 --format=%H
+2026-10-11T10:56:02.2836780Z af1cedb9b766fb38f9c9d4bfcb6d14a06c89ebb5
+2026-10-11T10:56:02.3055526Z ##[group]Run actions/setup-dotnet@v4
+2026-10-11T10:56:02.3056225Z with:
+2026-10-11T10:56:02.3056723Z   dotnet-version: 8.0.425
+2026-10-11T10:56:02.3057325Z   cache: false
+2026-10-11T10:56:02.3057829Z env:
+2026-10-11T10:56:02.3058415Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:56:02.3059269Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:56:02.3060172Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:56:02.3060913Z ##[endgroup]
+2026-10-11T10:56:02.3970807Z (node:2068) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-11T10:56:02.3972499Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-11T10:56:02.3987212Z [command]/home/runner/work/_actions/actions/setup-dotnet/v4/externals/install-dotnet.sh --skip-non-versioned-files --runtime dotnet --channel LTS
+2026-10-11T10:56:02.7283378Z dotnet-install: .NET Core Runtime with version '10.0.12' is already installed.
+2026-10-11T10:56:02.7300105Z [command]/home/runner/work/_actions/actions/setup-dotnet/v4/externals/install-dotnet.sh --skip-non-versioned-files --version 8.0.425
+2026-10-11T10:56:02.9011681Z dotnet-install: .NET Core SDK with version '8.0.425' is already installed.
+2026-10-11T10:56:02.9132198Z ##[group]Run dotnet build DotNetMicroservicesPoc.sln -c Release --nologo
+2026-10-11T10:56:02.9132518Z [36;1mdotnet build DotNetMicroservicesPoc.sln -c Release --nologo[0m
+2026-10-11T10:56:02.9339244Z shell: /usr/bin/bash -e {0}
+2026-10-11T10:56:02.9339406Z env:
+2026-10-11T10:56:02.9339741Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:56:02.9339933Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:56:02.9340099Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:56:02.9340257Z   DOTNET_ROOT: /usr/share/dotnet
+2026-10-11T10:56:02.9340393Z ##[endgroup]
+2026-10-11T10:56:07.5392358Z   Determining projects to restore...
+2026-10-11T10:56:09.4436603Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService/AuthService.csproj (in 1.13 sec).
+2026-10-11T10:56:09.4441692Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService/DocumentService.csproj (in 1.13 sec).
+2026-10-11T10:56:09.4443061Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService.Api/ChatService.Api.csproj (in 1.13 sec).
+2026-10-11T10:56:09.4482563Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService.Api/AuthService.Api.csproj (in 0.9 ms).
+2026-10-11T10:56:10.6590958Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj (in 2.35 sec).
+2026-10-11T10:56:10.6650815Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway.Api/AgentPortalApiGateway.Api.csproj (in 0.8 ms).
+2026-10-11T10:56:11.7239861Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService.Test/AuthService.Test.csproj (in 2.25 sec).
+2026-10-11T10:56:13.8908953Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:13.8912663Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:13.9335167Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:13.9353386Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:13.9355496Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj (in 4.47 sec).
+2026-10-11T10:56:14.0079960Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway.Test/AgentPortalApiGateway.Test.csproj (in 4.47 sec).
+2026-10-11T10:56:14.0110984Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService.Api/ProductService.Api.csproj (in 1 ms).
+2026-10-11T10:56:14.0991616Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj (in 3.3 sec).
+2026-10-11T10:56:14.2163475Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService.Test/ProductService.Test.csproj (in 2.24 sec).
+2026-10-11T10:56:14.2194613Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.Api/PricingService.Api.csproj (in 7 ms).
+2026-10-11T10:56:16.5443236Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:16.5445401Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:16.5447068Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:17.1457252Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj (in 2.4 sec).
+2026-10-11T10:56:17.7220976Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService.Test/PolicyService.Test.csproj (in 35 ms).
+2026-10-11T10:56:17.8791543Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService.Api/PolicyService.Api.csproj (in 4 ms).
+2026-10-11T10:56:17.9202904Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:17.9206254Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:17.9209461Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:17.9212654Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:18.0612288Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.Test/PricingService.Test.csproj (in 3.97 sec).
+2026-10-11T10:56:18.0621914Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj (in 3.97 sec).
+2026-10-11T10:56:18.1308218Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService.Api/PolicySearchService.Api.csproj (in 1 ms).
+2026-10-11T10:56:18.1309749Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.IntegrationTest/PricingService.IntegrationTest.csproj (in 3.88 sec).
+2026-10-11T10:56:18.6909452Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:18.6911693Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:18.8400886Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj (in 816 ms).
+2026-10-11T10:56:18.8409841Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService.Test/PolicySearchService.Test.csproj (in 635 ms).
+2026-10-11T10:56:18.9481599Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Api/PaymentService.Api.csproj (in 0.9 ms).
+2026-10-11T10:56:18.9487653Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService.Test/DocumentService.Test.csproj (in 10 ms).
+2026-10-11T10:56:18.9529945Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:18.9533312Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:18.9681398Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService.Api/DocumentService.Api.csproj (in 0.8 ms).
+2026-10-11T10:56:18.9691523Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj (in 6 ms).
+2026-10-11T10:56:18.9807767Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService.Api/DashboardService.Api.csproj (in 0.7 ms).
+2026-10-11T10:56:19.0089406Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService/ChatService.csproj (in 3 ms).
+2026-10-11T10:56:19.0553391Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService.Test/ChatService.Test.csproj (in 10 ms).
+2026-10-11T10:56:19.1588276Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService.Test/DashboardService.Test.csproj (in 177 ms).
+2026-10-11T10:56:20.0913191Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:20.0916092Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:20.4043575Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj (in 2.14 sec).
+2026-10-11T10:56:20.4052831Z   Restored /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj (in 2.14 sec).
+2026-10-11T10:56:20.6092077Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+2026-10-11T10:56:20.6094076Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+2026-10-11T10:56:20.6099235Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:20.6101466Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:20.6870951Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q
+2026-10-11T10:56:20.6872488Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:20.6874493Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:20.7652833Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+2026-10-11T10:56:20.7654314Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+2026-10-11T10:56:25.1191306Z   PolicySearchService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService.Api/bin/Release/net8.0/PolicySearchService.Api.dll
+2026-10-11T10:56:25.1194108Z   PolicyService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService.Api/bin/Release/net8.0/PolicyService.Api.dll
+2026-10-11T10:56:25.1225829Z   PaymentService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Api/bin/Release/net8.0/PaymentService.Api.dll
+2026-10-11T10:56:25.1227222Z   PricingService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.Api/bin/Release/net8.0/PricingService.Api.dll
+2026-10-11T10:56:25.1618426Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:25.1644856Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:25.1871876Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:25.1874014Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:25.2394255Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:25.2396922Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:25.3122962Z   ProductService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService.Api/bin/Release/net8.0/ProductService.Api.dll
+2026-10-11T10:56:25.4416871Z   DashboardService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService.Api/bin/Release/net8.0/DashboardService.Api.dll
+2026-10-11T10:56:25.4800122Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:25.4801510Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:26.0718472Z   ChatService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService.Api/bin/Release/net8.0/ChatService.Api.dll
+2026-10-11T10:56:27.0292672Z   AuthService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService.Api/bin/Release/net8.0/AuthService.Api.dll
+2026-10-11T10:56:27.2785441Z   AgentPortalApiGateway -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/bin/Release/net8.0/AgentPortalApiGateway.dll
+2026-10-11T10:56:27.3012198Z   AuthService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService/bin/Release/net8.0/AuthService.dll
+2026-10-11T10:56:27.6681737Z   DocumentService.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService.Api/bin/Release/net8.0/DocumentService.Api.dll
+2026-10-11T10:56:27.9893622Z   AgentPortalApiGateway.Api -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway.Api/bin/Release/net8.0/AgentPortalApiGateway.Api.dll
+2026-10-11T10:56:28.0280896Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Startup.cs(60,9): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:28.0292310Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Jobs/JobsInstaller.cs(18,13): warning CS0618: 'PostgreSqlBootstrapperConfigurationExtensions.UsePostgreSqlStorage(IGlobalConfiguration, string)' is obsolete: 'Will be removed in 2.0. Please use UsePostgreSqlStorage(Action<PostgreSqlBootstrapperOptions>) overload.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:28.0343424Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:28.0463203Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Jobs/JobsInstaller.cs(29,9): warning CS0618: 'RecurringJob.AddOrUpdate<T>(Expression<Func<T, Task>>, string, TimeZoneInfo, string)' is obsolete: 'Please use an overload with the explicit recurringJobId parameter and RecurringJobOptions instead. Will be removed in 2.0.0.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:28.1996246Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/Program.cs(43,17): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj]
+2026-10-11T10:56:28.2001547Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj]
+2026-10-11T10:56:28.5203536Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/Program.cs(33,16): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj]
+2026-10-11T10:56:29.2562793Z   AgentPortalApiGateway.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway.Test/bin/Release/net8.0/AgentPortalApiGateway.Test.dll
+2026-10-11T10:56:29.3258669Z   PricingService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/bin/Release/net8.0/PricingService.dll
+2026-10-11T10:56:29.8443703Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Layouts/MainLayout.razor.cs(8,45): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8448897Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Layouts/MainLayout.razor.cs(10,41): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8454514Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/ThemeColorSelector.razor(16,18): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8512928Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(94,30): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8543989Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(98,45): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8572927Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(100,41): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:29.8602759Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Auth/CustomAuthenticationStateProvider.cs(37,29): warning CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2017) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:30.5999964Z   PricingService.IntegrationTest -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.IntegrationTest/bin/Release/net8.0/PricingService.IntegrationTest.dll
+2026-10-11T10:56:31.2530891Z   PricingService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.Test/bin/Release/net8.0/PricingService.Test.dll
+2026-10-11T10:56:31.3014754Z   AuthService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll
+2026-10-11T10:56:31.3428476Z   DocumentService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService/bin/Release/net8.0/DocumentService.dll
+2026-10-11T10:56:32.6603656Z   BlazorWasmClient -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/bin/Release/net8.0/BlazorWasmClient.dll
+2026-10-11T10:56:32.6631108Z   BlazorWasmClient (Blazor output) -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/bin/Release/net8.0/wwwroot
+2026-10-11T10:56:32.6720704Z   ProductService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/bin/Release/net8.0/ProductService.dll
+2026-10-11T10:56:32.7540649Z   DashboardService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/bin/Release/net8.0/DashboardService.dll
+2026-10-11T10:56:33.0297717Z   ChatService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService/bin/Release/net8.0/ChatService.dll
+2026-10-11T10:56:33.1660927Z   PolicyService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/bin/Release/net8.0/PolicyService.dll
+2026-10-11T10:56:33.1934253Z   PaymentService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/bin/Release/net8.0/PaymentService.dll
+2026-10-11T10:56:33.4355589Z   PolicySearchService -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/bin/Release/net8.0/PolicySearchService.dll
+2026-10-11T10:56:33.7254117Z   ProductService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService.Test/bin/Release/net8.0/ProductService.Test.dll
+2026-10-11T10:56:33.8083569Z   DashboardService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll
+2026-10-11T10:56:33.9955275Z   PolicySearchService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService.Test/bin/Release/net8.0/PolicySearchService.Test.dll
+2026-10-11T10:56:34.0253699Z   ChatService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ChatService.Test/bin/Release/net8.0/ChatService.Test.dll
+2026-10-11T10:56:34.0563401Z   DocumentService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DocumentService.Test/bin/Release/net8.0/DocumentService.Test.dll
+2026-10-11T10:56:34.2023608Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.2028327Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.2032490Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.2036634Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.2040576Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.2043849Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.3169249Z   PolicyService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll
+2026-10-11T10:56:34.6575546Z   PaymentService.Test -> /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/bin/Release/net8.0/PaymentService.Test.dll
+2026-10-11T10:56:34.6849003Z 
+2026-10-11T10:56:34.6894372Z Build succeeded.
+2026-10-11T10:56:34.6901136Z 
+2026-10-11T10:56:34.6934117Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.6961721Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.6981731Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.6992541Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.6998080Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7001589Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7004850Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7007957Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7011109Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7014288Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7017262Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7020421Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7023557Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7026478Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7029393Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7032183Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7034929Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DotNetMicroservicesPoc.sln]
+2026-10-11T10:56:34.7037094Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+2026-10-11T10:56:34.7038900Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+2026-10-11T10:56:34.7040985Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7043111Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7044601Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q
+2026-10-11T10:56:34.7045794Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7046988Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7048168Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+2026-10-11T10:56:34.7049323Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+2026-10-11T10:56:34.7051272Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7052406Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7053495Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7054583Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7055687Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7057861Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7063652Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+2026-10-11T10:56:34.7065796Z /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+2026-10-11T10:56:34.7068164Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Startup.cs(60,9): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:34.7071262Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Jobs/JobsInstaller.cs(18,13): warning CS0618: 'PostgreSqlBootstrapperConfigurationExtensions.UsePostgreSqlStorage(IGlobalConfiguration, string)' is obsolete: 'Will be removed in 2.0. Please use UsePostgreSqlStorage(Action<PostgreSqlBootstrapperOptions>) overload.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:34.7073987Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:34.7076676Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/Jobs/JobsInstaller.cs(29,9): warning CS0618: 'RecurringJob.AddOrUpdate<T>(Expression<Func<T, Task>>, string, TimeZoneInfo, string)' is obsolete: 'Please use an overload with the explicit recurringJobId parameter and RecurringJobOptions instead. Will be removed in 2.0.0.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService/PaymentService.csproj]
+2026-10-11T10:56:34.7079128Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/Program.cs(43,17): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj]
+2026-10-11T10:56:34.7096595Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService/PricingService.csproj]
+2026-10-11T10:56:34.7100412Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/Program.cs(33,16): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService/PolicyService.csproj]
+2026-10-11T10:56:34.7102607Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Layouts/MainLayout.razor.cs(8,45): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7104942Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Layouts/MainLayout.razor.cs(10,41): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7107393Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/ThemeColorSelector.razor(16,18): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7110048Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(94,30): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7112502Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(98,45): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7115061Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Layout/TopMenu.razor(100,41): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7117616Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/Components/Auth/CustomAuthenticationStateProvider.cs(37,29): warning CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2017) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/BlazorWasmClient/BlazorWasmClient.csproj]
+2026-10-11T10:56:34.7130926Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7135473Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7140703Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7144884Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7149162Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7153463Z ##[warning]/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/PaymentService.Test.csproj]
+2026-10-11T10:56:34.7155457Z     54 Warning(s)
+2026-10-11T10:56:34.7155638Z     0 Error(s)
+2026-10-11T10:56:34.7155738Z 
+2026-10-11T10:56:34.7155842Z Time Elapsed 00:00:28.92
+2026-10-11T10:56:34.7937815Z ##[group]Run docker pull postgres:16
+2026-10-11T10:56:34.7938011Z [36;1mdocker pull postgres:16[0m
+2026-10-11T10:56:34.7938207Z [36;1mdocker pull docker.elastic.co/elasticsearch/elasticsearch:8.9.2[0m
+2026-10-11T10:56:34.7990168Z shell: /usr/bin/bash -e {0}
+2026-10-11T10:56:34.7990303Z env:
+2026-10-11T10:56:34.7990434Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:56:34.7990614Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:56:34.7990777Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:56:34.7990927Z   DOTNET_ROOT: /usr/share/dotnet
+2026-10-11T10:56:34.7991060Z ##[endgroup]
+2026-10-11T10:56:35.4491858Z 16: Pulling from library/postgres
+2026-10-11T10:56:35.6253536Z ecc510c1e359: Pulling fs layer
+2026-10-11T10:56:35.6254052Z 79faf13a8736: Pulling fs layer
+2026-10-11T10:56:35.6254456Z 6456bfbf35e7: Pulling fs layer
+2026-10-11T10:56:35.6254705Z b353db459ed1: Pulling fs layer
+2026-10-11T10:56:35.6254979Z 99f49de4fe2b: Pulling fs layer
+2026-10-11T10:56:35.6255457Z 83d1a2a3917c: Pulling fs layer
+2026-10-11T10:56:35.6255776Z 715ea0948cb1: Pulling fs layer
+2026-10-11T10:56:35.6256099Z 486e8305f56f: Pulling fs layer
+2026-10-11T10:56:35.6256415Z e7d675f11ded: Pulling fs layer
+2026-10-11T10:56:35.6257668Z c49864c27f35: Pulling fs layer
+2026-10-11T10:56:35.6258220Z 770ef8b308ea: Pulling fs layer
+2026-10-11T10:56:35.6258598Z 50c25daa0302: Pulling fs layer
+2026-10-11T10:56:35.6259068Z 8309db3ae5b6: Pulling fs layer
+2026-10-11T10:56:35.6259330Z 9731e27f2541: Pulling fs layer
+2026-10-11T10:56:35.6259804Z 770ef8b308ea: Waiting
+2026-10-11T10:56:35.6260001Z 486e8305f56f: Waiting
+2026-10-11T10:56:35.6260190Z 50c25daa0302: Waiting
+2026-10-11T10:56:35.6260378Z e7d675f11ded: Waiting
+2026-10-11T10:56:35.6260563Z 8309db3ae5b6: Waiting
+2026-10-11T10:56:35.6260750Z c49864c27f35: Waiting
+2026-10-11T10:56:35.6260938Z b353db459ed1: Waiting
+2026-10-11T10:56:35.6261126Z 99f49de4fe2b: Waiting
+2026-10-11T10:56:35.6261309Z 83d1a2a3917c: Waiting
+2026-10-11T10:56:35.8020908Z 79faf13a8736: Verifying Checksum
+2026-10-11T10:56:35.8021214Z 79faf13a8736: Download complete
+2026-10-11T10:56:35.9018949Z 6456bfbf35e7: Download complete
+2026-10-11T10:56:35.9684927Z ecc510c1e359: Verifying Checksum
+2026-10-11T10:56:35.9685249Z ecc510c1e359: Download complete
+2026-10-11T10:56:36.0211568Z b353db459ed1: Verifying Checksum
+2026-10-11T10:56:36.0211822Z b353db459ed1: Download complete
+2026-10-11T10:56:36.1763004Z 715ea0948cb1: Verifying Checksum
+2026-10-11T10:56:36.1763387Z 715ea0948cb1: Download complete
+2026-10-11T10:56:36.1960028Z 99f49de4fe2b: Verifying Checksum
+2026-10-11T10:56:36.1960322Z 99f49de4fe2b: Download complete
+2026-10-11T10:56:36.2081393Z 83d1a2a3917c: Verifying Checksum
+2026-10-11T10:56:36.2081917Z 83d1a2a3917c: Download complete
+2026-10-11T10:56:36.3425064Z 486e8305f56f: Verifying Checksum
+2026-10-11T10:56:36.3425368Z 486e8305f56f: Download complete
+2026-10-11T10:56:36.3682432Z c49864c27f35: Download complete
+2026-10-11T10:56:36.5012276Z 770ef8b308ea: Verifying Checksum
+2026-10-11T10:56:36.5013423Z 770ef8b308ea: Download complete
+2026-10-11T10:56:36.5244170Z 50c25daa0302: Verifying Checksum
+2026-10-11T10:56:36.5251634Z 50c25daa0302: Download complete
+2026-10-11T10:56:36.6538734Z 8309db3ae5b6: Verifying Checksum
+2026-10-11T10:56:36.6540405Z 8309db3ae5b6: Download complete
+2026-10-11T10:56:36.6806475Z 9731e27f2541: Verifying Checksum
+2026-10-11T10:56:36.6807197Z 9731e27f2541: Download complete
+2026-10-11T10:56:36.6898512Z ecc510c1e359: Pull complete
+2026-10-11T10:56:36.7695793Z e7d675f11ded: Verifying Checksum
+2026-10-11T10:56:36.7696136Z e7d675f11ded: Download complete
+2026-10-11T10:56:41.6917120Z 79faf13a8736: Pull complete
+2026-10-11T10:56:41.9010798Z 6456bfbf35e7: Pull complete
+2026-10-11T10:56:41.9407223Z b353db459ed1: Pull complete
+2026-10-11T10:56:42.2460848Z 99f49de4fe2b: Pull complete
+2026-10-11T10:56:42.3245200Z 83d1a2a3917c: Pull complete
+2026-10-11T10:56:42.3293344Z 715ea0948cb1: Pull complete
+2026-10-11T10:56:42.3347943Z 486e8305f56f: Pull complete
+2026-10-11T10:56:45.5112217Z e7d675f11ded: Pull complete
+2026-10-11T10:56:45.5217193Z c49864c27f35: Pull complete
+2026-10-11T10:56:45.5275272Z 770ef8b308ea: Pull complete
+2026-10-11T10:56:45.5341519Z 50c25daa0302: Pull complete
+2026-10-11T10:56:45.5403300Z 8309db3ae5b6: Pull complete
+2026-10-11T10:56:45.5467954Z 9731e27f2541: Pull complete
+2026-10-11T10:56:45.5493194Z Digest: sha256:ca0bd484cb98bf4b24eb1010e73fb3fcbd6714d240fbc1a10eea5b7dbecb641d
+2026-10-11T10:56:45.5503622Z Status: Downloaded newer image for postgres:16
+2026-10-11T10:56:45.5509791Z docker.io/library/postgres:16
+2026-10-11T10:56:46.8949847Z 8.9.2: Pulling from elasticsearch/elasticsearch
+2026-10-11T10:56:47.3107068Z f9175e7b73a4: Pulling fs layer
+2026-10-11T10:56:47.3107347Z b17dd0909dd8: Pulling fs layer
+2026-10-11T10:56:47.3107584Z f7e21cb84625: Pulling fs layer
+2026-10-11T10:56:47.3107755Z 89732bc75041: Pulling fs layer
+2026-10-11T10:56:47.3107979Z 731bb51f4235: Pulling fs layer
+2026-10-11T10:56:47.3108199Z 65aad7a621d0: Pulling fs layer
+2026-10-11T10:56:47.3108458Z d04a1d5f05ac: Pulling fs layer
+2026-10-11T10:56:47.3108596Z b85e9161dda3: Pulling fs layer
+2026-10-11T10:56:47.3108805Z 59c8be2a01eb: Pulling fs layer
+2026-10-11T10:56:47.3109026Z 9a7fe9ec4849: Pulling fs layer
+2026-10-11T10:56:47.3109479Z 731bb51f4235: Waiting
+2026-10-11T10:56:47.3109797Z 65aad7a621d0: Waiting
+2026-10-11T10:56:47.3109913Z d04a1d5f05ac: Waiting
+2026-10-11T10:56:47.3110028Z b85e9161dda3: Waiting
+2026-10-11T10:56:47.3110141Z 59c8be2a01eb: Waiting
+2026-10-11T10:56:47.3110254Z 9a7fe9ec4849: Waiting
+2026-10-11T10:56:47.3110365Z 89732bc75041: Waiting
+2026-10-11T10:56:47.7475706Z f7e21cb84625: Verifying Checksum
+2026-10-11T10:56:47.7475884Z f7e21cb84625: Download complete
+2026-10-11T10:56:47.9053230Z b17dd0909dd8: Verifying Checksum
+2026-10-11T10:56:47.9053673Z b17dd0909dd8: Download complete
+2026-10-11T10:56:47.9913294Z f9175e7b73a4: Verifying Checksum
+2026-10-11T10:56:47.9913553Z f9175e7b73a4: Download complete
+2026-10-11T10:56:48.0450858Z 89732bc75041: Verifying Checksum
+2026-10-11T10:56:48.0451140Z 89732bc75041: Download complete
+2026-10-11T10:56:48.4054438Z 65aad7a621d0: Verifying Checksum
+2026-10-11T10:56:48.4054666Z 65aad7a621d0: Download complete
+2026-10-11T10:56:48.4802970Z d04a1d5f05ac: Verifying Checksum
+2026-10-11T10:56:48.4803624Z d04a1d5f05ac: Download complete
+2026-10-11T10:56:48.5409210Z f9175e7b73a4: Pull complete
+2026-10-11T10:56:48.8237459Z b85e9161dda3: Verifying Checksum
+2026-10-11T10:56:48.8237696Z b85e9161dda3: Download complete
+2026-10-11T10:56:48.9243600Z 59c8be2a01eb: Verifying Checksum
+2026-10-11T10:56:48.9243901Z 59c8be2a01eb: Download complete
+2026-10-11T10:56:49.2838593Z 9a7fe9ec4849: Verifying Checksum
+2026-10-11T10:56:49.2838823Z 9a7fe9ec4849: Download complete
+2026-10-11T10:56:49.3896096Z b17dd0909dd8: Pull complete
+2026-10-11T10:56:49.4012207Z f7e21cb84625: Pull complete
+2026-10-11T10:56:49.4137075Z 89732bc75041: Pull complete
+2026-10-11T10:56:58.1533541Z 731bb51f4235: Download complete
+2026-10-11T10:57:06.7804985Z 731bb51f4235: Pull complete
+2026-10-11T10:57:06.7867014Z 65aad7a621d0: Pull complete
+2026-10-11T10:57:06.7931112Z d04a1d5f05ac: Pull complete
+2026-10-11T10:57:06.8043521Z b85e9161dda3: Pull complete
+2026-10-11T10:57:06.8149476Z 59c8be2a01eb: Pull complete
+2026-10-11T10:57:06.8214399Z 9a7fe9ec4849: Pull complete
+2026-10-11T10:57:06.8238773Z Digest: sha256:60f54a2fda4c2e7b921828ad6a658b3e0261f9c6b2aa55af7aad9a61020abd10
+2026-10-11T10:57:06.8248077Z Status: Downloaded newer image for docker.elastic.co/elasticsearch/elasticsearch:8.9.2
+2026-10-11T10:57:06.8253496Z docker.elastic.co/elasticsearch/elasticsearch:8.9.2
+2026-10-11T10:57:06.8288545Z ##[group]Run for project in ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do
+2026-10-11T10:57:06.8289157Z [36;1mfor project in ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do[0m
+2026-10-11T10:57:06.8289834Z [36;1m  dotnet test "$project/$project.csproj" -c Release --no-build --no-restore --logger trx --results-directory ci-test-results[0m
+2026-10-11T10:57:06.8290120Z [36;1mdone[0m
+2026-10-11T10:57:06.8338161Z shell: /usr/bin/bash -e {0}
+2026-10-11T10:57:06.8338293Z env:
+2026-10-11T10:57:06.8338437Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:57:06.8338616Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:57:06.8338778Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:57:06.8338926Z   DOTNET_ROOT: /usr/share/dotnet
+2026-10-11T10:57:06.8339058Z ##[endgroup]
+2026-10-11T10:57:07.1289174Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ProductService.Test/bin/Release/net8.0/ProductService.Test.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:07.4879118Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:07.4912496Z 
+2026-10-11T10:57:07.9851371Z Starting test execution, please wait...
+2026-10-11T10:57:08.0590878Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:10.1111855Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_08.trx
+2026-10-11T10:57:10.1112823Z 
+2026-10-11T10:57:10.1138149Z Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 1 s - ProductService.Test.dll (net8.0)
+2026-10-11T10:57:10.4448010Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.Test/bin/Release/net8.0/PricingService.Test.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:10.4794009Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:10.4826343Z 
+2026-10-11T10:57:10.5318327Z Starting test execution, please wait...
+2026-10-11T10:57:10.5482160Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:10.9543723Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_10.trx
+2026-10-11T10:57:10.9544494Z 
+2026-10-11T10:57:10.9569734Z Passed!  - Failed:     0, Passed:    10, Skipped:     0, Total:    10, Duration: 49 ms - PricingService.Test.dll (net8.0)
+2026-10-11T10:57:11.2721258Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:11.3065955Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:11.3097586Z 
+2026-10-11T10:57:11.3577627Z Starting test execution, please wait...
+2026-10-11T10:57:11.3745012Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:11.7337233Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_11.trx
+2026-10-11T10:57:11.7338219Z 
+2026-10-11T10:57:11.7362564Z Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 3 ms - PolicyService.Test.dll (net8.0)
+2026-10-11T10:57:12.0536732Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PaymentService.Test/bin/Release/net8.0/PaymentService.Test.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:12.0985601Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:12.1017519Z 
+2026-10-11T10:57:12.1502615Z Starting test execution, please wait...
+2026-10-11T10:57:12.1669131Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:12.5299361Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_12.trx
+2026-10-11T10:57:12.5300066Z 
+2026-10-11T10:57:12.5323839Z Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 3 ms - PaymentService.Test.dll (net8.0)
+2026-10-11T10:57:12.8349005Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:12.8699266Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:12.8732002Z 
+2026-10-11T10:57:12.9226813Z Starting test execution, please wait...
+2026-10-11T10:57:12.9395558Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:25.6496551Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_25.trx
+2026-10-11T10:57:25.6497207Z 
+2026-10-11T10:57:25.6521988Z Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 78 ms - DashboardService.Test.dll (net8.0)
+2026-10-11T10:57:25.9738665Z Test run for /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/PricingService.IntegrationTest/bin/Release/net8.0/PricingService.IntegrationTest.dll (.NETCoreApp,Version=v8.0)
+2026-10-11T10:57:26.0157910Z VSTest version 17.11.1 (x64)
+2026-10-11T10:57:26.0190072Z 
+2026-10-11T10:57:26.0685414Z Starting test execution, please wait...
+2026-10-11T10:57:26.0853697Z A total of 1 test files matched the specified pattern.
+2026-10-11T10:57:30.7958411Z Results File: /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029/ci-test-results/_runnervmmprz5_2026-10-11_10_57_30.trx
+2026-10-11T10:57:30.7959187Z 
+2026-10-11T10:57:30.7984845Z Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 53 ms - PricingService.IntegrationTest.dll (net8.0)
+2026-10-11T10:57:30.8290138Z ##[group]Run actions/upload-artifact@v4
+2026-10-11T10:57:30.8290303Z with:
+2026-10-11T10:57:30.8290413Z   name: test-results
+2026-10-11T10:57:30.8290539Z   path: ci-test-results/*.trx
+2026-10-11T10:57:30.8290676Z   if-no-files-found: warn
+2026-10-11T10:57:30.8290804Z   compression-level: 6
+2026-10-11T10:57:30.8290922Z   overwrite: false
+2026-10-11T10:57:30.8291040Z   include-hidden-files: false
+2026-10-11T10:57:30.8291167Z env:
+2026-10-11T10:57:30.8291291Z   Eureka__Client__ShouldRegisterWithEureka: false
+2026-10-11T10:57:30.8291471Z   Eureka__Client__ShouldFetchRegistry: false
+2026-10-11T10:57:30.8291650Z   Logging__EventLog__LogLevel__Default: None
+2026-10-11T10:57:30.8291806Z   DOTNET_ROOT: /usr/share/dotnet
+2026-10-11T10:57:30.8291936Z ##[endgroup]
+2026-10-11T10:57:30.9269232Z (node:3958) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-11T10:57:30.9269844Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-11T10:57:30.9313225Z With the provided path, there will be 6 files uploaded
+2026-10-11T10:57:30.9318909Z Artifact name is valid!
+2026-10-11T10:57:30.9319138Z Root directory input is valid!
+2026-10-11T10:57:31.2097320Z Beginning upload of artifact content to blob storage
+2026-10-11T10:57:31.2257569Z (node:3958) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-11T10:57:31.3939167Z Uploaded bytes 15167
+2026-10-11T10:57:31.4329976Z Finished uploading artifact content to blob storage!
+2026-10-11T10:57:31.4330551Z SHA256 digest of uploaded artifact zip is 5c575351662720caceefe7b6bb0dd96609bea1ba3d326d70a901807453a9a3e4
+2026-10-11T10:57:31.4332286Z Finalizing artifact upload
+2026-10-11T10:57:31.6876527Z Artifact test-results.zip successfully finalized. Artifact ID 11699972334
+2026-10-11T10:57:31.6877172Z Artifact test-results has been successfully uploaded! Final size is 15167 bytes. Artifact ID is 11699972334
+2026-10-11T10:57:31.6881169Z Artifact download URL: https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029/actions/runs/38133718612/artifacts/11699972334
+2026-10-11T10:57:31.6999826Z Post job cleanup.
+2026-10-11T10:57:31.7690468Z (node:3970) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-11T10:57:31.7691108Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-11T10:57:31.7810499Z Post job cleanup.
+2026-10-11T10:57:31.8328536Z [command]/usr/bin/git version
+2026-10-11T10:57:31.8357634Z git version 2.55.0
+2026-10-11T10:57:31.8379330Z Temporarily overriding HOME='/home/runner/work/_temp/24365e99-cdfd-4814-835a-3af6a0961dad' before making global git config changes
+2026-10-11T10:57:31.8380259Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-11T10:57:31.8383240Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Microservices-InsurancePortal-2424802010029/Microservices-InsurancePortal-2424802010029
+2026-10-11T10:57:31.8410134Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-11T10:57:31.8442747Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-11T10:57:31.8614164Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-11T10:57:31.8634593Z http.https://github.com/.extraheader
+2026-10-11T10:57:31.8641884Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-11T10:57:31.8668608Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-11T10:57:31.8846641Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-11T10:57:31.8874634Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-11T10:57:31.9172184Z Cleaning up orphan processes
+2026-10-11T10:57:31.9386896Z Terminate orphan process: pid (2281) (dotnet)
+2026-10-11T10:57:31.9399700Z Terminate orphan process: pid (2282) (dotnet)
+2026-10-11T10:57:31.9417694Z Terminate orphan process: pid (2283) (dotnet)
+2026-10-11T10:57:31.9436460Z Terminate orphan process: pid (2374) (dotnet)
+2026-10-11T10:57:31.9520260Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-dotnet@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

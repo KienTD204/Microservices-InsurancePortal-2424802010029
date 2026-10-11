@@ -22,6 +22,7 @@ Có thể nộp ZIP chứa bốn backup khi elearning chỉ cho một file; dùn
 
 - 32 project build thành công, 0 lỗi. Lần full build ban đầu 57 cảnh báo; lần cuối incremental 23 cảnh báo.
 - 46 test case đạt. Bốn database được backup và thử restore thành công.
+- GitHub Actions đã build 0 lỗi và chạy cả sáu suite với 46 test đạt trên commit source `af1cedb9b766fb38f9c9d4bfcb6d14a06c89ebb5`: https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029/actions/runs/38133718612 . Commit tài liệu cuối bổ sung bằng chứng; không thay code đã kiểm tra.
 - Luồng sản phẩm, đăng nhập/JWT, báo giá, tạo/xem hợp đồng, search và tạo tài khoản thanh toán qua RabbitMQ đã kiểm tra.
 - DocumentService chỉ là scaffold; chức năng chứng chỉ PDF chưa được upstream cung cấp. Cảnh báo bảo mật dependency còn được giữ trong báo cáo.
 - Lời mời collaborator đã gửi; việc chấp nhận thuộc tài khoản của thầy. Upload elearning vẫn do sinh viên thực hiện. Xem tab Actions và `evidence/ci-status.json` để kiểm tra kết quả CI; log local và CI được phân biệt.
