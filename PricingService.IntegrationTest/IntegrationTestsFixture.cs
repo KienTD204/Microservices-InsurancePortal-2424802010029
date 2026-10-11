@@ -13,6 +13,7 @@ namespace PricingService.IntegrationTest;
 public class IntegrationTestsFixture : IAsyncLifetime
 {
     private readonly PostgreSqlContainer pgSqlContainer = new PostgreSqlBuilder()
+        .WithImage("postgres:16")
         .WithDatabase("lab_netmicro_pricing")
         .WithCleanUp(true)
         .Build();
@@ -38,7 +39,8 @@ public class IntegrationTestsFixture : IAsyncLifetime
 
     public async Task DisposeAsync()
     {
-        await SystemUnderTest.DisposeAsync();
+        if (SystemUnderTest != null)
+            await SystemUnderTest.DisposeAsync();
         await pgSqlContainer.DisposeAsync();
     }
 

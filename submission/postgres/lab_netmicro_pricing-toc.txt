@@ -1,0 +1,39 @@
+;
+; Archive created at 2026-10-11 10:36:38 UTC
+;     dbname: lab_netmicro_pricing
+;     TOC Entries: 28
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.15 (Debian 16.15-1.pgdg13+2)
+;     Dumped by pg_dump version: 16.15 (Debian 16.15-1.pgdg13+2)
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 16444 SCHEMA - policy_service lab_user
+3440; 0 0 ACL - SCHEMA public pg_database_owner
+221; 1255 16449 FUNCTION policy_service mt_grams_array(text) lab_user
+220; 1255 16448 FUNCTION policy_service mt_grams_query(text) lab_user
+219; 1255 16447 FUNCTION policy_service mt_grams_vector(text) lab_user
+217; 1255 16445 FUNCTION policy_service mt_immutable_timestamp(text) lab_user
+218; 1255 16446 FUNCTION policy_service mt_immutable_timestamptz(text) lab_user
+244; 1255 16471 FUNCTION policy_service mt_insert_tariff(character varying, jsonb, character varying, uuid, uuid) lab_user
+222; 1255 16450 FUNCTION policy_service mt_jsonb_append(jsonb, text[], jsonb, boolean) lab_user
+223; 1255 16451 FUNCTION policy_service mt_jsonb_copy(jsonb, text[], text[]) lab_user
+224; 1255 16452 FUNCTION policy_service mt_jsonb_duplicate(jsonb, text[], jsonb) lab_user
+225; 1255 16453 FUNCTION policy_service mt_jsonb_fix_null_parent(jsonb, text[]) lab_user
+226; 1255 16454 FUNCTION policy_service mt_jsonb_increment(jsonb, text[], numeric) lab_user
+238; 1255 16455 FUNCTION policy_service mt_jsonb_insert(jsonb, text[], jsonb, integer, boolean) lab_user
+239; 1255 16456 FUNCTION policy_service mt_jsonb_move(jsonb, text[], text) lab_user
+242; 1255 16459 FUNCTION policy_service mt_jsonb_patch(jsonb, jsonb) lab_user
+240; 1255 16457 FUNCTION policy_service mt_jsonb_path_to_array(text, character) lab_user
+241; 1255 16458 FUNCTION policy_service mt_jsonb_remove(jsonb, text[], jsonb) lab_user
+245; 1255 16472 FUNCTION policy_service mt_update_tariff(character varying, jsonb, character varying, uuid, uuid) lab_user
+243; 1255 16470 FUNCTION policy_service mt_upsert_tariff(character varying, jsonb, character varying, uuid, uuid) lab_user
+216; 1259 16460 TABLE policy_service mt_doc_tariff lab_user
+3433; 0 16460 TABLE DATA policy_service mt_doc_tariff lab_user
+3289; 2606 16468 CONSTRAINT policy_service mt_doc_tariff pkey_mt_doc_tariff_id lab_user
+3287; 1259 16469 INDEX policy_service mt_doc_tariff_idx_code lab_user

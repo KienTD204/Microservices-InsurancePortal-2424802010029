@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b79b1b9c-d354-40a5-b7b0-18505580e965" name="kient@KA_IEN_KIEN 2026-10-11 17:28:21" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:28:21.4084751+07:00" queuing="2026-10-11T17:28:21.4084757+07:00" start="2026-10-11T17:28:09.3528752+07:00" finish="2026-10-11T17:28:21.4187505+07:00" />
+  <TestSettings name="default" id="5debf3d9-7484-4e43-b7d4-e2b131fe5b21">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-11_17_28_21" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="63578338-8c91-4452-a4a8-dcff3931ec9e" testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2978601+07:00" endTime="2026-10-11T17:28:21.2978604+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63578338-8c91-4452-a4a8-dcff3931ec9e">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a66ce54-0b30-454f-a70e-88da4202e626" testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2989417+07:00" endTime="2026-10-11T17:28:21.2989421+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a66ce54-0b30-454f-a70e-88da4202e626">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb0aa984-23f6-41f6-bc38-b706280637bf" testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2914988+07:00" endTime="2026-10-11T17:28:21.2915206+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb0aa984-23f6-41f6-bc38-b706280637bf">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cddb305b-9bb6-49fd-94ca-9b76a2e580cc" testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2952118+07:00" endTime="2026-10-11T17:28:21.2952120+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cddb305b-9bb6-49fd-94ca-9b76a2e580cc">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7eca04b4-6de1-4f9f-8a72-8d200c9f0902" testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2970278+07:00" endTime="2026-10-11T17:28:21.2970280+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7eca04b4-6de1-4f9f-8a72-8d200c9f0902">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fabffd36-4abf-4e48-acaf-9c48c84daa5d" testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-11T17:28:21.2962371+07:00" endTime="2026-10-11T17:28:21.2962373+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fabffd36-4abf-4e48-acaf-9c48c84daa5d">
+      <Output>
+        <ErrorInfo>
+          <Message>Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+</Message>
+          <StackTrace>   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+   at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+   at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 128&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 464&#xD;
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 280&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 25</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97">
+      <Execution id="fabffd36-4abf-4e48-acaf-9c48c84daa5d" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_All_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="e549e8b0-e906-14ff-d5a2-55103a3761f1">
+      <Execution id="cddb305b-9bb6-49fd-94ca-9b76a2e580cc" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_All_Agents_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="e4d18f3d-24c2-d58c-ebd6-7fbae2931851">
+      <Execution id="fb0aa984-23f6-41f6-bc38-b706280637bf" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_Jim_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a">
+      <Execution id="7eca04b4-6de1-4f9f-8a72-8d200c9f0902" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_HSI_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="a7a9f750-7425-2301-5fe8-8bef9936dcbb">
+      <Execution id="63578338-8c91-4452-a4a8-dcff3931ec9e" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_HSI_Product_In_01_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" storage="c:\microserviceslab\insuranceportal\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="2d6c2823-4f11-e831-6fcc-aadbd5366d0a">
+      <Execution id="6a66ce54-0b30-454f-a70e-88da4202e626" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_All_Product_In_First_Q_2020" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" executionId="63578338-8c91-4452-a4a8-dcff3931ec9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" executionId="6a66ce54-0b30-454f-a70e-88da4202e626" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" executionId="fb0aa984-23f6-41f6-bc38-b706280637bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" executionId="cddb305b-9bb6-49fd-94ca-9b76a2e580cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" executionId="7eca04b4-6de1-4f9f-8a72-8d200c9f0902" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" executionId="fabffd36-4abf-4e48-acaf-9c48c84daa5d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="0" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:01.67]   Discovering: DashboardService.Test&#xD;
+[xUnit.net 00:00:01.70]   Discovered:  DashboardService.Test&#xD;
+[xUnit.net 00:00:01.70]   Starting:    DashboardService.Test&#xD;
+[testcontainers.org 00:00:00.07] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.8.2&#xD;
+  Kernel Version: 6.18.40.1-microsoft-standard-WSL2&#xD;
+  API Version: 1.56&#xD;
+  Operating System: Docker Desktop (containerized)&#xD;
+  Total Memory: 7.39 GB&#xD;
+[testcontainers.org 00:00:00.12] Searching Docker registry credential in Auths&#xD;
+[testcontainers.org 00:00:00.12] Searching Docker registry credential in Auths&#xD;
+[testcontainers.org 00:00:00.12] Searching Docker registry credential in CredHelpers&#xD;
+[testcontainers.org 00:00:00.12] Searching Docker registry credential in CredsStore&#xD;
+[testcontainers.org 00:00:00.24] Docker registry credential https://index.docker.io/v1/ not found&#xD;
+[testcontainers.org 00:00:04.14] Docker image testcontainers/ryuk:0.6.0 created&#xD;
+[testcontainers.org 00:00:04.25] Docker container d055693f8fc3 created&#xD;
+[testcontainers.org 00:00:04.29] Start Docker container d055693f8fc3&#xD;
+[testcontainers.org 00:00:04.47] Wait for Docker container d055693f8fc3 to complete readiness checks&#xD;
+[testcontainers.org 00:00:04.47] Docker container d055693f8fc3 ready&#xD;
+[testcontainers.org 00:00:06.79] Docker image elasticsearch:8.9.2 created&#xD;
+[testcontainers.org 00:00:06.85] Docker container 38db9c7da12e created&#xD;
+[testcontainers.org 00:00:07.14] Add file to tar archive: Content length: 29 byte(s), Target file: "/usr/share/elasticsearch/config/jvm.options.d/elasticsearch-default-memory-vm.options"&#xD;
+[testcontainers.org 00:00:07.14] Copy tar archive to container: Content length: 29 byte(s), Docker container: 38db9c7da12e&#xD;
+[testcontainers.org 00:00:07.16] Start Docker container 38db9c7da12e&#xD;
+[testcontainers.org 00:00:07.46] Delete Docker container 38db9c7da12e&#xD;
+[xUnit.net 00:00:10.16]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.16]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.16]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.16]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.16]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.16]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.16]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.16]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.16]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.17]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.17]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.17]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.17]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.17]       Docker.DotNet.DockerApiException : Docker API responded with status code=InternalServerError, response={"message":"failed to set up container networking: driver failed programming external connectivity on endpoint elasticsearch-892 (77549f87cd941931aa1a375576e690ddcd5ac2c2d63ce6284ca421bd3ac7f7ec): Bind for 127.0.0.1:9200 failed: port is already allocated"}
+&#xD;
+[xUnit.net 00:00:10.17]       Stack Trace:&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)&#xD;
+[xUnit.net 00:00:10.17]            at Docker.DotNet.ContainerOperations.StartContainerAsync(String id, ContainerStartParameters parameters, CancellationToken cancellationToken)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Clients/TestcontainersClient.cs(128,0): at DotNet.Testcontainers.Clients.TestcontainersClient.StartAsync(String id, CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(464,0): at DotNet.Testcontainers.Containers.DockerContainer.UnsafeStartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         /_/src/Testcontainers/Containers/DockerContainer.cs(280,0): at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct)&#xD;
+[xUnit.net 00:00:10.17]         C:\MicroservicesLab\InsurancePortal\DashboardService.Test\ElasticSearchInContainerFixture.cs(25,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:10.19]   Finished:    DashboardService.Test&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3020123+07:00">
+        <Text>[xUnit.net 00:00:10.16]     DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3024286+07:00">
+        <Text>[xUnit.net 00:00:10.17]     DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3026115+07:00">
+        <Text>[xUnit.net 00:00:10.17]     DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3030426+07:00">
+        <Text>[xUnit.net 00:00:10.17]     DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3035023+07:00">
+        <Text>[xUnit.net 00:00:10.17]     DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-11T17:28:21.3039749+07:00">
+        <Text>[xUnit.net 00:00:10.17]     DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

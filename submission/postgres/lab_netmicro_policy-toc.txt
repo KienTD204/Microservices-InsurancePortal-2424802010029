@@ -1,0 +1,39 @@
+;
+; Archive created at 2026-10-11 10:36:37 UTC
+;     dbname: lab_netmicro_policy
+;     TOC Entries: 28
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.15 (Debian 16.15-1.pgdg13+2)
+;     Dumped by pg_dump version: 16.15 (Debian 16.15-1.pgdg13+2)
+;
+;
+; Selected TOC Entries:
+;
+3455; 0 0 ACL - SCHEMA public pg_database_owner
+221; 1259 16426 TABLE public offer_covers lab_user
+220; 1259 16419 TABLE public offers lab_user
+216; 1259 16394 TABLE public outbox_messages lab_user
+215; 1259 16393 SEQUENCE public outbox_messages_id_seq lab_user
+3456; 0 0 SEQUENCE OWNED BY public outbox_messages_id_seq lab_user
+217; 1259 16402 TABLE public policies lab_user
+219; 1259 16416 TABLE public policy_covers lab_user
+218; 1259 16409 TABLE public policy_versions lab_user
+3287; 2604 16397 DEFAULT public outbox_messages id lab_user
+3448; 0 16426 TABLE DATA public offer_covers lab_user
+3447; 0 16419 TABLE DATA public offers lab_user
+3443; 0 16394 TABLE DATA public outbox_messages lab_user
+3444; 0 16402 TABLE DATA public policies lab_user
+3446; 0 16416 TABLE DATA public policy_covers lab_user
+3445; 0 16409 TABLE DATA public policy_versions lab_user
+3457; 0 0 SEQUENCE SET public outbox_messages_id_seq lab_user
+3295; 2606 16425 CONSTRAINT public offers offers_pkey lab_user
+3289; 2606 16401 CONSTRAINT public outbox_messages outbox_messages_pkey lab_user
+3291; 2606 16408 CONSTRAINT public policies policies_pkey lab_user
+3293; 2606 16415 CONSTRAINT public policy_versions policy_versions_pkey lab_user
+3296; 2606 16429 FK CONSTRAINT public policy_versions fk_751c6bb1 lab_user
+3297; 2606 16434 FK CONSTRAINT public policy_covers fk_c63ab836 lab_user
+3298; 2606 16439 FK CONSTRAINT public offer_covers fk_f8493b11 lab_user

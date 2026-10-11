@@ -1,0 +1,39 @@
+;
+; Archive created at 2026-10-11 10:36:36 UTC
+;     dbname: lab_netmicro_payments
+;     TOC Entries: 28
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.15 (Debian 16.15-1.pgdg13+2)
+;     Dumped by pg_dump version: 16.15 (Debian 16.15-1.pgdg13+2)
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 16473 SCHEMA - payment_service lab_user
+3440; 0 0 ACL - SCHEMA public pg_database_owner
+221; 1255 16478 FUNCTION payment_service mt_grams_array(text) lab_user
+220; 1255 16477 FUNCTION payment_service mt_grams_query(text) lab_user
+219; 1255 16476 FUNCTION payment_service mt_grams_vector(text) lab_user
+217; 1255 16474 FUNCTION payment_service mt_immutable_timestamp(text) lab_user
+218; 1255 16475 FUNCTION payment_service mt_immutable_timestamptz(text) lab_user
+244; 1255 16500 FUNCTION payment_service mt_insert_policyaccount(character varying, jsonb, character varying, uuid, uuid) lab_user
+222; 1255 16479 FUNCTION payment_service mt_jsonb_append(jsonb, text[], jsonb, boolean) lab_user
+223; 1255 16480 FUNCTION payment_service mt_jsonb_copy(jsonb, text[], text[]) lab_user
+224; 1255 16481 FUNCTION payment_service mt_jsonb_duplicate(jsonb, text[], jsonb) lab_user
+225; 1255 16482 FUNCTION payment_service mt_jsonb_fix_null_parent(jsonb, text[]) lab_user
+226; 1255 16483 FUNCTION payment_service mt_jsonb_increment(jsonb, text[], numeric) lab_user
+238; 1255 16484 FUNCTION payment_service mt_jsonb_insert(jsonb, text[], jsonb, integer, boolean) lab_user
+239; 1255 16485 FUNCTION payment_service mt_jsonb_move(jsonb, text[], text) lab_user
+242; 1255 16488 FUNCTION payment_service mt_jsonb_patch(jsonb, jsonb) lab_user
+240; 1255 16486 FUNCTION payment_service mt_jsonb_path_to_array(text, character) lab_user
+241; 1255 16487 FUNCTION payment_service mt_jsonb_remove(jsonb, text[], jsonb) lab_user
+245; 1255 16501 FUNCTION payment_service mt_update_policyaccount(character varying, jsonb, character varying, uuid, uuid) lab_user
+243; 1255 16499 FUNCTION payment_service mt_upsert_policyaccount(character varying, jsonb, character varying, uuid, uuid) lab_user
+216; 1259 16489 TABLE payment_service mt_doc_policyaccount lab_user
+3433; 0 16489 TABLE DATA payment_service mt_doc_policyaccount lab_user
+3289; 2606 16497 CONSTRAINT payment_service mt_doc_policyaccount pkey_mt_doc_policyaccount_id lab_user
+3287; 1259 16498 INDEX payment_service mt_doc_policyaccount_idx_policy_number lab_user

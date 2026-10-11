@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using DashboardService.DataAccess.Elastic;
 using DashboardService.Domain;
@@ -11,13 +12,12 @@ namespace DashboardService.Test;
 public class ElasticSearchInContainerFixture : IAsyncLifetime
 {
     private readonly ElasticsearchContainer testContainer = new ElasticsearchBuilder()
-        .WithImage("elasticsearch:8.9.2")
-        .WithName("elasticsearch-892")
+        .WithImage("docker.elastic.co/elasticsearch/elasticsearch:8.9.2")
         .WithEnvironment("discovery.type", "single-node")
         .WithEnvironment("xpack.security.enabled", "false")
-        .WithPortBinding(9200, 9200)
-        .WithPortBinding(9300, 9300)
-        .WithWaitStrategy(Wait.ForUnixContainer().UntilPortIsAvailable(9200))
+        .WithEnvironment("ES_JAVA_OPTS", "-Xms512m -Xmx512m")
+        .WithPortBinding(9200, true)
+        .WithWaitStrategy(Wait.ForUnixContainer().UntilHttpRequestIsSucceeded(request => request.ForPort(9200).ForPath("/")))
         .Build();
     
     public async Task InitializeAsync()
@@ -34,7 +34,8 @@ public class ElasticSearchInContainerFixture : IAsyncLifetime
 
     public ElasticsearchClient ElasticClient()
     {
-        var connectionSettings = new ElasticsearchClientSettings()
+        var endpoint = new Uri($"http://{testContainer.Hostname}:{testContainer.GetMappedPublicPort(9200)}");
+        var connectionSettings = new ElasticsearchClientSettings(endpoint)
             .DefaultMappingFor<PolicyDocument>(m =>
                 m.IndexName("policy_lab_stats").IdProperty(d => d.Number));
         return new ElasticsearchClient(connectionSettings);

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9516e21b-f169-4e33-9888-a926d422e5fb" name="kient@KA_IEN_KIEN 2026-10-11 17:35:05" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:35:05.3662532+07:00" queuing="2026-10-11T17:35:05.3662536+07:00" start="2026-10-11T17:35:03.9999773+07:00" finish="2026-10-11T17:35:05.3711837+07:00" />
+  <TestSettings name="default" id="2b553e46-0176-4e73-adec-5f3431b204f1">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-11_17_35_05" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ea0960f3-6f4b-43a7-9c37-77bc37fb8ceb" testId="60d68e54-c39f-c44c-3b57-2a7f882d1d68" testName="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterOutpayment" computerName="KA_IEN_KIEN" duration="00:00:00.0001668" startTime="2026-10-11T17:35:05.2738628+07:00" endTime="2026-10-11T17:35:05.2738630+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea0960f3-6f4b-43a7-9c37-77bc37fb8ceb" />
+    <UnitTestResult executionId="c8d23c09-ef84-4f43-b882-3ecff656b428" testId="2e30a8fe-9997-05b5-c90f-720971a099f8" testName="PaymentService.Tests.Domain.PolicyAccountTest.CanProperlyCalculateBalance" computerName="KA_IEN_KIEN" duration="00:00:00.0002294" startTime="2026-10-11T17:35:05.2741420+07:00" endTime="2026-10-11T17:35:05.2741422+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8d23c09-ef84-4f43-b882-3ecff656b428" />
+    <UnitTestResult executionId="27c23e05-2eb6-4469-a3f3-a903bafc4a72" testId="30346eae-bd38-fcde-e277-e3c708255b65" testName="PaymentService.Tests.Domain.PolicyAccountTest.CanCloseAccountAndReturnMoney" computerName="KA_IEN_KIEN" duration="00:00:00.0093177" startTime="2026-10-11T17:35:05.2686379+07:00" endTime="2026-10-11T17:35:05.2686517+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27c23e05-2eb6-4469-a3f3-a903bafc4a72" />
+    <UnitTestResult executionId="6adfcf6a-8d8b-4f41-b20e-9d8b72539e04" testId="3fbc20cb-dc57-361e-7b83-a3e61eb6f5f9" testName="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterInPayment" computerName="KA_IEN_KIEN" duration="00:00:00.0053315" startTime="2026-10-11T17:35:05.2732221+07:00" endTime="2026-10-11T17:35:05.2732224+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6adfcf6a-8d8b-4f41-b20e-9d8b72539e04" />
+    <UnitTestResult executionId="0cfc0b9c-0a9e-4357-bc66-d27e53012d63" testId="3571e90d-d61b-b014-5a23-6e635f1164cc" testName="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterExpectdPayment" computerName="KA_IEN_KIEN" duration="00:00:00.0002136" startTime="2026-10-11T17:35:05.2737068+07:00" endTime="2026-10-11T17:35:05.2737069+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0cfc0b9c-0a9e-4357-bc66-d27e53012d63" />
+    <UnitTestResult executionId="76df5329-b81d-4d11-b561-6b1689919f2b" testId="1e802e20-d269-f64f-1bf6-c30bc0911648" testName="PaymentService.Tests.Domain.PolicyAccountTest.NewlyCreatedAccountIsActive" computerName="KA_IEN_KIEN" duration="00:00:00.0001201" startTime="2026-10-11T17:35:05.2736375+07:00" endTime="2026-10-11T17:35:05.2736377+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76df5329-b81d-4d11-b561-6b1689919f2b" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterOutpayment" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="60d68e54-c39f-c44c-3b57-2a7f882d1d68">
+      <Execution id="ea0960f3-6f4b-43a7-9c37-77bc37fb8ceb" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="CanRegisterOutpayment" />
+    </UnitTest>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.CanProperlyCalculateBalance" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="2e30a8fe-9997-05b5-c90f-720971a099f8">
+      <Execution id="c8d23c09-ef84-4f43-b882-3ecff656b428" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="CanProperlyCalculateBalance" />
+    </UnitTest>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.CanCloseAccountAndReturnMoney" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="30346eae-bd38-fcde-e277-e3c708255b65">
+      <Execution id="27c23e05-2eb6-4469-a3f3-a903bafc4a72" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="CanCloseAccountAndReturnMoney" />
+    </UnitTest>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterInPayment" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="3fbc20cb-dc57-361e-7b83-a3e61eb6f5f9">
+      <Execution id="6adfcf6a-8d8b-4f41-b20e-9d8b72539e04" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="CanRegisterInPayment" />
+    </UnitTest>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.CanRegisterExpectdPayment" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="3571e90d-d61b-b014-5a23-6e635f1164cc">
+      <Execution id="0cfc0b9c-0a9e-4357-bc66-d27e53012d63" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="CanRegisterExpectdPayment" />
+    </UnitTest>
+    <UnitTest name="PaymentService.Tests.Domain.PolicyAccountTest.NewlyCreatedAccountIsActive" storage="c:\microserviceslab\insuranceportal\paymentservice.test\bin\release\net8.0\paymentservice.test.dll" id="1e802e20-d269-f64f-1bf6-c30bc0911648">
+      <Execution id="76df5329-b81d-4d11-b561-6b1689919f2b" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PaymentService.Tests.Domain.PolicyAccountTest" name="NewlyCreatedAccountIsActive" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="60d68e54-c39f-c44c-3b57-2a7f882d1d68" executionId="ea0960f3-6f4b-43a7-9c37-77bc37fb8ceb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e30a8fe-9997-05b5-c90f-720971a099f8" executionId="c8d23c09-ef84-4f43-b882-3ecff656b428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30346eae-bd38-fcde-e277-e3c708255b65" executionId="27c23e05-2eb6-4469-a3f3-a903bafc4a72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fbc20cb-dc57-361e-7b83-a3e61eb6f5f9" executionId="6adfcf6a-8d8b-4f41-b20e-9d8b72539e04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3571e90d-d61b-b014-5a23-6e635f1164cc" executionId="0cfc0b9c-0a9e-4357-bc66-d27e53012d63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e802e20-d269-f64f-1bf6-c30bc0911648" executionId="76df5329-b81d-4d11-b561-6b1689919f2b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:00.73]   Discovering: PaymentService.Test&#xD;
+[xUnit.net 00:00:00.76]   Discovered:  PaymentService.Test&#xD;
+[xUnit.net 00:00:00.77]   Starting:    PaymentService.Test&#xD;
+[xUnit.net 00:00:00.82]   Finished:    PaymentService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -1,0 +1,56 @@
+services:
+  eureka:
+    build:
+      context: ../eureka-server
+      dockerfile: Dockerfile.windows
+    image: lab-eureka-server
+    container_name: eureka-server
+    ports:
+      - "127.0.0.1:8761:8761"
+
+  postgres:
+    build:
+      context: ../postgres
+      dockerfile: Dockerfile.windows
+    image: lab-postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_PASSWORD: lab_pass
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - lab_pgdata16:/var/lib/postgresql/data
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.2
+    container_name: elasticsearch
+    environment:
+      discovery.type: single-node
+      bootstrap.memory_lock: "true"
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "127.0.0.1:9200:9200"
+    volumes:
+      - lab_esdata892:/usr/share/elasticsearch/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbit
+    environment:
+      RABBITMQ_CONFIG_FILE: /etc/rabbitmq/rabbitmq.config
+    ports:
+      - "127.0.0.1:15672:15672"
+      - "127.0.0.1:5672:5672"
+    volumes:
+      - ./rabbitmq-isolated.conf:/etc/rabbitmq/rabbitmq.config:ro
+      - lab_rabbitdata:/var/lib/rabbitmq
+
+volumes:
+  lab_pgdata16:
+  lab_esdata892:
+  lab_rabbitdata:

@@ -1,0 +1,13 @@
+{
+  "policyNumber": "1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+  "offer": {
+    "offerNumber": "795b32af-3e2a-4a43-84ab-b8330641c15e",
+    "totalPrice": 98.0,
+    "coversPrices": {
+      "C1": 26.0,
+      "C2": 52.0,
+      "C3": 20.0
+    }
+  },
+  "note": "Synthetic lab customer, generated for verification."
+}

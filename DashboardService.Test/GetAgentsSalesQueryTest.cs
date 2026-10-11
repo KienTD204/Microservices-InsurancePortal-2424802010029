@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using System.Threading.Tasks;
 using DashboardService.Api.Queries;
 using DashboardService.DataAccess.Elastic;
 using DashboardService.Queries;
@@ -18,7 +19,7 @@ public class GetAgentsSalesQueryTest
     }
 
     [Fact]
-    public async void Sales_All_Product_By_Jim_In_01_And_02_2020()
+    public async Task Sales_All_Product_By_Jim_In_01_And_02_2020()
     {
         var queryHandler = new GetAgentsSalesHandler(new ElasticPolicyRepository(fixture.ElasticClient()));
         var result = await queryHandler.Handle(
@@ -37,7 +38,7 @@ public class GetAgentsSalesQueryTest
     }
 
     [Fact]
-    public async void Sales_All_Product_By_All_Agents_In_01_And_02_2020()
+    public async Task Sales_All_Product_By_All_Agents_In_01_And_02_2020()
     {
         var queryHandler = new GetAgentsSalesHandler(new ElasticPolicyRepository(fixture.ElasticClient()));
         var result = await queryHandler.Handle(

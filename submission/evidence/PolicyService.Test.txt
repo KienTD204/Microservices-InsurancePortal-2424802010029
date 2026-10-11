@@ -1,0 +1,5 @@
+Test run for C:\MicroservicesLab\InsurancePortal\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+Results File: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PolicyService.Test.trx
+
+Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 3 ms - PolicyService.Test.dll (net8.0)

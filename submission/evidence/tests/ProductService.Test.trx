@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="03adc7bb-749a-4d25-a78c-f75213bc8083" name="kient@KA_IEN_KIEN 2026-10-11 17:27:51" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:27:51.9439063+07:00" queuing="2026-10-11T17:27:51.9439069+07:00" start="2026-10-11T17:27:47.2042848+07:00" finish="2026-10-11T17:27:56.2091824+07:00" />
+  <TestSettings name="default" id="3847e2d5-9dc3-4464-8bb4-2227aaf4c9fa">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-11_17_27_51" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2fc781b1-21aa-49db-b69b-e779f3235c34" testId="8a200cda-5a20-2a6d-cb2f-c3c6c675db98" testName="ProductService.Test.Domain.ProductTest.Product_CoverIsAdded(code: &quot;C2&quot;, name: &quot;Illness&quot;, description: &quot;&quot;, optional: False, sumInsured: 5000.0)" computerName="KA_IEN_KIEN" duration="00:00:00.0003685" startTime="2026-10-11T17:27:51.9104680+07:00" endTime="2026-10-11T17:27:51.9104681+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fc781b1-21aa-49db-b69b-e779f3235c34" />
+    <UnitTestResult executionId="6d29854d-c458-477d-845b-de7443798105" testId="25459da7-dba0-de5d-f9c9-e22a6876570f" testName="ProductService.Test.Domain.ProductTest.Product_ActiveCannotBeActivated" computerName="KA_IEN_KIEN" duration="00:00:00.0005927" startTime="2026-10-11T17:27:51.9123284+07:00" endTime="2026-10-11T17:27:51.9123288+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d29854d-c458-477d-845b-de7443798105" />
+    <UnitTestResult executionId="c43ad27f-f33e-412e-b595-6739d9176e07" testId="dc13bf5e-0c72-de6a-c20f-6b750ba1e678" testName="ProductService.Test.Handlers.ProductMapperTest.ToQuestionDtoList_ReturnsCorrectValue" computerName="KA_IEN_KIEN" duration="00:00:00.2519535" startTime="2026-10-11T17:27:51.9115409+07:00" endTime="2026-10-11T17:27:51.9115414+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c43ad27f-f33e-412e-b595-6739d9176e07" />
+    <UnitTestResult executionId="033c28ad-0396-48ac-987c-7febac689486" testId="efba0d43-aedb-dcff-a555-d6fa5a8097de" testName="ProductService.Test.Handlers.FindProductsHandlersTest.FindAllProductsHandler_ReturnsListOfAllProducts" computerName="KA_IEN_KIEN" duration="00:00:00.4931772" startTime="2026-10-11T17:27:52.1497313+07:00" endTime="2026-10-11T17:27:52.1497319+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="033c28ad-0396-48ac-987c-7febac689486" />
+    <UnitTestResult executionId="bd61f151-0c94-4ec7-8754-4414710761ba" testId="25c82d82-e9c7-e38c-d197-bc083a116288" testName="ProductService.Test.Domain.ProductTest.Product_CoverIsAdded(code: &quot;C3&quot;, name: &quot;Assistance&quot;, description: &quot;&quot;, optional: True, sumInsured: null)" computerName="KA_IEN_KIEN" duration="00:00:00.0020458" startTime="2026-10-11T17:27:51.9099969+07:00" endTime="2026-10-11T17:27:51.9099971+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd61f151-0c94-4ec7-8754-4414710761ba" />
+    <UnitTestResult executionId="0b809e2e-8330-4b48-96df-b520abb50ae7" testId="f74cc271-6035-9aa5-8a83-5fd2d9aeef3f" testName="ProductService.Test.Controllers.ProductsControllerTest.GetByCode_ReturnsJsonResult_WithOneProductOfCorrectType" computerName="KA_IEN_KIEN" duration="00:00:04.4290744" startTime="2026-10-11T17:27:56.0906902+07:00" endTime="2026-10-11T17:27:56.0906907+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b809e2e-8330-4b48-96df-b520abb50ae7" />
+    <UnitTestResult executionId="d6ae3d61-0006-4305-9ef4-1d1069beba55" testId="9e1ce358-f5cf-0fec-1c28-394b171dbde6" testName="ProductService.Test.Handlers.FindProductsHandlersTest.FindProductByCodeHandler_ReturnsNullIfCodeNotExists" computerName="KA_IEN_KIEN" duration="00:00:00.0029260" startTime="2026-10-11T17:27:52.1602576+07:00" endTime="2026-10-11T17:27:52.1602581+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6ae3d61-0006-4305-9ef4-1d1069beba55" />
+    <UnitTestResult executionId="7fcdb1ad-8f04-46ac-bd85-fcf76a85fefc" testId="4f0928d6-bd4b-594a-73e3-6541a2299f89" testName="ProductService.Test.Domain.ProductTest.ProductDraftIsCreated(code: &quot;TRI&quot;, name: &quot;Safe Traveller&quot;, image: &quot;/static/travel.jpg&quot;, description: &quot;Travel insurance&quot;, maxNumberOfInsured: 10, icon: &quot;plane&quot;)" computerName="KA_IEN_KIEN" duration="00:00:00.0012579" startTime="2026-10-11T17:27:51.9239134+07:00" endTime="2026-10-11T17:27:51.9239137+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fcdb1ad-8f04-46ac-bd85-fcf76a85fefc" />
+    <UnitTestResult executionId="8cb45fcc-0826-411c-84a1-62d7d28e94b3" testId="654457ab-079b-005a-d837-1e47eb0686d3" testName="ProductService.Test.Handlers.ProductMapperTest.ToCoverDtoList_ReturnsCorrectTypeAndValuesAndNumberOfElements" computerName="KA_IEN_KIEN" duration="00:00:00.0067011" startTime="2026-10-11T17:27:51.9241449+07:00" endTime="2026-10-11T17:27:51.9241450+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cb45fcc-0826-411c-84a1-62d7d28e94b3" />
+    <UnitTestResult executionId="fb04a15b-5d31-432d-8f06-bd75bde50bfb" testId="d0d65f3d-a713-80a5-db68-c38821735946" testName="ProductService.Test.Handlers.FindProductsHandlersTest.FindProductByCodeHandler_ReturnsOneProduct" computerName="KA_IEN_KIEN" duration="00:00:00.0072067" startTime="2026-10-11T17:27:52.1571176+07:00" endTime="2026-10-11T17:27:52.1571182+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb04a15b-5d31-432d-8f06-bd75bde50bfb" />
+    <UnitTestResult executionId="60211841-75be-45ae-a303-16c80d937f4a" testId="6333d564-3640-3e28-4ae6-295b675ab971" testName="ProductService.Test.Domain.ProductTest.Product_DraftCanBeActivated" computerName="KA_IEN_KIEN" duration="00:00:00.0028000" startTime="2026-10-11T17:27:51.9116359+07:00" endTime="2026-10-11T17:27:51.9116363+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60211841-75be-45ae-a303-16c80d937f4a" />
+    <UnitTestResult executionId="e10860bc-f2ef-4167-b6e4-44b1a2fc5123" testId="604c0e87-1e8c-9c02-6597-b75796be1f8c" testName="ProductService.Test.Domain.ProductTest.Product_QuestionsAreAdded" computerName="KA_IEN_KIEN" duration="00:00:00.2435070" startTime="2026-10-11T17:27:51.9066119+07:00" endTime="2026-10-11T17:27:51.9066270+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e10860bc-f2ef-4167-b6e4-44b1a2fc5123" />
+    <UnitTestResult executionId="0d4f7c65-dd37-4223-9ab4-d5eab1e1e23e" testId="145f10d9-7598-6f92-c455-6c8479a91fe3" testName="ProductService.Test.Controllers.ProductsControllerTest.GetAll_ReturnsJsonResult_WithListOfProducts" computerName="KA_IEN_KIEN" duration="00:00:00.0477605" startTime="2026-10-11T17:27:56.1397318+07:00" endTime="2026-10-11T17:27:56.1397321+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d4f7c65-dd37-4223-9ab4-d5eab1e1e23e" />
+    <UnitTestResult executionId="1cb0d175-f846-46fb-ab14-92b109ec208d" testId="c99a65ca-7dfb-c1ad-7c84-660890b1ac7f" testName="ProductService.Test.Handlers.ProductMapperTest.ToQuestionDtoList_ReturnsCorrectTypeAndNumberOfElements" computerName="KA_IEN_KIEN" duration="00:00:00.0009525" startTime="2026-10-11T17:27:51.9242451+07:00" endTime="2026-10-11T17:27:51.9242452+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cb0d175-f846-46fb-ab14-92b109ec208d" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.Product_CoverIsAdded(code: &quot;C2&quot;, name: &quot;Illness&quot;, description: &quot;&quot;, optional: False, sumInsured: 5000.0)" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="8a200cda-5a20-2a6d-cb2f-c3c6c675db98">
+      <Execution id="2fc781b1-21aa-49db-b69b-e779f3235c34" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="Product_CoverIsAdded" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Controllers.ProductsControllerTest.GetAll_ReturnsJsonResult_WithListOfProducts" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="145f10d9-7598-6f92-c455-6c8479a91fe3">
+      <Execution id="0d4f7c65-dd37-4223-9ab4-d5eab1e1e23e" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Controllers.ProductsControllerTest" name="GetAll_ReturnsJsonResult_WithListOfProducts" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.ProductMapperTest.ToQuestionDtoList_ReturnsCorrectTypeAndNumberOfElements" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="c99a65ca-7dfb-c1ad-7c84-660890b1ac7f">
+      <Execution id="1cb0d175-f846-46fb-ab14-92b109ec208d" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.ProductMapperTest" name="ToQuestionDtoList_ReturnsCorrectTypeAndNumberOfElements" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.ProductMapperTest.ToQuestionDtoList_ReturnsCorrectValue" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="dc13bf5e-0c72-de6a-c20f-6b750ba1e678">
+      <Execution id="c43ad27f-f33e-412e-b595-6739d9176e07" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.ProductMapperTest" name="ToQuestionDtoList_ReturnsCorrectValue" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Controllers.ProductsControllerTest.GetByCode_ReturnsJsonResult_WithOneProductOfCorrectType" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="f74cc271-6035-9aa5-8a83-5fd2d9aeef3f">
+      <Execution id="0b809e2e-8330-4b48-96df-b520abb50ae7" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Controllers.ProductsControllerTest" name="GetByCode_ReturnsJsonResult_WithOneProductOfCorrectType" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.ProductDraftIsCreated(code: &quot;TRI&quot;, name: &quot;Safe Traveller&quot;, image: &quot;/static/travel.jpg&quot;, description: &quot;Travel insurance&quot;, maxNumberOfInsured: 10, icon: &quot;plane&quot;)" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="4f0928d6-bd4b-594a-73e3-6541a2299f89">
+      <Execution id="7fcdb1ad-8f04-46ac-bd85-fcf76a85fefc" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="ProductDraftIsCreated" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.FindProductsHandlersTest.FindAllProductsHandler_ReturnsListOfAllProducts" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="efba0d43-aedb-dcff-a555-d6fa5a8097de">
+      <Execution id="033c28ad-0396-48ac-987c-7febac689486" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.FindProductsHandlersTest" name="FindAllProductsHandler_ReturnsListOfAllProducts" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.Product_DraftCanBeActivated" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="6333d564-3640-3e28-4ae6-295b675ab971">
+      <Execution id="60211841-75be-45ae-a303-16c80d937f4a" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="Product_DraftCanBeActivated" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.Product_QuestionsAreAdded" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="604c0e87-1e8c-9c02-6597-b75796be1f8c">
+      <Execution id="e10860bc-f2ef-4167-b6e4-44b1a2fc5123" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="Product_QuestionsAreAdded" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.FindProductsHandlersTest.FindProductByCodeHandler_ReturnsOneProduct" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="d0d65f3d-a713-80a5-db68-c38821735946">
+      <Execution id="fb04a15b-5d31-432d-8f06-bd75bde50bfb" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.FindProductsHandlersTest" name="FindProductByCodeHandler_ReturnsOneProduct" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.Product_CoverIsAdded(code: &quot;C3&quot;, name: &quot;Assistance&quot;, description: &quot;&quot;, optional: True, sumInsured: null)" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="25c82d82-e9c7-e38c-d197-bc083a116288">
+      <Execution id="bd61f151-0c94-4ec7-8754-4414710761ba" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="Product_CoverIsAdded" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.FindProductsHandlersTest.FindProductByCodeHandler_ReturnsNullIfCodeNotExists" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="9e1ce358-f5cf-0fec-1c28-394b171dbde6">
+      <Execution id="d6ae3d61-0006-4305-9ef4-1d1069beba55" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.FindProductsHandlersTest" name="FindProductByCodeHandler_ReturnsNullIfCodeNotExists" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Handlers.ProductMapperTest.ToCoverDtoList_ReturnsCorrectTypeAndValuesAndNumberOfElements" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="654457ab-079b-005a-d837-1e47eb0686d3">
+      <Execution id="8cb45fcc-0826-411c-84a1-62d7d28e94b3" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Handlers.ProductMapperTest" name="ToCoverDtoList_ReturnsCorrectTypeAndValuesAndNumberOfElements" />
+    </UnitTest>
+    <UnitTest name="ProductService.Test.Domain.ProductTest.Product_ActiveCannotBeActivated" storage="c:\microserviceslab\insuranceportal\productservice.test\bin\release\net8.0\productservice.test.dll" id="25459da7-dba0-de5d-f9c9-e22a6876570f">
+      <Execution id="6d29854d-c458-477d-845b-de7443798105" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="ProductService.Test.Domain.ProductTest" name="Product_ActiveCannotBeActivated" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="8a200cda-5a20-2a6d-cb2f-c3c6c675db98" executionId="2fc781b1-21aa-49db-b69b-e779f3235c34" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25459da7-dba0-de5d-f9c9-e22a6876570f" executionId="6d29854d-c458-477d-845b-de7443798105" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc13bf5e-0c72-de6a-c20f-6b750ba1e678" executionId="c43ad27f-f33e-412e-b595-6739d9176e07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="efba0d43-aedb-dcff-a555-d6fa5a8097de" executionId="033c28ad-0396-48ac-987c-7febac689486" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25c82d82-e9c7-e38c-d197-bc083a116288" executionId="bd61f151-0c94-4ec7-8754-4414710761ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f74cc271-6035-9aa5-8a83-5fd2d9aeef3f" executionId="0b809e2e-8330-4b48-96df-b520abb50ae7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e1ce358-f5cf-0fec-1c28-394b171dbde6" executionId="d6ae3d61-0006-4305-9ef4-1d1069beba55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f0928d6-bd4b-594a-73e3-6541a2299f89" executionId="7fcdb1ad-8f04-46ac-bd85-fcf76a85fefc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="654457ab-079b-005a-d837-1e47eb0686d3" executionId="8cb45fcc-0826-411c-84a1-62d7d28e94b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0d65f3d-a713-80a5-db68-c38821735946" executionId="fb04a15b-5d31-432d-8f06-bd75bde50bfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6333d564-3640-3e28-4ae6-295b675ab971" executionId="60211841-75be-45ae-a303-16c80d937f4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="604c0e87-1e8c-9c02-6597-b75796be1f8c" executionId="e10860bc-f2ef-4167-b6e4-44b1a2fc5123" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="145f10d9-7598-6f92-c455-6c8479a91fe3" executionId="0d4f7c65-dd37-4223-9ab4-d5eab1e1e23e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c99a65ca-7dfb-c1ad-7c84-660890b1ac7f" executionId="1cb0d175-f846-46fb-ab14-92b109ec208d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="14" executed="14" passed="14" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:02.27]   Discovering: ProductService.Test&#xD;
+[xUnit.net 00:00:02.38]   Discovered:  ProductService.Test&#xD;
+[xUnit.net 00:00:02.39]   Starting:    ProductService.Test&#xD;
+warn: Microsoft.EntityFrameworkCore.Model.Validation[10400]&#xD;
+      Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 0 entities to in-memory store.&#xD;
+info: Microsoft.EntityFrameworkCore.Update[30100]&#xD;
+      Saved 35 entities to in-memory store.&#xD;
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]&#xD;
+      Request starting HTTP/1.1 GET http://localhost/api/Products/TRI - - -&#xD;
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]&#xD;
+      Failed to determine the https port for redirect.&#xD;
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]&#xD;
+      Executing endpoint 'ProductService.Controllers.ProductsController.GetByCode (ProductService)'&#xD;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]&#xD;
+      Route matched with {action = "GetByCode", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetByCode(System.String) on controller ProductService.Controllers.ProductsController (ProductService).&#xD;
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[2]&#xD;
+      Executing JsonResult, writing value of type 'ProductService.Api.Queries.Dtos.ProductDto'.&#xD;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]&#xD;
+      Executed action ProductService.Controllers.ProductsController.GetByCode (ProductService) in 152.447ms&#xD;
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]&#xD;
+      Executed endpoint 'ProductService.Controllers.ProductsController.GetByCode (ProductService)'&#xD;
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]&#xD;
+      Request finished HTTP/1.1 GET http://localhost/api/Products/TRI - 200 - application/json;+charset=utf-8 194.9431ms&#xD;
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]&#xD;
+      Request starting HTTP/1.1 GET http://localhost/api/Products - - -&#xD;
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]&#xD;
+      Executing endpoint 'ProductService.Controllers.ProductsController.GetAll (ProductService)'&#xD;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]&#xD;
+      Route matched with {action = "GetAll", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller ProductService.Controllers.ProductsController (ProductService).&#xD;
+info: Microsoft.AspNetCore.Mvc.NewtonsoftJson.NewtonsoftJsonResultExecutor[2]&#xD;
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[ProductService.Api.Queries.Dtos.ProductDto, ProductService.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.&#xD;
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]&#xD;
+      Executed action ProductService.Controllers.ProductsController.GetAll (ProductService) in 40.76ms&#xD;
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]&#xD;
+      Executed endpoint 'ProductService.Controllers.ProductsController.GetAll (ProductService)'&#xD;
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]&#xD;
+      Request finished HTTP/1.1 GET http://localhost/api/Products - 200 - application/json;+charset=utf-8 44.7868ms&#xD;
+[xUnit.net 00:00:06.92]   Finished:    ProductService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

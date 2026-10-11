@@ -1,0 +1,6 @@
+Test run for C:\MicroservicesLab\InsurancePortal\PaymentService.Test\bin\Release\net8.0\PaymentService.Test.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PaymentService.Test.trx
+Results File: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PaymentService.Test.trx
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 5 ms - PaymentService.Test.dll (net8.0)

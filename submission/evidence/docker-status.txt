@@ -1,0 +1,5 @@
+NAME            IMAGE                                                 COMMAND                  SERVICE         CREATED          STATUS          PORTS
+elasticsearch   docker.elastic.co/elasticsearch/elasticsearch:8.9.2   "/bin/tini -- /usr/l…"   elasticsearch   14 minutes ago   Up 14 minutes   127.0.0.1:9200->9200/tcp
+eureka-server   lab-eureka-server                                     "java -jar /app/eure…"   eureka          14 minutes ago   Up 14 minutes   127.0.0.1:8761->8761/tcp
+postgres        lab-postgres:16                                       "docker-entrypoint.s…"   postgres        14 minutes ago   Up 14 minutes   127.0.0.1:5432->5432/tcp
+rabbit          rabbitmq:3-management                                 "docker-entrypoint.s…"   rabbitmq        14 minutes ago   Up 14 minutes   127.0.0.1:5672->5672/tcp, 127.0.0.1:15672->15672/tcp

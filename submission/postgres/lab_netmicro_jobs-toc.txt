@@ -1,0 +1,107 @@
+;
+; Archive created at 2026-10-11 10:36:36 UTC
+;     dbname: lab_netmicro_jobs
+;     TOC Entries: 96
+;     Compression: gzip
+;     Dump Version: 1.15-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 16.15 (Debian 16.15-1.pgdg13+2)
+;     Dumped by pg_dump version: 16.15 (Debian 16.15-1.pgdg13+2)
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 16502 SCHEMA - hangfire lab_user
+3553; 0 0 ACL - SCHEMA public pg_database_owner
+236; 1259 16794 TABLE hangfire aggregatedcounter lab_user
+235; 1259 16793 SEQUENCE hangfire aggregatedcounter_id_seq lab_user
+3554; 0 0 SEQUENCE OWNED BY hangfire aggregatedcounter_id_seq lab_user
+218; 1259 16509 TABLE hangfire counter lab_user
+217; 1259 16508 SEQUENCE hangfire counter_id_seq lab_user
+3555; 0 0 SEQUENCE OWNED BY hangfire counter_id_seq lab_user
+220; 1259 16517 TABLE hangfire hash lab_user
+219; 1259 16516 SEQUENCE hangfire hash_id_seq lab_user
+3556; 0 0 SEQUENCE OWNED BY hangfire hash_id_seq lab_user
+222; 1259 16528 TABLE hangfire job lab_user
+221; 1259 16527 SEQUENCE hangfire job_id_seq lab_user
+3557; 0 0 SEQUENCE OWNED BY hangfire job_id_seq lab_user
+233; 1259 16588 TABLE hangfire jobparameter lab_user
+232; 1259 16587 SEQUENCE hangfire jobparameter_id_seq lab_user
+3558; 0 0 SEQUENCE OWNED BY hangfire jobparameter_id_seq lab_user
+226; 1259 16553 TABLE hangfire jobqueue lab_user
+225; 1259 16552 SEQUENCE hangfire jobqueue_id_seq lab_user
+3559; 0 0 SEQUENCE OWNED BY hangfire jobqueue_id_seq lab_user
+228; 1259 16561 TABLE hangfire list lab_user
+227; 1259 16560 SEQUENCE hangfire list_id_seq lab_user
+3560; 0 0 SEQUENCE OWNED BY hangfire list_id_seq lab_user
+234; 1259 16602 TABLE hangfire lock lab_user
+216; 1259 16503 TABLE hangfire schema lab_user
+229; 1259 16569 TABLE hangfire server lab_user
+231; 1259 16577 TABLE hangfire set lab_user
+230; 1259 16576 SEQUENCE hangfire set_id_seq lab_user
+3561; 0 0 SEQUENCE OWNED BY hangfire set_id_seq lab_user
+224; 1259 16538 TABLE hangfire state lab_user
+223; 1259 16537 SEQUENCE hangfire state_id_seq lab_user
+3562; 0 0 SEQUENCE OWNED BY hangfire state_id_seq lab_user
+3337; 2604 16797 DEFAULT hangfire aggregatedcounter id lab_user
+3320; 2604 16635 DEFAULT hangfire counter id lab_user
+3321; 2604 16644 DEFAULT hangfire hash id lab_user
+3323; 2604 16654 DEFAULT hangfire job id lab_user
+3334; 2604 16704 DEFAULT hangfire jobparameter id lab_user
+3327; 2604 16727 DEFAULT hangfire jobqueue id lab_user
+3329; 2604 16747 DEFAULT hangfire list id lab_user
+3332; 2604 16756 DEFAULT hangfire set id lab_user
+3325; 2604 16681 DEFAULT hangfire state id lab_user
+3546; 0 16794 TABLE DATA hangfire aggregatedcounter lab_user
+3528; 0 16509 TABLE DATA hangfire counter lab_user
+3530; 0 16517 TABLE DATA hangfire hash lab_user
+3532; 0 16528 TABLE DATA hangfire job lab_user
+3543; 0 16588 TABLE DATA hangfire jobparameter lab_user
+3536; 0 16553 TABLE DATA hangfire jobqueue lab_user
+3538; 0 16561 TABLE DATA hangfire list lab_user
+3544; 0 16602 TABLE DATA hangfire lock lab_user
+3526; 0 16503 TABLE DATA hangfire schema lab_user
+3539; 0 16569 TABLE DATA hangfire server lab_user
+3541; 0 16577 TABLE DATA hangfire set lab_user
+3534; 0 16538 TABLE DATA hangfire state lab_user
+3563; 0 0 SEQUENCE SET hangfire aggregatedcounter_id_seq lab_user
+3564; 0 0 SEQUENCE SET hangfire counter_id_seq lab_user
+3565; 0 0 SEQUENCE SET hangfire hash_id_seq lab_user
+3566; 0 0 SEQUENCE SET hangfire job_id_seq lab_user
+3567; 0 0 SEQUENCE SET hangfire jobparameter_id_seq lab_user
+3568; 0 0 SEQUENCE SET hangfire jobqueue_id_seq lab_user
+3569; 0 0 SEQUENCE SET hangfire list_id_seq lab_user
+3570; 0 0 SEQUENCE SET hangfire set_id_seq lab_user
+3571; 0 0 SEQUENCE SET hangfire state_id_seq lab_user
+3378; 2606 16803 CONSTRAINT hangfire aggregatedcounter aggregatedcounter_key_key lab_user
+3380; 2606 16801 CONSTRAINT hangfire aggregatedcounter aggregatedcounter_pkey lab_user
+3341; 2606 16637 CONSTRAINT hangfire counter counter_pkey lab_user
+3345; 2606 16772 CONSTRAINT hangfire hash hash_key_field_key lab_user
+3347; 2606 16646 CONSTRAINT hangfire hash hash_pkey lab_user
+3352; 2606 16656 CONSTRAINT hangfire job job_pkey lab_user
+3374; 2606 16706 CONSTRAINT hangfire jobparameter jobparameter_pkey lab_user
+3360; 2606 16729 CONSTRAINT hangfire jobqueue jobqueue_pkey lab_user
+3363; 2606 16749 CONSTRAINT hangfire list list_pkey lab_user
+3376; 2606 16628 CONSTRAINT hangfire lock lock_resource_key lab_user
+3339; 2606 16507 CONSTRAINT hangfire schema schema_pkey lab_user
+3365; 2606 16775 CONSTRAINT hangfire server server_pkey lab_user
+3369; 2606 16777 CONSTRAINT hangfire set set_key_value_key lab_user
+3371; 2606 16758 CONSTRAINT hangfire set set_pkey lab_user
+3355; 2606 16683 CONSTRAINT hangfire state state_pkey lab_user
+3342; 1259 16804 INDEX hangfire ix_hangfire_counter_expireat lab_user
+3343; 1259 16766 INDEX hangfire ix_hangfire_counter_key lab_user
+3348; 1259 16805 INDEX hangfire ix_hangfire_hash_expireat lab_user
+3349; 1259 16806 INDEX hangfire ix_hangfire_job_expireat lab_user
+3350; 1259 16773 INDEX hangfire ix_hangfire_job_statename lab_user
+3372; 1259 16778 INDEX hangfire ix_hangfire_jobparameter_jobidandname lab_user
+3356; 1259 16840 INDEX hangfire ix_hangfire_jobqueue_fetchedat_queue_jobid lab_user
+3357; 1259 16738 INDEX hangfire ix_hangfire_jobqueue_jobidandqueue lab_user
+3358; 1259 16807 INDEX hangfire ix_hangfire_jobqueue_queueandfetchedat lab_user
+3361; 1259 16809 INDEX hangfire ix_hangfire_list_expireat lab_user
+3366; 1259 16810 INDEX hangfire ix_hangfire_set_expireat lab_user
+3367; 1259 16792 INDEX hangfire ix_hangfire_set_key_score lab_user
+3353; 1259 16691 INDEX hangfire ix_hangfire_state_jobid lab_user
+3382; 2606 16715 FK CONSTRAINT hangfire jobparameter jobparameter_jobid_fkey lab_user
+3381; 2606 16692 FK CONSTRAINT hangfire state state_jobid_fkey lab_user

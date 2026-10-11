@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="510" height="600" preserveAspectRatio="xMinYMin meet" viewBox="0 0 510 600" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="510" height="600"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-600)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="125" y="20" width="380" height="566" style="stroke: rgb(47%,59%,64%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(96%,98%,98%); fill-rule: evenodd;"/>
+			<text x="137" y="568" style="font-family: Arial-Bold; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,1136) scale(1,-1)">HỆ THỐNG PORTAL ĐẠI LÝ BẢO HIỂM</text>
+			<ellipse cx="52.0" cy="317.0" rx="9.0" ry="9.0" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 52,308 L 52,275 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 30,295 L 74,295 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 52,275 L 35,255 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 52,275 L 69,255 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="39.49755859375" y="240" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,480) scale(1,-1)">Đại lý</text>
+			<text x="31.43115234375" y="224" style="font-family: Arial; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,448) scale(1,-1)">bảo hiểm</text>
+			<path d="M 74,295 L 164,535 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="535.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="228.8458984375" y="532" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,1064) scale(1,-1)">UC-01 - Đăng nhập</text>
+			<path d="M 74,295 L 164,476 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="476.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="199.25546874999998" y="473" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,946) scale(1,-1)">UC-02 - Xem danh sách sản phẩm</text>
+			<path d="M 74,295 L 164,417 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="417.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="206.84375" y="414" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,828) scale(1,-1)">UC-03 - Xem chi tiết sản phẩm</text>
+			<path d="M 74,295 L 164,358 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="358.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="227.1357421875" y="355" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,710) scale(1,-1)">UC-04 - Tạo báo giá</text>
+			<path d="M 74,295 L 164,299 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="299.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="193.42246093749998" y="296" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,592) scale(1,-1)">UC-06 - Xác nhận bán / tạo hợp đồng</text>
+			<path d="M 74,295 L 164,240 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="240.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="206.5923828125" y="237" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,474) scale(1,-1)">UC-07 - Tải / in chứng chỉ PDF</text>
+			<path d="M 74,295 L 164,181 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="181.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="201.7498046875" y="178" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,356) scale(1,-1)">UC-08A - Tìm báo giá / hợp đồng</text>
+			<path d="M 74,295 L 164,122 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="122.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="200.278125" y="119" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,238) scale(1,-1)">UC-08B - Xem báo giá / hợp đồng</text>
+			<path d="M 74,295 L 164,63 Z" style="stroke: rgb(61%,68%,72%); stroke-linecap: butt; stroke-width: 0.65;"/>
+			<ellipse cx="267.0" cy="63.0" rx="103.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="198.76132812499998" y="60" style="font-family: Arial; font-size: 8.8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,120) scale(1,-1)">UC-09 - Trò chuyện giữa các đại lý</text>
+			<ellipse cx="437.0" cy="322.0" rx="61.0" ry="23.0" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,95%,96%); fill-rule: evenodd;"/>
+			<text x="424.57451171875" y="325" style="font-family: Arial; font-size: 8.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,650) scale(1,-1)">UC-05</text>
+			<text x="421.22353515625" y="313" style="font-family: Arial; font-size: 8.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,626) scale(1,-1)">Tính phí</text>
+			<path d="M 366,353 L 390,333 Z" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 1; stroke-dasharray: 3, 2;"/>
+			<polyline points="381 333, 390 333, 389 342" style="stroke: rgb(15%,41%,50%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="376" y="368" style="font-family: Arial; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,736) scale(1,-1)">&lt;&lt;include&gt;&gt;</text>
+		</g>
+	</g>
+</svg>

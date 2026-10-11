@@ -1,0 +1,33 @@
+name: Lab build and tests
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      Eureka__Client__ShouldRegisterWithEureka: 'false'
+      Eureka__Client__ShouldFetchRegistry: 'false'
+      Logging__EventLog__LogLevel__Default: None
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.425'
+      - name: Build integrated solution
+        run: dotnet build DotNetMicroservicesPoc.sln -c Release --nologo
+      - name: Prepare integration images
+        run: |
+          docker pull postgres:16
+          docker pull docker.elastic.co/elasticsearch/elasticsearch:8.9.2
+      - name: Run six existing test suites
+        run: |
+          for project in ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do
+            dotnet test "$project/$project.csproj" -c Release --no-build --no-restore --logger trx --results-directory ci-test-results
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: ci-test-results/*.trx

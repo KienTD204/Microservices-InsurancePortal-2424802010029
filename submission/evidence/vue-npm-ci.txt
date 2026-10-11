@@ -1,0 +1,38 @@
+
+> bootstrap-vue@2.0.0-rc.11 postinstall C:\MicroservicesLab\InsurancePortal\Web\node_modules\bootstrap-vue
+> opencollective postinstall || exit 0
+
+
+     *** Thank you for using bootstrap-vue! ***
+
+Please consider donating to our open collective
+     to help us maintain this package.
+
+  https://opencollective.com/bootstrap-vue/donate
+
+                    ***
+
+
+> node-sass@4.9.2 install C:\MicroservicesLab\InsurancePortal\Web\node_modules\node-sass
+> node scripts/install.js
+
+Cached binary found at C:\Users\kient\AppData\Roaming\npm-cache\_cacache\node-sass\4.9.2\win32-x64-64_binding.node
+
+> node-sass@4.9.2 postinstall C:\MicroservicesLab\InsurancePortal\Web\node_modules\node-sass
+> node scripts/build.js
+
+Binary found at C:\MicroservicesLab\InsurancePortal\Web\node_modules\node-sass\vendor\win32-x64-64\binding.node
+Testing binary
+Binary is fine
+
+> yorkie@1.0.3 install C:\MicroservicesLab\InsurancePortal\Web\node_modules\yorkie
+> node bin/install.js
+
+setting up Git hooks
+done
+
+
+> fsevents@1.2.4 install C:\MicroservicesLab\InsurancePortal\Web\node_modules\fsevents
+> node install
+
+added 1636 packages in 9.154s

@@ -1,0 +1,5 @@
+Test run for C:\MicroservicesLab\InsurancePortal\ProductService.Test\bin\Release\net8.0\ProductService.Test.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+Results File: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\ProductService.Test.trx
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 4 s - ProductService.Test.dll (net8.0)

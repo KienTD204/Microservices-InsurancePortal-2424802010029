@@ -49,6 +49,126 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Test", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmClient", "BlazorWasmClient\BlazorWasmClient.csproj", "{21FE7A24-4DA2-41C4-BC95-9F042FB49D7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Api", "AuthService.Api\AuthService.Api.csproj", "{A13A772E-384A-4B00-8107-C1A374D2BC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Test", "AuthService.Test\AuthService.Test.csproj", "{F39DBACC-F35D-4167-9682-8529F6EECF27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatService.Test", "ChatService.Test\ChatService.Test.csproj", "{F9BD6967-10B7-4F50-906B-E5B0F135C4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolicySearchService.Test", "PolicySearchService.Test\PolicySearchService.Test.csproj", "{D152AC65-F6ED-4344-9164-3A5054F581FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService", "DocumentService\DocumentService.csproj", "{DE29D596-8340-4591-81A1-630187C527ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Api", "DocumentService.Api\DocumentService.Api.csproj", "{EE06D1BD-F36D-4E8D-B2F1-283D79A762CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentService.Test", "DocumentService.Test\DocumentService.Test.csproj", "{E77BB069-D7F4-4E40-96E4-50E462EE8FC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway.Api", "AgentPortalApiGateway.Api\AgentPortalApiGateway.Api.csproj", "{DEE10357-4122-46C7-9DCA-F7EED68E009B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway.Test", "AgentPortalApiGateway.Test\AgentPortalApiGateway.Test.csproj", "{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eureka-server", "eureka-server", "{FF5E7550-D5A9-4F26-B9EF-AF84FDC57F54}"
+	ProjectSection(SolutionItems) = preProject
+		eureka-server\build.gradle = eureka-server\build.gradle
+		eureka-server\Dockerfile = eureka-server\Dockerfile
+		eureka-server\Dockerfile.windows = eureka-server\Dockerfile.windows
+		eureka-server\gradle\wrapper\gradle-wrapper.jar = eureka-server\gradle\wrapper\gradle-wrapper.jar
+		eureka-server\gradle\wrapper\gradle-wrapper.properties = eureka-server\gradle\wrapper\gradle-wrapper.properties
+		eureka-server\gradlew = eureka-server\gradlew
+		eureka-server\gradlew.bat = eureka-server\gradlew.bat
+		eureka-server\src\main\java\net\chrisrichardson\microservices\eurekaserver\EurekaServer.java = eureka-server\src\main\java\net\chrisrichardson\microservices\eurekaserver\EurekaServer.java
+		eureka-server\src\main\resources\application.yml = eureka-server\src\main\resources\application.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{108E6485-FD77-4208-904B-DFE42C5675E9}"
+	ProjectSection(SolutionItems) = preProject
+		postgres\createdatabases.sql = postgres\createdatabases.sql
+		postgres\Dockerfile = postgres\Dockerfile
+		postgres\Dockerfile.windows = postgres\Dockerfile.windows
+		postgres\lab-permissions.sql = postgres\lab-permissions.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{761AD5A5-AE01-45DF-8C29-FC723B8A2526}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\app-build.sh = scripts\app-build.sh
+		scripts\app-down.sh = scripts\app-down.sh
+		scripts\app-logs.sh = scripts\app-logs.sh
+		scripts\app-run.sh = scripts\app-run.sh
+		scripts\app.yml = scripts\app.yml
+		scripts\build-without-tests.bat = scripts\build-without-tests.bat
+		scripts\build-without-tests.sh = scripts\build-without-tests.sh
+		scripts\build.bat = scripts\build.bat
+		scripts\build.sh = scripts\build.sh
+		scripts\infra-build.sh = scripts\infra-build.sh
+		scripts\infra-down.sh = scripts\infra-down.sh
+		scripts\infra-logs.sh = scripts\infra-logs.sh
+		scripts\infra-run.sh = scripts\infra-run.sh
+		scripts\infra.windows.yml = scripts\infra.windows.yml
+		scripts\infra.yml = scripts\infra.yml
+		scripts\rabbitmq-isolated.conf = scripts\rabbitmq-isolated.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{689B92E0-3FFE-45B6-B2AD-90B8B8D30646}"
+	ProjectSection(SolutionItems) = preProject
+		Web\.dockerignore = Web\.dockerignore
+		Web\.env-example = Web\.env-example
+		Web\.gitignore = Web\.gitignore
+		Web\babel.config.js = Web\babel.config.js
+		Web\Dockerfile = Web\Dockerfile
+		Web\nginx.conf = Web\nginx.conf
+		Web\package-lock.json = Web\package-lock.json
+		Web\package.json = Web\package.json
+		Web\public\favicon.ico = Web\public\favicon.ico
+		Web\public\index.html = Web\public\index.html
+		Web\public\static\avatars\admin.png = Web\public\static\avatars\admin.png
+		Web\public\static\avatars\agent1.png = Web\public\static\avatars\agent1.png
+		Web\public\static\avatars\danny_solid.png = Web\public\static\avatars\danny_solid.png
+		Web\public\static\avatars\jimmy_solid.png = Web\public\static\avatars\jimmy_solid.png
+		Web\public\static\car.jpg = Web\public\static\car.jpg
+		Web\public\static\farm.jpg = Web\public\static\farm.jpg
+		Web\public\static\house.jpg = Web\public\static\house.jpg
+		Web\public\static\travel.jpg = Web\public\static\travel.jpg
+		Web\README.md = Web\README.md
+		Web\src\App.vue = Web\src\App.vue
+		Web\src\assets\logo.png = Web\src\assets\logo.png
+		Web\src\assets\logo_horizontal.png = Web\src\assets\logo_horizontal.png
+		Web\src\components\Account.vue = Web\src\components\Account.vue
+		Web\src\components\Chat.vue = Web\src\components\Chat.vue
+		Web\src\components\Chatbot.vue = Web\src\components\Chatbot.vue
+		Web\src\components\CoverList.vue = Web\src\components\CoverList.vue
+		Web\src\components\Dashboard.vue = Web\src\components\Dashboard.vue
+		Web\src\components\Home.vue = Web\src\components\Home.vue
+		Web\src\components\http\ApiClient.js = Web\src\components\http\ApiClient.js
+		Web\src\components\http\Auth.js = Web\src\components\http\Auth.js
+		Web\src\components\http\WebSocket.js = Web\src\components\http\WebSocket.js
+		Web\src\components\PolicyCreate.vue = Web\src\components\PolicyCreate.vue
+		Web\src\components\PolicyDetails.vue = Web\src\components\PolicyDetails.vue
+		Web\src\components\PolicyList.vue = Web\src\components\PolicyList.vue
+		Web\src\components\ProductCard.vue = Web\src\components\ProductCard.vue
+		Web\src\components\ProductDetails.vue = Web\src\components\ProductDetails.vue
+		Web\src\components\ProductList.vue = Web\src\components\ProductList.vue
+		Web\src\components\SalesAgents.vue = Web\src\components\SalesAgents.vue
+		Web\src\components\SalesBar.js = Web\src\components\SalesBar.js
+		Web\src\components\SalesDistribution.vue = Web\src\components\SalesDistribution.vue
+		Web\src\components\SalesLines.js = Web\src\components\SalesLines.js
+		Web\src\components\SalesPie.js = Web\src\components\SalesPie.js
+		Web\src\components\SalesTrendsLines.vue = Web\src\components\SalesTrendsLines.vue
+		Web\src\components\TotalSalesCard.vue = Web\src\components\TotalSalesCard.vue
+		Web\src\main.js = Web\src\main.js
+		Web\src\router.js = Web\src\router.js
+		Web\src\views\AccountView.vue = Web\src\views\AccountView.vue
+		Web\src\views\ChatbotView.vue = Web\src\views\ChatbotView.vue
+		Web\src\views\ChatView.vue = Web\src\views\ChatView.vue
+		Web\src\views\DashboardView.vue = Web\src\views\DashboardView.vue
+		Web\src\views\HomeView.vue = Web\src\views\HomeView.vue
+		Web\src\views\PoliciesView.vue = Web\src\views\PoliciesView.vue
+		Web\src\views\PolicyCreateView.vue = Web\src\views\PolicyCreateView.vue
+		Web\src\views\PolicyDetailsView.vue = Web\src\views\PolicyDetailsView.vue
+		Web\src\views\ProductDetailsView.vue = Web\src\views\ProductDetailsView.vue
+		Web\src\views\ProductsView.vue = Web\src\views\ProductsView.vue
+		Web\yarn.lock = Web\yarn.lock
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +267,42 @@ Global
 		{21FE7A24-4DA2-41C4-BC95-9F042FB49D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21FE7A24-4DA2-41C4-BC95-9F042FB49D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21FE7A24-4DA2-41C4-BC95-9F042FB49D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13A772E-384A-4B00-8107-C1A374D2BC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13A772E-384A-4B00-8107-C1A374D2BC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13A772E-384A-4B00-8107-C1A374D2BC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13A772E-384A-4B00-8107-C1A374D2BC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39DBACC-F35D-4167-9682-8529F6EECF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39DBACC-F35D-4167-9682-8529F6EECF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39DBACC-F35D-4167-9682-8529F6EECF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39DBACC-F35D-4167-9682-8529F6EECF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9BD6967-10B7-4F50-906B-E5B0F135C4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BD6967-10B7-4F50-906B-E5B0F135C4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BD6967-10B7-4F50-906B-E5B0F135C4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BD6967-10B7-4F50-906B-E5B0F135C4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D152AC65-F6ED-4344-9164-3A5054F581FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D152AC65-F6ED-4344-9164-3A5054F581FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D152AC65-F6ED-4344-9164-3A5054F581FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D152AC65-F6ED-4344-9164-3A5054F581FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE29D596-8340-4591-81A1-630187C527ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE29D596-8340-4591-81A1-630187C527ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE29D596-8340-4591-81A1-630187C527ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE29D596-8340-4591-81A1-630187C527ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE06D1BD-F36D-4E8D-B2F1-283D79A762CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE06D1BD-F36D-4E8D-B2F1-283D79A762CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE06D1BD-F36D-4E8D-B2F1-283D79A762CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE06D1BD-F36D-4E8D-B2F1-283D79A762CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E77BB069-D7F4-4E40-96E4-50E462EE8FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77BB069-D7F4-4E40-96E4-50E462EE8FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77BB069-D7F4-4E40-96E4-50E462EE8FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77BB069-D7F4-4E40-96E4-50E462EE8FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE10357-4122-46C7-9DCA-F7EED68E009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE10357-4122-46C7-9DCA-F7EED68E009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE10357-4122-46C7-9DCA-F7EED68E009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE10357-4122-46C7-9DCA-F7EED68E009B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

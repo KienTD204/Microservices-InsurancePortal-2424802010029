@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="145a112f-55a3-4894-a781-2ad9e3b96e8d" name="kient@KA_IEN_KIEN 2026-10-11 17:31:59" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-11T17:31:59.3801873+07:00" queuing="2026-10-11T17:31:59.3801875+07:00" start="2026-10-11T17:31:51.7445094+07:00" finish="2026-10-11T17:31:59.3849732+07:00" />
+  <TestSettings name="default" id="05eccdc8-bca5-4fa0-89c6-abe00bde51ce">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-11_17_31_59" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a9d7486f-2d34-49e5-86ca-ac378b7d50e7" testId="10dbcc33-57b1-b6e4-7411-ce223ad3b043" testName="PricingService.IntegrationTest.PricingControllerTest.CommandIsProperlyValidated" computerName="KA_IEN_KIEN" duration="00:00:00.0915483" startTime="2026-10-11T17:31:58.7333028+07:00" endTime="2026-10-11T17:31:58.7333159+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9d7486f-2d34-49e5-86ca-ac378b7d50e7" />
+    <UnitTestResult executionId="8075a977-6d97-4b01-9fa1-90e8c40bb0c1" testId="3005f730-9c08-350a-18da-8948b9d3f265" testName="PricingService.IntegrationTest.PricingControllerTest.PriceForTravelPolicyIsCorrect" computerName="KA_IEN_KIEN" duration="00:00:00.1994155" startTime="2026-10-11T17:31:58.9335059+07:00" endTime="2026-10-11T17:31:58.9335066+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8075a977-6d97-4b01-9fa1-90e8c40bb0c1" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PricingService.IntegrationTest.PricingControllerTest.PriceForTravelPolicyIsCorrect" storage="c:\microserviceslab\insuranceportal\pricingservice.integrationtest\bin\release\net8.0\pricingservice.integrationtest.dll" id="3005f730-9c08-350a-18da-8948b9d3f265">
+      <Execution id="8075a977-6d97-4b01-9fa1-90e8c40bb0c1" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\bin\Release\net8.0\PricingService.IntegrationTest.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.IntegrationTest.PricingControllerTest" name="PriceForTravelPolicyIsCorrect" />
+    </UnitTest>
+    <UnitTest name="PricingService.IntegrationTest.PricingControllerTest.CommandIsProperlyValidated" storage="c:\microserviceslab\insuranceportal\pricingservice.integrationtest\bin\release\net8.0\pricingservice.integrationtest.dll" id="10dbcc33-57b1-b6e4-7411-ce223ad3b043">
+      <Execution id="a9d7486f-2d34-49e5-86ca-ac378b7d50e7" />
+      <TestMethod codeBase="C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\bin\Release\net8.0\PricingService.IntegrationTest.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.IntegrationTest.PricingControllerTest" name="CommandIsProperlyValidated" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="10dbcc33-57b1-b6e4-7411-ce223ad3b043" executionId="a9d7486f-2d34-49e5-86ca-ac378b7d50e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3005f730-9c08-350a-18da-8948b9d3f265" executionId="8075a977-6d97-4b01-9fa1-90e8c40bb0c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:00.61]   Discovering: PricingService.IntegrationTest&#xD;
+[xUnit.net 00:00:00.63]   Discovered:  PricingService.IntegrationTest&#xD;
+[xUnit.net 00:00:00.63]   Starting:    PricingService.IntegrationTest&#xD;
+[testcontainers.org 00:00:00.07] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.8.2&#xD;
+  Kernel Version: 6.18.40.1-microsoft-standard-WSL2&#xD;
+  API Version: 1.56&#xD;
+  Operating System: Docker Desktop (containerized)&#xD;
+  Total Memory: 7.39 GB&#xD;
+[testcontainers.org 00:00:00.21] Docker container 310a046ddd5a created&#xD;
+[testcontainers.org 00:00:00.26] Start Docker container 310a046ddd5a&#xD;
+[testcontainers.org 00:00:00.45] Wait for Docker container 310a046ddd5a to complete readiness checks&#xD;
+[testcontainers.org 00:00:00.46] Docker container 310a046ddd5a ready&#xD;
+[testcontainers.org 00:00:00.60] Docker container 78244c19b479 created&#xD;
+[testcontainers.org 00:00:00.61] Start Docker container 78244c19b479&#xD;
+[testcontainers.org 00:00:00.77] Wait for Docker container 78244c19b479 to complete readiness checks&#xD;
+[testcontainers.org 00:00:00.78] Execute "pg_isready --host localhost --dbname lab_netmicro_pricing --username postgres" at Docker container 78244c19b479&#xD;
+[testcontainers.org 00:00:01.89] Execute "pg_isready --host localhost --dbname lab_netmicro_pricing --username postgres" at Docker container 78244c19b479&#xD;
+[testcontainers.org 00:00:01.96] Docker container 78244c19b479 ready&#xD;
+[testcontainers.org 00:00:06.12] Delete Docker container 78244c19b479&#xD;
+[xUnit.net 00:00:07.18]   Finished:    PricingService.IntegrationTest&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

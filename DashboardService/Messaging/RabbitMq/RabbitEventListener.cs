@@ -39,11 +39,11 @@ public class RabbitEventListener
         var queue = busClient.Advanced.QueueDeclare("lab-dashboard-service-" + typeof(T).Name);
         busClient.Advanced.Bind(exchange, queue, typeof(T).Name.ToLower());
         //subscribe
-        busClient.Advanced.Consume(queue, (IMessage<T> msg, MessageReceivedInfo messageReceivedInfo) =>
+        busClient.Advanced.Consume(queue, async (IMessage<T> msg, MessageReceivedInfo messageReceivedInfo) =>
         {
             using var scope = serviceProvider.CreateScope();
             var internalBus = scope.ServiceProvider.GetRequiredService<IMediator>();
-            return internalBus.Publish(msg.Body);
+            await internalBus.Publish(msg.Body);
         });
     }
 }

@@ -1,0 +1,634 @@
+[
+  {
+    "check": "Gateway rejects missing JWT",
+    "url": "http://localhost:8099/api/Products",
+    "status": 401,
+    "expected": 401,
+    "passed": true,
+    "response": ""
+  },
+  {
+    "check": "Authenticate demo agent",
+    "url": "http://localhost:6060/api/User",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "token": "[REDACTED]",
+      "userName": "jimmy.solid",
+      "roles": [
+        "SALESMAN",
+        "USER"
+      ],
+      "avatar": "static/avatars/jimmy_solid.png",
+      "userType": "SALESMAN",
+      "expiryTimeStamp": "2026-10-18T10:35:02.0989613Z"
+    }
+  },
+  {
+    "check": "Direct products",
+    "url": "http://localhost:5030/api/Products",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": [
+      {
+        "code": "TRI",
+        "name": "Safe Traveller",
+        "image": "/static/travel.jpg",
+        "description": "Travel insurance",
+        "covers": [
+          {
+            "code": "C2",
+            "name": "Illness",
+            "description": "",
+            "optional": false,
+            "sumInsured": 5000.0
+          },
+          {
+            "code": "C3",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "DESTINATION",
+            "questionType": "Choice",
+            "text": "Destination",
+            "choices": [
+              {
+                "code": "EUR",
+                "label": "Europe"
+              },
+              {
+                "code": "WORLD",
+                "label": "World"
+              },
+              {
+                "code": "PL",
+                "label": "Poland"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "NUM_OF_ADULTS",
+            "questionType": "Numeric",
+            "text": "Number of adults"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CHILDREN",
+            "questionType": "Numeric",
+            "text": "Number of children"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "plane"
+      },
+      {
+        "code": "HSI",
+        "name": "Happy House",
+        "image": "/static/house.jpg",
+        "description": "House insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Fire",
+            "description": "",
+            "optional": false,
+            "sumInsured": 200000.0
+          },
+          {
+            "code": "C2",
+            "name": "Flood",
+            "description": "",
+            "optional": false,
+            "sumInsured": 100000.0
+          },
+          {
+            "code": "C3",
+            "name": "Theft",
+            "description": "",
+            "optional": false,
+            "sumInsured": 50000.0
+          },
+          {
+            "code": "C4",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "TYP",
+            "questionType": "Choice",
+            "text": "Apartment / House",
+            "choices": [
+              {
+                "code": "APT",
+                "label": "Apartment"
+              },
+              {
+                "code": "HOUSE",
+                "label": "House"
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "questionCode": "FLOOD",
+            "questionType": "Choice",
+            "text": "Located in flood risk area",
+            "choices": [
+              {
+                "code": "YES",
+                "label": "Yes"
+              },
+              {
+                "code": "NO",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "AREA",
+            "questionType": "Numeric",
+            "text": "Area"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "building"
+      },
+      {
+        "code": "FAI",
+        "name": "Happy farm",
+        "image": "/static/farm.jpg",
+        "description": "Farm insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Crops",
+            "description": "",
+            "optional": false,
+            "sumInsured": 200000.0
+          },
+          {
+            "code": "C2",
+            "name": "Flood",
+            "description": "",
+            "optional": false,
+            "sumInsured": 100000.0
+          },
+          {
+            "code": "C3",
+            "name": "Fire",
+            "description": "",
+            "optional": false,
+            "sumInsured": 50000.0
+          },
+          {
+            "code": "C4",
+            "name": "Equipment",
+            "description": "",
+            "optional": true,
+            "sumInsured": 300000.0
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "TYP",
+            "questionType": "Choice",
+            "text": "Cultivation type",
+            "choices": [
+              {
+                "code": "ZB",
+                "label": "Crop"
+              },
+              {
+                "code": "KW",
+                "label": "Vegetable"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "AREA",
+            "questionType": "Numeric",
+            "text": "Area"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "apple"
+      },
+      {
+        "code": "CAR",
+        "name": "Happy Driver",
+        "image": "/static/car.jpg",
+        "description": "Car insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "car"
+      }
+    ]
+  },
+  {
+    "check": "Gateway products via Eureka",
+    "url": "http://localhost:8099/api/Products",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": [
+      {
+        "code": "TRI",
+        "name": "Safe Traveller",
+        "image": "/static/travel.jpg",
+        "description": "Travel insurance",
+        "covers": [
+          {
+            "code": "C2",
+            "name": "Illness",
+            "description": "",
+            "optional": false,
+            "sumInsured": 5000.0
+          },
+          {
+            "code": "C3",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "DESTINATION",
+            "questionType": "Choice",
+            "text": "Destination",
+            "choices": [
+              {
+                "code": "EUR",
+                "label": "Europe"
+              },
+              {
+                "code": "WORLD",
+                "label": "World"
+              },
+              {
+                "code": "PL",
+                "label": "Poland"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "NUM_OF_ADULTS",
+            "questionType": "Numeric",
+            "text": "Number of adults"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CHILDREN",
+            "questionType": "Numeric",
+            "text": "Number of children"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "plane"
+      },
+      {
+        "code": "HSI",
+        "name": "Happy House",
+        "image": "/static/house.jpg",
+        "description": "House insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Fire",
+            "description": "",
+            "optional": false,
+            "sumInsured": 200000.0
+          },
+          {
+            "code": "C2",
+            "name": "Flood",
+            "description": "",
+            "optional": false,
+            "sumInsured": 100000.0
+          },
+          {
+            "code": "C3",
+            "name": "Theft",
+            "description": "",
+            "optional": false,
+            "sumInsured": 50000.0
+          },
+          {
+            "code": "C4",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "TYP",
+            "questionType": "Choice",
+            "text": "Apartment / House",
+            "choices": [
+              {
+                "code": "APT",
+                "label": "Apartment"
+              },
+              {
+                "code": "HOUSE",
+                "label": "House"
+              }
+            ]
+          },
+          {
+            "index": 4,
+            "questionCode": "FLOOD",
+            "questionType": "Choice",
+            "text": "Located in flood risk area",
+            "choices": [
+              {
+                "code": "YES",
+                "label": "Yes"
+              },
+              {
+                "code": "NO",
+                "label": "No"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "AREA",
+            "questionType": "Numeric",
+            "text": "Area"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "building"
+      },
+      {
+        "code": "FAI",
+        "name": "Happy farm",
+        "image": "/static/farm.jpg",
+        "description": "Farm insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Crops",
+            "description": "",
+            "optional": false,
+            "sumInsured": 200000.0
+          },
+          {
+            "code": "C2",
+            "name": "Flood",
+            "description": "",
+            "optional": false,
+            "sumInsured": 100000.0
+          },
+          {
+            "code": "C3",
+            "name": "Fire",
+            "description": "",
+            "optional": false,
+            "sumInsured": 50000.0
+          },
+          {
+            "code": "C4",
+            "name": "Equipment",
+            "description": "",
+            "optional": true,
+            "sumInsured": 300000.0
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "questionCode": "TYP",
+            "questionType": "Choice",
+            "text": "Cultivation type",
+            "choices": [
+              {
+                "code": "ZB",
+                "label": "Crop"
+              },
+              {
+                "code": "KW",
+                "label": "Vegetable"
+              }
+            ]
+          },
+          {
+            "index": 2,
+            "questionCode": "AREA",
+            "questionType": "Numeric",
+            "text": "Area"
+          },
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "apple"
+      },
+      {
+        "code": "CAR",
+        "name": "Happy Driver",
+        "image": "/static/car.jpg",
+        "description": "Car insurance",
+        "covers": [
+          {
+            "code": "C1",
+            "name": "Assistance",
+            "description": "",
+            "optional": true
+          }
+        ],
+        "questions": [
+          {
+            "index": 3,
+            "questionCode": "NUM_OF_CLAIM",
+            "questionType": "Numeric",
+            "text": "Number of claims in last 5 years"
+          }
+        ],
+        "maxNumberOfInsured": 0,
+        "icon": "car"
+      }
+    ]
+  },
+  {
+    "check": "Blazor frontend",
+    "url": "http://localhost:5081/",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>BlazorWasmClient</title>\n    <base href=\"/\" />\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js\"></script>\n    \n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU\" crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\">\n\n    <link href=\"_content/Blazorise/blazorise.min.css?v=1.3.0.0\" rel=\"stylesheet\" />\n    <link href=\"_content/Blazorise.Bootstrap5/blazorise.bootstrap5.min.css?v=1.3.0.0\" rel=\"stylesheet\" />\n\n    <link href=\"_content/Blazorise.Snackbar/blazorise.snackbar.css\" rel=\"stylesheet\" />\n    <!--<link href=\"BlazorWasmClient.Styles.css\" rel=\"stylesheet\" />-->\n    <link rel=\"stylesheet\" href=\"css/blazor-ui.css\" />\n</head>\n\n<body>\n    <div id=\"app\">\n        <div class=\"loading\">Loading...</div>\n        <link rel=\"stylesheet\"\n              href=\"data:text/css,.loading%7Bfont-family%3A'Franklin%20Gothic%20Medium'%2C'Arial%20Narrow'%2CArial%2Csans-serif%3Bcolor%3A%2388a%3Bfont-size%3A18px%3Btext-align%3Acenter%3Bwidth%3A150px%3Bheight%3A150px%3Bposition%3Afixed%3Btop%3A0%3Bbottom%3A0%3Bleft%3A0%3Bright%3A0%3Bmargin%3Aauto%7D.loading%3A%3Aafter%7Bcontent%3A''%3Bborder%3Asolid%2010px%3Bborder"
+  },
+  {
+    "check": "Create offer via Policy and Pricing",
+    "url": "http://localhost:8099/api/Offers",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "offerNumber": "795b32af-3e2a-4a43-84ab-b8330641c15e",
+      "totalPrice": 98.0,
+      "coversPrices": {
+        "C1": 26.0,
+        "C2": 52.0,
+        "C3": 20.0
+      }
+    }
+  },
+  {
+    "check": "Convert offer to policy",
+    "url": "http://localhost:8099/api/Policies",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "policyNumber": "1f84b81b-203f-4fbf-8a82-c1e03e8556ae"
+    }
+  },
+  {
+    "check": "View policy details",
+    "url": "http://localhost:8099/api/Policies/1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "policy": {
+        "number": "1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+        "dateFrom": "2026-10-16T00:00:00",
+        "dateTo": "2026-10-21T00:00:00",
+        "policyHolder": "Lab Student",
+        "totalPremium": 98.0,
+        "productCode": "TRI",
+        "accountNumber": null,
+        "covers": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      }
+    }
+  },
+  {
+    "check": "Payment account from RabbitMQ event",
+    "url": "http://localhost:5070/api/Payment/accounts/1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "balance": {
+        "policyAccountNumber": "1821e4b0-9ec2-4645-b029-fc1093f431a1",
+        "policyNumber": "1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+        "balance": 0.0
+      }
+    }
+  },
+  {
+    "check": "Search policy",
+    "url": "http://localhost:8099/api/PolicySearch?q=1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "policies": [
+        {
+          "policyNumber": "1f84b81b-203f-4fbf-8a82-c1e03e8556ae",
+          "policyStartDate": "2026-10-16T00:00:00+07:00",
+          "policyEndDate": "2026-10-21T00:00:00+07:00",
+          "productCode": "TRI",
+          "policyHolder": "Lab Student",
+          "premiumAmount": 98.0
+        }
+      ]
+    }
+  },
+  {
+    "check": "Elasticsearch health",
+    "url": "http://localhost:9200/_cluster/health",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "cluster_name": "docker-cluster",
+      "status": "yellow",
+      "timed_out": false,
+      "number_of_nodes": 1,
+      "number_of_data_nodes": 1,
+      "active_primary_shards": 2,
+      "active_shards": 2,
+      "relocating_shards": 0,
+      "initializing_shards": 0,
+      "unassigned_shards": 2,
+      "delayed_unassigned_shards": 0,
+      "number_of_pending_tasks": 0,
+      "number_of_in_flight_fetch": 0,
+      "task_max_waiting_in_queue_millis": 0,
+      "active_shards_percent_as_number": 50.0
+    }
+  },
+  {
+    "check": "Chat SignalR negotiate",
+    "url": "http://localhost:4099/agentsChat/negotiate?negotiateVersion=1",
+    "status": 200,
+    "expected": 200,
+    "passed": true,
+    "response": {
+      "note": "Authenticated SignalR negotiation succeeded; connection token omitted from public evidence"
+    }
+  }
+]

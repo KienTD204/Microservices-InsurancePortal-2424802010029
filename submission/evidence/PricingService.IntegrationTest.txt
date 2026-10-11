@@ -1,0 +1,6 @@
+Test run for C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\bin\Release\net8.0\PricingService.IntegrationTest.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+WARNING: Overwriting results file: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PricingService.IntegrationTest.trx
+Results File: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PricingService.IntegrationTest.trx
+
+Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 200 ms - PricingService.IntegrationTest.dll (net8.0)

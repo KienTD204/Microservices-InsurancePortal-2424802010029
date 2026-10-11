@@ -1,0 +1,10 @@
+[
+  {
+    "Project": "DashboardService.Test",
+    "ExitCode": 0
+  },
+  {
+    "Project": "PricingService.IntegrationTest",
+    "ExitCode": 0
+  }
+]

@@ -1,0 +1,46 @@
+Test run for C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\bin\Release\net8.0\PricingService.IntegrationTest.dll (.NETCoreApp,Version=v8.0)
+A total of 1 test files matched the specified pattern.
+[xUnit.net 00:00:09.19]     PricingService.IntegrationTest.PricingControllerTest.CommandIsProperlyValidated [FAIL]
+[xUnit.net 00:00:09.19]     PricingService.IntegrationTest.PricingControllerTest.PriceForTravelPolicyIsCorrect [FAIL]
+[xUnit.net 00:00:09.19]     [Test Collection Cleanup Failure (PricingControllerFixtureCollection)] System.NullReferenceException
+  Failed PricingService.IntegrationTest.PricingControllerTest.CommandIsProperlyValidated [1 ms]
+  Error Message:
+   Docker.DotNet.DockerImageNotFoundException : Docker API responded with status code=NotFound, response={"message":"No such image: postgres:15.1"}
+
+  Stack Trace:
+     at Docker.DotNet.ContainerOperations.<>c.<.cctor>b__30_1(HttpStatusCode statusCode, String responseBody)
+   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)
+   at Docker.DotNet.ContainerOperations.CreateContainerAsync(CreateContainerParameters parameters, CancellationToken cancellationToken)
+   at DotNet.Testcontainers.Clients.DockerContainerOperations.RunAsync(IContainerConfiguration configuration, CancellationToken ct) in /_/src/Testcontainers/Clients/DockerContainerOperations.cs:line 213
+   at DotNet.Testcontainers.Clients.TestcontainersClient.RunAsync(IContainerConfiguration configuration, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 307
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeCreateAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 413
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 277
+   at PricingService.IntegrationTest.IntegrationTestsFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\IntegrationTestsFixture.cs:line 24
+  Failed PricingService.IntegrationTest.PricingControllerTest.PriceForTravelPolicyIsCorrect [1 ms]
+  Error Message:
+   Docker.DotNet.DockerImageNotFoundException : Docker API responded with status code=NotFound, response={"message":"No such image: postgres:15.1"}
+
+  Stack Trace:
+     at Docker.DotNet.ContainerOperations.<>c.<.cctor>b__30_1(HttpStatusCode statusCode, String responseBody)
+   at Docker.DotNet.DockerClient.HandleIfErrorResponseAsync(HttpStatusCode statusCode, HttpResponseMessage response, IEnumerable`1 handlers)
+   at Docker.DotNet.DockerClient.MakeRequestAsync(IEnumerable`1 errorHandlers, HttpMethod method, String path, IQueryString queryString, IRequestContent body, IDictionary`2 headers, TimeSpan timeout, CancellationToken token)
+   at Docker.DotNet.ContainerOperations.CreateContainerAsync(CreateContainerParameters parameters, CancellationToken cancellationToken)
+   at DotNet.Testcontainers.Clients.DockerContainerOperations.RunAsync(IContainerConfiguration configuration, CancellationToken ct) in /_/src/Testcontainers/Clients/DockerContainerOperations.cs:line 213
+   at DotNet.Testcontainers.Clients.TestcontainersClient.RunAsync(IContainerConfiguration configuration, CancellationToken ct) in /_/src/Testcontainers/Clients/TestcontainersClient.cs:line 307
+   at DotNet.Testcontainers.Containers.DockerContainer.UnsafeCreateAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 413
+   at DotNet.Testcontainers.Containers.DockerContainer.StartAsync(CancellationToken ct) in /_/src/Testcontainers/Containers/DockerContainer.cs:line 277
+   at PricingService.IntegrationTest.IntegrationTestsFixture.InitializeAsync() in C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\IntegrationTestsFixture.cs:line 24
+  Failed PricingService.IntegrationTest.PricingControllerTest.PriceForTravelPolicyIsCorrect [1 ms]
+  Error Message:
+   [Test Collection Cleanup Failure (PricingControllerFixtureCollection)]: System.NullReferenceException : Object reference not set to an instance of an object.
+  Stack Trace:
+     at PricingService.IntegrationTest.IntegrationTestsFixture.DisposeAsync() in C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\IntegrationTestsFixture.cs:line 41
+  Failed PricingService.IntegrationTest.PricingControllerTest.CommandIsProperlyValidated [1 ms]
+  Error Message:
+   [Test Collection Cleanup Failure (PricingControllerFixtureCollection)]: System.NullReferenceException : Object reference not set to an instance of an object.
+  Stack Trace:
+     at PricingService.IntegrationTest.IntegrationTestsFixture.DisposeAsync() in C:\MicroservicesLab\InsurancePortal\PricingService.IntegrationTest\IntegrationTestsFixture.cs:line 41
+Results File: C:\MicroservicesLab\InsurancePortal\submission\evidence\tests\PricingService.IntegrationTest.trx
+
+Failed!  - Failed:     4, Passed:     0, Skipped:     0, Total:     4, Duration: 4 ms - PricingService.IntegrationTest.dll (net8.0)

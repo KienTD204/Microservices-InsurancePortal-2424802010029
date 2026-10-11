@@ -1,0 +1,58 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+title Portal đại lý bảo hiểm - mẫu phân tích từ đề bài
+
+actor "Đại lý bảo hiểm" as Agent
+
+rectangle "Portal đại lý bảo hiểm" {
+  package "Identity / Auth" {
+    usecase "UC-01\nĐăng nhập" as Login
+  }
+  package "Product Catalog" {
+    usecase "UC-02\nXem danh sách sản phẩm" as Products
+    usecase "UC-03\nXem chi tiết / chọn sản phẩm" as Details
+  }
+  package "Policy" {
+    usecase "UC-04\nTạo báo giá" as Offer
+    usecase "UC-06\nXác nhận bán / tạo hợp đồng" as Buy
+    usecase "UC-08B\nXem báo giá / hợp đồng" as View
+  }
+  package "Pricing" {
+    usecase "UC-05\nTính phí bảo hiểm" as Price
+  }
+  package "Policy Search" {
+    usecase "UC-08A\nTìm báo giá / hợp đồng" as Search
+  }
+  package "Documents" {
+    usecase "UC-07\nTải / in chứng chỉ PDF" as Certificate
+  }
+  package "Chat" {
+    usecase "UC-09\nTrò chuyện với đại lý khác" as Chat
+  }
+}
+
+Agent -- Login
+Agent -- Products
+Agent -- Details
+Agent -- Offer
+Agent -- Buy
+Agent -- View
+Agent -- Search
+Agent -- Certificate
+Agent -- Chat
+Offer ..> Price : <<include>>
+
+note bottom of Buy
+  Tiền điều kiện: đăng nhập và có báo giá hợp lệ.
+end note
+note bottom of Certificate
+  Tiền điều kiện: hợp đồng đã được tạo.
+  Source snapshot chưa cung cấp DocumentService.
+end note
+note bottom of Login
+  Các thao tác nghiệp vụ có tiền điều kiện xác thực.
+  Không bắt buộc include đăng nhập lại ở mỗi thao tác.
+end note
+@enduml

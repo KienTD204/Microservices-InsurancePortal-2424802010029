@@ -1,0 +1,4 @@
+/postgres lab-postgres:16 sha256:4000239519048ddd0b4855d8a0facbdc4bf6d4709bf74ca923befc923ca2591c
+/rabbit rabbitmq:3-management sha256:e582c0bc7766f3342496d8485efb5a1df782b5ce3886ad017e2eaae442311f69
+/elasticsearch docker.elastic.co/elasticsearch/elasticsearch:8.9.2 sha256:60f54a2fda4c2e7b921828ad6a658b3e0261f9c6b2aa55af7aad9a61020abd10
+/eureka-server lab-eureka-server sha256:4436d75ecc03ba7890cbe014927cab3cb2534358a2eb4e5d1bd4685508e91a5e

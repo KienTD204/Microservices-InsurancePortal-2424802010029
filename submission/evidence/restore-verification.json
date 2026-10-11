@@ -1,0 +1,158 @@
+[
+  {
+    "Database": "lab_netmicro_payments",
+    "RestoreDatabase": "verify_20261011_payments",
+    "RestoreExit": 0,
+    "TableCount": 1,
+    "TablesMatched": true,
+    "Rows": [
+      {
+        "Table": "payment_service,mt_doc_policyaccount",
+        "CurrentSourceRows": "4",
+        "RestoredRows": "4",
+        "SameNow": true
+      }
+    ]
+  },
+  {
+    "Database": "lab_netmicro_jobs",
+    "RestoreDatabase": "verify_20261011_jobs",
+    "RestoreExit": 0,
+    "TableCount": 12,
+    "TablesMatched": true,
+    "Rows": [
+      {
+        "Table": "hangfire,aggregatedcounter",
+        "CurrentSourceRows": "3",
+        "RestoredRows": "3",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,counter",
+        "CurrentSourceRows": "12",
+        "RestoredRows": "9",
+        "SameNow": false
+      },
+      {
+        "Table": "hangfire,hash",
+        "CurrentSourceRows": "9",
+        "RestoredRows": "9",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,job",
+        "CurrentSourceRows": "8",
+        "RestoredRows": "7",
+        "SameNow": false
+      },
+      {
+        "Table": "hangfire,jobparameter",
+        "CurrentSourceRows": "32",
+        "RestoredRows": "28",
+        "SameNow": false
+      },
+      {
+        "Table": "hangfire,jobqueue",
+        "CurrentSourceRows": "0",
+        "RestoredRows": "0",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,list",
+        "CurrentSourceRows": "0",
+        "RestoredRows": "0",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,lock",
+        "CurrentSourceRows": "0",
+        "RestoredRows": "0",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,schema",
+        "CurrentSourceRows": "1",
+        "RestoredRows": "1",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,server",
+        "CurrentSourceRows": "2",
+        "RestoredRows": "2",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,set",
+        "CurrentSourceRows": "1",
+        "RestoredRows": "1",
+        "SameNow": true
+      },
+      {
+        "Table": "hangfire,state",
+        "CurrentSourceRows": "24",
+        "RestoredRows": "21",
+        "SameNow": false
+      }
+    ]
+  },
+  {
+    "Database": "lab_netmicro_policy",
+    "RestoreDatabase": "verify_20261011_policy",
+    "RestoreExit": 0,
+    "TableCount": 6,
+    "TablesMatched": true,
+    "Rows": [
+      {
+        "Table": "public,offer_covers",
+        "CurrentSourceRows": "6",
+        "RestoredRows": "6",
+        "SameNow": true
+      },
+      {
+        "Table": "public,offers",
+        "CurrentSourceRows": "2",
+        "RestoredRows": "2",
+        "SameNow": true
+      },
+      {
+        "Table": "public,outbox_messages",
+        "CurrentSourceRows": "0",
+        "RestoredRows": "0",
+        "SameNow": true
+      },
+      {
+        "Table": "public,policies",
+        "CurrentSourceRows": "2",
+        "RestoredRows": "2",
+        "SameNow": true
+      },
+      {
+        "Table": "public,policy_covers",
+        "CurrentSourceRows": "6",
+        "RestoredRows": "6",
+        "SameNow": true
+      },
+      {
+        "Table": "public,policy_versions",
+        "CurrentSourceRows": "2",
+        "RestoredRows": "2",
+        "SameNow": true
+      }
+    ]
+  },
+  {
+    "Database": "lab_netmicro_pricing",
+    "RestoreDatabase": "verify_20261011_pricing",
+    "RestoreExit": 0,
+    "TableCount": 1,
+    "TablesMatched": true,
+    "Rows": [
+      {
+        "Table": "policy_service,mt_doc_tariff",
+        "CurrentSourceRows": "4",
+        "RestoredRows": "4",
+        "SameNow": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Project": "ProductService.Test",
+    "ExitCode": 0
+  },
+  {
+    "Project": "PricingService.Test",
+    "ExitCode": 0
+  },
+  {
+    "Project": "PolicyService.Test",
+    "ExitCode": 0
+  },
+  {
+    "Project": "PaymentService.Test",
+    "ExitCode": 0
+  },
+  {
+    "Project": "DashboardService.Test",
+    "ExitCode": 1
+  },
+  {
+    "Project": "PricingService.IntegrationTest",
+    "ExitCode": 1
+  }
+]
