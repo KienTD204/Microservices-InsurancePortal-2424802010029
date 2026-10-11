@@ -1,5 +1,9 @@
 # ASCLAB .NET Core PoC - LAB Insurance Sales Portal
 
+## Bài nộp thực hành - Trương Đắc Kiên
+
+**2424802010029 - D24CNTT05**. Đọc [README-LAB.md](README-LAB.md) để dựng bản Windows, xem phạm vi chỉnh sửa và kết quả xác minh. [Báo cáo PDF](submission/reports), [backup PostgreSQL](submission/postgres), [ảnh build và bằng chứng](submission/evidence). Giữ nguyên nguồn tham khảo và LICENSE bên dưới; các project scaffold được ghi riêng.
+
 [![BuiltWithDot.Net shield](https://builtwithdot.net/project/409/microservices-on-net-core-sample/badge)](https://builtwithdot.net/project/409/microservices-on-net-core-sample)
 
 This is an example of a very simplified insurance sales system made in a microservice architecture using:
