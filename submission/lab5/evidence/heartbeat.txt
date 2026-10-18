@@ -1,0 +1,8 @@
+[13:39:55 DBG] SendHeartbeatAsync http://localhost:8761/eureka/apps/PRICINGSERVICE/localhost:PricingService:5041?status=UP&lastDirtyTimestamp=1792305503190, status: OK, instanceInfo: null, retry: 0
+[13:39:55 DBG] Renew PRICINGSERVICE/localhost:PricingService:5041 returned: OK
+[13:40:25 DBG] SendHeartbeatAsync http://localhost:8761/eureka/apps/PRICINGSERVICE/localhost:PricingService:5041?status=UP&lastDirtyTimestamp=1792305503190, status: OK, instanceInfo: null, retry: 0
+[13:40:25 DBG] Renew PRICINGSERVICE/localhost:PricingService:5041 returned: OK
+[13:40:55 DBG] SendHeartbeatAsync http://localhost:8761/eureka/apps/PRICINGSERVICE/localhost:PricingService:5041?status=UP&lastDirtyTimestamp=1792305503190, status: OK, instanceInfo: null, retry: 0
+[13:40:55 DBG] Renew PRICINGSERVICE/localhost:PricingService:5041 returned: OK
+[13:41:25 DBG] SendHeartbeatAsync http://localhost:8761/eureka/apps/PRICINGSERVICE/localhost:PricingService:5041?status=UP&lastDirtyTimestamp=1792305503190, status: OK, instanceInfo: null, retry: 0
+[13:41:25 DBG] Renew PRICINGSERVICE/localhost:PricingService:5041 returned: OK

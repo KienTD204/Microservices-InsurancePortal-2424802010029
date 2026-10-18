@@ -1,0 +1,2 @@
+postgres | Up 3 minutes | 127.0.0.1:5432->5432/tcp
+eureka-server | Up 3 minutes | 127.0.0.1:8761->8761/tcp

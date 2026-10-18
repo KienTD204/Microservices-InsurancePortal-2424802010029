@@ -30,7 +30,11 @@ public class IntegrationTestsFixture : IAsyncLifetime
             {
                 configBuilder.AddInMemoryCollection(new Dictionary<string, string>
                 {
-                    ["ConnectionStrings:DefaultConnection"] = pgSqlContainer.GetConnectionString()
+                    ["ConnectionStrings:DefaultConnection"] = pgSqlContainer.GetConnectionString(),
+                    // Tests use their own PostgreSQL container and never register a fake runtime instance.
+                    ["Eureka:Client:ShouldRegisterWithEureka"] = "false",
+                    ["Eureka:Client:ShouldFetchRegistry"] = "false",
+                    ["Logging:EventLog:LogLevel:Default"] = "None"
                 });
             });
 

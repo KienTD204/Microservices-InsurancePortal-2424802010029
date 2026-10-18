@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-18T13:38:48.0657906+07:00",
+  "eurekaUrl": "http://localhost:8761",
+  "pricingUrl": "http://localhost:5041",
+  "health": {
+    "status": "UP"
+  },
+  "registry": {
+    "application": {
+      "name": "PRICINGSERVICE",
+      "instance": [
+        {
+          "instanceId": "localhost:PricingService:5041",
+          "hostName": "localhost",
+          "app": "PRICINGSERVICE",
+          "ipAddr": "192.168.1.96",
+          "status": "UP",
+          "overriddenStatus": "UNKNOWN",
+          "port": {
+            "$": 5041,
+            "@enabled": "true"
+          },
+          "securePort": {
+            "$": 443,
+            "@enabled": "false"
+          },
+          "countryId": 1,
+          "dataCenterInfo": {
+            "@class": "com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo",
+            "name": "MyOwn"
+          },
+          "leaseInfo": {
+            "renewalIntervalInSecs": 30,
+            "durationInSecs": 90,
+            "registrationTimestamp": 1792305505564,
+            "lastRenewalTimestamp": 1792305505564,
+            "evictionTimestamp": 0,
+            "serviceUpTimestamp": 1792305505565
+          },
+          "metadata": {
+            "@class": "java.util.Collections$EmptyMap"
+          },
+          "homePageUrl": "http://localhost:5041/",
+          "statusPageUrl": "http://localhost:5041/info",
+          "healthCheckUrl": "http://localhost:5041/health",
+          "vipAddress": "PricingService",
+          "secureVipAddress": "PricingService",
+          "isCoordinatingDiscoveryServer": "false",
+          "lastUpdatedTimestamp": "1792305505565",
+          "lastDirtyTimestamp": "1792305503190",
+          "actionType": "ADDED"
+        }
+      ]
+    }
+  },
+  "request": {
+    "productCode": "TRI",
+    "answers": [
+      {
+        "questionType": 1,
+        "questionCode": "NUM_OF_ADULTS",
+        "answer": 1
+      },
+      {
+        "questionType": 1,
+        "questionCode": "NUM_OF_CHILDREN",
+        "answer": 1
+      },
+      {
+        "questionType": 0,
+        "questionCode": "DESTINATION",
+        "answer": "EUR"
+      }
+    ],
+    "policyFrom": "2026-10-23T00:00:00+07:00",
+    "policyTo": "2026-10-28T00:00:00+07:00",
+    "selectedCovers": [
+      "C1",
+      "C2",
+      "C3"
+    ]
+  },
+  "price": {
+    "totalPrice": 98.0,
+    "coverPrices": {
+      "C1": 26.0,
+      "C2": 52.0,
+      "C3": 20.0
+    }
+  },
+  "invalidRequestHttpStatus": 400,
+  "result": "PASS"
+}

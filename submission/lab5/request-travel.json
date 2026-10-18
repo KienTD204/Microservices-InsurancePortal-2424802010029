@@ -1,0 +1,11 @@
+{
+  "productCode": "TRI",
+  "policyFrom": "2026-10-23T00:00:00+07:00",
+  "policyTo": "2026-10-28T00:00:00+07:00",
+  "selectedCovers": ["C1", "C2", "C3"],
+  "answers": [
+    { "questionCode": "NUM_OF_ADULTS", "questionType": 1, "answer": 1 },
+    { "questionCode": "NUM_OF_CHILDREN", "questionType": 1, "answer": 1 },
+    { "questionCode": "DESTINATION", "questionType": 0, "answer": "EUR" }
+  ]
+}

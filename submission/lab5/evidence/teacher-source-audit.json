@@ -1,0 +1,104 @@
+{
+  "result": "PASS",
+  "archives": [
+    {
+      "archive": "PricingService.Api.rar",
+      "sha256": "87973652B20B30D8CACFEF7B39CA4E40E570E663A847F60AB1D405B6A4A30A72"
+    },
+    {
+      "archive": "PricingService.Test.rar",
+      "sha256": "E78A7B05EB98DC6808FFC737379909128327E6EFD0421BD3B7C3291C19673E95"
+    },
+    {
+      "archive": "PricingService.IntegrationTest.rar",
+      "sha256": "0E0B044F5CC750BE361D496C11968AB50C54772131BA9F23F67D13B2EEB8AB1C"
+    }
+  ],
+  "files": [
+    {
+      "file": "PricingService.Api/PricingService.Api.csproj",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Api/Commands/CalculatePriceCommand.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Api/Commands/CalculatePriceResult.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Api/Commands/Dto/QuestionAnswer.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Api/Converters/QuestionAnswerConverter.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.IntegrationTest/IntegrationTestsFixture.cs",
+      "identicalIgnoringLineEndings": false,
+      "documentedFixtureAdaptation": true
+    },
+    {
+      "file": "PricingService.IntegrationTest/PricingControllerFixture.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.IntegrationTest/PricingControllerFixtureCollection.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.IntegrationTest/PricingControllerTest.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.IntegrationTest/PricingService.IntegrationTest.csproj",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.IntegrationTest/Properties/launchSettings.json",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/PricingService.Test.csproj",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/Commands/CalculatePriceHandlerShould.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/Controllers/PricingControllerShould.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/Domain/TariffFactory.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/Domain/TariffTest.cs",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    },
+    {
+      "file": "PricingService.Test/Properties/launchSettings.json",
+      "identicalIgnoringLineEndings": true,
+      "documentedFixtureAdaptation": false
+    }
+  ]
+}

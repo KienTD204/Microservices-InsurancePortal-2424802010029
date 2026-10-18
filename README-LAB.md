@@ -1,5 +1,7 @@
 # Bài thực hành Microservices - Trương Đắc Kiên
 
+**Bài thực hành 5:** xem [README-LAB5.md](README-LAB5.md) để chạy PricingService, Eureka và xem bằng chứng nộp bài mới.
+
 - Sinh viên: **Trương Đắc Kiên**
 - MSSV: **2424802010029**
 - Lớp: **D24CNTT05**

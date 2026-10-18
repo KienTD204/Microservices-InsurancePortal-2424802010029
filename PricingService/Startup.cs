@@ -1,6 +1,7 @@
 ﻿using GlobalExceptionHandler.WebApi;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -50,6 +51,17 @@ public class Startup
 
         // Startup.Configure is synchronous; finish seeding before accepting requests.
         app.UseInitializer().GetAwaiter().GetResult();
-        app.UseEndpoints(endpoints => endpoints.MapControllers());
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+            endpoints.MapGet("/health", context => context.Response.WriteAsJsonAsync(new { status = "UP" }));
+            endpoints.MapGet("/info", context => context.Response.WriteAsJsonAsync(new
+            {
+                application = "PricingService", assignment = "Lab 5 - Eureka Discovery"
+            }));
+        });
+
+        // Kept to match the assignment. Steeltoe >= 3.1 also starts discovery via IHostedService.
+        app.UseDiscoveryClient();
     }
 }

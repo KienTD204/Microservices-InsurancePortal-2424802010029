@@ -2,6 +2,8 @@
 
 ## Bài nộp thực hành - Trương Đắc Kiên
 
+**Bài thực hành 5 (18/10/2026):** [Hướng dẫn chạy và nội dung hoàn thành](README-LAB5.md) | [PDF minh chứng Eureka](submission/lab5/Bai-thuc-hanh-5_Minh-chung-Eureka.pdf) | [Bằng chứng kiểm thử](submission/lab5/evidence). PricingService đăng ký Eureka thành công, **12/12 test đạt**.
+
 **2424802010029 - D24CNTT05**. Đọc [README-LAB.md](README-LAB.md) để dựng bản Windows, xem phạm vi chỉnh sửa và kết quả xác minh. [Báo cáo PDF](submission/reports), [backup PostgreSQL](submission/postgres), [ảnh build và bằng chứng](submission/evidence). Giữ nguyên nguồn tham khảo và LICENSE bên dưới; các project scaffold được ghi riêng.
 
 [![BuiltWithDot.Net shield](https://builtwithdot.net/project/409/microservices-on-net-core-sample/badge)](https://builtwithdot.net/project/409/microservices-on-net-core-sample)
