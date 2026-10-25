@@ -42,7 +42,7 @@ public class
             .Sum(p => p.Sales.PoliciesCount);
 
         salesInMonth.Should().Be(expectedSales, $"we expected {expectedSales} for {year}-{month}");
-        countInMonth.Should().Be(countInMonth, $"we expected {countInMonth} for {year}-{month}");
+        countInMonth.Should().Be(expectedCount, $"we expected {expectedCount} for {year}-{month}");
 
         return new AndConstraint<GetSalesTrendsResultAssertions>(this);
     }

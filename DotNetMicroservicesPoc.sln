@@ -169,6 +169,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{689B92E0-3FF
 		Web\yarn.lock = Web\yarn.lock
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{2DB1DDBA-D27C-48F5-9BD5-B01C4ADAF742}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6.Verifier", "tools\Lab6.Verifier\Lab6.Verifier.csproj", "{133C4BEF-511F-44D6-96E0-29DEF3E01231}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,11 +307,18 @@ Global
 		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A43FB7-1911-4E38-AB49-5DCFA25F43DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133C4BEF-511F-44D6-96E0-29DEF3E01231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133C4BEF-511F-44D6-96E0-29DEF3E01231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133C4BEF-511F-44D6-96E0-29DEF3E01231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133C4BEF-511F-44D6-96E0-29DEF3E01231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8EE96CFB-B280-442F-BE96-FA7B0023EB6D}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{133C4BEF-511F-44D6-96E0-29DEF3E01231} = {2DB1DDBA-D27C-48F5-9BD5-B01C4ADAF742}
 	EndGlobalSection
 EndGlobal

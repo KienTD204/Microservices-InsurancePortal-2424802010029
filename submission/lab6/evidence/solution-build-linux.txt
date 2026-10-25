@@ -1,0 +1,185 @@
+  Determining projects to restore...
+  Restored /src/DocumentService.Api/DocumentService.Api.csproj (in 110 ms).
+  Restored /src/AgentPortalApiGateway.Api/AgentPortalApiGateway.Api.csproj (in 110 ms).
+  Restored /src/DashboardService.Api/DashboardService.Api.csproj (in 3.01 sec).
+  Restored /src/PolicyService.Api/PolicyService.Api.csproj (in 3.14 sec).
+  Restored /src/ProductService.Api/ProductService.Api.csproj (in 3.14 sec).
+  Restored /src/ChatService.Api/ChatService.Api.csproj (in 3.15 sec).
+  Restored /src/PaymentService.Api/PaymentService.Api.csproj (in 3.14 sec).
+  Restored /src/AuthService.Api/AuthService.Api.csproj (in 1 ms).
+  Restored /src/PolicySearchService.Api/PolicySearchService.Api.csproj (in 3 ms).
+  Restored /src/DocumentService/DocumentService.csproj (in 3.47 sec).
+  Restored /src/AuthService/AuthService.csproj (in 1.16 sec).
+  Restored /src/tools/Lab6.Verifier/Lab6.Verifier.csproj (in 1.54 sec).
+/src/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+  Restored /src/PolicySearchService/PolicySearchService.csproj (in 4.99 sec).
+  Restored /src/DashboardService/DashboardService.csproj (in 8.15 sec).
+  Restored /src/PricingService.Api/PricingService.Api.csproj (in 14 ms).
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+  Restored /src/AgentPortalApiGateway/AgentPortalApiGateway.csproj (in 5.5 sec).
+  Restored /src/ChatService/ChatService.csproj (in 9 ms).
+  Restored /src/DashboardService.Test/DashboardService.Test.csproj (in 8.75 sec).
+  Restored /src/DocumentService.Test/DocumentService.Test.csproj (in 11.24 sec).
+  Restored /src/AuthService.Test/AuthService.Test.csproj (in 7.76 sec).
+  Restored /src/ChatService.Test/ChatService.Test.csproj (in 2.53 sec).
+  Restored /src/PolicySearchService.Test/PolicySearchService.Test.csproj (in 8.08 sec).
+  Restored /src/AgentPortalApiGateway.Test/AgentPortalApiGateway.Test.csproj (in 11.24 sec).
+  Restored /src/BlazorWasmClient/BlazorWasmClient.csproj (in 11.75 sec).
+/src/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+  Restored /src/ProductService/ProductService.csproj (in 7.22 sec).
+  Restored /src/ProductService.Test/ProductService.Test.csproj (in 4.95 sec).
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+  Restored /src/PolicyService/PolicyService.csproj (in 5.55 sec).
+  Restored /src/PolicyService.Test/PolicyService.Test.csproj (in 13.75 sec).
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/src/DotNetMicroservicesPoc.sln]
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/src/DotNetMicroservicesPoc.sln]
+  Restored /src/PricingService/PricingService.csproj (in 15.63 sec).
+  Restored /src/PricingService.Test/PricingService.Test.csproj (in 15.63 sec).
+  Restored /src/PricingService.IntegrationTest/PricingService.IntegrationTest.csproj (in 15.66 sec).
+  Restored /src/PaymentService/PaymentService.csproj (in 12.52 sec).
+  Restored /src/PaymentService.Test/PaymentService.Test.csproj (in 15.68 sec).
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+/src/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+  AuthService.Api -> /src/AuthService.Api/bin/Release/net8.0/AuthService.Api.dll
+  PolicySearchService.Api -> /src/PolicySearchService.Api/bin/Release/net8.0/PolicySearchService.Api.dll
+  DocumentService.Api -> /src/DocumentService.Api/bin/Release/net8.0/DocumentService.Api.dll
+  AgentPortalApiGateway.Api -> /src/AgentPortalApiGateway.Api/bin/Release/net8.0/AgentPortalApiGateway.Api.dll
+  PricingService.Api -> /src/PricingService.Api/bin/Release/net8.0/PricingService.Api.dll
+  PaymentService.Api -> /src/PaymentService.Api/bin/Release/net8.0/PaymentService.Api.dll
+  ProductService.Api -> /src/ProductService.Api/bin/Release/net8.0/ProductService.Api.dll
+  PolicyService.Api -> /src/PolicyService.Api/bin/Release/net8.0/PolicyService.Api.dll
+  DashboardService.Api -> /src/DashboardService.Api/bin/Release/net8.0/DashboardService.Api.dll
+  ChatService.Api -> /src/ChatService.Api/bin/Release/net8.0/ChatService.Api.dll
+  AgentPortalApiGateway -> /src/AgentPortalApiGateway/bin/Release/net8.0/AgentPortalApiGateway.dll
+  AuthService -> /src/AuthService/bin/Release/net8.0/AuthService.dll
+/src/PaymentService/Startup.cs(60,9): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call. [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/Jobs/JobsInstaller.cs(18,13): warning CS0618: 'PostgreSqlBootstrapperConfigurationExtensions.UsePostgreSqlStorage(IGlobalConfiguration, string)' is obsolete: 'Will be removed in 2.0. Please use UsePostgreSqlStorage(Action<PostgreSqlBootstrapperOptions>) overload.' [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/Jobs/JobsInstaller.cs(29,9): warning CS0618: 'RecurringJob.AddOrUpdate<T>(Expression<Func<T, Task>>, string, TimeZoneInfo, string)' is obsolete: 'Please use an overload with the explicit recurringJobId parameter and RecurringJobOptions instead. Will be removed in 2.0.0.' [/src/PaymentService/PaymentService.csproj]
+/src/PricingService/Startup.cs(65,9): warning CS0618: 'DiscoveryApplicationBuilderExtensions.UseDiscoveryClient(IApplicationBuilder)' is obsolete: 'This method call is no longer needed, you should remove it.' [/src/PricingService/PricingService.csproj]
+/src/PricingService/Program.cs(43,17): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/src/PricingService/PricingService.csproj]
+/src/PricingService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/src/PricingService/PricingService.csproj]
+  Lab6.Verifier -> /src/tools/Lab6.Verifier/bin/Release/net8.0/Lab6.Verifier.dll
+  PricingService -> /src/PricingService/bin/Release/net8.0/PricingService.dll
+  PaymentService -> /src/PaymentService/bin/Release/net8.0/PaymentService.dll
+  PolicySearchService -> /src/PolicySearchService/bin/Release/net8.0/PolicySearchService.dll
+  DocumentService -> /src/DocumentService/bin/Release/net8.0/DocumentService.dll
+  AgentPortalApiGateway.Test -> /src/AgentPortalApiGateway.Test/bin/Release/net8.0/AgentPortalApiGateway.Test.dll
+  ProductService -> /src/ProductService/bin/Release/net8.0/ProductService.dll
+  ChatService -> /src/ChatService/bin/Release/net8.0/ChatService.dll
+/src/PolicyService/Program.cs(33,16): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/src/PolicyService/PolicyService.csproj]
+  AuthService.Test -> /src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll
+  PolicyService -> /src/PolicyService/bin/Release/net8.0/PolicyService.dll
+  PolicySearchService.Test -> /src/PolicySearchService.Test/bin/Release/net8.0/PolicySearchService.Test.dll
+  DashboardService -> /src/DashboardService/bin/Release/net8.0/DashboardService.dll
+  DocumentService.Test -> /src/DocumentService.Test/bin/Release/net8.0/DocumentService.Test.dll
+  PricingService.Test -> /src/PricingService.Test/bin/Release/net8.0/PricingService.Test.dll
+  PricingService.IntegrationTest -> /src/PricingService.IntegrationTest/bin/Release/net8.0/PricingService.IntegrationTest.dll
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+  PaymentService.Test -> /src/PaymentService.Test/bin/Release/net8.0/PaymentService.Test.dll
+  DashboardService.Test -> /src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll
+  ChatService.Test -> /src/ChatService.Test/bin/Release/net8.0/ChatService.Test.dll
+  PolicyService.Test -> /src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll
+/src/BlazorWasmClient/Layouts/MainLayout.razor.cs(8,45): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Layouts/MainLayout.razor.cs(10,41): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/ThemeColorSelector.razor(16,18): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(94,30): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(98,45): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(100,41): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Auth/CustomAuthenticationStateProvider.cs(37,29): warning CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2017) [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+  BlazorWasmClient -> /src/BlazorWasmClient/bin/Release/net8.0/BlazorWasmClient.dll
+  BlazorWasmClient (Blazor output) -> /src/BlazorWasmClient/bin/Release/net8.0/wwwroot
+  ProductService.Test -> /src/ProductService.Test/bin/Release/net8.0/ProductService.Test.dll
+
+Build succeeded.
+
+/src/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533 [/src/DotNetMicroservicesPoc.sln]
+/src/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp [/src/DotNetMicroservicesPoc.sln]
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp [/src/DotNetMicroservicesPoc.sln]
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c [/src/DotNetMicroservicesPoc.sln]
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'NHibernate' 5.5.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-fg4q-ccq8-3r5q
+/src/PolicyService/PolicyService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PolicyService/PolicyService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rfx3-98h7-v3xp
+/src/PaymentService/PaymentService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PricingService/PricingService.csproj : warning NU1904: Package 'Marten' 7.19.1 has a known critical severity vulnerability, https://github.com/advisories/GHSA-vmw2-qwm8-x84c
+/src/PricingService/PricingService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PricingService/PricingService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/AgentPortalApiGateway/AgentPortalApiGateway.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/ProductService/ProductService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/ProductService/ProductService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/PolicySearchService/PolicySearchService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/DashboardService/DashboardService.csproj : warning NU1903: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known high severity vulnerability, https://github.com/advisories/GHSA-j8ph-6fxj-g533
+/src/DashboardService/DashboardService.csproj : warning NU1901: Package 'Steeltoe.Discovery.Eureka' 3.2.7 has a known low severity vulnerability, https://github.com/advisories/GHSA-vmcp-66r5-3pcp
+/src/PaymentService/Startup.cs(60,9): warning CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call. [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/Jobs/JobsInstaller.cs(18,13): warning CS0618: 'PostgreSqlBootstrapperConfigurationExtensions.UsePostgreSqlStorage(IGlobalConfiguration, string)' is obsolete: 'Will be removed in 2.0. Please use UsePostgreSqlStorage(Action<PostgreSqlBootstrapperOptions>) overload.' [/src/PaymentService/PaymentService.csproj]
+/src/PaymentService/Jobs/JobsInstaller.cs(29,9): warning CS0618: 'RecurringJob.AddOrUpdate<T>(Expression<Func<T, Task>>, string, TimeZoneInfo, string)' is obsolete: 'Please use an overload with the explicit recurringJobId parameter and RecurringJobOptions instead. Will be removed in 2.0.0.' [/src/PaymentService/PaymentService.csproj]
+/src/PricingService/Startup.cs(65,9): warning CS0618: 'DiscoveryApplicationBuilderExtensions.UseDiscoveryClient(IApplicationBuilder)' is obsolete: 'This method call is no longer needed, you should remove it.' [/src/PricingService/PricingService.csproj]
+/src/PricingService/Program.cs(43,17): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/src/PricingService/PricingService.csproj]
+/src/PricingService/DataAccess/Marten/MartenInstaller.cs(34,9): warning CS0618: 'JsonNetSerializer.Customize(Action<JsonSerializer>)' is obsolete: 'Use Configure(Action<JsonSerializerSettings> configure) instead. This overload will be removed in the next major release.' [/src/PricingService/PricingService.csproj]
+/src/PolicyService/Program.cs(33,16): warning CS0618: 'SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, ILogger?, bool, LoggerProviderCollection?)' is obsolete: 'Prefer UseSerilog() on IHostBuilder' [/src/PolicyService/PolicyService.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(24,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(46,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/PaymentService.Test/Domain/PolicyAccountTest.cs(35,9): warning xUnit2013: Do not use Assert.Equal() to check for collection size. Use Assert.Single instead. (https://xunit.net/xunit.analyzers/rules/xUnit2013) [/src/PaymentService.Test/PaymentService.Test.csproj]
+/src/BlazorWasmClient/Layouts/MainLayout.razor.cs(8,45): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Layouts/MainLayout.razor.cs(10,41): warning CS8632: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/ThemeColorSelector.razor(16,18): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(94,30): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(98,45): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Layout/TopMenu.razor(100,41): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+/src/BlazorWasmClient/Components/Auth/CustomAuthenticationStateProvider.cs(37,29): warning CA2017: Number of parameters supplied in the logging message template do not match the number of named placeholders (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2017) [/src/BlazorWasmClient/BlazorWasmClient.csproj]
+    55 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:29.51

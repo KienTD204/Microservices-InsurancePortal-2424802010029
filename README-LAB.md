@@ -1,5 +1,7 @@
 # Bài thực hành Microservices - Trương Đắc Kiên
 
+**Bài thực hành 6 (25/10/2026):** [Gateway Ocelot, Auth, Chat và Dashboard](README-LAB6.md) - nhánh `student/lab6`.
+
 **Bài thực hành 5:** xem [README-LAB5.md](README-LAB5.md) để chạy PricingService, Eureka và xem bằng chứng nộp bài mới.
 
 - Sinh viên: **Trương Đắc Kiên**

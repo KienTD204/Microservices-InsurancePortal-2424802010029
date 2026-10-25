@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b300fea6-16e0-45fd-a3f1-ae48bfb7bc9d" name="kient@KA_IEN_KIEN 2026-10-25 14:47:44" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-25T14:47:44.9675469+07:00" queuing="2026-10-25T14:47:44.9675473+07:00" start="2026-10-25T14:47:21.7195813+07:00" finish="2026-10-25T14:47:44.9780709+07:00" />
+  <TestSettings name="default" id="a4e4fb96-fbb9-4238-85b4-07b435642ef4">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-25_14_47_44" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9a40c3ac-b553-4b49-be83-54c327254b9e" testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3748916+07:00" endTime="2026-10-25T14:47:44.3748917+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a40c3ac-b553-4b49-be83-54c327254b9e">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f4d4475-3db9-4eb1-b550-d1359d523dc6" testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3758575+07:00" endTime="2026-10-25T14:47:44.3758586+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f4d4475-3db9-4eb1-b550-d1359d523dc6">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="85482617-6704-4689-8241-afef1a25c136" testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3735893+07:00" endTime="2026-10-25T14:47:44.3735895+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="85482617-6704-4689-8241-afef1a25c136">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="32f1925b-21d7-402b-b078-d7f22be3fa87" testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3703071+07:00" endTime="2026-10-25T14:47:44.3703218+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32f1925b-21d7-402b-b078-d7f22be3fa87">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42cdac7c-d3e9-453e-ad62-8eb5bf90bc1b" testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3754339+07:00" endTime="2026-10-25T14:47:44.3754340+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42cdac7c-d3e9-453e-ad62-8eb5bf90bc1b">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e713c172-268e-4304-925b-9bf665d4e476" testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" computerName="KA_IEN_KIEN" duration="00:00:00.0010000" startTime="2026-10-25T14:47:44.3744390+07:00" endTime="2026-10-25T14:47:44.3744391+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e713c172-268e-4304-925b-9bf665d4e476">
+      <Output>
+        <ErrorInfo>
+          <Message>System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)</Message>
+          <StackTrace>   at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+   at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync() in C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs:line 26</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97">
+      <Execution id="e713c172-268e-4304-925b-9bf665d4e476" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_All_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="e549e8b0-e906-14ff-d5a2-55103a3761f1">
+      <Execution id="85482617-6704-4689-8241-afef1a25c136" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_All_Agents_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="e4d18f3d-24c2-d58c-ebd6-7fbae2931851">
+      <Execution id="32f1925b-21d7-402b-b078-d7f22be3fa87" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_Jim_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a">
+      <Execution id="9a40c3ac-b553-4b49-be83-54c327254b9e" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_HSI_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="a7a9f750-7425-2301-5fe8-8bef9936dcbb">
+      <Execution id="42cdac7c-d3e9-453e-ad62-8eb5bf90bc1b" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_HSI_Product_In_01_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\dashboardservice.test\bin\release\net8.0\dashboardservice.test.dll" id="2d6c2823-4f11-e831-6fcc-aadbd5366d0a">
+      <Execution id="5f4d4475-3db9-4eb1-b550-d1359d523dc6" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_All_Product_In_First_Q_2020" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" executionId="9a40c3ac-b553-4b49-be83-54c327254b9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" executionId="5f4d4475-3db9-4eb1-b550-d1359d523dc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" executionId="85482617-6704-4689-8241-afef1a25c136" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" executionId="32f1925b-21d7-402b-b078-d7f22be3fa87" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" executionId="42cdac7c-d3e9-453e-ad62-8eb5bf90bc1b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" executionId="e713c172-268e-4304-925b-9bf665d4e476" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="0" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:01.98]   Discovering: DashboardService.Test&#xD;
+[xUnit.net 00:00:02.03]   Discovered:  DashboardService.Test&#xD;
+[xUnit.net 00:00:02.03]   Starting:    DashboardService.Test&#xD;
+[testcontainers.org 00:00:00.16] Connected to Docker:&#xD;
+  Host: npipe://./pipe/docker_engine&#xD;
+  Server Version: 29.8.2&#xD;
+  Kernel Version: 6.18.54.1-microsoft-standard-WSL2&#xD;
+  API Version: 1.56&#xD;
+  Operating System: Docker Desktop (containerized)&#xD;
+  Total Memory: 7.38 GB&#xD;
+[testcontainers.org 00:00:00.40] Docker container e18e3f919a0d created&#xD;
+[testcontainers.org 00:00:00.46] Start Docker container e18e3f919a0d&#xD;
+[testcontainers.org 00:00:00.72] Wait for Docker container e18e3f919a0d to complete readiness checks&#xD;
+[testcontainers.org 00:00:00.72] Docker container e18e3f919a0d ready&#xD;
+[testcontainers.org 00:00:00.83] Docker container 1565e8272d31 created&#xD;
+[testcontainers.org 00:00:00.86] Add file to tar archive: Content length: 29 byte(s), Target file: "/usr/share/elasticsearch/config/jvm.options.d/elasticsearch-default-memory-vm.options"&#xD;
+[testcontainers.org 00:00:00.87] Copy tar archive to container: Content length: 29 byte(s), Docker container: 1565e8272d31&#xD;
+[testcontainers.org 00:00:00.91] Start Docker container 1565e8272d31&#xD;
+[testcontainers.org 00:00:01.16] Wait for Docker container 1565e8272d31 to complete readiness checks&#xD;
+[testcontainers.org 00:00:17.68] Docker container 1565e8272d31 ready&#xD;
+[testcontainers.org 00:00:17.98] Delete Docker container 1565e8272d31&#xD;
+[xUnit.net 00:00:20.84]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.84]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.84]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.84]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:20.85]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.85]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.85]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:20.85]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.85]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.85]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:20.85]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.85]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.85]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:20.85]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.85]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.85]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:20.85]       System.IO.FileLoadException : Could not load file or assembly 'C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\bin\Release\net8.0\DashboardService.dll'. An Application Control policy has blocked this file. (0x800711C7)&#xD;
+[xUnit.net 00:00:20.85]       Stack Trace:&#xD;
+[xUnit.net 00:00:20.85]            at DashboardService.Test.ElasticSearchInContainerFixture.InsertData()&#xD;
+[xUnit.net 00:00:20.85]         C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\DashboardService.Test\ElasticSearchInContainerFixture.cs(26,0): at DashboardService.Test.ElasticSearchInContainerFixture.InitializeAsync()&#xD;
+[xUnit.net 00:00:21.35]   Finished:    DashboardService.Test&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3796220+07:00">
+        <Text>[xUnit.net 00:00:20.84]     DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3799135+07:00">
+        <Text>[xUnit.net 00:00:20.85]     DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3799510+07:00">
+        <Text>[xUnit.net 00:00:20.85]     DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3799797+07:00">
+        <Text>[xUnit.net 00:00:20.85]     DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3801231+07:00">
+        <Text>[xUnit.net 00:00:20.85]     DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020 [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="KA_IEN_KIEN" outcome="Error" timestamp="2026-10-25T14:47:44.3804389+07:00">
+        <Text>[xUnit.net 00:00:20.85]     DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020 [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

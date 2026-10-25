@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e9ba78b4-03ea-423f-a0b0-8f66d2bb5b1c" name="@f6de859ff3ad 2026-10-25 07:54:06" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-25T07:54:06.7727237+00:00" queuing="2026-10-25T07:54:06.7727238+00:00" start="2026-10-25T07:54:06.1517862+00:00" finish="2026-10-25T07:54:06.7807808+00:00" />
+  <TestSettings name="default" id="9284b335-edad-4cb5-8c92-1dca28184a93">
+    <Deployment runDeploymentRoot="_f6de859ff3ad_2026-10-25_07_54_06" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f3aeebac-bb49-470b-9ef3-577a8f519adc" testId="6209f48f-d5fb-8ce1-c79e-3919e74db878" testName="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOffer" computerName="f6de859ff3ad" duration="00:00:00.0290349" startTime="2026-10-25T07:54:06.6842975+00:00" endTime="2026-10-25T07:54:06.6842975+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3aeebac-bb49-470b-9ef3-577a8f519adc" />
+    <UnitTestResult executionId="fed38a0d-d30f-47ab-8545-df9d2ba4056b" testId="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06" testName="PolicyService.Test.Domain.PolicyTerminationTest.CannotTerminateTerminatedPolicy" computerName="f6de859ff3ad" duration="00:00:00.0232066" startTime="2026-10-25T07:54:06.6810971+00:00" endTime="2026-10-25T07:54:06.6811301+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fed38a0d-d30f-47ab-8545-df9d2ba4056b" />
+    <UnitTestResult executionId="d2a4ae7f-a18f-4372-b8f7-56b697daab6a" testId="4c6e493e-e965-6fa4-4484-0bee64d52888" testName="PolicyService.Test.Domain.OfferTest.CannotBuyAlreadyConvertedOffer" computerName="f6de859ff3ad" duration="00:00:00.0005777" startTime="2026-10-25T07:54:06.6849204+00:00" endTime="2026-10-25T07:54:06.6849204+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2a4ae7f-a18f-4372-b8f7-56b697daab6a" />
+    <UnitTestResult executionId="14866bbb-8af2-4993-a323-55e30025af02" testId="60c19578-2798-aae3-d55a-48ddb9c4b6a7" testName="PolicyService.Test.Domain.PolicyTerminationTest.CanTerminateActivePolicyInTheMiddleOfCoverPeriod" computerName="f6de859ff3ad" duration="00:00:00.0023924" startTime="2026-10-25T07:54:06.6847433+00:00" endTime="2026-10-25T07:54:06.6847433+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14866bbb-8af2-4993-a323-55e30025af02" />
+    <UnitTestResult executionId="4ea62dd3-7c94-4290-bfd4-f5d7f4e7b511" testId="9e720e59-535c-2e0c-fc32-5c2943d5619d" testName="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOfferFromAgent" computerName="f6de859ff3ad" duration="00:00:00.0004580" startTime="2026-10-25T07:54:06.6847925+00:00" endTime="2026-10-25T07:54:06.6847926+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ea62dd3-7c94-4290-bfd4-f5d7f4e7b511" />
+    <UnitTestResult executionId="fe651ea8-e49a-4ff2-926a-b9eab7877130" testId="45ae15c0-95bf-6398-e3a6-e91ee01082ac" testName="PolicyService.Test.Domain.OfferTest.CannotBuyExpiredOffer" computerName="f6de859ff3ad" duration="00:00:00.0003206" startTime="2026-10-25T07:54:06.6850781+00:00" endTime="2026-10-25T07:54:06.6850782+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe651ea8-e49a-4ff2-926a-b9eab7877130" />
+    <UnitTestResult executionId="28b72a38-46cf-4ffd-831e-d52fdcffc0db" testId="6db7dad1-c7e4-399c-a94c-fd24e38755a4" testName="PolicyService.Test.Domain.OfferTest.CanCreateOfferBasedOnPrice" computerName="f6de859ff3ad" duration="00:00:00.0001494" startTime="2026-10-25T07:54:06.6853590+00:00" endTime="2026-10-25T07:54:06.6853592+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28b72a38-46cf-4ffd-831e-d52fdcffc0db" />
+    <UnitTestResult executionId="022b13f0-02f1-4628-b7a3-03c47c70ddc8" testId="85a0b269-b5bd-7181-00bc-9f6018ec9f42" testName="PolicyService.Test.Domain.OfferTest.CanCreateOfferOnBehalfOfAgentBasedOnPrice" computerName="f6de859ff3ad" duration="00:00:00.0006411" startTime="2026-10-25T07:54:06.6850187+00:00" endTime="2026-10-25T07:54:06.6850188+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="022b13f0-02f1-4628-b7a3-03c47c70ddc8" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CannotBuyAlreadyConvertedOffer" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="4c6e493e-e965-6fa4-4484-0bee64d52888">
+      <Execution id="d2a4ae7f-a18f-4372-b8f7-56b697daab6a" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CannotBuyAlreadyConvertedOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanCreateOfferBasedOnPrice" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="6db7dad1-c7e4-399c-a94c-fd24e38755a4">
+      <Execution id="28b72a38-46cf-4ffd-831e-d52fdcffc0db" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanCreateOfferBasedOnPrice" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.PolicyTerminationTest.CanTerminateActivePolicyInTheMiddleOfCoverPeriod" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="60c19578-2798-aae3-d55a-48ddb9c4b6a7">
+      <Execution id="14866bbb-8af2-4993-a323-55e30025af02" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.PolicyTerminationTest" name="CanTerminateActivePolicyInTheMiddleOfCoverPeriod" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanCreateOfferOnBehalfOfAgentBasedOnPrice" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="85a0b269-b5bd-7181-00bc-9f6018ec9f42">
+      <Execution id="022b13f0-02f1-4628-b7a3-03c47c70ddc8" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanCreateOfferOnBehalfOfAgentBasedOnPrice" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOfferFromAgent" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="9e720e59-535c-2e0c-fc32-5c2943d5619d">
+      <Execution id="4ea62dd3-7c94-4290-bfd4-f5d7f4e7b511" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanBuyNewNonExpiredOfferFromAgent" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CannotBuyExpiredOffer" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="45ae15c0-95bf-6398-e3a6-e91ee01082ac">
+      <Execution id="fe651ea8-e49a-4ff2-926a-b9eab7877130" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CannotBuyExpiredOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOffer" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="6209f48f-d5fb-8ce1-c79e-3919e74db878">
+      <Execution id="f3aeebac-bb49-470b-9ef3-577a8f519adc" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanBuyNewNonExpiredOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.PolicyTerminationTest.CannotTerminateTerminatedPolicy" storage="/src/policyservice.test/bin/release/net8.0/policyservice.test.dll" id="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06">
+      <Execution id="fed38a0d-d30f-47ab-8545-df9d2ba4056b" />
+      <TestMethod codeBase="/src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.PolicyTerminationTest" name="CannotTerminateTerminatedPolicy" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6209f48f-d5fb-8ce1-c79e-3919e74db878" executionId="f3aeebac-bb49-470b-9ef3-577a8f519adc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06" executionId="fed38a0d-d30f-47ab-8545-df9d2ba4056b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c6e493e-e965-6fa4-4484-0bee64d52888" executionId="d2a4ae7f-a18f-4372-b8f7-56b697daab6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60c19578-2798-aae3-d55a-48ddb9c4b6a7" executionId="14866bbb-8af2-4993-a323-55e30025af02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e720e59-535c-2e0c-fc32-5c2943d5619d" executionId="4ea62dd3-7c94-4290-bfd4-f5d7f4e7b511" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45ae15c0-95bf-6398-e3a6-e91ee01082ac" executionId="fe651ea8-e49a-4ff2-926a-b9eab7877130" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6db7dad1-c7e4-399c-a94c-fd24e38755a4" executionId="28b72a38-46cf-4ffd-831e-d52fdcffc0db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85a0b269-b5bd-7181-00bc-9f6018ec9f42" executionId="022b13f0-02f1-4628-b7a3-03c47c70ddc8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.08]   Discovering: PolicyService.Test
+[xUnit.net 00:00:00.11]   Discovered:  PolicyService.Test
+[xUnit.net 00:00:00.11]   Starting:    PolicyService.Test
+[xUnit.net 00:00:00.18]   Finished:    PolicyService.Test
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

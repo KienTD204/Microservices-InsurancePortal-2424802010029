@@ -1,0 +1,559 @@
+{
+  "checkedAt": "2026-10-25T15:42:41.2166990+07:00",
+  "result": "PASS",
+  "normalization": "UTF-8 text, CRLF normalized to LF; original archives are preserved byte for byte.",
+  "summary": [
+    {
+      "status": "ADAPTED",
+      "count": 12
+    },
+    {
+      "status": "UNCHANGED",
+      "count": 74
+    }
+  ],
+  "archives": [
+    {
+      "name": "AuthService.rar",
+      "sha256": "e636409087fbfb1618ffae61ea9df1ca9ec311e44af2cb3111864e49576dcc90"
+    },
+    {
+      "name": "ChatService.rar",
+      "sha256": "4b777a4e5379c3389a71bbbd395cddcd83801c57d583afa825b487ae91613acb"
+    },
+    {
+      "name": "ChatService.Api.rar",
+      "sha256": "1845ae60ee8510551a34f1311c7198584652f19801122b1c82664171e4ba3ffb"
+    },
+    {
+      "name": "DashboardService.rar",
+      "sha256": "344bb6eb4112209f9613b29770fe9709d031d6739fa504efef8d02774f3e8193"
+    },
+    {
+      "name": "DashboardService.Api.rar",
+      "sha256": "7719227cd9a2a523332e24acea79f7e986261f673a7cd51c57611233c962fab2"
+    },
+    {
+      "name": "DashboardService.Test.rar",
+      "sha256": "b26380500251473503c26da859b4ea48cda4d6902af6588a65b2c35dcb5ae2f4"
+    }
+  ],
+  "files": [
+    {
+      "path": "AuthService/AppSettings.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "e3d6cb7fdf06eb6c84e94f3f8faaea772500d4650512c75b04bf18b12182107a",
+      "solutionSha256": "e3d6cb7fdf06eb6c84e94f3f8faaea772500d4650512c75b04bf18b12182107a"
+    },
+    {
+      "path": "AuthService/appsettings.Development.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a",
+      "solutionSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a"
+    },
+    {
+      "path": "AuthService/appsettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "defcefcfac4c85013edd5446fbce679521c92f5891e4df429e3b61b51c985a5a",
+      "solutionSha256": "defcefcfac4c85013edd5446fbce679521c92f5891e4df429e3b61b51c985a5a"
+    },
+    {
+      "path": "AuthService/AuthService.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "1a6c4ab59eb2ee9a5c9858a40cf81eb92fb2d8ac4298acad6ea00a583f0b7c98",
+      "solutionSha256": "1a6c4ab59eb2ee9a5c9858a40cf81eb92fb2d8ac4298acad6ea00a583f0b7c98"
+    },
+    {
+      "path": "AuthService/Dockerfile",
+      "status": "UNCHANGED",
+      "sourceSha256": "12e7bfdbd2919252224a11d156ec6fa6f97c778ddb4117e0983a6ce1e3c0e58f",
+      "solutionSha256": "12e7bfdbd2919252224a11d156ec6fa6f97c778ddb4117e0983a6ce1e3c0e58f"
+    },
+    {
+      "path": "AuthService/hosting.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "78e47f2bf6a965e98066b4143949736a6ebca3a49f6fb085932a1bd2963c88f5",
+      "solutionSha256": "78e47f2bf6a965e98066b4143949736a6ebca3a49f6fb085932a1bd2963c88f5"
+    },
+    {
+      "path": "AuthService/Program.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "a6a2e11a65795ce4c6baaf01c833727d84a7642b303e8c68cda581c8beade322",
+      "solutionSha256": "a6a2e11a65795ce4c6baaf01c833727d84a7642b303e8c68cda581c8beade322"
+    },
+    {
+      "path": "AuthService/Startup.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "b768020ece921d7235aa23a2daac4b1f295a029faeab700cb3b7b620cd044715",
+      "solutionSha256": "b768020ece921d7235aa23a2daac4b1f295a029faeab700cb3b7b620cd044715"
+    },
+    {
+      "path": "AuthService/Controllers/UserController.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "58077c2adf881e3445936f6ac7aae58fe12b8c74a6a9f608a8a56b7bbc9936c1",
+      "solutionSha256": "e3c4b7b7b85dad11a86d0d547421500df9f638c3b6755766414bcd76b322250e"
+    },
+    {
+      "path": "AuthService/DataAccess/InsuranceAgentsInMemoryDb.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "69b64a3fec1487f7d26ae55bab087994e89a7aa5d28ba8097c2f3518fe70a4f5",
+      "solutionSha256": "64de8e95ef83ec3b6b68156a6dea058d52fea298d0110ac0cefaf5576b4a6601"
+    },
+    {
+      "path": "AuthService/Domain/AuthRequest.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "3ac7f9625b6f61e05645d58934969f57761970d3416d5a0f83d98f10cb48676e",
+      "solutionSha256": "fc60a3a8cd7a482337827cb0885c8cf2fa507d5f028e6c219e53c7a04b7095ed"
+    },
+    {
+      "path": "AuthService/Domain/AuthResult.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "752283540e9ab25389afa905ce4e8ab7bdce4497b683cb423229bc85d73f253b",
+      "solutionSha256": "752283540e9ab25389afa905ce4e8ab7bdce4497b683cb423229bc85d73f253b"
+    },
+    {
+      "path": "AuthService/Domain/AuthService.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "b1c7413b8b30b99b8fdfcff011c5ded66af03fe17ded9c62920bd8f9a9abbf5e",
+      "solutionSha256": "b1c7413b8b30b99b8fdfcff011c5ded66af03fe17ded9c62920bd8f9a9abbf5e"
+    },
+    {
+      "path": "AuthService/Domain/IInsuranceAgents.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "652b6f8fc0685e872788f5ca76805ac7d332c278c0175359fb5dd17896210790",
+      "solutionSha256": "652b6f8fc0685e872788f5ca76805ac7d332c278c0175359fb5dd17896210790"
+    },
+    {
+      "path": "AuthService/Domain/InsuranceAgent.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "58212cf6f507803ef7a32a96e2e591f8e14e6f16145e8247ee4b4ed8a361591f",
+      "solutionSha256": "58212cf6f507803ef7a32a96e2e591f8e14e6f16145e8247ee4b4ed8a361591f"
+    },
+    {
+      "path": "AuthService/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "73f2c7845e59ebbc7e53d090b5a7cf053895c725ea2f3aebe0e44bf478144e73",
+      "solutionSha256": "73f2c7845e59ebbc7e53d090b5a7cf053895c725ea2f3aebe0e44bf478144e73"
+    },
+    {
+      "path": "ChatService/AppSettings.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "c2d30c739da64fd275a2bedc564b283fa4a547ce499cb57aa4f3d8308914e028",
+      "solutionSha256": "c2d30c739da64fd275a2bedc564b283fa4a547ce499cb57aa4f3d8308914e028"
+    },
+    {
+      "path": "ChatService/appsettings.Development.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a",
+      "solutionSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a"
+    },
+    {
+      "path": "ChatService/appsettings.docker.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "892a05d7fa68f660eaed8e7636502fe5fadb013d738210d30ae38ec49fd533c3",
+      "solutionSha256": "892a05d7fa68f660eaed8e7636502fe5fadb013d738210d30ae38ec49fd533c3"
+    },
+    {
+      "path": "ChatService/appsettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "3cd6db33dd637a1fae3aaf5fc13e5e44fada8d92cf57ec8219afe003735b69fc",
+      "solutionSha256": "3cd6db33dd637a1fae3aaf5fc13e5e44fada8d92cf57ec8219afe003735b69fc"
+    },
+    {
+      "path": "ChatService/ChatService.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "a6457e1605b0d81bb05e027f0ce2aecd9d78c5e40ca0cddbdf734a10256e2402",
+      "solutionSha256": "a6457e1605b0d81bb05e027f0ce2aecd9d78c5e40ca0cddbdf734a10256e2402"
+    },
+    {
+      "path": "ChatService/Dockerfile",
+      "status": "UNCHANGED",
+      "sourceSha256": "0deba2dc4cdd2b50f0a979ce70dfe82a98eaeeea0b903751b2ea63931725caa4",
+      "solutionSha256": "0deba2dc4cdd2b50f0a979ce70dfe82a98eaeeea0b903751b2ea63931725caa4"
+    },
+    {
+      "path": "ChatService/hosting.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "c041822393924f57f3d14ed59c2862f2111115a1b77958f3c7194f7c8cd2c38a",
+      "solutionSha256": "c041822393924f57f3d14ed59c2862f2111115a1b77958f3c7194f7c8cd2c38a"
+    },
+    {
+      "path": "ChatService/NameUserIdProvider.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "14f6d0daed52eda9295fdc405d540786f4f711008b5fad18114193141cdd7734",
+      "solutionSha256": "14f6d0daed52eda9295fdc405d540786f4f711008b5fad18114193141cdd7734"
+    },
+    {
+      "path": "ChatService/Program.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "6aa0d9a2d86b0ae0b86d2e964d3efac16c75f051f02d6cfe8ae4c42a71d03dad",
+      "solutionSha256": "6aa0d9a2d86b0ae0b86d2e964d3efac16c75f051f02d6cfe8ae4c42a71d03dad"
+    },
+    {
+      "path": "ChatService/Startup.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "3305593b8e976d7b6d45de270e7c040a7aa48c7612a37248309b0dc10c8b29f7",
+      "solutionSha256": "3305593b8e976d7b6d45de270e7c040a7aa48c7612a37248309b0dc10c8b29f7"
+    },
+    {
+      "path": "ChatService/Commands/SendNotificationHandler.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "a473cf3d9f3cc479c45947a84edbc74e4142823ce33ad20e619060c8ae64784d",
+      "solutionSha256": "ae644fa5e6018660c317f4e504bc72a359c94ce7706739bb96171b03b060c3a9"
+    },
+    {
+      "path": "ChatService/Controllers/NotificationController.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "6f5588067a92cec0e2aa29f95e41c79e3359f6c975a794934cdb79d29a9abbff",
+      "solutionSha256": "6f5588067a92cec0e2aa29f95e41c79e3359f6c975a794934cdb79d29a9abbff"
+    },
+    {
+      "path": "ChatService/Hubs/AgentChatHub.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "b55297206af99c3aa7de31a22e7d2e5dd682a533bcbe424a18b7c767777dd3d4",
+      "solutionSha256": "b55297206af99c3aa7de31a22e7d2e5dd682a533bcbe424a18b7c767777dd3d4"
+    },
+    {
+      "path": "ChatService/Listeners/PolicyCreatedHandler.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "1b36d0b904432bd657100ffc53fcaa6036f7085aaf8b588b3c078a21c1818cd8",
+      "solutionSha256": "1b36d0b904432bd657100ffc53fcaa6036f7085aaf8b588b3c078a21c1818cd8"
+    },
+    {
+      "path": "ChatService/Messaging/RabbitMq/RabbitEventListener.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "3499577e8d9b09a36f097e1865bd5e4bece26848c61658091653b39e9e644f63",
+      "solutionSha256": "f747fbb2692b873338af47034b0380956597b784e4a57b5c37a173ceca570475"
+    },
+    {
+      "path": "ChatService/Messaging/RabbitMq/RabbitInstaller.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "460eea1da35df199432edda86b5d2071849ae13deaba17a2af98c1b95064c94f",
+      "solutionSha256": "460eea1da35df199432edda86b5d2071849ae13deaba17a2af98c1b95064c94f"
+    },
+    {
+      "path": "ChatService/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "a791bdca4cfb1841d4581e40c0b6944ee68976392824cd5060edade8bbf29109",
+      "solutionSha256": "a791bdca4cfb1841d4581e40c0b6944ee68976392824cd5060edade8bbf29109"
+    },
+    {
+      "path": "ChatService.Api/ChatService.Api.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "b410bf078d6ce8c36f02c824e8869d75ef9c664e1275b11fb5db2b8d5640f217",
+      "solutionSha256": "b410bf078d6ce8c36f02c824e8869d75ef9c664e1275b11fb5db2b8d5640f217"
+    },
+    {
+      "path": "ChatService.Api/Commands/SendNotificationCommand.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "bbb8fbb867d615bbc266a7b39d4f72bdffde1dd9b673c2c9462a8508efd9a30a",
+      "solutionSha256": "bbb8fbb867d615bbc266a7b39d4f72bdffde1dd9b673c2c9462a8508efd9a30a"
+    },
+    {
+      "path": "DashboardService/appsettings.Development.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "07549bfcb929c8fcdc743fb47b5a6932f6da93becb0297557aebdec4910fe669",
+      "solutionSha256": "07549bfcb929c8fcdc743fb47b5a6932f6da93becb0297557aebdec4910fe669"
+    },
+    {
+      "path": "DashboardService/appsettings.docker.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "4820307f0dda0986b6abe3af8992eb64ec5628a5d2d6da7493ed52cd5dfe04c6",
+      "solutionSha256": "4820307f0dda0986b6abe3af8992eb64ec5628a5d2d6da7493ed52cd5dfe04c6"
+    },
+    {
+      "path": "DashboardService/appsettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "cdc6fe0fd79295a45d5b9580b200c93ff3b996bd4e46f9dbdb8423912c8d0bd9",
+      "solutionSha256": "cdc6fe0fd79295a45d5b9580b200c93ff3b996bd4e46f9dbdb8423912c8d0bd9"
+    },
+    {
+      "path": "DashboardService/DashboardService.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "95f04f9d1c7857cb6ed13b17797c65d5ff02d18c7a7b75539ffffa58a1b24b71",
+      "solutionSha256": "95f04f9d1c7857cb6ed13b17797c65d5ff02d18c7a7b75539ffffa58a1b24b71"
+    },
+    {
+      "path": "DashboardService/Dockerfile",
+      "status": "UNCHANGED",
+      "sourceSha256": "3ba6c73dad90ab0f614cde1353641488cbe14f10a557ecb3bfccb1de412ae9e3",
+      "solutionSha256": "3ba6c73dad90ab0f614cde1353641488cbe14f10a557ecb3bfccb1de412ae9e3"
+    },
+    {
+      "path": "DashboardService/hosting.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "24302d46734e5889a5736ff9b8dd08339eeac762b6eb72f308d39c4211f7fc1f",
+      "solutionSha256": "24302d46734e5889a5736ff9b8dd08339eeac762b6eb72f308d39c4211f7fc1f"
+    },
+    {
+      "path": "DashboardService/Program.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "6ba4c576cc86394ff221cdba620276d02fa42f9ca08e2925f3e7dab105589017",
+      "solutionSha256": "6ba4c576cc86394ff221cdba620276d02fa42f9ca08e2925f3e7dab105589017"
+    },
+    {
+      "path": "DashboardService/Startup.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "0cf1f4d42cd140c9bcd6cf4db13048221cc5005e12b8f787a184a13d42fcf40a",
+      "solutionSha256": "0cf1f4d42cd140c9bcd6cf4db13048221cc5005e12b8f787a184a13d42fcf40a"
+    },
+    {
+      "path": "DashboardService/Controllers/DashboardController.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "855762cb2a6815adc452c5fca54270acf3b1cdd1cecfa5355f09fc17a1c93016",
+      "solutionSha256": "855762cb2a6815adc452c5fca54270acf3b1cdd1cecfa5355f09fc17a1c93016"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/AgentSalesQueryAdapter.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "af4b5ece334004b1c4eb172588fd59112525f226e2957c072d0af3c178db7526",
+      "solutionSha256": "af4b5ece334004b1c4eb172588fd59112525f226e2957c072d0af3c178db7526"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/ElasticPolicyRepository.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "289b97c63af8a37e51e68bbb660b49b71f6fe334102690def789cfac260243ea",
+      "solutionSha256": "c844b442d560d8c0aadf8bd571e39a4c6e40c78abdd655d0b1ed2173bd4ba3f5"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/NestInstaller.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "ff708e4627b01edd4c64b5629e9272e5ccc2a64d34013a323d52a8088a9ebdbb",
+      "solutionSha256": "c7a208edc16653ce00007d2a05de10db676607ee60f447abeb257b46620d64d9"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/QueryAdapter.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "27e5a3908274a4e7c6d2dacf3e7ee57233655a6c092e5d34e3f0e0e4210a50b3",
+      "solutionSha256": "27e5a3908274a4e7c6d2dacf3e7ee57233655a6c092e5d34e3f0e0e4210a50b3"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/SalesTrendsQueryAdapter.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "f6311742c13d39e9efd4ea911ee6ba37eb979271dcfc4bee0d7b3c8de7ff0ca7",
+      "solutionSha256": "f6311742c13d39e9efd4ea911ee6ba37eb979271dcfc4bee0d7b3c8de7ff0ca7"
+    },
+    {
+      "path": "DashboardService/DataAccess/Elastic/TotalSalesQueryAdapter.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "c02a160fab026aed9fbf32ab8bfd227099045d32315d20b2b8d9477e1621e2fe",
+      "solutionSha256": "c02a160fab026aed9fbf32ab8bfd227099045d32315d20b2b8d9477e1621e2fe"
+    },
+    {
+      "path": "DashboardService/Domain/AgentSalesQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "9132ed03442b02759ec30535e58e595e63616c2126fe8004d0f3b669bedcaf2b",
+      "solutionSha256": "9132ed03442b02759ec30535e58e595e63616c2126fe8004d0f3b669bedcaf2b"
+    },
+    {
+      "path": "DashboardService/Domain/IPolicyRepository.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "1a01c6049211f89c824d0d1cf280f0a526434b870ef3f348a98023de21d54dd6",
+      "solutionSha256": "1a01c6049211f89c824d0d1cf280f0a526434b870ef3f348a98023de21d54dd6"
+    },
+    {
+      "path": "DashboardService/Domain/PolicyDocument.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "9584a34f64e84ebdda6dfe4926b931f90bbc2415858af5679f7b361d3430580a",
+      "solutionSha256": "9584a34f64e84ebdda6dfe4926b931f90bbc2415858af5679f7b361d3430580a"
+    },
+    {
+      "path": "DashboardService/Domain/SalesResult.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "90669538085abf8ec3b900e558c86d1c789d5100b5a0e730da853fa86bc7a08d",
+      "solutionSha256": "90669538085abf8ec3b900e558c86d1c789d5100b5a0e730da853fa86bc7a08d"
+    },
+    {
+      "path": "DashboardService/Domain/SalesTrendsQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "973967d9fad8e9e06afea3a093dffc56cadeed7d9812349985c796ecf8d894fe",
+      "solutionSha256": "973967d9fad8e9e06afea3a093dffc56cadeed7d9812349985c796ecf8d894fe"
+    },
+    {
+      "path": "DashboardService/Domain/TotalSalesQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "f0ddcb779bd84b7b2bc9ba9f0365d98d7e71df9f1d46e240b5eefa9e0add94e5",
+      "solutionSha256": "f0ddcb779bd84b7b2bc9ba9f0365d98d7e71df9f1d46e240b5eefa9e0add94e5"
+    },
+    {
+      "path": "DashboardService/Init/SalesData.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "593072ae34b462a8ab3cb317572dae62b104450c1230fc8cbef39eeb555c11c0",
+      "solutionSha256": "37a3884c0c6f217b56eceed70e8c87e50964525ab7b96dd19fb297002def8e33"
+    },
+    {
+      "path": "DashboardService/Init/SalesDataInitializer.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "f17222ad68422083d10be32d97257224e05772a6ebdb205e2ad68b6faa0150f1",
+      "solutionSha256": "f17222ad68422083d10be32d97257224e05772a6ebdb205e2ad68b6faa0150f1"
+    },
+    {
+      "path": "DashboardService/Init/SalesDataInitializerInstaller.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "7ebdc75b26779641e4d66ffb4d6b132321461f2f2a5b76193e0a7f1282d2c1c9",
+      "solutionSha256": "7ebdc75b26779641e4d66ffb4d6b132321461f2f2a5b76193e0a7f1282d2c1c9"
+    },
+    {
+      "path": "DashboardService/Listeners/PolicyCreatedHandler.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "d480ea8f2f527e1982dd05acd6c382fde1b6c7e7fe4e5b226925dc82a707b5ea",
+      "solutionSha256": "d480ea8f2f527e1982dd05acd6c382fde1b6c7e7fe4e5b226925dc82a707b5ea"
+    },
+    {
+      "path": "DashboardService/Messaging/RabbitMq/RabbitEventListener.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "5b3b97a86c6c720f4e078e309015c97560800d38fcdc49924f5cd63389d2a510",
+      "solutionSha256": "ddd25c54c1b8e3e6a10c91927b9e3ab888e95036d1ef5d22e6a826bb46010280"
+    },
+    {
+      "path": "DashboardService/Messaging/RabbitMq/RabbitInstaller.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "b1ea195716438233ae858e7ab7c978f95de8404bb08a4ac17546f6db3389d05b",
+      "solutionSha256": "b1ea195716438233ae858e7ab7c978f95de8404bb08a4ac17546f6db3389d05b"
+    },
+    {
+      "path": "DashboardService/Messaging/RabbitMq/RabbitMqOptions.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "f440ced2b0f2c5f3859d0ff0ad4ece97caef4fe5006d72ed2174a1b07df89e3c",
+      "solutionSha256": "f440ced2b0f2c5f3859d0ff0ad4ece97caef4fe5006d72ed2174a1b07df89e3c"
+    },
+    {
+      "path": "DashboardService/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "sourceSha256": "dcc26f0a1d2acfa8f50c4e78e80aba770275169eac7a0d78b0f755324e0de6af",
+      "solutionSha256": "dcc26f0a1d2acfa8f50c4e78e80aba770275169eac7a0d78b0f755324e0de6af"
+    },
+    {
+      "path": "DashboardService/Queries/GetAgentsSalesHandler.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "dbed8a2cf99ba30b5e0ace32e689c86d0881170827cbe827c80f05f513e8220b",
+      "solutionSha256": "dbed8a2cf99ba30b5e0ace32e689c86d0881170827cbe827c80f05f513e8220b"
+    },
+    {
+      "path": "DashboardService/Queries/GetSalesTrendsHandler.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "e2764545dd6749d63d6a23e00d82964badb2b7427f8555a137b3af3c22c9a0df",
+      "solutionSha256": "e2764545dd6749d63d6a23e00d82964badb2b7427f8555a137b3af3c22c9a0df"
+    },
+    {
+      "path": "DashboardService/Queries/GetTotalSalesHandler.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "b9d6f120bd95c2fca765a5cff0b3c68808fa22471fc97aa77942bb1a69f77719",
+      "solutionSha256": "b9d6f120bd95c2fca765a5cff0b3c68808fa22471fc97aa77942bb1a69f77719"
+    },
+    {
+      "path": "DashboardService.Api/DashboardService.Api.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "9db69b2cc91c7a49f293092e48584ea45506e907b2170771f9007b13020e0c0a",
+      "solutionSha256": "9db69b2cc91c7a49f293092e48584ea45506e907b2170771f9007b13020e0c0a"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetAgentsSalesQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "15eae0483f54da51824c2bc570754ebe90cca75c3b81e204b431799f686d6f4e",
+      "solutionSha256": "15eae0483f54da51824c2bc570754ebe90cca75c3b81e204b431799f686d6f4e"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetAgentsSalesResult.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "5ad1839833b2c256e0bb1d1171202e1c0170ef37096c426ee54c317a08a6e2b5",
+      "solutionSha256": "5ad1839833b2c256e0bb1d1171202e1c0170ef37096c426ee54c317a08a6e2b5"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetSalesTrendsQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "45cdf07fd477ff4a97c8c54c2382edd865d20b3f15d248203b5bda8b49afff1e",
+      "solutionSha256": "45cdf07fd477ff4a97c8c54c2382edd865d20b3f15d248203b5bda8b49afff1e"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetSalesTrendsResult.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "5172aee9c77848c4140b3440e619cca7b0ab92bd58d5082ba062dbb9c9dfa1c4",
+      "solutionSha256": "5172aee9c77848c4140b3440e619cca7b0ab92bd58d5082ba062dbb9c9dfa1c4"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetTotalSalesQuery.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "dae8191945f341ed809ee56052c6ab89718b07ad337168959994e4783e0ae60d",
+      "solutionSha256": "dae8191945f341ed809ee56052c6ab89718b07ad337168959994e4783e0ae60d"
+    },
+    {
+      "path": "DashboardService.Api/Queries/GetTotalSalesResult.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "ee5eef4a1ecad69a4dfd87dec69b630f80761516767277ef52066b25a9704719",
+      "solutionSha256": "ee5eef4a1ecad69a4dfd87dec69b630f80761516767277ef52066b25a9704719"
+    },
+    {
+      "path": "DashboardService.Api/Queries/Dtos/PeriodSaleDto.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "ae63ca397752f5e0b8638de135414c6311510f34ea124d7571beef6a0e1f5d68",
+      "solutionSha256": "ae63ca397752f5e0b8638de135414c6311510f34ea124d7571beef6a0e1f5d68"
+    },
+    {
+      "path": "DashboardService.Api/Queries/Dtos/SalesDto.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "de2f50c5f94604edc84ce9be6fc68be7b764acf070ab9b38fa483f9a93a90ec1",
+      "solutionSha256": "de2f50c5f94604edc84ce9be6fc68be7b764acf070ab9b38fa483f9a93a90ec1"
+    },
+    {
+      "path": "DashboardService.Api/Queries/Dtos/TimeUnit.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "ff705e32c5bc6930b02acb8b6bfb8b279cf283835dbbe84cec86f99c395dd16e",
+      "solutionSha256": "ff705e32c5bc6930b02acb8b6bfb8b279cf283835dbbe84cec86f99c395dd16e"
+    },
+    {
+      "path": "DashboardService.Test/DashboardService.Test.csproj",
+      "status": "UNCHANGED",
+      "sourceSha256": "bbceded834505d15df58b9fdf87bb97de0da0a6e983f041a14a55dd7071cc203",
+      "solutionSha256": "bbceded834505d15df58b9fdf87bb97de0da0a6e983f041a14a55dd7071cc203"
+    },
+    {
+      "path": "DashboardService.Test/ElasticSearchInContainerFixture.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "9f708c3cfc6e69cf717147b995b431db7170d2470688bf02cbd0df188457f6e8",
+      "solutionSha256": "d99a99ea5f5252614867121bfac96895a19f712400b9b628772a3682ba5123ad"
+    },
+    {
+      "path": "DashboardService.Test/GetAgentsSalesQueryTest.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "17b680e055bbbc8758c3d169a603439233cd90936e725a08dce648adc725ee84",
+      "solutionSha256": "2e54254f70b79492aedaf601b2dbc754e2e627f304c46a127f573c1269fd0271"
+    },
+    {
+      "path": "DashboardService.Test/GetAgentsSalesResultAssert.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "c963f6130302a5e2a23c21a30ef2124e0844f8a9a42ebc6d9549cd0e4bc77545",
+      "solutionSha256": "c963f6130302a5e2a23c21a30ef2124e0844f8a9a42ebc6d9549cd0e4bc77545"
+    },
+    {
+      "path": "DashboardService.Test/GetSalesTrendsQueryTest.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "e42b0d1d141b3d1ba4522913363e5cd74a82eeb2f6dc884bb37da4a072b105c4",
+      "solutionSha256": "e42b0d1d141b3d1ba4522913363e5cd74a82eeb2f6dc884bb37da4a072b105c4"
+    },
+    {
+      "path": "DashboardService.Test/GetSalesTrendsResultAssert.cs",
+      "status": "ADAPTED",
+      "sourceSha256": "7cab61710d2b7bc20a901987fa42bbd7e9cceb94edbbdb021c47bc72dba68dd1",
+      "solutionSha256": "21cbc369b6836f95bdb71bd2332a6034ccbeb95495092d982bd87af4d9a008b2"
+    },
+    {
+      "path": "DashboardService.Test/GetTotalSalesQueryTest.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "e3f0e969c9a8b2657dcec7ddbb424c8e0af8974186d64dc07597d71036ee7f0f",
+      "solutionSha256": "e3f0e969c9a8b2657dcec7ddbb424c8e0af8974186d64dc07597d71036ee7f0f"
+    },
+    {
+      "path": "DashboardService.Test/GetTotalSalesResultAssert.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "fa821b18a23907e759fc032c6a2902701f357b1052ca4ecd7ebc5c334db3efe5",
+      "solutionSha256": "fa821b18a23907e759fc032c6a2902701f357b1052ca4ecd7ebc5c334db3efe5"
+    },
+    {
+      "path": "DashboardService.Test/PolicyDocumentBuilder.cs",
+      "status": "UNCHANGED",
+      "sourceSha256": "59f4e6878a414676fef6b77dd43bc906c1a998c348ad633e669083804bbe53a9",
+      "solutionSha256": "59f4e6878a414676fef6b77dd43bc906c1a998c348ad633e669083804bbe53a9"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-10-25T15:38:12.542032+07:00",
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "Anonymous request is blocked: /api/User",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Anonymous request is blocked: /Products/TRI",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Anonymous request is blocked: /api/Dashboard/total-sales",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Unknown account returns HTTP 400",
+      "passed": true,
+      "detail": 400
+    },
+    {
+      "name": "Missing credentials return HTTP 400",
+      "passed": true,
+      "detail": 400
+    },
+    {
+      "name": "AuthService issues JWT for jimmy.solid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AuthService issues JWT for danny.solid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Authenticated profile does not expose a password",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Eureka/Ocelot forwards /Products/TRI",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /api/Products/TRI",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /Products",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /api/Products",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "SignalR rejects anonymous negotiation",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Two authenticated SignalR clients receive the chat message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Notification command reaches SignalR clients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RabbitMQ PolicyCreated produces a live chat notification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RabbitMQ PolicyCreated is indexed once in Dashboard via Elasticsearch",
+      "passed": true,
+      "detail": {
+        "PolicyNumber": "LAB6-5d743f7e055b4531adfd13c12a11695b",
+        "agent": "lab6.verifier.5d743f7e055b4531adfd13c12a11695b",
+        "premium": 123.45
+      }
+    },
+    {
+      "name": "Dashboard responds through Gateway: total-sales",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Dashboard responds through Gateway: sales-trends",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ProductService and DashboardService are registered in Eureka",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "syntheticPolicy": "LAB6-5d743f7e055b4531adfd13c12a11695b",
+  "note": "One uniquely identified verification policy is intentionally retained in the local lab index. JWT values are never written to this report."
+}

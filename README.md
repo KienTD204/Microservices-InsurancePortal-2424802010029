@@ -1,5 +1,7 @@
 # ASCLAB .NET Core PoC - LAB Insurance Sales Portal
 
+**Bài thực hành 6 (25/10/2026):** [Gateway Ocelot, Auth, Chat và Dashboard](README-LAB6.md) - nhánh `student/lab6`.
+
 ## Bài nộp thực hành - Trương Đắc Kiên
 
 **Bài thực hành 5 (18/10/2026):** [Hướng dẫn chạy và nội dung hoàn thành](README-LAB5.md) | [PDF minh chứng Eureka](submission/lab5/Bai-thuc-hanh-5_Minh-chung-Eureka.pdf) | [Bằng chứng kiểm thử](submission/lab5/evidence). PricingService đăng ký Eureka thành công, **12/12 test đạt**.

@@ -1,0 +1,95 @@
+{
+  "result": "FAIL",
+  "checks": [
+    {
+      "name": "Anonymous request is blocked: /api/User",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Anonymous request is blocked: /Products/TRI",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Anonymous request is blocked: /api/Dashboard/total-sales",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Unknown account returns HTTP 400",
+      "passed": true,
+      "detail": 400
+    },
+    {
+      "name": "Missing credentials return HTTP 400",
+      "passed": true,
+      "detail": 400
+    },
+    {
+      "name": "AuthService issues JWT for jimmy.solid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "AuthService issues JWT for danny.solid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Authenticated profile does not expose a password",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Eureka/Ocelot forwards /Products/TRI",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /api/Products/TRI",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /Products",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "Eureka/Ocelot forwards /api/Products",
+      "passed": true,
+      "detail": 200
+    },
+    {
+      "name": "SignalR rejects anonymous negotiation",
+      "passed": true,
+      "detail": 401
+    },
+    {
+      "name": "Two authenticated SignalR clients receive the chat message",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Notification command reaches SignalR clients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RabbitMQ PolicyCreated produces a live chat notification",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "RabbitMQ PolicyCreated is indexed once in Dashboard via Elasticsearch",
+      "passed": false,
+      "detail": {
+        "PolicyNumber": "LAB6-078765e93b0c4c5aad8f356d58f03b1a",
+        "agent": "lab6.verifier.078765e93b0c4c5aad8f356d58f03b1a",
+        "premium": 123.45
+      }
+    }
+  ],
+  "error": "RabbitMQ PolicyCreated is indexed once in Dashboard via Elasticsearch"
+}

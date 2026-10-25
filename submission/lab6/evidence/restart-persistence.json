@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-25T15:41:05.0287653+07:00",
+  "result": "PASS",
+  "policyNumber": "LAB6-5d743f7e055b4531adfd13c12a11695b",
+  "before": {
+    "policiesCount": 1,
+    "evidence": "restart-before-runtime-verification.json",
+    "premiumAmount": 123.45
+  },
+  "after": {
+    "policiesCount": 1,
+    "premiumAmount": 123.45
+  },
+  "legacyIndexCount": 941
+}

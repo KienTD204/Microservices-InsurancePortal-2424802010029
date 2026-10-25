@@ -1,0 +1,36 @@
+services:
+  lab6:
+    build:
+      context: ..
+      dockerfile: tools/Lab6.Verifier/Dockerfile
+    image: insurance-lab6:verified
+    ports:
+      - "127.0.0.1:6060:6060"
+      - "127.0.0.1:5030:5030"
+      - "127.0.0.1:4099:4099"
+      - "127.0.0.1:5035:5035"
+      - "127.0.0.1:8099:8099"
+    volumes:
+      - ../submission/lab6/evidence:/src/submission/lab6/evidence
+    networks:
+      - insurance
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:6060/swagger/v1/swagger.json >/dev/null && curl -fsS http://localhost:5030/swagger/v1/swagger.json >/dev/null && curl -fsS http://localhost:4099/swagger/v1/swagger.json >/dev/null && curl -fsS http://localhost:5035/swagger/v1/swagger.json >/dev/null"]
+      interval: 10s
+      timeout: 10s
+      retries: 18
+  verify:
+    profiles: ["verification"]
+    image: insurance-lab6:verified
+    network_mode: "service:lab6"
+    depends_on:
+      lab6:
+        condition: service_healthy
+    volumes:
+      - ../submission/lab6/evidence:/src/submission/lab6/evidence
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: ["bash", "scripts/verify-lab6-container.sh"]
+networks:
+  insurance:
+    external: true
+    name: insurance-lab_default

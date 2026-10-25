@@ -1,3 +1,3 @@
 # AuthService.Test
 
-Project khung bổ sung để đáp ứng quy tắc ba project của Task 1. Không có trong sáu RAR hoặc snapshot upstream. Chưa triển khai nghiệp vụ/kiểm thử mới. Không tính một project test chưa có test case là kiểm thử chức năng đã đạt.
+Project được tạo từ bài thực hành trước. Bài thực hành 6 bổ sung `AuthenticationTests.cs`: 3 trường hợp đăng nhập đúng được xác minh chữ ký và claims JWT, 5 trường hợp thông tin đăng nhập sai được từ chối mà không phát sinh exception. Mã kiểm thử mới do bài làm bổ sung, không nằm trong RAR của giảng viên.

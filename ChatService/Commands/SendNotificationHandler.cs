@@ -18,7 +18,7 @@ public class SendNotificationHandler : IRequestHandler<SendNotificationCommand, 
 
     public async Task<Unit> Handle(SendNotificationCommand request, CancellationToken cancellationToken)
     {
-        await chatHubContext.Clients.All.SendAsync("ReceiveMessage", "system", request.Message);
+        await chatHubContext.Clients.All.SendAsync("ReceiveNotification", request.Message, cancellationToken);
 
         return Unit.Value;
     }

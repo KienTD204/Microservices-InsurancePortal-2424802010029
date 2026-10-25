@@ -4,6 +4,7 @@ using DashboardService.DataAccess.Elastic;
 using DashboardService.Domain;
 using DotNet.Testcontainers.Builders;
 using Elastic.Clients.Elasticsearch;
+using Elastic.Clients.Elasticsearch.Mapping;
 using Testcontainers.Elasticsearch;
 using Xunit;
 
@@ -23,6 +24,16 @@ public class ElasticSearchInContainerFixture : IAsyncLifetime
     public async Task InitializeAsync()
     {
         await testContainer.StartAsync();
+        var client = ElasticClient();
+        // Reproduce the old automatic integer mapping while retaining decimals in _source.
+        await client.Indices.CreateAsync(PolicyIndex.LegacyName, index => index.Mappings(new TypeMapping
+        {
+            Properties = new Properties { ["totalPremium"] = new LongNumberProperty() }
+        }));
+        await client.IndexAsync(new PolicyDocument("legacy-decimal", new System.DateTime(2034, 1, 1),
+            new System.DateTime(2034, 12, 31), "Legacy Test", "LEGACY", 12.34m, "legacy.agent"),
+            index => index.Index(PolicyIndex.LegacyName).Id("legacy-decimal").Refresh(Refresh.True));
+        await PolicyIndex.EnsureCreatedAsync(ElasticClient());
         InsertData();
     }
 
@@ -37,7 +48,7 @@ public class ElasticSearchInContainerFixture : IAsyncLifetime
         var endpoint = new Uri($"http://{testContainer.Hostname}:{testContainer.GetMappedPublicPort(9200)}");
         var connectionSettings = new ElasticsearchClientSettings(endpoint)
             .DefaultMappingFor<PolicyDocument>(m =>
-                m.IndexName("policy_lab_stats").IdProperty(d => d.Number));
+                m.IndexName(PolicyIndex.Name).IdProperty(d => d.Number));
         return new ElasticsearchClient(connectionSettings);
     }
 

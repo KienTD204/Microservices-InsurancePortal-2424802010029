@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -22,9 +23,8 @@ public class Program
 
     public static IWebHost BuildWebHost(string[] args)
     {
-        var key = Encoding.ASCII.GetBytes("THIS_IS_A_RANDOM_SECRET_2e7a1e80-16ee-4e52-b5c6-5e8892453459");
-
         return WebHost.CreateDefaultBuilder(args)
+            .UseUrls(Environment.GetEnvironmentVariable("ASPNETCORE_URLS") ?? "http://localhost:8099")
             .ConfigureAppConfiguration((hostingContext, config) =>
             {
                 config
@@ -36,8 +36,9 @@ public class Program
                     .AddJsonFile($"ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
                     .AddEnvironmentVariables();
             })
-            .ConfigureServices(s =>
+            .ConfigureServices((context, s) =>
             {
+                var key = Encoding.UTF8.GetBytes(context.Configuration["AppSettings:Secret"]);
                 s.AddCors();
                 s.AddAuthentication(x =>
                     {
@@ -72,7 +73,7 @@ public class Program
                     .AllowAnyHeader()
                     .AllowCredentials()
                 );
-                a.UseOcelot().Wait();
+                a.UseOcelot().GetAwaiter().GetResult();
             })
             .Build();
     }

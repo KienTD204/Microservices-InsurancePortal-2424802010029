@@ -21,10 +21,10 @@ jobs:
         run: |
           docker pull postgres:16
           docker pull docker.elastic.co/elasticsearch/elasticsearch:8.9.2
-      - name: Run six existing test suites
+      - name: Run lab test suites including authentication regression tests
         run: |
-          for project in ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do
-            dotnet test "$project/$project.csproj" -c Release --no-build --no-restore --logger trx --results-directory ci-test-results
+          for project in AuthService.Test ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do
+            dotnet test "$project/$project.csproj" -c Release --no-build --no-restore --logger trx --results-directory ci-test-results -- RunConfiguration.TreatNoTestsAsError=true
           done
       - uses: actions/upload-artifact@v4
         if: always()

@@ -18,7 +18,7 @@ public static class NestInstaller
     {
         var connectionSettings = new ElasticsearchClientSettings(new Uri(cnString))
             .DefaultMappingFor<PolicyDocument>(m =>
-                m.IndexName("policy_lab_stats").IdProperty(d => d.Number));
+                m.IndexName(PolicyIndex.Name).IdProperty(d => d.Number));
         return new ElasticsearchClient(connectionSettings);
     }
 }

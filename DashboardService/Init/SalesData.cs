@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DashboardService.DataAccess.Elastic;
 using DashboardService.Domain;
 using Elastic.Clients.Elasticsearch;
-using Elastic.Clients.Elasticsearch.IndexManagement;
 
 namespace DashboardService.Init;
 
@@ -18,8 +18,11 @@ public class SalesData
 
     public async Task SeedData()
     {
-        var policyIndexExists = await elasticClient.Indices.ExistsAsync("policy_lab_stats");
-        if (policyIndexExists.Exists) await elasticClient.Indices.DeleteAsync(new DeleteIndexRequest("policy_lab_stats"));
+        var policyIndexExists = await elasticClient.Indices.ExistsAsync(PolicyIndex.Name);
+        var hasLegacyData = (await elasticClient.Indices.ExistsAsync(PolicyIndex.LegacyName)).Exists;
+        await PolicyIndex.EnsureCreatedAsync(elasticClient);
+        // Keep policies received through RabbitMQ when the service is restarted.
+        if (policyIndexExists.Exists || hasLegacyData) return;
 
         var salesData = new Dictionary<string, (string Product, int Month, int Policies)[]>
         {
@@ -46,16 +49,20 @@ public class SalesData
                     agentSalesData.Key
                 );
 
-                await elasticClient.IndexAsync
+                var response = await elasticClient.IndexAsync
                 (
                     policy,
                     i => i
-                        .Index("policy_lab_stats")
+                        .Index(PolicyIndex.Name)
                         .Id(policy.Number)
-                        .Refresh(Refresh.True)
+                        .Refresh(Refresh.False)
                 );
+                if (!response.IsValidResponse)
+                    throw new InvalidOperationException("Failed to seed dashboard sales data.");
             }
         }
+
+        await elasticClient.Indices.RefreshAsync(PolicyIndex.Name);
     }
 
     private static (string Product, int Month, int Policies)[] JimmySalesData()

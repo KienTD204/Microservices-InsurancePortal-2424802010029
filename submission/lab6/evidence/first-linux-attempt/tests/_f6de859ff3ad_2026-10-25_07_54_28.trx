@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e966aed1-6871-445e-84ad-2cde0a3b35bb" name="@f6de859ff3ad 2026-10-25 07:54:28" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-25T07:54:28.8747647+00:00" queuing="2026-10-25T07:54:28.8747648+00:00" start="2026-10-25T07:54:08.9726855+00:00" finish="2026-10-25T07:54:28.8811582+00:00" />
+  <TestSettings name="default" id="ade7687c-2657-4ca5-a7ba-837fb0706949">
+    <Deployment runDeploymentRoot="_f6de859ff3ad_2026-10-25_07_54_28" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9ef63b93-3875-4640-a011-d4f34f5c934d" testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" computerName="f6de859ff3ad" duration="00:00:00.0380680" startTime="2026-10-25T07:54:27.9917922+00:00" endTime="2026-10-25T07:54:27.9917924+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ef63b93-3875-4640-a011-d4f34f5c934d" />
+    <UnitTestResult executionId="9e94270c-1ec1-495a-abd5-d5f35549c317" testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" testName="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" computerName="f6de859ff3ad" duration="00:00:00.0630303" startTime="2026-10-25T07:54:27.9534378+00:00" endTime="2026-10-25T07:54:27.9534380+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e94270c-1ec1-495a-abd5-d5f35549c317" />
+    <UnitTestResult executionId="88745f1b-44b5-4465-b941-61593bfe2fb6" testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" computerName="f6de859ff3ad" duration="00:00:00.0352704" startTime="2026-10-25T07:54:27.8890892+00:00" endTime="2026-10-25T07:54:27.8890895+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88745f1b-44b5-4465-b941-61593bfe2fb6" />
+    <UnitTestResult executionId="836027d8-fd78-4a38-9b8b-9d46dea0431d" testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" computerName="f6de859ff3ad" duration="00:00:00.0312808" startTime="2026-10-25T07:54:28.0234365+00:00" endTime="2026-10-25T07:54:28.0234368+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="836027d8-fd78-4a38-9b8b-9d46dea0431d" />
+    <UnitTestResult executionId="ebdedf86-11e2-437c-9482-40441e396ca8" testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" testName="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" computerName="f6de859ff3ad" duration="00:00:00.0280000" startTime="2026-10-25T07:54:28.0515747+00:00" endTime="2026-10-25T07:54:28.0515749+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebdedf86-11e2-437c-9482-40441e396ca8" />
+    <UnitTestResult executionId="77086543-1586-40e8-a359-b0c11a439071" testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" testName="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" computerName="f6de859ff3ad" duration="00:00:00.2326166" startTime="2026-10-25T07:54:27.8548939+00:00" endTime="2026-10-25T07:54:27.8549242+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77086543-1586-40e8-a359-b0c11a439071" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_All_Product_In_First_Q_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97">
+      <Execution id="9e94270c-1ec1-495a-abd5-d5f35549c317" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_All_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_All_Agents_In_01_And_02_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="e549e8b0-e906-14ff-d5a2-55103a3761f1">
+      <Execution id="88745f1b-44b5-4465-b941-61593bfe2fb6" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_All_Agents_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetAgentsSalesQueryTest.Sales_All_Product_By_Jim_In_01_And_02_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="e4d18f3d-24c2-d58c-ebd6-7fbae2931851">
+      <Execution id="77086543-1586-40e8-a359-b0c11a439071" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetAgentsSalesQueryTest" name="Sales_All_Product_By_Jim_In_01_And_02_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetSalesTrendsQueryTest.SalesTrends_HSI_Product_In_First_Q_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a">
+      <Execution id="9ef63b93-3875-4640-a011-d4f34f5c934d" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetSalesTrendsQueryTest" name="SalesTrends_HSI_Product_In_First_Q_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_HSI_Product_In_01_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="a7a9f750-7425-2301-5fe8-8bef9936dcbb">
+      <Execution id="836027d8-fd78-4a38-9b8b-9d46dea0431d" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_HSI_Product_In_01_2020" />
+    </UnitTest>
+    <UnitTest name="DashboardService.Test.GetTotalSalesQueryTest.TotalSales_All_Product_In_First_Q_2020" storage="/src/dashboardservice.test/bin/release/net8.0/dashboardservice.test.dll" id="2d6c2823-4f11-e831-6fcc-aadbd5366d0a">
+      <Execution id="ebdedf86-11e2-437c-9482-40441e396ca8" />
+      <TestMethod codeBase="/src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="DashboardService.Test.GetTotalSalesQueryTest" name="TotalSales_All_Product_In_First_Q_2020" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b91c34d2-a79c-75d2-ea63-bc52fdbf6a1a" executionId="9ef63b93-3875-4640-a011-d4f34f5c934d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="887e9b1e-fbaa-0158-5aa0-5b5bebf6ea97" executionId="9e94270c-1ec1-495a-abd5-d5f35549c317" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e549e8b0-e906-14ff-d5a2-55103a3761f1" executionId="88745f1b-44b5-4465-b941-61593bfe2fb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a9f750-7425-2301-5fe8-8bef9936dcbb" executionId="836027d8-fd78-4a38-9b8b-9d46dea0431d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d6c2823-4f11-e831-6fcc-aadbd5366d0a" executionId="ebdedf86-11e2-437c-9482-40441e396ca8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4d18f3d-24c2-d58c-ebd6-7fbae2931851" executionId="77086543-1586-40e8-a359-b0c11a439071" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="6" executed="6" passed="6" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.08]   Discovering: DashboardService.Test
+[xUnit.net 00:00:00.10]   Discovered:  DashboardService.Test
+[xUnit.net 00:00:00.11]   Starting:    DashboardService.Test
+[testcontainers.org 00:00:00.08] Connected to Docker:
+  Host: unix:///var/run/docker.sock
+  Server Version: 29.8.2
+  Kernel Version: 6.18.54.1-microsoft-standard-WSL2
+  API Version: 1.56
+  Operating System: Docker Desktop (containerized)
+  Total Memory: 7.38 GB
+[testcontainers.org 00:00:00.25] Docker container 6b6e3153a7f8 created
+[testcontainers.org 00:00:00.31] Start Docker container 6b6e3153a7f8
+[testcontainers.org 00:00:00.52] Wait for Docker container 6b6e3153a7f8 to complete readiness checks
+[testcontainers.org 00:00:00.53] Docker container 6b6e3153a7f8 ready
+[testcontainers.org 00:00:00.64] Docker container eb6ea374f044 created
+[testcontainers.org 00:00:00.65] Add file to tar archive: Content length: 29 byte(s), Target file: "/usr/share/elasticsearch/config/jvm.options.d/elasticsearch-default-memory-vm.options"
+[testcontainers.org 00:00:00.65] Copy tar archive to container: Content length: 29 byte(s), Docker container: eb6ea374f044
+[testcontainers.org 00:00:00.69] Start Docker container eb6ea374f044
+[testcontainers.org 00:00:00.95] Wait for Docker container eb6ea374f044 to complete readiness checks
+[testcontainers.org 00:00:16.57] Docker container eb6ea374f044 ready
+[testcontainers.org 00:00:18.54] Delete Docker container eb6ea374f044
+[xUnit.net 00:00:19.46]   Finished:    DashboardService.Test
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

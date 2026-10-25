@@ -3,6 +3,46 @@
     {
       "DownstreamPathTemplate": "/api/Products/{everything}",
       "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/Products/{everything}",
+      "ServiceName": "ProductService",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiSecurity",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "userType": "SALESMAN"
+      },
+      "UseServiceDiscovery": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Products",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/Products",
+      "ServiceName": "ProductService",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 15
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "ApiSecurity",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "userType": "SALESMAN"
+      },
+      "UseServiceDiscovery": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/Products/{everything}",
+      "DownstreamScheme": "http",
       "UpstreamPathTemplate": "/api/Products/{everything}",
       "ServiceName": "ProductService",
       "UpstreamHttpMethod": [
@@ -17,7 +57,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/Products",
@@ -36,7 +77,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/Dashboard/{everything}",
@@ -55,7 +97,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/Offer",
@@ -74,7 +117,8 @@
       },
       "AddHeadersToRequest": {
         "AgentLogin": "Claims[http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier] > value[0] > |"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/Policy",
@@ -90,7 +134,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/Policy/{number}",
@@ -109,7 +154,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     },
     {
       "DownstreamPathTemplate": "/api/PolicySearch",
@@ -125,7 +171,8 @@
       },
       "RouteClaimsRequirement": {
         "userType": "SALESMAN"
-      }
+      },
+      "UseServiceDiscovery": true
     }
   ],
   "GlobalConfiguration": {

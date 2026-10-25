@@ -20,7 +20,7 @@ public class ElasticPolicyRepository : IPolicyRepository
         (
             policy,
             i => i
-                .Index("policy_lab_stats")
+                .Index(PolicyIndex.Name)
                 .Id(policy.Number)
                 .Refresh(Refresh.True)
         );

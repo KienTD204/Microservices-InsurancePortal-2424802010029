@@ -6,4 +6,7 @@
 .vscode
 */bin
 */obj
+**/bin
+**/obj
+.runtime
 **/.toolstarget

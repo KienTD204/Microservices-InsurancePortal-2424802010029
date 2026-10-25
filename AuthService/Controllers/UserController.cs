@@ -23,7 +23,7 @@ public class UserController : ControllerBase
         var authResult = authService.Authenticate(user.Login, user.Password);
 
         if (authResult == null)
-            return BadRequest(new { message = "Username of password incorrect" });
+            return BadRequest(new { message = "Username or password incorrect" });
 
         return Ok(new
         {
@@ -39,6 +39,9 @@ public class UserController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        return Ok(authService.AgentFromLogin(HttpContext.User.Identity.Name));
+        var agent = authService.AgentFromLogin(HttpContext.User.Identity.Name);
+        if (agent == null) return Unauthorized();
+
+        return Ok(new { agent.Login, agent.Avatar, agent.AvailableProducts });
     }
 }

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3d2fed41-7811-4a6a-9562-8f4ee659ee10" name="kient@KA_IEN_KIEN 2026-10-25 14:47:10" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-10-25T14:47:10.7885061+07:00" queuing="2026-10-25T14:47:10.7885065+07:00" start="2026-10-25T14:47:05.7228003+07:00" finish="2026-10-25T14:47:10.8420217+07:00" />
+  <TestSettings name="default" id="057cf87d-190e-4be4-84e8-5e414748fecf">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-10-25_14_47_10" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="acba6415-717e-4a29-82a6-95ae3208be26" testId="76f35b1e-5723-2e21-448e-65c36339c2d1" testName="PricingService.Test.Controllers.PricingControllerShould.CallMediatorWithCorrectParameters" computerName="KA_IEN_KIEN" duration="00:00:01.3467735" startTime="2026-10-25T14:47:10.7177739+07:00" endTime="2026-10-25T14:47:10.7177745+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acba6415-717e-4a29-82a6-95ae3208be26" />
+    <UnitTestResult executionId="cf001f8a-ca54-4aa7-b5c1-563053848d3b" testId="b42dbe32-8072-958e-563f-0c8750d10dfc" testName="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsProductCodeIsEmpty" computerName="KA_IEN_KIEN" duration="00:00:00.0011171" startTime="2026-10-25T14:47:10.7417546+07:00" endTime="2026-10-25T14:47:10.7417548+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf001f8a-ca54-4aa7-b5c1-563053848d3b" />
+    <UnitTestResult executionId="f7192163-ddf4-4307-a1cd-e881183e5a74" testId="58c7a50d-6b64-bb90-2882-61ad0e1a401d" testName="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsSelectedCoversIsEmpty" computerName="KA_IEN_KIEN" duration="00:00:00.0017930" startTime="2026-10-25T14:47:10.7405072+07:00" endTime="2026-10-25T14:47:10.7405074+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7192163-ddf4-4307-a1cd-e881183e5a74" />
+    <UnitTestResult executionId="3f0be759-bc97-4100-bcb5-954164f0cd7c" testId="df4ae01e-7c57-196e-2dc8-c9b80e37bf84" testName="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowExceptionsIfTheCommandIsDefault" computerName="KA_IEN_KIEN" duration="00:00:00.0015518" startTime="2026-10-25T14:47:10.7669263+07:00" endTime="2026-10-25T14:47:10.7669265+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f0be759-bc97-4100-bcb5-954164f0cd7c" />
+    <UnitTestResult executionId="02e3aed6-e683-4e95-865e-21cf27ebf49a" testId="fcf7a033-d1d6-8c02-91b1-35b0efd0d5ab" testName="PricingService.Test.Controllers.PricingControllerShould.ReturnJsonResult" computerName="KA_IEN_KIEN" duration="00:00:00.0192938" startTime="2026-10-25T14:47:10.7374310+07:00" endTime="2026-10-25T14:47:10.7374314+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="02e3aed6-e683-4e95-865e-21cf27ebf49a" />
+    <UnitTestResult executionId="0122a645-cbb4-4e3e-aa8a-a18abe65b2a9" testId="77ebc8fb-bb4d-2dac-4370-ec987bb8392c" testName="PricingService.Test.Domain.TariffTest.CanCalculateTravelPolicyPrice" computerName="KA_IEN_KIEN" duration="00:00:00.0066637" startTime="2026-10-25T14:47:10.6531774+07:00" endTime="2026-10-25T14:47:10.6531777+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0122a645-cbb4-4e3e-aa8a-a18abe65b2a9" />
+    <UnitTestResult executionId="ebc7d89d-5fcf-49ee-9178-ffedefa7e252" testId="b3b89d56-5484-474d-dcdd-20c804637982" testName="PricingService.Test.Domain.TariffTest.CanCalculateCarPolicyPrice" computerName="KA_IEN_KIEN" duration="00:00:00.0026546" startTime="2026-10-25T14:47:10.6559166+07:00" endTime="2026-10-25T14:47:10.6559169+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebc7d89d-5fcf-49ee-9178-ffedefa7e252" />
+    <UnitTestResult executionId="c8440f0d-905b-4776-bb15-f5ade2addd3c" testId="ac1e5d68-6939-55f1-7ae7-6f5088bd08e0" testName="PricingService.Test.Domain.TariffTest.CanCalculateHousePolicyPrice" computerName="KA_IEN_KIEN" duration="00:00:01.2718183" startTime="2026-10-25T14:47:10.6466250+07:00" endTime="2026-10-25T14:47:10.6466475+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8440f0d-905b-4776-bb15-f5ade2addd3c" />
+    <UnitTestResult executionId="e559f72a-7b28-4154-96bb-2dd42e6babc7" testId="88a39d94-0228-071a-35c6-628f102e338a" testName="PricingService.Test.Commands.CalculatePriceHandlerShould.ReturnCorrectPrice" computerName="KA_IEN_KIEN" duration="00:00:00.0140321" startTime="2026-10-25T14:47:10.7559232+07:00" endTime="2026-10-25T14:47:10.7559236+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e559f72a-7b28-4154-96bb-2dd42e6babc7" />
+    <UnitTestResult executionId="2994c521-c704-45fa-b7bf-df66870ee563" testId="9a0460e3-7db0-6a49-819a-a92dd81ef258" testName="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsAnswersIsEmpty" computerName="KA_IEN_KIEN" duration="00:00:01.3676254" startTime="2026-10-25T14:47:10.7385727+07:00" endTime="2026-10-25T14:47:10.7385730+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2994c521-c704-45fa-b7bf-df66870ee563" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PricingService.Test.Controllers.PricingControllerShould.CallMediatorWithCorrectParameters" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="76f35b1e-5723-2e21-448e-65c36339c2d1">
+      <Execution id="acba6415-717e-4a29-82a6-95ae3208be26" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Controllers.PricingControllerShould" name="CallMediatorWithCorrectParameters" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsAnswersIsEmpty" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="9a0460e3-7db0-6a49-819a-a92dd81ef258">
+      <Execution id="2994c521-c704-45fa-b7bf-df66870ee563" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Commands.CalculatePriceHandlerShould" name="ThrowAnExceptionIfTheCommandsAnswersIsEmpty" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Commands.CalculatePriceHandlerShould.ReturnCorrectPrice" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="88a39d94-0228-071a-35c6-628f102e338a">
+      <Execution id="e559f72a-7b28-4154-96bb-2dd42e6babc7" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Commands.CalculatePriceHandlerShould" name="ReturnCorrectPrice" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsSelectedCoversIsEmpty" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="58c7a50d-6b64-bb90-2882-61ad0e1a401d">
+      <Execution id="f7192163-ddf4-4307-a1cd-e881183e5a74" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Commands.CalculatePriceHandlerShould" name="ThrowAnExceptionIfTheCommandsSelectedCoversIsEmpty" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Domain.TariffTest.CanCalculateHousePolicyPrice" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="ac1e5d68-6939-55f1-7ae7-6f5088bd08e0">
+      <Execution id="c8440f0d-905b-4776-bb15-f5ade2addd3c" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Domain.TariffTest" name="CanCalculateHousePolicyPrice" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowExceptionsIfTheCommandIsDefault" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="df4ae01e-7c57-196e-2dc8-c9b80e37bf84">
+      <Execution id="3f0be759-bc97-4100-bcb5-954164f0cd7c" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Commands.CalculatePriceHandlerShould" name="ThrowExceptionsIfTheCommandIsDefault" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Domain.TariffTest.CanCalculateTravelPolicyPrice" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="77ebc8fb-bb4d-2dac-4370-ec987bb8392c">
+      <Execution id="0122a645-cbb4-4e3e-aa8a-a18abe65b2a9" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Domain.TariffTest" name="CanCalculateTravelPolicyPrice" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Commands.CalculatePriceHandlerShould.ThrowAnExceptionIfTheCommandsProductCodeIsEmpty" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="b42dbe32-8072-958e-563f-0c8750d10dfc">
+      <Execution id="cf001f8a-ca54-4aa7-b5c1-563053848d3b" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Commands.CalculatePriceHandlerShould" name="ThrowAnExceptionIfTheCommandsProductCodeIsEmpty" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Domain.TariffTest.CanCalculateCarPolicyPrice" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="b3b89d56-5484-474d-dcdd-20c804637982">
+      <Execution id="ebc7d89d-5fcf-49ee-9178-ffedefa7e252" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Domain.TariffTest" name="CanCalculateCarPolicyPrice" />
+    </UnitTest>
+    <UnitTest name="PricingService.Test.Controllers.PricingControllerShould.ReturnJsonResult" storage="c:\users\kient\documents\codex\2026-10-25\th-c-hi\work\repository\pricingservice.test\bin\release\net8.0\pricingservice.test.dll" id="fcf7a033-d1d6-8c02-91b1-35b0efd0d5ab">
+      <Execution id="02e3aed6-e683-4e95-865e-21cf27ebf49a" />
+      <TestMethod codeBase="C:\Users\kient\Documents\Codex\2026-10-25\th-c-hi\work\repository\PricingService.Test\bin\Release\net8.0\PricingService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PricingService.Test.Controllers.PricingControllerShould" name="ReturnJsonResult" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="76f35b1e-5723-2e21-448e-65c36339c2d1" executionId="acba6415-717e-4a29-82a6-95ae3208be26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b42dbe32-8072-958e-563f-0c8750d10dfc" executionId="cf001f8a-ca54-4aa7-b5c1-563053848d3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58c7a50d-6b64-bb90-2882-61ad0e1a401d" executionId="f7192163-ddf4-4307-a1cd-e881183e5a74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df4ae01e-7c57-196e-2dc8-c9b80e37bf84" executionId="3f0be759-bc97-4100-bcb5-954164f0cd7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcf7a033-d1d6-8c02-91b1-35b0efd0d5ab" executionId="02e3aed6-e683-4e95-865e-21cf27ebf49a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77ebc8fb-bb4d-2dac-4370-ec987bb8392c" executionId="0122a645-cbb4-4e3e-aa8a-a18abe65b2a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3b89d56-5484-474d-dcdd-20c804637982" executionId="ebc7d89d-5fcf-49ee-9178-ffedefa7e252" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac1e5d68-6939-55f1-7ae7-6f5088bd08e0" executionId="c8440f0d-905b-4776-bb15-f5ade2addd3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88a39d94-0228-071a-35c6-628f102e338a" executionId="e559f72a-7b28-4154-96bb-2dd42e6babc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a0460e3-7db0-6a49-819a-a92dd81ef258" executionId="2994c521-c704-45fa-b7bf-df66870ee563" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:01.75]   Discovering: PricingService.Test&#xD;
+[xUnit.net 00:00:01.79]   Discovered:  PricingService.Test&#xD;
+[xUnit.net 00:00:01.80]   Starting:    PricingService.Test&#xD;
+[xUnit.net 00:00:03.25]   Finished:    PricingService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

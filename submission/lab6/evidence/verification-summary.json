@@ -1,0 +1,64 @@
+{
+  "result": "PASS",
+  "testSuites": [
+    {
+      "suite": "AuthService.Test",
+      "total": 8,
+      "executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "DashboardService.Test",
+      "total": 8,
+      "executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "PaymentService.Test",
+      "total": 6,
+      "executed": 6,
+      "passed": 6,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "PolicyService.Test",
+      "total": 8,
+      "executed": 8,
+      "passed": 8,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "PricingService.IntegrationTest",
+      "total": 2,
+      "executed": 2,
+      "passed": 2,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "PricingService.Test",
+      "total": 10,
+      "executed": 10,
+      "passed": 10,
+      "failed": 0,
+      "notExecuted": 0
+    },
+    {
+      "suite": "ProductService.Test",
+      "total": 14,
+      "executed": 14,
+      "passed": 14,
+      "failed": 0,
+      "notExecuted": 0
+    }
+  ],
+  "totalTests": 56,
+  "runtimeChecks": 20,
+  "restartPersistence": "PASS"
+}

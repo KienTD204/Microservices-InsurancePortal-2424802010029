@@ -5,6 +5,7 @@ using static Xunit.Assert;
 
 namespace PolicyService.Test.Domain;
 
+[Collection("Shared policy clock")]
 public class PolicyTerminationTest
 {
     [Fact]
