@@ -5,6 +5,10 @@
 *.sh	text eol=lf
 *.bat	text eol=crlf
 
+# Keep raw verification evidence byte-for-byte so its SHA256 manifest survives checkout.
+submission/lab7/evidence/** -text -whitespace
+submission/lab7/provided/** -text
+
 ###############################################################################
 # Set default behavior for command prompt diff.
 #

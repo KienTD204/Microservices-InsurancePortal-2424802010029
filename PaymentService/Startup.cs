@@ -57,7 +57,7 @@ public class Startup
         }
 
         app.UseHttpsRedirection();
-        app.UseInitializer();
+        app.UseInitializer().GetAwaiter().GetResult();
         app.UseRabbitListeners(new List<Type> { typeof(PolicyCreated), typeof(PolicyTerminated) });
         app.UseBackgroundJobs();
         app.UseEndpoints(endpoints => endpoints.MapControllers());

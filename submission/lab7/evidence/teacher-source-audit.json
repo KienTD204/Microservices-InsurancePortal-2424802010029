@@ -1,0 +1,794 @@
+{
+  "checkedAt": "2026-11-01T15:46:06.5617520+07:00",
+  "result": "PASS",
+  "baseCommit": "3bbedb0",
+  "normalization": "UTF-8 text, CRLF normalized to LF; original archives are preserved byte for byte.",
+  "totalFiles": 107,
+  "summary": [
+    {
+      "status": "ADAPTED",
+      "count": 3
+    },
+    {
+      "status": "UNCHANGED",
+      "count": 104
+    }
+  ],
+  "archives": [
+    {
+      "name": "PaymentService.rar",
+      "sha256": "53c881f0e6582e5b5ade1b45bdc22d5d1bae47d294a470767a0350e17d547018"
+    },
+    {
+      "name": "PaymentService.Api.rar",
+      "sha256": "4380aed366dffa87d24b7e27ac743f6981ca4a0637042358aaf326aed3bbf442"
+    },
+    {
+      "name": "PaymentService.Test.rar",
+      "sha256": "86c690e8f730c696dd1b398879d5b4bb58d824ecaafeca79395e45cdfe672a2d"
+    },
+    {
+      "name": "ProductService.rar",
+      "sha256": "0bdd2707bd7d36dd25aed940cf115af61ffe26ed5ff43b14829d71a6739f6702"
+    },
+    {
+      "name": "ProductService.Api.rar",
+      "sha256": "cda205d9799b1eebe85dd62d26bb6c9df4536211b1a45eda89a6d8e353c773bf"
+    },
+    {
+      "name": "ProductService.Test.rar",
+      "sha256": "b9d9a281828030f1641711c08b4e682cf620f3a752c02e064bd2287345fbb111"
+    }
+  ],
+  "files": [
+    {
+      "path": "PaymentService/appsettings.Development.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "a6597334eee6f460b454ae575f4941bcec1fa24f717732fe452c32369b53c431",
+      "solutionSha256": "a6597334eee6f460b454ae575f4941bcec1fa24f717732fe452c32369b53c431"
+    },
+    {
+      "path": "PaymentService/appsettings.docker.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "2d81849046d75b228401618b59c06ec14f0c3447adf6456107fd84f3a0c3a740",
+      "solutionSha256": "2d81849046d75b228401618b59c06ec14f0c3447adf6456107fd84f3a0c3a740"
+    },
+    {
+      "path": "PaymentService/appsettings.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "8ef67cb2137b56a2c304c49f03b9a36e8ec0ebe9ea67458bdea6ce68326b4ac8",
+      "solutionSha256": "8ef67cb2137b56a2c304c49f03b9a36e8ec0ebe9ea67458bdea6ce68326b4ac8"
+    },
+    {
+      "path": "PaymentService/Dockerfile",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "2c7450f867a383418738cb80115ed1b500c248205a160bde400e59b3b07ae6d1",
+      "solutionSha256": "2c7450f867a383418738cb80115ed1b500c248205a160bde400e59b3b07ae6d1"
+    },
+    {
+      "path": "PaymentService/hosting.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "863e81a74c4f4d0e5f4b9135f734f9fb7791e38e06ac71049ebf27471750796b",
+      "solutionSha256": "863e81a74c4f4d0e5f4b9135f734f9fb7791e38e06ac71049ebf27471750796b"
+    },
+    {
+      "path": "PaymentService/PaymentService.csproj",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "34ad4e1bb336bdbeada6dbf5987d2360e8be709f8f6d756366f77918a6616666",
+      "solutionSha256": "34ad4e1bb336bdbeada6dbf5987d2360e8be709f8f6d756366f77918a6616666"
+    },
+    {
+      "path": "PaymentService/Program.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "eb44cddfd4596b814d67562997cee6263eb358b7a1874acc9dc0bbcf950e4916",
+      "solutionSha256": "eb44cddfd4596b814d67562997cee6263eb358b7a1874acc9dc0bbcf950e4916"
+    },
+    {
+      "path": "PaymentService/Startup.cs",
+      "status": "ADAPTED",
+      "reason": "Wait for Marten demo/schema initialization before accepting HTTP requests or policy events.",
+      "sourceSha256": "e6b1629fec34d491b3265be249f241351807d21e3d3ebd551e982b9f51fd7e00",
+      "solutionSha256": "5305ce7a321cf2db3495322504732ee1a186584f73f60de2c6a7ebe0fbe26b17"
+    },
+    {
+      "path": "PaymentService/Controllers/PaymentController.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "939ed032df4d1a682a35b4b8c59b9cde61d6ba066a2960770e8e040e9178ed1a",
+      "solutionSha256": "939ed032df4d1a682a35b4b8c59b9cde61d6ba066a2960770e8e040e9178ed1a"
+    },
+    {
+      "path": "PaymentService/DataAccess/Marten/MartenDataStore.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "ac2240db4957735f2df79de3fea733b3506fb2c4e0d422631ca1f56d80efd91d",
+      "solutionSha256": "ac2240db4957735f2df79de3fea733b3506fb2c4e0d422631ca1f56d80efd91d"
+    },
+    {
+      "path": "PaymentService/DataAccess/Marten/MartenInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4467f464ab77228a0ac77ce7cf5ecff2a69a35bbe6abf99393dea66f4851cc1b",
+      "solutionSha256": "4467f464ab77228a0ac77ce7cf5ecff2a69a35bbe6abf99393dea66f4851cc1b"
+    },
+    {
+      "path": "PaymentService/DataAccess/Marten/MartenPolicyAccountRepository.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "51cec25f22509ca1944935bed773a395f73e39a3de60dbb11cf160a3960c7c61",
+      "solutionSha256": "51cec25f22509ca1944935bed773a395f73e39a3de60dbb11cf160a3960c7c61"
+    },
+    {
+      "path": "PaymentService/DataAccess/Marten/ProtectedSettersContractResolver.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "b8775fc0f4d058400505b52c2448c61a9afbd4029c8d6aec0eb3a2f539549457",
+      "solutionSha256": "b8775fc0f4d058400505b52c2448c61a9afbd4029c8d6aec0eb3a2f539549457"
+    },
+    {
+      "path": "PaymentService/Domain/AccountingEntry.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "8ad8078c09b43c91bb0cd1489268d222ad72b24e20e5acd7df2ba9e8e3ff7da4",
+      "solutionSha256": "8ad8078c09b43c91bb0cd1489268d222ad72b24e20e5acd7df2ba9e8e3ff7da4"
+    },
+    {
+      "path": "PaymentService/Domain/BankStatementFile.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "71c1e541a3bd9f59efb3b88a2479ed7017a9d2d36ba07cb63a82a821ee7f5ab7",
+      "solutionSha256": "71c1e541a3bd9f59efb3b88a2479ed7017a9d2d36ba07cb63a82a821ee7f5ab7"
+    },
+    {
+      "path": "PaymentService/Domain/ExpectedPayment.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "73a5a858abeec58e98ff58ae2f31d52ac357afee4d166e5921cc5a9ee0895231",
+      "solutionSha256": "73a5a858abeec58e98ff58ae2f31d52ac357afee4d166e5921cc5a9ee0895231"
+    },
+    {
+      "path": "PaymentService/Domain/IDataStore.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "80b2e70148a5bdd05320a2f08ac28552566a765821930ce4d141a5a83b3cd2dc",
+      "solutionSha256": "80b2e70148a5bdd05320a2f08ac28552566a765821930ce4d141a5a83b3cd2dc"
+    },
+    {
+      "path": "PaymentService/Domain/InPayment.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d503c3b43a1a144f0ecccd036eb90f2c72046d5258ef9060a2fa317428844ed4",
+      "solutionSha256": "d503c3b43a1a144f0ecccd036eb90f2c72046d5258ef9060a2fa317428844ed4"
+    },
+    {
+      "path": "PaymentService/Domain/InPaymentRegistrationService.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "8969803e9525d6ecc09620f8c72115d070e40700ba5ec864505a38dce0a4bf95",
+      "solutionSha256": "8969803e9525d6ecc09620f8c72115d070e40700ba5ec864505a38dce0a4bf95"
+    },
+    {
+      "path": "PaymentService/Domain/IPolicyAccountRepository.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "9bb5c7d4f2ef396889f32ddc86a012c5e7f4727cc45ae0e5c1d24d5498cb6750",
+      "solutionSha256": "9bb5c7d4f2ef396889f32ddc86a012c5e7f4727cc45ae0e5c1d24d5498cb6750"
+    },
+    {
+      "path": "PaymentService/Domain/OutPayment.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "17ebddbb5e381bda9c072c3b8de8caa4348c0495dbe5e8491e012501fd5a4be9",
+      "solutionSha256": "17ebddbb5e381bda9c072c3b8de8caa4348c0495dbe5e8491e012501fd5a4be9"
+    },
+    {
+      "path": "PaymentService/Domain/PolicyAccount.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "47b165e88f5a404bb9acbc293b9262697a8a7b5f31734d74ef41b204b6e68a5a",
+      "solutionSha256": "47b165e88f5a404bb9acbc293b9262697a8a7b5f31734d74ef41b204b6e68a5a"
+    },
+    {
+      "path": "PaymentService/Domain/PolicyAccountNumberGenerator.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "857f7e35f7596e23f87fb4a363f72870af0d69897fdb3cf8aa122a2203a3f9a0",
+      "solutionSha256": "857f7e35f7596e23f87fb4a363f72870af0d69897fdb3cf8aa122a2203a3f9a0"
+    },
+    {
+      "path": "PaymentService/Domain/PolicyAccountStatus.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4dbb06424c58ad9ca7e0f0755d43b7bc7ce07829ba3b0df45ca0b0c03e4b5043",
+      "solutionSha256": "4dbb06424c58ad9ca7e0f0755d43b7bc7ce07829ba3b0df45ca0b0c03e4b5043"
+    },
+    {
+      "path": "PaymentService/Extensions/EnumerableExtensions.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "0a59181b8660bd3878c72329ed79a8333bec5cfd6b835c08de3d6a32e7a40ffa",
+      "solutionSha256": "0a59181b8660bd3878c72329ed79a8333bec5cfd6b835c08de3d6a32e7a40ffa"
+    },
+    {
+      "path": "PaymentService/Infrastructure/LogingBehaviour.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "1999ca0cf509eb8844c53cd37220ff59479a384254e68c7ca74cccaf9262aa5e",
+      "solutionSha256": "1999ca0cf509eb8844c53cd37220ff59479a384254e68c7ca74cccaf9262aa5e"
+    },
+    {
+      "path": "PaymentService/Infrastructure/Configuration/ExceptionMapper.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "12f6c9ee64c735d0f4867e9fac5b0596d2cd59e0509c31b623576a21b8541ea5",
+      "solutionSha256": "12f6c9ee64c735d0f4867e9fac5b0596d2cd59e0509c31b623576a21b8541ea5"
+    },
+    {
+      "path": "PaymentService/Init/ApplicationBuilderExtensions.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "62d5f6f11612a67facb9213adcd123132c54640b1ccb2158d199fac96c1827ba",
+      "solutionSha256": "62d5f6f11612a67facb9213adcd123132c54640b1ccb2158d199fac96c1827ba"
+    },
+    {
+      "path": "PaymentService/Init/DataLoader.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "cd6f92f5d5a4b740a83f40d6fa7e97ee9bb893cf4cc1615c14a43575b4666608",
+      "solutionSha256": "cd6f92f5d5a4b740a83f40d6fa7e97ee9bb893cf4cc1615c14a43575b4666608"
+    },
+    {
+      "path": "PaymentService/Init/DataLoaderInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "1e7361fcc1721ddf00d797f6b28d84e158be72e45e7e6555b9832fb251eb640e",
+      "solutionSha256": "1e7361fcc1721ddf00d797f6b28d84e158be72e45e7e6555b9832fb251eb640e"
+    },
+    {
+      "path": "PaymentService/Init/DemoAccountsFactory.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "70d5d20f950e3fab7684da5ae95600ade8f248b05592855bad7dd5752729323b",
+      "solutionSha256": "70d5d20f950e3fab7684da5ae95600ade8f248b05592855bad7dd5752729323b"
+    },
+    {
+      "path": "PaymentService/Jobs/BackgroundJobsConfig.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "50b5ae3de885dee129620e4d65067a2efc2fc5b1ef3ecb7f86e4a6e693d9ab7f",
+      "solutionSha256": "50b5ae3de885dee129620e4d65067a2efc2fc5b1ef3ecb7f86e4a6e693d9ab7f"
+    },
+    {
+      "path": "PaymentService/Jobs/InPaymentRegistrationJob.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "cbc67b5bd4b9354273a1e357b4136b7c359ad2273f60ad3d53f0c9e515fd3f93",
+      "solutionSha256": "cbc67b5bd4b9354273a1e357b4136b7c359ad2273f60ad3d53f0c9e515fd3f93"
+    },
+    {
+      "path": "PaymentService/Jobs/JobsInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "82ca7b7be5e46b5d58671a8a122bb5207a72469aded97ddc2b2d1ced9cff6e88",
+      "solutionSha256": "82ca7b7be5e46b5d58671a8a122bb5207a72469aded97ddc2b2d1ced9cff6e88"
+    },
+    {
+      "path": "PaymentService/Listeners/PolicyCreatedHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "12e2eba268388ee047923157e93cd086a36f1538f21a43377df46f9a7ea7e4cf",
+      "solutionSha256": "12e2eba268388ee047923157e93cd086a36f1538f21a43377df46f9a7ea7e4cf"
+    },
+    {
+      "path": "PaymentService/Listeners/PolicyTerminatedHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "3bbf43cfd18e0b03e0cbc1faba42f707d3ec6da0e43b982042908421cc3b66a7",
+      "solutionSha256": "3bbf43cfd18e0b03e0cbc1faba42f707d3ec6da0e43b982042908421cc3b66a7"
+    },
+    {
+      "path": "PaymentService/Messaging/RabbitMq/RabbitEventListener.cs",
+      "status": "ADAPTED",
+      "reason": "Inherited: await the notification handler before disposing its dependency scope.",
+      "sourceSha256": "334b4355add46d09936fdc341bd0ca015973d251721d16221d6d9244bdb13ac1",
+      "solutionSha256": "6e3684c170d0c495cfd7194d9cccfff4051c295f22009b7f607eac573171b50f"
+    },
+    {
+      "path": "PaymentService/Messaging/RabbitMq/RabbitInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "fa23f21c2544185b7ff684fe2b495a4b9d34c7164cc74b935049f5a53eacc82b",
+      "solutionSha256": "fa23f21c2544185b7ff684fe2b495a4b9d34c7164cc74b935049f5a53eacc82b"
+    },
+    {
+      "path": "PaymentService/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d368c7ade462df007362ccf830da3f71eaee90763a038d7804cb6fd88480581d",
+      "solutionSha256": "d368c7ade462df007362ccf830da3f71eaee90763a038d7804cb6fd88480581d"
+    },
+    {
+      "path": "PaymentService/Queries/GetAccountBalanceHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "0684c1bf07957027b982851458a3ab55c45d1a8d4144358208774be51abcd4b7",
+      "solutionSha256": "0684c1bf07957027b982851458a3ab55c45d1a8d4144358208774be51abcd4b7"
+    },
+    {
+      "path": "PaymentService.Api/PaymentService.Api.csproj",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "5753ca4fb4c5ede1f3ece1c7ef72ee5f1e496a92a053d74914190ea6a94d0ab9",
+      "solutionSha256": "5753ca4fb4c5ede1f3ece1c7ef72ee5f1e496a92a053d74914190ea6a94d0ab9"
+    },
+    {
+      "path": "PaymentService.Api/Exceptions/BankStatementsFileNotFound.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "3fa26ae13fbf525b474d83d79a1be48920f05fe6d77767535658ceba5bb4acf8",
+      "solutionSha256": "3fa26ae13fbf525b474d83d79a1be48920f05fe6d77767535658ceba5bb4acf8"
+    },
+    {
+      "path": "PaymentService.Api/Exceptions/BankStatementsFileReadingError.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "c1dcfcff9a0fe17de57a76b1860678711147f09b6a46d954c3b2db7e9a3aa962",
+      "solutionSha256": "c1dcfcff9a0fe17de57a76b1860678711147f09b6a46d954c3b2db7e9a3aa962"
+    },
+    {
+      "path": "PaymentService.Api/Exceptions/BussinesExceptions.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d6522b70bfa15d43e5bc0097e4f908170770f843c0b45dcb1fd451b835dfe5e4",
+      "solutionSha256": "d6522b70bfa15d43e5bc0097e4f908170770f843c0b45dcb1fd451b835dfe5e4"
+    },
+    {
+      "path": "PaymentService.Api/Exceptions/PolicyAccountNotFound.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "3d2c00fc5ebe1d27c14a98e2b442a85c6d13b3bfd95a305bc60dc83e570e7b5a",
+      "solutionSha256": "3d2c00fc5ebe1d27c14a98e2b442a85c6d13b3bfd95a305bc60dc83e570e7b5a"
+    },
+    {
+      "path": "PaymentService.Api/Queries/GetAccountBalanceQuery.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "41d0c3816b3ac3e86c06caed41bc92846e3ebfb751559629cdebe844602d33e7",
+      "solutionSha256": "41d0c3816b3ac3e86c06caed41bc92846e3ebfb751559629cdebe844602d33e7"
+    },
+    {
+      "path": "PaymentService.Api/Queries/GetAccountBalanceQueryResult.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "0526463876616d8e863373b0ee6edd1d2268c71371113915b5604ed8f55ce2cb",
+      "solutionSha256": "0526463876616d8e863373b0ee6edd1d2268c71371113915b5604ed8f55ce2cb"
+    },
+    {
+      "path": "PaymentService.Api/Queries/Dtos/PolicyAccountBalanceDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "88d91cfec2798a7fc3c8a878dd53a98dad2f95ab759e915d6908d8dc7243e7b5",
+      "solutionSha256": "88d91cfec2798a7fc3c8a878dd53a98dad2f95ab759e915d6908d8dc7243e7b5"
+    },
+    {
+      "path": "PaymentService.Api/Queries/Dtos/PolicyAccountDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d98c471bfbacbdda4c7fa877550d43476397d155014c1134dbc21ef3c13365ff",
+      "solutionSha256": "d98c471bfbacbdda4c7fa877550d43476397d155014c1134dbc21ef3c13365ff"
+    },
+    {
+      "path": "PaymentService.Test/PaymentService.Test.csproj",
+      "status": "ADAPTED",
+      "reason": "Add Testcontainers.PostgreSql 3.9.0 for tests against an isolated PostgreSQL 16 database.",
+      "sourceSha256": "af2477f2790c6e18c3f480d09b0a9cb61a334e78939c9a3443e9b8bc407befd0",
+      "solutionSha256": "2d42135b70403fb918048e896aaad5a6b5be9bd859182a0285906111412e5455"
+    },
+    {
+      "path": "PaymentService.Test/Domain/MockPolicyAccountRepository.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "2398e8432f7d3ddb7cfb25bc405c05e415c41ec6b4d76639565c85d09da02e38",
+      "solutionSha256": "2398e8432f7d3ddb7cfb25bc405c05e415c41ec6b4d76639565c85d09da02e38"
+    },
+    {
+      "path": "PaymentService.Test/Domain/PolicyAccountTest.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "83ba65f8fab8c446484490ebb081c2a0b912c51c93afd3b8bfd3a2b77f3279bf",
+      "solutionSha256": "83ba65f8fab8c446484490ebb081c2a0b912c51c93afd3b8bfd3a2b77f3279bf"
+    },
+    {
+      "path": "PaymentService.Test/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "e0e099e4c90c8eadab6909a97ef621e0fffd1aaf4c03a5f7c9e9523850dc69fd",
+      "solutionSha256": "e0e099e4c90c8eadab6909a97ef621e0fffd1aaf4c03a5f7c9e9523850dc69fd"
+    },
+    {
+      "path": "ProductService/appsettings.Development.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a",
+      "solutionSha256": "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a"
+    },
+    {
+      "path": "ProductService/appsettings.docker.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "93eeb74ffe26acf7a84daaf28dcce866012eecf65ca35caf4eb144c7ead28349",
+      "solutionSha256": "93eeb74ffe26acf7a84daaf28dcce866012eecf65ca35caf4eb144c7ead28349"
+    },
+    {
+      "path": "ProductService/appsettings.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4809bb6c410cb40d098370474ceb684ea6e6386a86a59d4cbea248bd325a9d7e",
+      "solutionSha256": "4809bb6c410cb40d098370474ceb684ea6e6386a86a59d4cbea248bd325a9d7e"
+    },
+    {
+      "path": "ProductService/Dockerfile",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "a8a495b0488e1190ae881ac9cfc2ae141277473fda31b94626488ac7020727df",
+      "solutionSha256": "a8a495b0488e1190ae881ac9cfc2ae141277473fda31b94626488ac7020727df"
+    },
+    {
+      "path": "ProductService/hosting.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "fcc3b3702651e4ba0d7dab3c9b7b46f71ab5089a81623555047946fafb4faa8a",
+      "solutionSha256": "fcc3b3702651e4ba0d7dab3c9b7b46f71ab5089a81623555047946fafb4faa8a"
+    },
+    {
+      "path": "ProductService/ProductService.csproj",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "7705c9c9de992cbdcbe56e0d90461ad77c73a529e6e1f450470e34d0c674cfdb",
+      "solutionSha256": "7705c9c9de992cbdcbe56e0d90461ad77c73a529e6e1f450470e34d0c674cfdb"
+    },
+    {
+      "path": "ProductService/Program.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d57873299a7605ae3c9ed8ec5a93c8f3793f5dd5342ef630f02ce45e201105f8",
+      "solutionSha256": "d57873299a7605ae3c9ed8ec5a93c8f3793f5dd5342ef630f02ce45e201105f8"
+    },
+    {
+      "path": "ProductService/Commands/ActivateProductHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "58df086968308cd58f55eb670c0ad610707e95a44107ff18c3fd633b8945da0e",
+      "solutionSha256": "58df086968308cd58f55eb670c0ad610707e95a44107ff18c3fd633b8945da0e"
+    },
+    {
+      "path": "ProductService/Commands/CreateProductDraftHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "5764c377da7d6819d418709e1d89e797b2b944a045b63ee731918f1a3be4f5ed",
+      "solutionSha256": "5764c377da7d6819d418709e1d89e797b2b944a045b63ee731918f1a3be4f5ed"
+    },
+    {
+      "path": "ProductService/Commands/DiscontinueProductHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "bed1dc4a62be88bd8f2186c0c2ca5e8f497f242647844afb4b009da81b5f59da",
+      "solutionSha256": "bed1dc4a62be88bd8f2186c0c2ca5e8f497f242647844afb4b009da81b5f59da"
+    },
+    {
+      "path": "ProductService/Controllers/ProductsController.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "87413f7288a441b6e8bd3be04254c2634c4fda337a64accdb7cdc64b95b49519",
+      "solutionSha256": "87413f7288a441b6e8bd3be04254c2634c4fda337a64accdb7cdc64b95b49519"
+    },
+    {
+      "path": "ProductService/DataAccess/EF/EFInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "c87b99c4fa68d92b3e5660ba3fa9137395380ba4e31a25160bbc0b66bf050795",
+      "solutionSha256": "c87b99c4fa68d92b3e5660ba3fa9137395380ba4e31a25160bbc0b66bf050795"
+    },
+    {
+      "path": "ProductService/DataAccess/EF/ProductDbContext.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "0d08d0f1b94034fa5db55557664ae71af591d79b490e9e5a268e449d4f7a68c8",
+      "solutionSha256": "0d08d0f1b94034fa5db55557664ae71af591d79b490e9e5a268e449d4f7a68c8"
+    },
+    {
+      "path": "ProductService/DataAccess/EF/ProductRepository.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "b677a72919bb9dbd487d9d654adc96940c44e7f9b041d711451138f6979f8766",
+      "solutionSha256": "b677a72919bb9dbd487d9d654adc96940c44e7f9b041d711451138f6979f8766"
+    },
+    {
+      "path": "ProductService/DataAccess/EF/Configuration/ProductConfig.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "f2b6dd309a6e3ca6aaefbea588ba7bd3012225343223c0a64f46ad441fa626f5",
+      "solutionSha256": "f2b6dd309a6e3ca6aaefbea588ba7bd3012225343223c0a64f46ad441fa626f5"
+    },
+    {
+      "path": "ProductService/Domain/Choice.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "e5908a8d7c4d32c2eaa44570494cf6c0359511ecbc3d9aec47887fef44fa1139",
+      "solutionSha256": "e5908a8d7c4d32c2eaa44570494cf6c0359511ecbc3d9aec47887fef44fa1139"
+    },
+    {
+      "path": "ProductService/Domain/Cover.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "077112439e28fef6af1a2ac1b17fb3ea97e8326de16bb96200aee4e4b80e3123",
+      "solutionSha256": "077112439e28fef6af1a2ac1b17fb3ea97e8326de16bb96200aee4e4b80e3123"
+    },
+    {
+      "path": "ProductService/Domain/IProductRepository.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "f8b9c6fa4cbf9eaa239332366a72a6d317c881883c8e66d6321a6d566cdb011a",
+      "solutionSha256": "f8b9c6fa4cbf9eaa239332366a72a6d317c881883c8e66d6321a6d566cdb011a"
+    },
+    {
+      "path": "ProductService/Domain/Product.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "0eb4b017c32a95edf7f7ea3d3af64338d78f6f560e4551e90dd4245f26d185e7",
+      "solutionSha256": "0eb4b017c32a95edf7f7ea3d3af64338d78f6f560e4551e90dd4245f26d185e7"
+    },
+    {
+      "path": "ProductService/Domain/Question.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "e02216f36c2e80a5b3dab985abb611506a8fbb89f30ec079ffea82f90902df5d",
+      "solutionSha256": "e02216f36c2e80a5b3dab985abb611506a8fbb89f30ec079ffea82f90902df5d"
+    },
+    {
+      "path": "ProductService/Init/ApplicationBuilderExtensions.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "47283eb54e371be0967edbd0951f93f3c6af8f8addd257be727bea26a7e2eded",
+      "solutionSha256": "47283eb54e371be0967edbd0951f93f3c6af8f8addd257be727bea26a7e2eded"
+    },
+    {
+      "path": "ProductService/Init/DataLoader.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "108d5b8a3a3c6611258f63c70aa08c0b7efa0abd06084f08c78aa74e66695656",
+      "solutionSha256": "108d5b8a3a3c6611258f63c70aa08c0b7efa0abd06084f08c78aa74e66695656"
+    },
+    {
+      "path": "ProductService/Init/DataLoaderInstaller.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d3e64495ece24f5c559080f66e74816b461f1b3a1239b8e4ca6fda039442a76b",
+      "solutionSha256": "d3e64495ece24f5c559080f66e74816b461f1b3a1239b8e4ca6fda039442a76b"
+    },
+    {
+      "path": "ProductService/Init/DemoProductFactory.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "c7b3a4b9a750cc7c05503dd49013796c0e102711b9b157ae9d43edf148756c22",
+      "solutionSha256": "c7b3a4b9a750cc7c05503dd49013796c0e102711b9b157ae9d43edf148756c22"
+    },
+    {
+      "path": "ProductService/Properties/launchSettings.json",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "bc6e0c6f84b78bad3fb0e8f473c56ea4f9b05275967dc97d64e3b7472dd9c792",
+      "solutionSha256": "bc6e0c6f84b78bad3fb0e8f473c56ea4f9b05275967dc97d64e3b7472dd9c792"
+    },
+    {
+      "path": "ProductService/Queries/FindAllProductsHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "fd39272d103193e8ffdf6bb92e750c675730293a9d772d36ed910ece3756e5f9",
+      "solutionSha256": "fd39272d103193e8ffdf6bb92e750c675730293a9d772d36ed910ece3756e5f9"
+    },
+    {
+      "path": "ProductService/Queries/FindProductByCodeHandler.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4ae582ce153275c50c79abb249431e064c4b382ec5436d3522a70bab3c80e70c",
+      "solutionSha256": "4ae582ce153275c50c79abb249431e064c4b382ec5436d3522a70bab3c80e70c"
+    },
+    {
+      "path": "ProductService/Queries/Mappers/ProductMapper.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "a155c152ff4f4f13809c0e77e90b4f07a48eb5e2e44cbecc106e7dfa5e48e66b",
+      "solutionSha256": "a155c152ff4f4f13809c0e77e90b4f07a48eb5e2e44cbecc106e7dfa5e48e66b"
+    },
+    {
+      "path": "ProductService.Api/ProductService.Api.csproj",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "befdd949f1f866c38fc0ba40de41613821abe136341020b5e3162eb48365343f",
+      "solutionSha256": "befdd949f1f866c38fc0ba40de41613821abe136341020b5e3162eb48365343f"
+    },
+    {
+      "path": "ProductService.Api/Commands/ActivateProductCommand.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "8da2243769eba6abaed8b242ee5f1cdc55834666d659e64717108fa232d540ca",
+      "solutionSha256": "8da2243769eba6abaed8b242ee5f1cdc55834666d659e64717108fa232d540ca"
+    },
+    {
+      "path": "ProductService.Api/Commands/ActivateProductResult.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "e9b3397c3a4b682a09feff643873832d33003c114ef99e6cf6b74fa585237166",
+      "solutionSha256": "e9b3397c3a4b682a09feff643873832d33003c114ef99e6cf6b74fa585237166"
+    },
+    {
+      "path": "ProductService.Api/Commands/CreateProductDraftCommand.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "158feb592b006d74c1b65ea43faaf221b9e5390faa579f071785f8ee6253cc90",
+      "solutionSha256": "158feb592b006d74c1b65ea43faaf221b9e5390faa579f071785f8ee6253cc90"
+    },
+    {
+      "path": "ProductService.Api/Commands/CreateProductDraftResult.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "eeae663186f9867cf5a66ac4b2235e8781b0567ad6a15aa33ed3cb85d3392001",
+      "solutionSha256": "eeae663186f9867cf5a66ac4b2235e8781b0567ad6a15aa33ed3cb85d3392001"
+    },
+    {
+      "path": "ProductService.Api/Commands/DiscontinueProductCommand.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "18d4f4df3d5d34914c135231a6b90ab3363d5b3b31555dc28a2497b4b615d378",
+      "solutionSha256": "18d4f4df3d5d34914c135231a6b90ab3363d5b3b31555dc28a2497b4b615d378"
+    },
+    {
+      "path": "ProductService.Api/Commands/DiscontinueProductResult.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "35b340fc4467a03f5743f72db8398ef8fa8e50a02d8e63000caa80c2b7666828",
+      "solutionSha256": "35b340fc4467a03f5743f72db8398ef8fa8e50a02d8e63000caa80c2b7666828"
+    },
+    {
+      "path": "ProductService.Api/Commands/Dtos/CoverDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "1127beccde81e6a11e4e47ebf59c2409cf63c9bfe3d500eebc20a3ada224bbb6",
+      "solutionSha256": "1127beccde81e6a11e4e47ebf59c2409cf63c9bfe3d500eebc20a3ada224bbb6"
+    },
+    {
+      "path": "ProductService.Api/Commands/Dtos/ProductDraftDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "64bbbba7a41f7c71027d1b8781dd18d95601d43b42e4731e94b95e819b2f81ec",
+      "solutionSha256": "64bbbba7a41f7c71027d1b8781dd18d95601d43b42e4731e94b95e819b2f81ec"
+    },
+    {
+      "path": "ProductService.Api/Commands/Dtos/QuestionDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4b2f82a0cde480f6513f14785718819739cab81f080c8a8265a5ff1ea0285c09",
+      "solutionSha256": "4b2f82a0cde480f6513f14785718819739cab81f080c8a8265a5ff1ea0285c09"
+    },
+    {
+      "path": "ProductService.Api/Queries/FindAllProductsQuery.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "ace719b5ca42b68c0c21789f3f8a28d0b2e088f9d83ca18d8268c387dd9c9477",
+      "solutionSha256": "ace719b5ca42b68c0c21789f3f8a28d0b2e088f9d83ca18d8268c387dd9c9477"
+    },
+    {
+      "path": "ProductService.Api/Queries/FindProductByCodeQuery.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "c1531dfe149acd305a7da76bf4c2a2a7d1eea239670c97fdfdf1b30629afc4c6",
+      "solutionSha256": "c1531dfe149acd305a7da76bf4c2a2a7d1eea239670c97fdfdf1b30629afc4c6"
+    },
+    {
+      "path": "ProductService.Api/Queries/Converters/QuestionDtoConverter.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "307806d3284c096f9a30f2115c8358bc2d6fecf6c9542bb84ea44ff80376795b",
+      "solutionSha256": "307806d3284c096f9a30f2115c8358bc2d6fecf6c9542bb84ea44ff80376795b"
+    },
+    {
+      "path": "ProductService.Api/Queries/Dtos/ChoiceDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "2d8429f4986dfbba5f90ededb964f669a13f0c177c77f2293a198314fd7790e1",
+      "solutionSha256": "2d8429f4986dfbba5f90ededb964f669a13f0c177c77f2293a198314fd7790e1"
+    },
+    {
+      "path": "ProductService.Api/Queries/Dtos/CoverDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "5e5ab244a96b6381c87160ce5cb660cab35df1b4d5a0b03dd9821105b5e6f02c",
+      "solutionSha256": "5e5ab244a96b6381c87160ce5cb660cab35df1b4d5a0b03dd9821105b5e6f02c"
+    },
+    {
+      "path": "ProductService.Api/Queries/Dtos/ProductDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "8b377830add30664a14bebbe2ecfd3637b20f7a9f26da1ce500f33d3f94caf80",
+      "solutionSha256": "8b377830add30664a14bebbe2ecfd3637b20f7a9f26da1ce500f33d3f94caf80"
+    },
+    {
+      "path": "ProductService.Api/Queries/Dtos/QuestionDto.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "285f0f01872fe8e725db828f5ef7fdf1852f05653422a6162709b7e086059b45",
+      "solutionSha256": "285f0f01872fe8e725db828f5ef7fdf1852f05653422a6162709b7e086059b45"
+    },
+    {
+      "path": "ProductService.Test/ProductService.Test.csproj",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "4fe1311331b2b41292da9550c2bd5b625f0b586439907542a843f3477f77d66c",
+      "solutionSha256": "4fe1311331b2b41292da9550c2bd5b625f0b586439907542a843f3477f77d66c"
+    },
+    {
+      "path": "ProductService.Test/Controllers/HttpClientExtensions.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "1de0fe8dda935f0eafff7a6d7176d5ee06c8efaad620eefd5ba2062f7cfc5de2",
+      "solutionSha256": "1de0fe8dda935f0eafff7a6d7176d5ee06c8efaad620eefd5ba2062f7cfc5de2"
+    },
+    {
+      "path": "ProductService.Test/Controllers/ProductControllerTest.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "d484cb64a9e9b2168af2d0c1a84d41985946e13deb8f55c7e4f34707001e82c4",
+      "solutionSha256": "d484cb64a9e9b2168af2d0c1a84d41985946e13deb8f55c7e4f34707001e82c4"
+    },
+    {
+      "path": "ProductService.Test/Domain/ProductTest.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "f12580a4462118db5369b65e96eddf85248280e445478db389d18e2e2608535e",
+      "solutionSha256": "f12580a4462118db5369b65e96eddf85248280e445478db389d18e2e2608535e"
+    },
+    {
+      "path": "ProductService.Test/Handlers/FindProductsHandlersTest.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "9619b63ebd4c07c5a91d879d7e3cc104a66589baf181f98aead94d2264dd9e01",
+      "solutionSha256": "9619b63ebd4c07c5a91d879d7e3cc104a66589baf181f98aead94d2264dd9e01"
+    },
+    {
+      "path": "ProductService.Test/Handlers/ProductMappperTest.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "723c1d1593e34e83d98784842ded550ea3def7839c2e25b1b6eb2c702623988c",
+      "solutionSha256": "723c1d1593e34e83d98784842ded550ea3def7839c2e25b1b6eb2c702623988c"
+    },
+    {
+      "path": "ProductService.Test/TestData/TestProductDtoFactory.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "1158d1830d365d25d170b151f20de2ff2a55161a799ca49193c17e4c0c9709cf",
+      "solutionSha256": "1158d1830d365d25d170b151f20de2ff2a55161a799ca49193c17e4c0c9709cf"
+    },
+    {
+      "path": "ProductService.Test/TestData/TestProductFactory.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "a879542e3ee5d6f4f8c6920361a68db448c3644cb1748d12df9dc8d0aa029e98",
+      "solutionSha256": "a879542e3ee5d6f4f8c6920361a68db448c3644cb1748d12df9dc8d0aa029e98"
+    },
+    {
+      "path": "ProductService.Test/TestData/TestQuestionFactory.cs",
+      "status": "UNCHANGED",
+      "reason": null,
+      "sourceSha256": "dbd516887e4a2684c3450a903ef4f3aee943ce7ce981df510481b23b8802cfb1",
+      "solutionSha256": "dbd516887e4a2684c3450a903ef4f3aee943ce7ce981df510481b23b8802cfb1"
+    }
+  ]
+}

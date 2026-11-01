@@ -1,0 +1,8 @@
+https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029/tree/student/lab7
+
+Bai thuc hanh 7 - Marten, PaymentService va ProductService
+Sinh vien: Truong Dac Kien
+MSSV: 2424802010029
+Lop: D24CNTT05
+Nhanh nop bai: student/lab7
+Huong dan va doi chieu task: README-LAB7.md

@@ -21,7 +21,7 @@ jobs:
         run: |
           docker pull postgres:16
           docker pull docker.elastic.co/elasticsearch/elasticsearch:8.9.2
-      - name: Run lab test suites including authentication regression tests
+      - name: Run lab suites including Marten PostgreSQL persistence and authentication
         run: |
           for project in AuthService.Test ProductService.Test PricingService.Test PolicyService.Test PaymentService.Test DashboardService.Test PricingService.IntegrationTest; do
             dotnet test "$project/$project.csproj" -c Release --no-build --no-restore --logger trx --results-directory ci-test-results -- RunConfiguration.TreatNoTestsAsError=true

@@ -1,0 +1,62 @@
+ Network insurance-lab7_default Creating 
+ Network insurance-lab7_default Creating 
+ Network insurance-lab7_default Created 
+ Network insurance-lab7_default Created 
+ Container insurance-lab7-verify-run-025422bcb218 Creating 
+ Container insurance-lab7-verify-run-025422bcb218 Created 
+Test run for /src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/AuthService.Test.trx
+
+Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 58 ms - AuthService.Test.dll (net8.0)
+Test run for /src/ProductService.Test/bin/Release/net8.0/ProductService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/ProductService.Test.trx
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 1 s - ProductService.Test.dll (net8.0)
+Test run for /src/PricingService.Test/bin/Release/net8.0/PricingService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/PricingService.Test.trx
+
+Passed!  - Failed:     0, Passed:    10, Skipped:     0, Total:    10, Duration: 81 ms - PricingService.Test.dll (net8.0)
+Test run for /src/PolicyService.Test/bin/Release/net8.0/PolicyService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/PolicyService.Test.trx
+
+Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 4 ms - PolicyService.Test.dll (net8.0)
+Test run for /src/PaymentService.Test/bin/Release/net8.0/PaymentService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/PaymentService.Test.trx
+
+Passed!  - Failed:     0, Passed:    11, Skipped:     0, Total:    11, Duration: 7 s - PaymentService.Test.dll (net8.0)
+Test run for /src/DashboardService.Test/bin/Release/net8.0/DashboardService.Test.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/DashboardService.Test.trx
+
+Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 414 ms - DashboardService.Test.dll (net8.0)
+Test run for /src/PricingService.IntegrationTest/bin/Release/net8.0/PricingService.IntegrationTest.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+Results File: /src/submission/lab7/evidence/tests-linux/PricingService.IntegrationTest.trx
+
+Passed!  - Failed:     0, Passed:     2, Skipped:     0, Total:     2, Duration: 80 ms - PricingService.IntegrationTest.dll (net8.0)

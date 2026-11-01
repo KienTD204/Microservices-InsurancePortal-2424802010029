@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-01T15:54:06.1022730+07:00",
+  "result": "PASS",
+  "policyNumber": "LAB7-e78a219f11a24615b53b2e9bdb953986",
+  "checks": [
+    {
+      "name": "Product catalog contains four demo products",
+      "result": "PASS",
+      "details": [
+        "TRI",
+        "HSI",
+        "FAI",
+        "CAR"
+      ]
+    },
+    {
+      "name": "Travel product includes covers and questions",
+      "result": "PASS",
+      "details": {
+        "code": "TRI",
+        "questions": 3,
+        "covers": 2
+      }
+    },
+    {
+      "name": "Payment API reads POLICY_1 from Marten",
+      "result": "PASS",
+      "details": {
+        "balance": {
+          "policyAccountNumber": "231232132131",
+          "policyNumber": "POLICY_1",
+          "balance": 0.0
+        }
+      }
+    },
+    {
+      "name": "Payment API reads POLICY_2 from Marten",
+      "result": "PASS",
+      "details": {
+        "balance": {
+          "policyAccountNumber": "389hfswjfrh2032r",
+          "policyNumber": "POLICY_2",
+          "balance": 0.0
+        }
+      }
+    },
+    {
+      "name": "Payment API reads POLICY_3 from Marten",
+      "result": "PASS",
+      "details": {
+        "balance": {
+          "policyAccountNumber": "0rju130fhj20",
+          "policyNumber": "POLICY_3",
+          "balance": 0.0
+        }
+      }
+    },
+    {
+      "name": "PostgreSQL stores policy account documents as jsonb",
+      "result": "PASS",
+      "details": "jsonb"
+    },
+    {
+      "name": "RabbitMQ PolicyCreated persists an account readable through HTTP",
+      "result": "PASS",
+      "details": {
+        "documentId": "828e6c5b-83b1-4d89-bc6d-59f7621636ae",
+        "response": {
+          "balance": {
+            "policyAccountNumber": "514716d5-3147-45a5-a5a0-b30772e0eee7",
+            "policyNumber": "LAB7-e78a219f11a24615b53b2e9bdb953986",
+            "balance": 0.0
+          }
+        },
+        "owner": {
+          "$id": "8",
+          "LastName": "Verifier",
+          "FirstName": "Lab7"
+        }
+      }
+    },
+    {
+      "name": "RabbitMQ PolicyTerminated persists the refund with decimal precision",
+      "result": "PASS",
+      "details": {
+        "balance": {
+          "policyAccountNumber": "514716d5-3147-45a5-a5a0-b30772e0eee7",
+          "policyNumber": "LAB7-e78a219f11a24615b53b2e9bdb953986",
+          "balance": -12.34
+        }
+      }
+    },
+    {
+      "name": "Service restart preserves the account and does not duplicate demo data",
+      "result": "PASS",
+      "details": {
+        "policyNumber": "LAB7-e78a219f11a24615b53b2e9bdb953986",
+        "demoAccountCount": 3,
+        "documentId": "828e6c5b-83b1-4d89-bc6d-59f7621636ae",
+        "balance": -12.34
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="95d0bd17-76ce-462f-99c6-1853787c472c" name="@17deb418e7ac 2026-11-01 08:48:17" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-01T08:48:17.4133280+00:00" queuing="2026-11-01T08:48:17.4133281+00:00" start="2026-11-01T08:48:16.4748448+00:00" finish="2026-11-01T08:48:17.4232138+00:00" />
+  <TestSettings name="default" id="ac14e0b6-0964-4f8d-8afa-147fafbd5f33">
+    <Deployment runDeploymentRoot="_17deb418e7ac_2026-11-01_08_48_17" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="6bc85ce0-bc05-4d8a-86a3-421ddcaae0f9" testId="c31c6943-528c-69ed-eb0c-1c19259eb37a" testName="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;jimmy.solid&quot;, password: &quot;secret&quot;)" computerName="17deb418e7ac" duration="00:00:00.0006801" startTime="2026-11-01T08:48:17.2912735+00:00" endTime="2026-11-01T08:48:17.2912735+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bc85ce0-bc05-4d8a-86a3-421ddcaae0f9" />
+    <UnitTestResult executionId="4a74ebe1-cda7-4b77-af1b-7759a83bdbbb" testId="1d71d9aa-acb3-46c4-56c0-ceeac01534bc" testName="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;&quot;, password: &quot;secret&quot;)" computerName="17deb418e7ac" duration="00:00:00.0002221" startTime="2026-11-01T08:48:17.2369347+00:00" endTime="2026-11-01T08:48:17.2369348+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a74ebe1-cda7-4b77-af1b-7759a83bdbbb" />
+    <UnitTestResult executionId="fd2199d9-18f8-4b62-ad3f-9c5fb82d5782" testId="a89ac03f-faa4-18ac-20ba-086aeb5707d7" testName="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;admin&quot;, password: &quot;admin&quot;)" computerName="17deb418e7ac" duration="00:00:00.0583077" startTime="2026-11-01T08:48:17.2893958+00:00" endTime="2026-11-01T08:48:17.2893961+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd2199d9-18f8-4b62-ad3f-9c5fb82d5782" />
+    <UnitTestResult executionId="d4134ac8-3ca4-4d56-9513-315e67b90485" testId="4fa79708-f404-46a7-47a5-6a03d2eeb2e4" testName="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;jimmy.solid&quot;, password: &quot;wrong-password&quot;)" computerName="17deb418e7ac" duration="00:00:00.0000755" startTime="2026-11-01T08:48:17.2374143+00:00" endTime="2026-11-01T08:48:17.2374143+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4134ac8-3ca4-4d56-9513-315e67b90485" />
+    <UnitTestResult executionId="fc7e8d59-b6fd-4d91-a959-8f28746dc917" testId="5f154ae6-002e-937a-01fa-3ed886e9a8d4" testName="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;unknown.agent&quot;, password: &quot;secret&quot;)" computerName="17deb418e7ac" duration="00:00:00.0000066" startTime="2026-11-01T08:48:17.2373847+00:00" endTime="2026-11-01T08:48:17.2373848+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc7e8d59-b6fd-4d91-a959-8f28746dc917" />
+    <UnitTestResult executionId="5e14ee86-a3e1-4371-9de8-0c4be4b3e1fa" testId="ba27f143-aa90-08e1-a88f-5c94f3c99cc3" testName="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;jimmy.solid&quot;, password: null)" computerName="17deb418e7ac" duration="00:00:00.0000054" startTime="2026-11-01T08:48:17.2374336+00:00" endTime="2026-11-01T08:48:17.2374336+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e14ee86-a3e1-4371-9de8-0c4be4b3e1fa" />
+    <UnitTestResult executionId="8438bbea-1ce4-4c45-ba59-99c08616c156" testId="6952b7b9-5227-83c6-2756-17e9541fe10b" testName="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;danny.solid&quot;, password: &quot;secret&quot;)" computerName="17deb418e7ac" duration="00:00:00.0011928" startTime="2026-11-01T08:48:17.2905033+00:00" endTime="2026-11-01T08:48:17.2905035+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8438bbea-1ce4-4c45-ba59-99c08616c156" />
+    <UnitTestResult executionId="2faf1710-0d38-4794-bda7-9eae9b174a03" testId="7f565879-dca3-9184-a386-455d05dba5d4" testName="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: null, password: &quot;secret&quot;)" computerName="17deb418e7ac" duration="00:00:00.0138722" startTime="2026-11-01T08:48:17.2327556+00:00" endTime="2026-11-01T08:48:17.2327689+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2faf1710-0d38-4794-bda7-9eae9b174a03" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;admin&quot;, password: &quot;admin&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="a89ac03f-faa4-18ac-20ba-086aeb5707d7">
+      <Execution id="fd2199d9-18f8-4b62-ad3f-9c5fb82d5782" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Valid_credentials_issue_a_signed_JWT_with_agent_identity" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;unknown.agent&quot;, password: &quot;secret&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="5f154ae6-002e-937a-01fa-3ed886e9a8d4">
+      <Execution id="fc7e8d59-b6fd-4d91-a959-8f28746dc917" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Invalid_credentials_are_rejected_without_an_exception" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;danny.solid&quot;, password: &quot;secret&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="6952b7b9-5227-83c6-2756-17e9541fe10b">
+      <Execution id="8438bbea-1ce4-4c45-ba59-99c08616c156" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Valid_credentials_issue_a_signed_JWT_with_agent_identity" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Valid_credentials_issue_a_signed_JWT_with_agent_identity(login: &quot;jimmy.solid&quot;, password: &quot;secret&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="c31c6943-528c-69ed-eb0c-1c19259eb37a">
+      <Execution id="6bc85ce0-bc05-4d8a-86a3-421ddcaae0f9" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Valid_credentials_issue_a_signed_JWT_with_agent_identity" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;&quot;, password: &quot;secret&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="1d71d9aa-acb3-46c4-56c0-ceeac01534bc">
+      <Execution id="4a74ebe1-cda7-4b77-af1b-7759a83bdbbb" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Invalid_credentials_are_rejected_without_an_exception" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;jimmy.solid&quot;, password: null)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="ba27f143-aa90-08e1-a88f-5c94f3c99cc3">
+      <Execution id="5e14ee86-a3e1-4371-9de8-0c4be4b3e1fa" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Invalid_credentials_are_rejected_without_an_exception" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: &quot;jimmy.solid&quot;, password: &quot;wrong-password&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="4fa79708-f404-46a7-47a5-6a03d2eeb2e4">
+      <Execution id="d4134ac8-3ca4-4d56-9513-315e67b90485" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Invalid_credentials_are_rejected_without_an_exception" />
+    </UnitTest>
+    <UnitTest name="AuthService.Test.AuthenticationTests.Invalid_credentials_are_rejected_without_an_exception(login: null, password: &quot;secret&quot;)" storage="/src/authservice.test/bin/release/net8.0/authservice.test.dll" id="7f565879-dca3-9184-a386-455d05dba5d4">
+      <Execution id="2faf1710-0d38-4794-bda7-9eae9b174a03" />
+      <TestMethod codeBase="/src/AuthService.Test/bin/Release/net8.0/AuthService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AuthService.Test.AuthenticationTests" name="Invalid_credentials_are_rejected_without_an_exception" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c31c6943-528c-69ed-eb0c-1c19259eb37a" executionId="6bc85ce0-bc05-4d8a-86a3-421ddcaae0f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d71d9aa-acb3-46c4-56c0-ceeac01534bc" executionId="4a74ebe1-cda7-4b77-af1b-7759a83bdbbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a89ac03f-faa4-18ac-20ba-086aeb5707d7" executionId="fd2199d9-18f8-4b62-ad3f-9c5fb82d5782" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fa79708-f404-46a7-47a5-6a03d2eeb2e4" executionId="d4134ac8-3ca4-4d56-9513-315e67b90485" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f154ae6-002e-937a-01fa-3ed886e9a8d4" executionId="fc7e8d59-b6fd-4d91-a959-8f28746dc917" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba27f143-aa90-08e1-a88f-5c94f3c99cc3" executionId="5e14ee86-a3e1-4371-9de8-0c4be4b3e1fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6952b7b9-5227-83c6-2756-17e9541fe10b" executionId="8438bbea-1ce4-4c45-ba59-99c08616c156" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f565879-dca3-9184-a386-455d05dba5d4" executionId="2faf1710-0d38-4794-bda7-9eae9b174a03" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.5.3.1+6b60a9e56a (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.07]   Discovering: AuthService.Test
+[xUnit.net 00:00:00.13]   Discovered:  AuthService.Test
+[xUnit.net 00:00:00.13]   Starting:    AuthService.Test
+[xUnit.net 00:00:00.28]   Finished:    AuthService.Test
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

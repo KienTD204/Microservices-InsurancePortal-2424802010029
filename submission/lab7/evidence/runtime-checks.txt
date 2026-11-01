@@ -1,0 +1,15 @@
+ Container insurance-lab7-payment-1 Restarting 
+ Container insurance-lab7-payment-1 Started 
+
+name                                                                   result
+----                                                                   ------
+Product catalog contains four demo products                            PASS
+Travel product includes covers and questions                           PASS
+Payment API reads POLICY_1 from Marten                                 PASS
+Payment API reads POLICY_2 from Marten                                 PASS
+Payment API reads POLICY_3 from Marten                                 PASS
+PostgreSQL stores policy account documents as jsonb                    PASS
+RabbitMQ PolicyCreated persists an account readable through HTTP       PASS
+RabbitMQ PolicyTerminated persists the refund with decimal precision   PASS
+Service restart preserves the account and does not duplicate demo data PASS
+

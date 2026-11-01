@@ -1,0 +1,48 @@
+ Image insurance-lab7:verified Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 653B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 538B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0.425
+#3 DONE 0.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 150B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM mcr.microsoft.com/dotnet/sdk:8.0.425@sha256:ec9c0a0dc5f60adc2065762050638dd5ed5facfc53716d4580a42d86027c8e80
+#5 resolve mcr.microsoft.com/dotnet/sdk:8.0.425@sha256:ec9c0a0dc5f60adc2065762050638dd5ed5facfc53716d4580a42d86027c8e80 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 9.55MB 0.5s done
+#6 DONE 0.5s
+
+#7 [2/4] WORKDIR /src
+#7 CACHED
+
+#8 [3/4] COPY . .
+#8 DONE 0.3s
+
+#9 [4/4] RUN dotnet build DotNetMicroservicesPoc.sln -c Release --nologo > /tmp/lab7-build-linux.txt 2>&1 || (cat /tmp/lab7-build-linux.txt && exit 1)
+#9 DONE 46.8s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 63.5s done
+#10 exporting manifest sha256:af108ac1c622feeb9a0dd8211ca5c8ce246cd43e9b60cf2769145b84cf9b12fe 0.0s done
+#10 exporting config sha256:d2cc3e2560566ecb395088c3fea59d78f74ce10b7a2b7106bee43c2305f3cba1 0.0s done
+#10 exporting attestation manifest sha256:f7248fa59bb7762809e3fd28ffd7fe9c357910eb1552aeda9574f7db9fa8a5d8 0.0s done
+#10 exporting manifest list sha256:33724e009da933766850b096bff1df5c1b9a95c36b5a1a004a472a1dea44157c 0.0s done
+#10 naming to docker.io/library/insurance-lab7:verified done
+#10 unpacking to docker.io/library/insurance-lab7:verified
+#10 unpacking to docker.io/library/insurance-lab7:verified 15.5s done
+#10 DONE 79.2s
+
+#11 resolving provenance for metadata file
+#11 DONE 0.0s
+ Image insurance-lab7:verified Built 
