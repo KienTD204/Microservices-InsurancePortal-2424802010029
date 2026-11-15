@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="934fff0f-4a75-44c0-9d3e-c183790b2bb5" name="kient@KA_IEN_KIEN 2026-11-15 13:51:54" runUser="KA_IEN_KIEN\kient" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-15T13:51:54.9135252+07:00" queuing="2026-11-15T13:51:54.9135257+07:00" start="2026-11-15T13:51:48.9405965+07:00" finish="2026-11-15T13:51:54.9206393+07:00" />
+  <TestSettings name="default" id="ad2b1a71-35a0-4d13-a2a3-435fad406efd">
+    <Deployment runDeploymentRoot="kient_KA_IEN_KIEN_2026-11-15_13_51_54" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2e39ddb5-e82a-4dff-b797-007d5d4d4261" testId="4c6e493e-e965-6fa4-4484-0bee64d52888" testName="PolicyService.Test.Domain.OfferTest.CannotBuyAlreadyConvertedOffer" computerName="KA_IEN_KIEN" duration="00:00:00.0006419" startTime="2026-11-15T13:51:54.8281594+07:00" endTime="2026-11-15T13:51:54.8281595+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e39ddb5-e82a-4dff-b797-007d5d4d4261" />
+    <UnitTestResult executionId="3e3698be-d383-4ac9-b21b-1ad0cc8e8151" testId="6db7dad1-c7e4-399c-a94c-fd24e38755a4" testName="PolicyService.Test.Domain.OfferTest.CanCreateOfferBasedOnPrice" computerName="KA_IEN_KIEN" duration="00:00:00.0001394" startTime="2026-11-15T13:51:54.8283125+07:00" endTime="2026-11-15T13:51:54.8283125+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e3698be-d383-4ac9-b21b-1ad0cc8e8151" />
+    <UnitTestResult executionId="a052decd-a286-4ac2-8c95-e3209c6b53b3" testId="85a0b269-b5bd-7181-00bc-9f6018ec9f42" testName="PolicyService.Test.Domain.OfferTest.CanCreateOfferOnBehalfOfAgentBasedOnPrice" computerName="KA_IEN_KIEN" duration="00:00:00.0002677" startTime="2026-11-15T13:51:54.8282115+07:00" endTime="2026-11-15T13:51:54.8282116+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a052decd-a286-4ac2-8c95-e3209c6b53b3" />
+    <UnitTestResult executionId="5e8c6a54-be7b-4b69-9715-4597bd37a267" testId="6209f48f-d5fb-8ce1-c79e-3919e74db878" testName="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOffer" computerName="KA_IEN_KIEN" duration="00:00:00.9286399" startTime="2026-11-15T13:51:54.8245440+07:00" endTime="2026-11-15T13:51:54.8245704+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e8c6a54-be7b-4b69-9715-4597bd37a267" />
+    <UnitTestResult executionId="37e0c0c7-ca83-4320-a2c7-01060a9721fb" testId="60c19578-2798-aae3-d55a-48ddb9c4b6a7" testName="PolicyService.Test.Domain.PolicyTerminationTest.CanTerminateActivePolicyInTheMiddleOfCoverPeriod" computerName="KA_IEN_KIEN" duration="00:00:00.0003172" startTime="2026-11-15T13:51:54.8308647+07:00" endTime="2026-11-15T13:51:54.8308648+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37e0c0c7-ca83-4320-a2c7-01060a9721fb" />
+    <UnitTestResult executionId="d6dba7c8-3c0d-4978-a007-e2b1cd9f3088" testId="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06" testName="PolicyService.Test.Domain.PolicyTerminationTest.CannotTerminateTerminatedPolicy" computerName="KA_IEN_KIEN" duration="00:00:00.0025198" startTime="2026-11-15T13:51:54.8304586+07:00" endTime="2026-11-15T13:51:54.8304590+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6dba7c8-3c0d-4978-a007-e2b1cd9f3088" />
+    <UnitTestResult executionId="3528c0a4-d4db-4aa7-8c4a-524bff7cc5e5" testId="45ae15c0-95bf-6398-e3a6-e91ee01082ac" testName="PolicyService.Test.Domain.OfferTest.CannotBuyExpiredOffer" computerName="KA_IEN_KIEN" duration="00:00:00.0002011" startTime="2026-11-15T13:51:54.8282673+07:00" endTime="2026-11-15T13:51:54.8282674+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3528c0a4-d4db-4aa7-8c4a-524bff7cc5e5" />
+    <UnitTestResult executionId="d3d13e33-291c-43c1-a51c-e190448a3ccf" testId="9e720e59-535c-2e0c-fc32-5c2943d5619d" testName="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOfferFromAgent" computerName="KA_IEN_KIEN" duration="00:00:00.0009827" startTime="2026-11-15T13:51:54.8275084+07:00" endTime="2026-11-15T13:51:54.8275085+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3d13e33-291c-43c1-a51c-e190448a3ccf" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CannotBuyAlreadyConvertedOffer" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="4c6e493e-e965-6fa4-4484-0bee64d52888">
+      <Execution id="2e39ddb5-e82a-4dff-b797-007d5d4d4261" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CannotBuyAlreadyConvertedOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanCreateOfferBasedOnPrice" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="6db7dad1-c7e4-399c-a94c-fd24e38755a4">
+      <Execution id="3e3698be-d383-4ac9-b21b-1ad0cc8e8151" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanCreateOfferBasedOnPrice" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.PolicyTerminationTest.CanTerminateActivePolicyInTheMiddleOfCoverPeriod" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="60c19578-2798-aae3-d55a-48ddb9c4b6a7">
+      <Execution id="37e0c0c7-ca83-4320-a2c7-01060a9721fb" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.PolicyTerminationTest" name="CanTerminateActivePolicyInTheMiddleOfCoverPeriod" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanCreateOfferOnBehalfOfAgentBasedOnPrice" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="85a0b269-b5bd-7181-00bc-9f6018ec9f42">
+      <Execution id="a052decd-a286-4ac2-8c95-e3209c6b53b3" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanCreateOfferOnBehalfOfAgentBasedOnPrice" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOfferFromAgent" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="9e720e59-535c-2e0c-fc32-5c2943d5619d">
+      <Execution id="d3d13e33-291c-43c1-a51c-e190448a3ccf" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanBuyNewNonExpiredOfferFromAgent" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CannotBuyExpiredOffer" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="45ae15c0-95bf-6398-e3a6-e91ee01082ac">
+      <Execution id="3528c0a4-d4db-4aa7-8c4a-524bff7cc5e5" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CannotBuyExpiredOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.OfferTest.CanBuyNewNonExpiredOffer" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="6209f48f-d5fb-8ce1-c79e-3919e74db878">
+      <Execution id="5e8c6a54-be7b-4b69-9715-4597bd37a267" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.OfferTest" name="CanBuyNewNonExpiredOffer" />
+    </UnitTest>
+    <UnitTest name="PolicyService.Test.Domain.PolicyTerminationTest.CannotTerminateTerminatedPolicy" storage="c:\users\kient\appdata\local\claude-data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\policyservice.test\bin\release\net8.0\policyservice.test.dll" id="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06">
+      <Execution id="d6dba7c8-3c0d-4978-a007-e2b1cd9f3088" />
+      <TestMethod codeBase="C:\Users\kient\AppData\Local\Claude-Data\claude_pzs8sxrjxfjjc\scratch-workspaces\f35949d7-d8ec-45cb-b2e5-9d2e13434484\8987aa71-f0b9-41c0-81b9-429ffdf17c96\scratch-2026-11-15-42ba50\repo\PolicyService.Test\bin\Release\net8.0\PolicyService.Test.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="PolicyService.Test.Domain.PolicyTerminationTest" name="CannotTerminateTerminatedPolicy" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="4c6e493e-e965-6fa4-4484-0bee64d52888" executionId="2e39ddb5-e82a-4dff-b797-007d5d4d4261" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6db7dad1-c7e4-399c-a94c-fd24e38755a4" executionId="3e3698be-d383-4ac9-b21b-1ad0cc8e8151" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85a0b269-b5bd-7181-00bc-9f6018ec9f42" executionId="a052decd-a286-4ac2-8c95-e3209c6b53b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6209f48f-d5fb-8ce1-c79e-3919e74db878" executionId="5e8c6a54-be7b-4b69-9715-4597bd37a267" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="60c19578-2798-aae3-d55a-48ddb9c4b6a7" executionId="37e0c0c7-ca83-4320-a2c7-01060a9721fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f8b8dca-9495-bdb8-6ac1-72d6f4c2ef06" executionId="d6dba7c8-3c0d-4978-a007-e2b1cd9f3088" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45ae15c0-95bf-6398-e3a6-e91ee01082ac" executionId="3528c0a4-d4db-4aa7-8c4a-524bff7cc5e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e720e59-535c-2e0c-fc32-5c2943d5619d" executionId="d3d13e33-291c-43c1-a51c-e190448a3ccf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.1+ce9211e970 (64-bit .NET 8.0.31)&#xD;
+[xUnit.net 00:00:02.30]   Discovering: PolicyService.Test&#xD;
+[xUnit.net 00:00:02.39]   Discovered:  PolicyService.Test&#xD;
+[xUnit.net 00:00:02.39]   Starting:    PolicyService.Test&#xD;
+[xUnit.net 00:00:03.39]   Finished:    PolicyService.Test&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

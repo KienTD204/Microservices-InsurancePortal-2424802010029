@@ -1,5 +1,7 @@
 # ASCLAB .NET Core PoC - LAB Insurance Sales Portal
 
+**Bài thực hành 9 (15/11/2026):** [Triển khai hệ thống - PolicyService và PolicySearchService](README-LAB9.md) - nhánh `student/lab9` | [Tệp link nộp bài](submission/lab9/2424802010029_TruongDacKien_BTH9_GitHub.txt).
+
 **Bài thực hành 7 (01/11/2026):** [Marten, PaymentService và ProductService](README-LAB7.md) - nhánh `student/lab7` | [Tệp link nộp bài](submission/lab7/2424802010029_TruongDacKien_BTH7_GitHub.txt).
 
 **Bài thực hành 6 (25/10/2026):** [Gateway Ocelot, Auth, Chat và Dashboard](README-LAB6.md) - nhánh `student/lab6`.

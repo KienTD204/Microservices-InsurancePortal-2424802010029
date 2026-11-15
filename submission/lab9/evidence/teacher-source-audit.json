@@ -1,0 +1,720 @@
+﻿{
+    "checkedAt":  "2026-11-15T13:52:13.0676327+07:00",
+    "result":  "PASS",
+    "baseCommit":  "b2b990c",
+    "normalization":  "UTF-8 text, CRLF normalized to LF; original archives are preserved byte for byte.",
+    "totalFiles":  97,
+    "summary":  [
+                    {
+                        "status":  "UNCHANGED",
+                        "count":  94
+                    },
+                    {
+                        "status":  "ADAPTED",
+                        "count":  3
+                    }
+                ],
+    "archives":  [
+                     {
+                         "name":  "PolicyService.rar",
+                         "sha256":  "19bb8d320ebf6b982dcca591ed171ae73859dfe9bff81e24a822dcc9d1f48531"
+                     },
+                     {
+                         "name":  "PolicyService.Api.rar",
+                         "sha256":  "d859239e88716a3aa113164d78b457b9fd18491336aeacd2314953dae6de0a8e"
+                     },
+                     {
+                         "name":  "PolicyService.Test.rar",
+                         "sha256":  "925a41c40bb004327a8fab00703794d6cd13742e8f2c829d1a220975ab8714c2"
+                     },
+                     {
+                         "name":  "PolicySearchService.rar",
+                         "sha256":  "48dd204c1ae729279d848da3b1f60417906a2616708cab109d08e11a6f8432f7"
+                     },
+                     {
+                         "name":  "PolicySearchService.Api.rar",
+                         "sha256":  "a4b00a4e16388085dfdc91c1f0073d221ff8a667722e3af7b60503e11d64677b"
+                     }
+                 ],
+    "files":  [
+                  {
+                      "path":  "PolicyService/appsettings.Development.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a",
+                      "solutionSha256":  "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a"
+                  },
+                  {
+                      "path":  "PolicyService/appsettings.docker.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e00a44f267a2292075912d28e77427a092e65077a756d407eabde4252b5ac274",
+                      "solutionSha256":  "e00a44f267a2292075912d28e77427a092e65077a756d407eabde4252b5ac274"
+                  },
+                  {
+                      "path":  "PolicyService/appsettings.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "9256b555777c0c5a85d8e79d51a8ac0b0e5df8577195e8247bf014f42b8d6941",
+                      "solutionSha256":  "9256b555777c0c5a85d8e79d51a8ac0b0e5df8577195e8247bf014f42b8d6941"
+                  },
+                  {
+                      "path":  "PolicyService/Dockerfile",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "6e2dde543dcc5907c5ce1c22d29d97ea743fe633d80fbe81196577b320e85790",
+                      "solutionSha256":  "6e2dde543dcc5907c5ce1c22d29d97ea743fe633d80fbe81196577b320e85790"
+                  },
+                  {
+                      "path":  "PolicyService/hosting.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "db449d2e17195a2eb36215819a0b9fd67693716dad69ef52e9373a8095fde09d",
+                      "solutionSha256":  "db449d2e17195a2eb36215819a0b9fd67693716dad69ef52e9373a8095fde09d"
+                  },
+                  {
+                      "path":  "PolicyService/PolicyService.csproj",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "101777c55a190e6c25298567c421502d69558e50054af5e137d778743d13208d",
+                      "solutionSha256":  "101777c55a190e6c25298567c421502d69558e50054af5e137d778743d13208d"
+                  },
+                  {
+                      "path":  "PolicyService/Program.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "1bb6154ce0c7505f2374314d1ce1a3b8fba53fa2812d4c3c7a34c97d2a0b5303",
+                      "solutionSha256":  "1bb6154ce0c7505f2374314d1ce1a3b8fba53fa2812d4c3c7a34c97d2a0b5303"
+                  },
+                  {
+                      "path":  "PolicyService/Startup.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "17b224b86f564acc1e8fb19f09f7532e608cff82656d63cb70c77f0c0c9eb8d0",
+                      "solutionSha256":  "17b224b86f564acc1e8fb19f09f7532e608cff82656d63cb70c77f0c0c9eb8d0"
+                  },
+                  {
+                      "path":  "PolicyService/Commands/CreateOfferByAgentHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "bc021b6df9e198e6800452d4702afa2bf3c3fabda9c8053e91040985dd6df6d5",
+                      "solutionSha256":  "bc021b6df9e198e6800452d4702afa2bf3c3fabda9c8053e91040985dd6df6d5"
+                  },
+                  {
+                      "path":  "PolicyService/Commands/CreateOfferHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "cc23248f5855491b1d237be9801f59b5c6d166e0f791001f80ba289fbe51524a",
+                      "solutionSha256":  "cc23248f5855491b1d237be9801f59b5c6d166e0f791001f80ba289fbe51524a"
+                  },
+                  {
+                      "path":  "PolicyService/Commands/CreatePolicyHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "1e0033b5ba03c0ebbada72c5161fdbd03ea9a5c090680ac99895565bc5292a8d",
+                      "solutionSha256":  "1e0033b5ba03c0ebbada72c5161fdbd03ea9a5c090680ac99895565bc5292a8d"
+                  },
+                  {
+                      "path":  "PolicyService/Commands/TerminatePolicyHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "151b01975caa9aed2251b9635990e73db5d07ffd692df7be8d3c29eb64896b76",
+                      "solutionSha256":  "151b01975caa9aed2251b9635990e73db5d07ffd692df7be8d3c29eb64896b76"
+                  },
+                  {
+                      "path":  "PolicyService/Controllers/ErrorController.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "12d714407c7e59c0d6cca64f93b52e71113c5909bc23e818e5a247171b04d151",
+                      "solutionSha256":  "12d714407c7e59c0d6cca64f93b52e71113c5909bc23e818e5a247171b04d151"
+                  },
+                  {
+                      "path":  "PolicyService/Controllers/OfferController.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2e1f1c2eb06b8d03a2f671c31fc468a64c50f1cc898a803f6c204217494f183e",
+                      "solutionSha256":  "2e1f1c2eb06b8d03a2f671c31fc468a64c50f1cc898a803f6c204217494f183e"
+                  },
+                  {
+                      "path":  "PolicyService/Controllers/PolicyController.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "1891b55bb9a3869959fe4b529145ca186b4be5cc53162cd159123b647b11459c",
+                      "solutionSha256":  "1891b55bb9a3869959fe4b529145ca186b4be5cc53162cd159123b647b11459c"
+                  },
+                  {
+                      "path":  "PolicyService/DataAccess/NHibernate/NHibernateInstaller.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0d47f663b8f1c57e5951a8a15545879e5ac4b8ef2d863717f4629bb28a238df0",
+                      "solutionSha256":  "0d47f663b8f1c57e5951a8a15545879e5ac4b8ef2d863717f4629bb28a238df0"
+                  },
+                  {
+                      "path":  "PolicyService/DataAccess/NHibernate/OfferRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "ee74116489a2f9365f5f63639f30603a7a6d4a11c1f3f2670a45c56b98d21486",
+                      "solutionSha256":  "ee74116489a2f9365f5f63639f30603a7a6d4a11c1f3f2670a45c56b98d21486"
+                  },
+                  {
+                      "path":  "PolicyService/DataAccess/NHibernate/PolicyRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "bc1aa3f3a688cb3fe5b797acb1217d329d3efac0ccc889ffbf571a7521723014",
+                      "solutionSha256":  "bc1aa3f3a688cb3fe5b797acb1217d329d3efac0ccc889ffbf571a7521723014"
+                  },
+                  {
+                      "path":  "PolicyService/DataAccess/NHibernate/UnitOfWork.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "3b7ad8cee02cd20621863533ed5ddaa348e4920cebc0c097e3f3e2de78d7f062",
+                      "solutionSha256":  "3b7ad8cee02cd20621863533ed5ddaa348e4920cebc0c097e3f3e2de78d7f062"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Address.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "4fe0cf26edb22d3e361d9c215c108da2fabdce24a7f28314cab0875edcfff980",
+                      "solutionSha256":  "4fe0cf26edb22d3e361d9c215c108da2fabdce24a7f28314cab0875edcfff980"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Answer.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "eaefba534130d90c4d1539471329d7fd99b77fa788ae59771ce2561339b85104",
+                      "solutionSha256":  "eaefba534130d90c4d1539471329d7fd99b77fa788ae59771ce2561339b85104"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Cover.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "217359ec32806dc9a2d31e19301e77e47576ed8a4bcb7e84977f9ee6ef05ee9c",
+                      "solutionSha256":  "217359ec32806dc9a2d31e19301e77e47576ed8a4bcb7e84977f9ee6ef05ee9c"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/IOfferRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "92d4c70d85a6f11e0b3ee0c6cc0558c0f0f3f60d9844815ad333b0c348f8fb9d",
+                      "solutionSha256":  "92d4c70d85a6f11e0b3ee0c6cc0558c0f0f3f60d9844815ad333b0c348f8fb9d"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/IPolicyRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "53e99cd260a8eb83141313d7410bfde29368827787abea0b08dde2182606f185",
+                      "solutionSha256":  "53e99cd260a8eb83141313d7410bfde29368827787abea0b08dde2182606f185"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/IPricingService.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "1a27d10bd2d9d9fd05abf47436c02ff6146d7eb2c7fcada54862b43092c168c7",
+                      "solutionSha256":  "1a27d10bd2d9d9fd05abf47436c02ff6146d7eb2c7fcada54862b43092c168c7"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/IUnitOfWork.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "b338244c7abce74279a2c9994f0187e847116c4847e7c62082bef21b87b8764a",
+                      "solutionSha256":  "b338244c7abce74279a2c9994f0187e847116c4847e7c62082bef21b87b8764a"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Offer.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "931c95a3049baa16a59420aebb738d9a62b2e071ab8ff21172b166dbb390d553",
+                      "solutionSha256":  "931c95a3049baa16a59420aebb738d9a62b2e071ab8ff21172b166dbb390d553"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Offer.hbm.xml",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "6b89d43cb0f9ae138e289678fe18d41216270ecf7a8aa4e1649bb10848c219c3",
+                      "solutionSha256":  "6b89d43cb0f9ae138e289678fe18d41216270ecf7a8aa4e1649bb10848c219c3"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Policy.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "a2267314183fb6fcf230189013d53825251cbac9d7e925aa7ff3497dc30b6864",
+                      "solutionSha256":  "a2267314183fb6fcf230189013d53825251cbac9d7e925aa7ff3497dc30b6864"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Policy.hbm.xml",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0ade437e9635ea10f483d3805ada6f666939df4f6292fb22ba27187938133c85",
+                      "solutionSha256":  "0ade437e9635ea10f483d3805ada6f666939df4f6292fb22ba27187938133c85"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/PolicyCover.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "857e5289ec63e74c7aba8c438089c1ec8216a8524b3b81115a6f91aa062b1814",
+                      "solutionSha256":  "857e5289ec63e74c7aba8c438089c1ec8216a8524b3b81115a6f91aa062b1814"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/PolicyHolder.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0bc83e2efafac969a882045e20995d11ebd66620cf3dace92b5bb4c5fc965c04",
+                      "solutionSha256":  "0bc83e2efafac969a882045e20995d11ebd66620cf3dace92b5bb4c5fc965c04"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/PolicyTerminationResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "ec07d01fa7b561adf9e6c6dd9581e16b9620e8a45909711d5759c19de3c91050",
+                      "solutionSha256":  "ec07d01fa7b561adf9e6c6dd9581e16b9620e8a45909711d5759c19de3c91050"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/PolicyVersion.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "327d117d75ee6ec1d1200504d6344622c4d59e75ea5b57606e749846d6af4fb3",
+                      "solutionSha256":  "327d117d75ee6ec1d1200504d6344622c4d59e75ea5b57606e749846d6af4fb3"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/PolicyVersions.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "9a762c11bbdfa8d0c891ae1166d240c24cc52bab4c05ade34e49229f5bb0f774",
+                      "solutionSha256":  "9a762c11bbdfa8d0c891ae1166d240c24cc52bab4c05ade34e49229f5bb0f774"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/Price.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "7b277ab0b3d9caa7e85bbd0b36eb533326dfde905769e9cdc0de98f039a01448",
+                      "solutionSha256":  "7b277ab0b3d9caa7e85bbd0b36eb533326dfde905769e9cdc0de98f039a01448"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/SysTime.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "ef3d9b49958f44c19a672ebe611839ef3a7f8302fe220fab87325cbc221639b2",
+                      "solutionSha256":  "ef3d9b49958f44c19a672ebe611839ef3a7f8302fe220fab87325cbc221639b2"
+                  },
+                  {
+                      "path":  "PolicyService/Domain/ValidityPeriod.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "27b656acb533c485a62cb4babe0feacefaa91672c3fce387e338504890187064",
+                      "solutionSha256":  "27b656acb533c485a62cb4babe0feacefaa91672c3fce387e338504890187064"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/IEventPublisher.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "9bb2838d24496b71ed1bb6fda2b0567815d7f75650ef38fd524ab5e3e946e77c",
+                      "solutionSha256":  "9bb2838d24496b71ed1bb6fda2b0567815d7f75650ef38fd524ab5e3e946e77c"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/RabbitInstaller.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "4ead51e768a693a9745bf5f2068f1f040e6c4050935f56a8e967dfd0df93e6cd",
+                      "solutionSha256":  "4ead51e768a693a9745bf5f2068f1f040e6c4050935f56a8e967dfd0df93e6cd"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/Outbox/Message.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "ba25a5410903f1763d3bec6d5d132bd50fc1c060eae6abce70b60e4569c7278e",
+                      "solutionSha256":  "ba25a5410903f1763d3bec6d5d132bd50fc1c060eae6abce70b60e4569c7278e"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/Outbox/Message.hbm.xml",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "aa4b87c2394513a7d117361624a28348d976cae394dd6980e3c2d000c7c7f7a8",
+                      "solutionSha256":  "aa4b87c2394513a7d117361624a28348d976cae394dd6980e3c2d000c7c7f7a8"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/Outbox/Outbox.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "730f03b1197ce62bbd722727f71375b32eee64aece677c25bacded1e2ef08c29",
+                      "solutionSha256":  "730f03b1197ce62bbd722727f71375b32eee64aece677c25bacded1e2ef08c29"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/Outbox/OutboxEventPublisher.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2315abcca29c157e95d12f8bc4103ce56dba10a70666c286b5112c7d86b3f9a4",
+                      "solutionSha256":  "2315abcca29c157e95d12f8bc4103ce56dba10a70666c286b5112c7d86b3f9a4"
+                  },
+                  {
+                      "path":  "PolicyService/Messaging/RabbitMq/Outbox/OutboxSendingService.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "786e8875960c0b7ab19f2b33ab6c72603b174ea64067471e01c3d62c874e971a",
+                      "solutionSha256":  "786e8875960c0b7ab19f2b33ab6c72603b174ea64067471e01c3d62c874e971a"
+                  },
+                  {
+                      "path":  "PolicyService/Properties/launchSettings.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "050e9c045310d2afb14005e461f7d3d5d3e8d81d7a43e1f8fcdca5d6f6c0d059",
+                      "solutionSha256":  "050e9c045310d2afb14005e461f7d3d5d3e8d81d7a43e1f8fcdca5d6f6c0d059"
+                  },
+                  {
+                      "path":  "PolicyService/Queries/GetPolicyDetailsHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "76c18961958689cbce186be822188c2ac190904899dade6b24ac6030689fb7d8",
+                      "solutionSha256":  "76c18961958689cbce186be822188c2ac190904899dade6b24ac6030689fb7d8"
+                  },
+                  {
+                      "path":  "PolicyService/RestClients/PricingClient.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "23eec092564f6ffbfd5658b42368bc0fc3afb136b2c1d408e6e62aef0b5ac9f9",
+                      "solutionSha256":  "23eec092564f6ffbfd5658b42368bc0fc3afb136b2c1d408e6e62aef0b5ac9f9"
+                  },
+                  {
+                      "path":  "PolicyService/RestClients/PricingService.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "352d30711c9691601ba198b310bd05e5e07c3ea98b3da0bbdac89f50035efad2",
+                      "solutionSha256":  "352d30711c9691601ba198b310bd05e5e07c3ea98b3da0bbdac89f50035efad2"
+                  },
+                  {
+                      "path":  "PolicyService/RestClients/RestClientsInstaller.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2753a6b51f2d6f1dfed8b2cb6d9925b8c293cd2fd42a5843b9a329c39ec8d03c",
+                      "solutionSha256":  "2753a6b51f2d6f1dfed8b2cb6d9925b8c293cd2fd42a5843b9a329c39ec8d03c"
+                  },
+                  {
+                      "path":  "PolicyService.Api/PolicyService.Api.csproj",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2f1447dcf01835ddb4e5fdd2d05129b43a2ee82d1074cf4731f2af161a4c9785",
+                      "solutionSha256":  "2f1447dcf01835ddb4e5fdd2d05129b43a2ee82d1074cf4731f2af161a4c9785"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/CreateOfferCommand.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "cb8f79b3b57843ec166af6d532b0f78cfb292c0dc8443e90af6ac652468b86f1",
+                      "solutionSha256":  "cb8f79b3b57843ec166af6d532b0f78cfb292c0dc8443e90af6ac652468b86f1"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/CreateOfferResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "a37ab1696877eea1dfd959a01b1115bb59c637d4c2717689b01ac9981785ed84",
+                      "solutionSha256":  "a37ab1696877eea1dfd959a01b1115bb59c637d4c2717689b01ac9981785ed84"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/CreatePolicyCommand.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "64cb2c78c50ddb2be2a4bf0eb4a320b4b8e5e8051893f14c565261d7b9e9bb26",
+                      "solutionSha256":  "64cb2c78c50ddb2be2a4bf0eb4a320b4b8e5e8051893f14c565261d7b9e9bb26"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/CreatePolicyResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "c7b8773330a581f660d74dc16455d222373c2152db9428647bc4b7c15cdc301b",
+                      "solutionSha256":  "c7b8773330a581f660d74dc16455d222373c2152db9428647bc4b7c15cdc301b"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/TerminatePolicyCommand.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "c93bfa118c630922cb4cb600464e5ee15e1188249e6906add30fbaaf627bb13f",
+                      "solutionSha256":  "c93bfa118c630922cb4cb600464e5ee15e1188249e6906add30fbaaf627bb13f"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/TerminatePolicyResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "d5e35dea88c868c6868147a0a85f16261c1e878afdada4a13c69ae0b0ea77c35",
+                      "solutionSha256":  "d5e35dea88c868c6868147a0a85f16261c1e878afdada4a13c69ae0b0ea77c35"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/Dtos/AddressDto.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "c77677e943154fa483127b8a08ef4e6476539d9f8c39743ef0022893e08d47de",
+                      "solutionSha256":  "c77677e943154fa483127b8a08ef4e6476539d9f8c39743ef0022893e08d47de"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/Dtos/PersonDto.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e882d09bd14462a16c17e38451a12faee1c051f9987e0b68310d799e59a4a5cd",
+                      "solutionSha256":  "e882d09bd14462a16c17e38451a12faee1c051f9987e0b68310d799e59a4a5cd"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Commands/Dtos/QuestionAnswer.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "b7a2c2c2be5dd770c19c996b1149b37d728a274365e0679119f384dac4636928",
+                      "solutionSha256":  "b7a2c2c2be5dd770c19c996b1149b37d728a274365e0679119f384dac4636928"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Converters/QuestionAnswerConverter.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "d3c02a298ec523aa6cc0109c5578e28d56a12689391694e3bea3a0fe59276374",
+                      "solutionSha256":  "d3c02a298ec523aa6cc0109c5578e28d56a12689391694e3bea3a0fe59276374"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Events/PolicyCreated.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "813dd50a8e0f148ab28017d4c1653316fc9a4cd3db4ed3d51d362a98ced9c9e9",
+                      "solutionSha256":  "813dd50a8e0f148ab28017d4c1653316fc9a4cd3db4ed3d51d362a98ced9c9e9"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Events/PolicyTerminated.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "b51834be2561ac9dfdffed8dfdf4e2a17ea9d65745186515da9d8545727b80d0",
+                      "solutionSha256":  "b51834be2561ac9dfdffed8dfdf4e2a17ea9d65745186515da9d8545727b80d0"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Queries/GetPolicyDetailsQuery.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "59cd5e6749dc82e062b1513e3fc55cf50663bb6c4b9238a02d6e17ecba3424a9",
+                      "solutionSha256":  "59cd5e6749dc82e062b1513e3fc55cf50663bb6c4b9238a02d6e17ecba3424a9"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Queries/GetPolicyDetailsQueryResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "c300206208723d546dc44b5ccbe50a6a4b627ee79d46ced25f230ab06de8c4ba",
+                      "solutionSha256":  "c300206208723d546dc44b5ccbe50a6a4b627ee79d46ced25f230ab06de8c4ba"
+                  },
+                  {
+                      "path":  "PolicyService.Api/Queries/Dto/PolicyDetailsDto.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0cdcd66d225fb77f5baadd1696b53d8919bca8127e427dd026dc4a0fd505e2c3",
+                      "solutionSha256":  "0cdcd66d225fb77f5baadd1696b53d8919bca8127e427dd026dc4a0fd505e2c3"
+                  },
+                  {
+                      "path":  "PolicyService.Test/PolicyService.Test.csproj",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0dbd5f62804d6ea7792f7dcdc850e5b6723062822e720d389e3cb83fe8da580c",
+                      "solutionSha256":  "0dbd5f62804d6ea7792f7dcdc850e5b6723062822e720d389e3cb83fe8da580c"
+                  },
+                  {
+                      "path":  "PolicyService.Test/Domain/OfferAssert.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e45526fd0e7d11ef5225639ca410e87855f263e2687b8b22697be27cb9585de9",
+                      "solutionSha256":  "e45526fd0e7d11ef5225639ca410e87855f263e2687b8b22697be27cb9585de9"
+                  },
+                  {
+                      "path":  "PolicyService.Test/Domain/OfferTest.cs",
+                      "status":  "ADAPTED",
+                      "reason":  "Inherited: both test classes replace the static SysTime clock, so they share one xUnit collection and no longer run in parallel.",
+                      "sourceSha256":  "ef1f4d005d84a16dff4d3bb20a5b24b426f7754d7acae0c72a5fd96e2bd97e2b",
+                      "solutionSha256":  "721394615d44f284b8730329b32ecae2d2c4c95d0afc78171c500d779cad2d62"
+                  },
+                  {
+                      "path":  "PolicyService.Test/Domain/PolicyAssert.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "9e3dd93c5ba928f56f4ba5215ccda78ffebf0f3f7f18606da2b2c55f6c1c67b7",
+                      "solutionSha256":  "9e3dd93c5ba928f56f4ba5215ccda78ffebf0f3f7f18606da2b2c55f6c1c67b7"
+                  },
+                  {
+                      "path":  "PolicyService.Test/Domain/PolicyTerminationTest.cs",
+                      "status":  "ADAPTED",
+                      "reason":  "Inherited: same shared xUnit collection for the static SysTime clock.",
+                      "sourceSha256":  "7f4735205905820f62d8993892c8734d2724e64bd82551fee6a7196059c6c6f3",
+                      "solutionSha256":  "251dda51a3c584d4c25e6b3902e129acf8861f8622a3b31c92df3898d5e37b77"
+                  },
+                  {
+                      "path":  "PolicyService.Test/TestData/OfferFactory.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "43c1f57470eb0ea054c9fac6168cf85a9fd804851e893e93fca3bd238100ce6b",
+                      "solutionSha256":  "43c1f57470eb0ea054c9fac6168cf85a9fd804851e893e93fca3bd238100ce6b"
+                  },
+                  {
+                      "path":  "PolicyService.Test/TestData/PolicyFactory.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "acbb2683eb50d47a562c92cb34a376376df1ae671249c2054a31d1237bab655c",
+                      "solutionSha256":  "acbb2683eb50d47a562c92cb34a376376df1ae671249c2054a31d1237bab655c"
+                  },
+                  {
+                      "path":  "PolicyService.Test/TestData/PolicyHolderFactory.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "d37c5d23ad55fd58886f3ee86ffc8ecdb5d5eda73205c68095e376fcbf875d89",
+                      "solutionSha256":  "d37c5d23ad55fd58886f3ee86ffc8ecdb5d5eda73205c68095e376fcbf875d89"
+                  },
+                  {
+                      "path":  "PolicyService.Test/TestData/TimeMachine.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e3254319f3ce50808e702a620d2509b284763c2d27f9fb8dddeb8bc80936c1a3",
+                      "solutionSha256":  "e3254319f3ce50808e702a620d2509b284763c2d27f9fb8dddeb8bc80936c1a3"
+                  },
+                  {
+                      "path":  "PolicySearchService/appsettings.Development.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a",
+                      "solutionSha256":  "14bf8f849db3f7a958ae8f22cb41475d2c2219ffeab93e357a16c0675142c75a"
+                  },
+                  {
+                      "path":  "PolicySearchService/appsettings.docker.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "0ab2db7e68c4f6cf1c46ba738d8486b0f9ffa1747246b931c89660795b6ef88d",
+                      "solutionSha256":  "0ab2db7e68c4f6cf1c46ba738d8486b0f9ffa1747246b931c89660795b6ef88d"
+                  },
+                  {
+                      "path":  "PolicySearchService/appsettings.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "736dbc3b898780f054ef4bd8f69475b9a7c1c6397251bed56b5f6a872c946c2f",
+                      "solutionSha256":  "736dbc3b898780f054ef4bd8f69475b9a7c1c6397251bed56b5f6a872c946c2f"
+                  },
+                  {
+                      "path":  "PolicySearchService/Dockerfile",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e1b7cea2f51d415428b4b3e1a4cf66a5ecd2bbab41ebbd06fa40cfec72079d06",
+                      "solutionSha256":  "e1b7cea2f51d415428b4b3e1a4cf66a5ecd2bbab41ebbd06fa40cfec72079d06"
+                  },
+                  {
+                      "path":  "PolicySearchService/hosting.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "e9938c07235e509b70e82919d4fff1956bd73bfe2eb2eb1ee79c8b7450f3e695",
+                      "solutionSha256":  "e9938c07235e509b70e82919d4fff1956bd73bfe2eb2eb1ee79c8b7450f3e695"
+                  },
+                  {
+                      "path":  "PolicySearchService/PolicySearchService.csproj",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "61da7ee85d3a8b07d6354507464e8a0acea57bce6274e199320632317251c282",
+                      "solutionSha256":  "61da7ee85d3a8b07d6354507464e8a0acea57bce6274e199320632317251c282"
+                  },
+                  {
+                      "path":  "PolicySearchService/Program.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "58b9c9632e0e352585c11edd28e7385ac8847c902ff4e93640f1047c1ddddaf5",
+                      "solutionSha256":  "58b9c9632e0e352585c11edd28e7385ac8847c902ff4e93640f1047c1ddddaf5"
+                  },
+                  {
+                      "path":  "PolicySearchService/Startup.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "627f818121c962d8dd2d01789fbcc271152aa114504679180b19f403d0ef897d",
+                      "solutionSha256":  "627f818121c962d8dd2d01789fbcc271152aa114504679180b19f403d0ef897d"
+                  },
+                  {
+                      "path":  "PolicySearchService/Controllers/PolicySearchController.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "7e4fcce9f8fa104ecad72b9933889c32c41cfb035e754254367e916d919b69f9",
+                      "solutionSha256":  "7e4fcce9f8fa104ecad72b9933889c32c41cfb035e754254367e916d919b69f9"
+                  },
+                  {
+                      "path":  "PolicySearchService/DataAccess/ElasticSearch/NestInstaller.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "3a953b94b026a2d95848df7a5f8057607b28c5ec0166266e975ba4da1f7672fd",
+                      "solutionSha256":  "3a953b94b026a2d95848df7a5f8057607b28c5ec0166266e975ba4da1f7672fd"
+                  },
+                  {
+                      "path":  "PolicySearchService/DataAccess/ElasticSearch/PolicyRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "5eb826876a607ae8221638170ffc8e8bf4918d2ec36f2819fe7dbd9080264229",
+                      "solutionSha256":  "5eb826876a607ae8221638170ffc8e8bf4918d2ec36f2819fe7dbd9080264229"
+                  },
+                  {
+                      "path":  "PolicySearchService/Domain/IPolicyRepository.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "267ab33f032b48e52b6906658ed90e628561b2944f120d0cbb9cc58052087e02",
+                      "solutionSha256":  "267ab33f032b48e52b6906658ed90e628561b2944f120d0cbb9cc58052087e02"
+                  },
+                  {
+                      "path":  "PolicySearchService/Domain/Policy.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "215f53eb1bc9b6831a41b1bbc7ccf10a06a2806e745755cc5bcae71bcf2ba93a",
+                      "solutionSha256":  "215f53eb1bc9b6831a41b1bbc7ccf10a06a2806e745755cc5bcae71bcf2ba93a"
+                  },
+                  {
+                      "path":  "PolicySearchService/Listeners/PolicyCreatedHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2bd56e99eaf2b3e5cc5d4d4072aa0b002f24a7ce695f3d57e79dca5ab76e2ba8",
+                      "solutionSha256":  "2bd56e99eaf2b3e5cc5d4d4072aa0b002f24a7ce695f3d57e79dca5ab76e2ba8"
+                  },
+                  {
+                      "path":  "PolicySearchService/Messaging/RabbitMq/RabbitEventListener.cs",
+                      "status":  "ADAPTED",
+                      "reason":  "Inherited: await the notification handler before disposing its dependency scope, so the Elasticsearch write finishes first.",
+                      "sourceSha256":  "05c36910ffe4cc65e702a26e3dfb65ef254a9a1a5387efc7286f166a91583a78",
+                      "solutionSha256":  "38fb70b98c79476f79c07dfef3c3e56fd8c81673530ef9fe22c319fff905f0f0"
+                  },
+                  {
+                      "path":  "PolicySearchService/Messaging/RabbitMq/RabbitInstaller.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "836c5614667330be83df6a1a34fe3f8d96be83f8a387f2bf92a8f863bbb7eed3",
+                      "solutionSha256":  "836c5614667330be83df6a1a34fe3f8d96be83f8a387f2bf92a8f863bbb7eed3"
+                  },
+                  {
+                      "path":  "PolicySearchService/Properties/launchSettings.json",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "5aa90e814e2bea18ed9a925284a0fe492e30abed61db5448c9c91aa801c43225",
+                      "solutionSha256":  "5aa90e814e2bea18ed9a925284a0fe492e30abed61db5448c9c91aa801c43225"
+                  },
+                  {
+                      "path":  "PolicySearchService/Queries/FindPolicyHandler.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "70cfbc3642d472973d48c581b8d31f1eb20b0c924f601922603f152d36dfd558",
+                      "solutionSha256":  "70cfbc3642d472973d48c581b8d31f1eb20b0c924f601922603f152d36dfd558"
+                  },
+                  {
+                      "path":  "PolicySearchService.Api/PolicySearchService.Api.csproj",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "9db69b2cc91c7a49f293092e48584ea45506e907b2170771f9007b13020e0c0a",
+                      "solutionSha256":  "9db69b2cc91c7a49f293092e48584ea45506e907b2170771f9007b13020e0c0a"
+                  },
+                  {
+                      "path":  "PolicySearchService.Api/Queries/FindPolicyQuery.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "7ad2a8fc50037a91bff24e49715dee666bc2054ad52982089ad0266c115bc659",
+                      "solutionSha256":  "7ad2a8fc50037a91bff24e49715dee666bc2054ad52982089ad0266c115bc659"
+                  },
+                  {
+                      "path":  "PolicySearchService.Api/Queries/FindPolicyResult.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "2db7db4add641428fab1dbb9195870b46837d8acd6dec049688b943c3863ca29",
+                      "solutionSha256":  "2db7db4add641428fab1dbb9195870b46837d8acd6dec049688b943c3863ca29"
+                  },
+                  {
+                      "path":  "PolicySearchService.Api/Queries/Dtos/PolicyDto.cs",
+                      "status":  "UNCHANGED",
+                      "reason":  null,
+                      "sourceSha256":  "6c26872765e360e869238c8fb3992950c5fce233adc7f877a3d24e322e0d8f4a",
+                      "solutionSha256":  "6c26872765e360e869238c8fb3992950c5fce233adc7f877a3d24e322e0d8f4a"
+                  }
+              ]
+}

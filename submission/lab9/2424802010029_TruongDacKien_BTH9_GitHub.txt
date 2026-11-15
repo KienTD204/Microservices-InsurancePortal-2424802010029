@@ -1,0 +1,9 @@
+https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029/tree/student/lab9
+
+Bai thuc hanh 9 - Trien khai he thong (PolicyService, PolicySearchService)
+Sinh vien: Truong Dac Kien
+MSSV: 2424802010029
+Lop: D24CNTT05
+Nhanh nop bai: student/lab9
+Huong dan va doi chieu task: README-LAB9.md
+Link video demo (Task 2): <dan link Google Drive vao day>
