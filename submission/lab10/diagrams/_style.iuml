@@ -1,0 +1,58 @@
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+skinparam roundCorner 6
+skinparam ArrowColor #34495E
+skinparam ArrowFontSize 10
+skinparam ArrowFontColor #2C3E50
+skinparam NoteBackgroundColor #FFFBE6
+skinparam NoteBorderColor #C9B458
+skinparam TitleFontSize 15
+skinparam component {
+  BackgroundColor #EAF2FB
+  BorderColor #2E6DA4
+}
+skinparam database {
+  BackgroundColor #FDF2E0
+  BorderColor #B9770E
+}
+skinparam queue {
+  BackgroundColor #FBE9E7
+  BorderColor #C0392B
+}
+skinparam node {
+  BackgroundColor #F7F9FB
+  BorderColor #566573
+}
+skinparam package {
+  BackgroundColor #FBFCFD
+  BorderColor #7F8C8D
+}
+skinparam rectangle {
+  BackgroundColor #FBFCFD
+  BorderColor #7F8C8D
+}
+skinparam class {
+  BackgroundColor #EAF2FB
+  BorderColor #2E6DA4
+  ArrowColor #34495E
+}
+skinparam sequence {
+  ParticipantBackgroundColor #EAF2FB
+  ParticipantBorderColor #2E6DA4
+  LifeLineBorderColor #7F8C8D
+  ActorBorderColor #2E6DA4
+}
+skinparam activity {
+  BackgroundColor #EAF2FB
+  BorderColor #2E6DA4
+}
+skinparam folder {
+  BackgroundColor #EAF2FB
+  BorderColor #2E6DA4
+}
+skinparam artifact {
+  BackgroundColor #FFFFFF
+  BorderColor #566573
+}

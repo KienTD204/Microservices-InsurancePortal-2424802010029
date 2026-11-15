@@ -1,0 +1,83 @@
+@startuml
+!include _style.iuml
+left to right direction
+title Khung nhìn Triển khai - Sơ đồ triển khai UML (theo scripts/lab9.docker.yml, project Compose "insurance-lab9")
+
+node "Máy người dùng" <<device>> as pc {
+  node "Trình duyệt web (Chrome / Edge)" <<execution environment>> as browser {
+    artifact "BlazorWasmClient.wasm\n+ _framework/*.dll" as wasm
+  }
+}
+
+node "Máy chủ triển khai: Windows 11 + Docker Desktop (WSL 2)" <<device>> as host {
+  node "Docker Engine - mạng bridge insurance-lab9_default" <<execution environment>> as docker {
+
+    node "web  :5081" <<container>> as cWeb {
+      artifact "BlazorWasmClient\n(Kestrel DevServer)" as aWeb
+    }
+    node "dotnet-agent-portal-gateway  :8099" <<container>> as cGw {
+      artifact "AgentPortalApiGateway.dll\n+ ocelot.json" as aGw
+    }
+    node "dotnet-auth-service  :6060" <<container>> as cAuth {
+      artifact "AuthService.dll" as aAuth
+    }
+    node "dotnet-chat-service  :4099" <<container>> as cChat {
+      artifact "ChatService.dll" as aChat
+    }
+    node "dotnet-product-service  :5030" <<container>> as cProduct {
+      artifact "ProductService.dll" as aProduct
+    }
+    node "dotnet-policy-service  :5050" <<container>> as cPolicy {
+      artifact "PolicyService.dll" as aPolicy
+    }
+    node "dotnet-pricing-service  :5040 (nội bộ)" <<container>> as cPricing {
+      artifact "PricingService.dll" as aPricing
+    }
+    node "dotnet-policy-search-service  :5065" <<container>> as cSearch {
+      artifact "PolicySearchService.dll" as aSearch
+    }
+    node "dotnet-dashboard-service  :5035" <<container>> as cDashboard {
+      artifact "DashboardService.dll" as aDashboard
+    }
+    node "dotnet-payment-service  :5070" <<container>> as cPayment {
+      artifact "PaymentService.dll" as aPayment
+    }
+
+    node "eureka-server  :8761" <<container>> as cEureka {
+      artifact "eureka-server.jar\n(JRE 8 Temurin)" as aEureka
+    }
+    node "rabbit  :5672 / :15672" <<container>> as cRabbit {
+      artifact "RabbitMQ 3-management" as aRabbit
+    }
+    node "postgres  :5432 (nội bộ)" <<container>> as cPg {
+      database "lab_netmicro_policy\nlab_netmicro_pricing\nlab_netmicro_payments\nlab_netmicro_jobs" as dbs
+    }
+    node "elasticsearch  :9200" <<container>> as cEs {
+      database "chỉ mục hợp đồng,\ndoanh số" as idx
+    }
+  }
+}
+
+browser --> cWeb : HTTP 5081\n(tải ứng dụng)
+browser --> cGw : HTTP/REST 8099
+browser --> cAuth : HTTP/REST 6060
+browser --> cChat : WebSocket 4099
+
+cGw --> cProduct : HTTP
+cGw --> cPolicy : HTTP
+cGw --> cSearch : HTTP
+cGw --> cDashboard : HTTP
+cGw ..> cEureka : HTTP 8761
+cPolicy --> cPricing : HTTP 5040
+cPolicy --> cRabbit : AMQP 5672
+cSearch --> cRabbit : AMQP
+cPayment --> cRabbit : AMQP
+cDashboard --> cRabbit : AMQP
+cChat --> cRabbit : AMQP
+cPolicy --> cPg : TCP 5432
+cPricing --> cPg : TCP 5432
+cPayment --> cPg : TCP 5432
+cSearch --> cEs : HTTP 9200
+cDashboard --> cEs : HTTP 9200
+
+@enduml

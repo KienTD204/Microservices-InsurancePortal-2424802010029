@@ -1,0 +1,44 @@
+@startuml
+!include _style.iuml
+title Khung nhìn Tiến trình (1/3) - Sơ đồ tuần tự: đăng nhập và tạo báo giá (giao tiếp đồng bộ REST)
+autonumber
+hide footbox
+actor "Đại lý" as agent
+participant "BlazorWasmClient\n<<tiến trình: trình duyệt>>" as ui
+participant "AuthService\n<<tiến trình .NET>>" as auth
+participant "AgentPortalApiGateway\n<<tiến trình .NET>>" as gw
+participant "Eureka Server\n<<tiến trình JVM>>" as eureka
+participant "PolicyService\n<<tiến trình .NET>>" as policy
+participant "PricingService\n<<tiến trình .NET>>" as pricing
+database "PostgreSQL" as pg
+
+== Đăng nhập ==
+agent -> ui : nhập tài khoản, mật khẩu
+ui -> auth : POST /api/User
+auth -> auth : kiểm tra InsuranceAgent,\nký JWT (hạn 7 ngày)
+auth --> ui : 200 {token, userType, expiryTimeStamp}
+ui -> ui : lưu phiên vào sessionStorage
+
+== Tạo báo giá ==
+agent -> ui : chọn sản phẩm, nhập tham số,\nbấm "Calculate price"
+ui -> gw : POST /api/Offers\nAuthorization: Bearer <JWT>
+gw -> gw : xác thực JWT,\nkiểm tra claim userType = SALESMAN,\nthêm header AgentLogin
+gw -> eureka : tra cứu địa chỉ PolicyService\n(danh bạ được lưu đệm)
+eureka --> gw : dotnet-policy-service:5050
+gw -> policy : POST /api/Offer
+activate policy
+policy -> policy : MediatR gửi CreateOfferByAgentCommand\n-> handler tương ứng
+policy -> pricing : POST /api/Pricing\n(RestEase; Polly thử lại 3 lần, cách 3 giây)
+activate pricing
+pricing -> pg : đọc Tariff theo mã sản phẩm (Marten)
+pg --> pricing : Tariff
+pricing -> pricing : Tariff.CalculatePrice()\n(luật tính phí bằng DynamicExpresso)
+pricing --> policy : CalculatePriceResult {tổng phí, phí từng quyền lợi}
+deactivate pricing
+policy -> policy : Offer.ForPriceAndAgent(...)
+policy -> pg : lưu Offer (NHibernate, Unit of Work)
+policy --> gw : 200 {offerNumber, totalPrice, coversPrices}
+deactivate policy
+gw --> ui : 200
+ui --> agent : hiển thị giá
+@enduml

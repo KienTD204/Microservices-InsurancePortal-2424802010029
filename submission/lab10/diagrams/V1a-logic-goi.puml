@@ -1,0 +1,42 @@
+@startuml
+!include _style.iuml
+title Khung nhìn Logic (1/4) - Sơ đồ gói: các phân hệ nghiệp vụ (bounded context) và phụ thuộc
+
+package "Giao diện người dùng" as ui {
+  folder "BlazorWasmClient" as blazor
+  folder "Web (Vue.js)" as vue
+}
+package "Cổng vào" as edge {
+  folder "AgentPortalApiGateway" as gw
+}
+package "Phân hệ nghiệp vụ" as biz {
+  folder "Xác thực\n(AuthService)" as auth
+  folder "Sản phẩm\n(ProductService)" as product
+  folder "Định giá\n(PricingService)" as pricing
+  folder "Hợp đồng\n(PolicyService)" as policy
+  folder "Tìm kiếm hợp đồng\n(PolicySearchService)" as search
+  folder "Thanh toán\n(PaymentService)" as payment
+  folder "Thống kê\n(DashboardService)" as dashboard
+  folder "Trao đổi trực tuyến\n(ChatService)" as chat
+  folder "Tài liệu\n(DocumentService)" as document
+}
+package "Hợp đồng dữ liệu dùng chung" as contracts {
+  folder "PolicyService.Api\n(Commands, Queries, Events)" as policyApi
+  folder "PricingService.Api" as pricingApi
+}
+
+ui ..> gw : <<use>>
+ui ..> auth : <<use>>
+ui ..> chat : <<use>>
+gw ..> product : <<route>>
+gw ..> policy : <<route>>
+gw ..> search : <<route>>
+gw ..> dashboard : <<route>>
+policy ..> pricing : <<call>>
+policy ..> policyApi : <<publish>>\nPolicyCreated,\nPolicyTerminated
+policy ..> pricingApi : <<import>>
+search ..> policyApi : <<subscribe>>
+payment ..> policyApi : <<subscribe>>
+dashboard ..> policyApi : <<subscribe>>
+chat ..> policyApi : <<subscribe>>
+@enduml

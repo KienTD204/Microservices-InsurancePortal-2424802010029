@@ -1,5 +1,7 @@
 # ASCLAB .NET Core PoC - LAB Insurance Sales Portal
 
+**Bài thực hành 10 (15/11/2026):** [Review lại kiến trúc: sơ đồ tổng quát và 4 khung nhìn UML](README-LAB10.md) - nhánh `student/lab10` | [Task 1 (PDF)](submission/lab10/BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf) | [Task 2 (PDF)](submission/lab10/BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf).
+
 **Bài thực hành 9 (15/11/2026):** [Triển khai hệ thống - PolicyService và PolicySearchService](README-LAB9.md) - nhánh `student/lab9` | [Tệp link nộp bài](submission/lab9/2424802010029_TruongDacKien_BTH9_GitHub.txt).
 
 **Bài thực hành 7 (01/11/2026):** [Marten, PaymentService và ProductService](README-LAB7.md) - nhánh `student/lab7` | [Tệp link nộp bài](submission/lab7/2424802010029_TruongDacKien_BTH7_GitHub.txt).

@@ -1,0 +1,64 @@
+@startuml
+!include _style.iuml
+set namespaceSeparator none
+hide empty members
+title Khung nhìn Logic (4/4) - Sơ đồ lớp miền của Thanh toán và Xác thực
+
+package "PaymentService.Domain" {
+  enum PolicyAccountStatus
+  class PolicyAccount <<Aggregate Root>> {
+    +PolicyAccountNumber : string
+    +PolicyNumber : string
+    +Status : PolicyAccountStatus
+    +ExpectedPayment(amount, dueDate)
+    +InPayment(amount, incomeDate)
+    +OutPayment(amount, releaseDate)
+    +BalanceAt(date) : decimal
+    +Close(closingDate, amountToReturn)
+  }
+  class Owner {
+    +FirstName : string
+    +LastName : string
+  }
+  abstract class AccountingEntry {
+    +CreationDate : DateTimeOffset
+    +EffectiveDate : DateTimeOffset
+    +Amount : decimal
+    +IsEffectiveOn(date) : bool
+  }
+  class "ExpectedPayment" as EP
+  class "InPayment" as IP
+  class "OutPayment" as OP
+  class BankStatementFile
+  class InPaymentRegistrationService
+  PolicyAccount --> PolicyAccountStatus
+  PolicyAccount "1" *-- "1" Owner
+  PolicyAccount "1" *-- "0..*" AccountingEntry : entries
+  AccountingEntry <|-- EP
+  AccountingEntry <|-- IP
+  AccountingEntry <|-- OP
+  InPaymentRegistrationService ..> BankStatementFile
+  InPaymentRegistrationService ..> PolicyAccount
+}
+
+package "AuthService.Domain" {
+  class InsuranceAgent {
+    +Login : string
+    +Avatar : string
+    +AvailableProducts : List<string>
+    +PasswordMatches(p : string) : bool
+  }
+  class "AuthService" as AuthSvc {
+    +Authenticate(login, password) : AuthResult
+    +AgentFromLogin(login) : InsuranceAgent
+  }
+  class AuthResult {
+    +Token : string
+    +ExpiryTimeStamp : DateTime
+  }
+  interface IInsuranceAgents
+  AuthSvc --> IInsuranceAgents
+  IInsuranceAgents ..> InsuranceAgent
+  AuthSvc ..> AuthResult : <<create>>
+}
+@enduml

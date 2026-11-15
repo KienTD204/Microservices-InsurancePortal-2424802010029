@@ -1,0 +1,42 @@
+@startuml
+!include _style.iuml
+skinparam defaultFontSize 14
+title Khung nhìn Tiến trình (3/3) - Sơ đồ hoạt động: quy trình bán bảo hiểm qua các tiến trình
+|Đại lý + BlazorWasmClient|
+start
+:Đăng nhập;
+|AuthService + API Gateway|
+:AuthService xác thực, phát hành JWT;
+|Đại lý + BlazorWasmClient|
+:Chọn sản phẩm, nhập tham số báo giá;
+|AuthService + API Gateway|
+:Gateway kiểm tra JWT,\nđịnh tuyến qua Eureka;
+|PolicyService|
+:Nhận lệnh tạo báo giá;
+|PricingService|
+:Tính phí theo biểu phí (Tariff);
+|PolicyService|
+:Lưu Offer, trả giá;
+|Đại lý + BlazorWasmClient|
+if (Khách đồng ý mua?) then (có)
+  :Nhập thông tin người mua, xác nhận;
+  |PolicyService|
+  :Chuyển Offer thành Policy;
+  :Lưu Policy + sự kiện vào Outbox\n(cùng một giao dịch);
+  :Luồng nền đẩy PolicyCreated\nlên RabbitMQ;
+  |Các service nhận sự kiện (xử lý song song)|
+  fork
+    :PolicySearchService:\nlập chỉ mục hợp đồng\nvào Elasticsearch;
+  fork again
+    :PaymentService:\nmở tài khoản hợp đồng,\nghi khoản phải thu;
+  fork again
+    :DashboardService:\ncập nhật dữ liệu\nthống kê doanh số;
+  fork again
+    :ChatService:\nđẩy thông báo SignalR\ntới đại lý đang trực tuyến;
+  end fork
+  |Đại lý + BlazorWasmClient|
+  :Xem tóm tắt hợp đồng,\ntìm kiếm hợp đồng;
+else (không: báo giá hết hạn sau 30 ngày)
+endif
+stop
+@enduml

@@ -1,0 +1,58 @@
+@startuml
+!include _style.iuml
+title Khung nhìn Tiến trình (2/3) - Sơ đồ tuần tự: tạo hợp đồng và lan truyền sự kiện (giao tiếp bất đồng bộ)
+autonumber
+hide footbox
+actor "Đại lý A" as agent
+participant "BlazorWasmClient" as ui
+participant "API Gateway" as gw
+participant "PolicyService\n(luồng xử lý request)" as policy
+participant "OutboxSendingService\n(luồng nền trong\nPolicyService, timer 1 giây)" as outbox
+database "PostgreSQL" as pg
+queue "RabbitMQ\nexchange lab-dotnet-micro" as mq
+participant "PolicySearch\nService" as search
+participant "Payment\nService" as payment
+participant "Dashboard\nService" as dashboard
+participant "ChatService\n(SignalR Hub)" as chat
+database "Elasticsearch" as es
+actor "Đại lý B\n(đang mở Chat)" as agentB
+
+agent -> ui : nhập người mua, bấm "Confirm"
+ui -> gw : POST /api/Policies + JWT
+gw -> policy : POST /api/Policy
+activate policy
+policy -> pg : đọc Offer theo số báo giá
+policy -> policy : offer.Buy(policyHolder)\n-> Policy + PolicyVersion 1
+policy -> pg : **một giao dịch**: lưu Policy\n+ ghi PolicyCreated vào bảng Outbox
+policy --> gw : 200 {policyNumber}
+deactivate policy
+gw --> ui : 200
+ui --> agent : "You successfully created a new policy"
+
+... tối đa khoảng 1 giây sau ...
+
+outbox -> pg : đọc các Message chưa gửi
+outbox -> mq : publish PolicyCreated\n(routing key "policycreated")
+outbox -> pg : xóa Message đã gửi
+
+par mỗi service có hàng đợi riêng, xử lý song song và độc lập
+  mq ->> search : PolicyCreated
+  search -> es : lập chỉ mục hợp đồng (lab_policies)
+else
+  mq ->> payment : PolicyCreated
+  payment -> pg : mở PolicyAccount + ExpectedPayment (Marten)
+else
+  mq ->> dashboard : PolicyCreated
+  dashboard -> es : ghi PolicyDocument để thống kê doanh số
+else
+  mq ->> chat : PolicyCreated
+  chat ->> agentB : SignalR "ReceiveNotification"\n(WebSocket, gửi tới mọi client)
+end
+
+agent -> ui : mở "Policies", tìm theo tên người mua
+ui -> gw : GET /api/PolicySearch?q=...
+gw -> search : GET /api/PolicySearch?q=...
+search -> es : truy vấn toàn văn
+es --> search : danh sách hợp đồng
+search --> ui : kết quả (qua Gateway)
+@enduml

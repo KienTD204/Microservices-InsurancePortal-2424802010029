@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>BTH10 - Task 1 - Kiến trúc tổng quát</title>
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<div class="cover">
+  <div class="school">Môn học: Kiến trúc và thiết kế phần mềm</div>
+  <div class="sub">Bài thực hành số 10 - Review lại kiến trúc của hệ thống trong Case Study</div>
+  <h1>TASK 1: KIẾN TRÚC TỔNG QUÁT CỦA HỆ THỐNG<br>CỔNG BÁN BẢO HIỂM (INSURANCE SALES PORTAL)</h1>
+  <table class="meta">
+    <tr><td>Sinh viên</td><td>Trương Đắc Kiên</td></tr>
+    <tr><td>MSSV</td><td>2424802010029</td></tr>
+    <tr><td>Lớp</td><td>D24CNTT05</td></tr>
+    <tr><td>Mã nguồn</td><td>github.com/KienTD204/Microservices-InsurancePortal-2424802010029 (nhánh <code>student/lab10</code>)</td></tr>
+    <tr><td>Ngày nộp</td><td>15/11/2026</td></tr>
+  </table>
+</div>
+
+<h2>1. Mục đích và cách thực hiện</h2>
+<p>Tài liệu này vẽ lại kiến trúc tổng quát của hệ thống đã xây dựng và triển khai thành công qua các bài thực hành 4 đến 9. Sơ đồ không được thiết kế trước mà được <b>khái quát ngược từ hệ thống thật</b>: mọi thành phần, cổng, công nghệ và mối liên kết trong sơ đồ đều được đối chiếu với mã nguồn (<code>*.csproj</code>, <code>Startup.cs</code>, <code>appsettings*.json</code>, <code>ocelot.json</code>) và với bản triển khai Docker Compose của Bài 9 (<code>scripts/lab9.docker.yml</code>, 14 container đang chạy).</p>
+<p>Hệ thống phục vụ <b>đại lý bảo hiểm</b>: xem danh mục sản phẩm, tính phí, lập báo giá, chuyển báo giá thành hợp đồng, tìm kiếm hợp đồng, theo dõi doanh số và trao đổi trực tuyến với đại lý khác.</p>
+
+<h2>2. Kiểu kiến trúc áp dụng</h2>
+<ul>
+  <li><b>Microservices</b>: mỗi năng lực nghiệp vụ là một service độc lập (một tiến trình, một cổng, một kho dữ liệu riêng), ứng với một ngữ cảnh giới hạn (bounded context) của DDD.</li>
+  <li><b>API Gateway</b>: giao diện chỉ gọi nghiệp vụ qua một cổng duy nhất (Ocelot); cổng này xác thực JWT, kiểm tra quyền và che giấu cấu trúc bên trong.</li>
+  <li><b>Service Discovery</b>: các service đăng ký với Eureka; Gateway và PolicyService gọi service khác theo <i>tên</i> thay vì địa chỉ cố định.</li>
+  <li><b>Giao tiếp kết hợp</b>: đồng bộ bằng REST/JSON khi cần kết quả ngay (tính phí); bất đồng bộ hướng sự kiện qua RabbitMQ khi chỉ cần thông báo (hợp đồng đã tạo/đã hủy).</li>
+  <li><b>Database per Service</b> và <b>Polyglot Persistence</b>: mỗi service tự chọn công nghệ lưu trữ phù hợp (quan hệ, tài liệu, chỉ mục tìm kiếm, bộ nhớ).</li>
+  <li><b>CQRS mức ứng dụng</b>: mọi service nghiệp vụ tách Command và Query, điều phối bằng MediatR; riêng việc tìm kiếm và thống kê được tách hẳn thành service đọc (PolicySearch, Dashboard).</li>
+  <li><b>Transactional Outbox</b>: PolicyService ghi sự kiện cùng giao dịch với dữ liệu nghiệp vụ rồi mới đẩy lên RabbitMQ, tránh mất sự kiện.</li>
+</ul>
+
+<section class="wide">
+  <h3>3. Sơ đồ kiến trúc tổng quát</h3>
+  <figure class="solo">
+    <img src="diagrams/out/T1-kien-truc-tong-quat.svg" alt="Sơ đồ kiến trúc tổng quát">
+    <figcaption>Hình 1. Kiến trúc tổng quát: 5 tầng (giao diện, cổng vào, dịch vụ nghiệp vụ, hạ tầng dùng chung, nền tảng) với đầy đủ tên service và công nghệ.</figcaption>
+  </figure>
+</section>
+
+<h2>4. Giải thích sơ đồ</h2>
+<h3>4.1. Các thành phần tham gia hệ thống</h3>
+<table class="t">
+  <tr><th style="width:21%">Thành phần</th><th style="width:7%">Cổng</th><th style="width:26%">Trách nhiệm</th><th style="width:24%">Công nghệ chính</th><th>Lưu trữ / giao tiếp</th></tr>
+  <tr><td><b>BlazorWasmClient</b></td><td>5081</td><td>Giao diện một trang cho đại lý: đăng nhập, sản phẩm, báo giá, hợp đồng, tìm kiếm, thống kê, chat.</td><td>Blazor WebAssembly (.NET 8), Blazorise + Bootstrap 5, SignalR Client, Blazored.SessionStorage</td><td>Gọi Gateway và AuthService bằng REST; nối ChatService bằng WebSocket.</td></tr>
+  <tr><td><b>Web</b></td><td>8080</td><td>Giao diện một trang viết bằng Vue (bản gốc của hệ thống).</td><td>Vue.js 2, BootstrapVue, axios, vue-router, Nginx</td><td>Có trong mã nguồn; không nằm trong bản triển khai Bài 9.</td></tr>
+  <tr><td><b>AgentPortalApiGateway</b></td><td>8099</td><td>Cổng vào duy nhất của nghiệp vụ: xác thực JWT, kiểm tra claim, định tuyến, cache, CORS.</td><td>Ocelot 23, Ocelot.Provider.Eureka, Steeltoe Discovery, JWT Bearer</td><td>Không có dữ liệu riêng; định tuyến tới Product, Policy, PolicySearch, Dashboard.</td></tr>
+  <tr><td><b>AuthService</b></td><td>6060</td><td>Xác thực đại lý, phát hành JWT (hạn 7 ngày), trả hồ sơ đại lý.</td><td>ASP.NET Core Web API, System.IdentityModel.Tokens.Jwt</td><td>Danh sách đại lý trong bộ nhớ.</td></tr>
+  <tr><td><b>ProductService</b></td><td>5030</td><td>Danh mục sản phẩm bảo hiểm: quyền lợi (cover), câu hỏi, lựa chọn.</td><td>EF Core 8, MediatR, Ensure.That</td><td>EF Core InMemory; đăng ký Eureka.</td></tr>
+  <tr><td><b>PricingService</b></td><td>5040</td><td>Tính phí bảo hiểm theo biểu phí (Tariff) và các luật tính.</td><td>Marten 7, DynamicExpresso, MediatR, Serilog</td><td>PostgreSQL <code>lab_netmicro_pricing</code>; đăng ký Eureka.</td></tr>
+  <tr><td><b>PolicyService</b></td><td>5050</td><td>Service trung tâm: lập báo giá, tạo và hủy hợp đồng, phát sự kiện vòng đời hợp đồng.</td><td>NHibernate 5, RestEase, Polly, EasyNetQ, MediatR, Serilog</td><td>PostgreSQL <code>lab_netmicro_policy</code>; gọi Pricing bằng REST; phát sự kiện lên RabbitMQ (Outbox).</td></tr>
+  <tr><td><b>PolicySearchService</b></td><td>5065</td><td>Tìm kiếm hợp đồng toàn văn.</td><td>Elastic.Clients.Elasticsearch 8.9, EasyNetQ, MediatR</td><td>Elasticsearch, chỉ mục <code>lab_policies</code>; nhận <code>PolicyCreated</code>.</td></tr>
+  <tr><td><b>PaymentService</b></td><td>5070</td><td>Tài khoản hợp đồng, khoản phải thu, ghi nhận tiền về từ tệp sao kê.</td><td>Marten 7, Hangfire, Dapper, EasyNetQ, MediatR</td><td>PostgreSQL <code>lab_netmicro_payments</code>, <code>lab_netmicro_jobs</code>; nhận <code>PolicyCreated</code>, <code>PolicyTerminated</code>.</td></tr>
+  <tr><td><b>DashboardService</b></td><td>5035</td><td>Thống kê doanh số: tổng, theo đại lý, theo thời gian.</td><td>Elastic.Clients.Elasticsearch 8.9, EasyNetQ, MediatR</td><td>Elasticsearch; nhận <code>PolicyCreated</code>.</td></tr>
+  <tr><td><b>ChatService</b></td><td>4099</td><td>Chat giữa các đại lý và đẩy thông báo tức thời khi có hợp đồng mới.</td><td>ASP.NET Core SignalR, JWT Bearer, EasyNetQ, MediatR</td><td>Không lưu dữ liệu; nhận <code>PolicyCreated</code>.</td></tr>
+  <tr><td><b>DocumentService</b></td><td>-</td><td>Dự kiến sinh chứng chỉ PDF bằng JS Report.</td><td>ASP.NET Core Web API (khung)</td><td>Mới là project khung, chưa triển khai, chưa chạy.</td></tr>
+</table>
+
+<h3>4.2. Các công nghệ hỗ trợ giải pháp</h3>
+<table class="t">
+  <tr><th style="width:21%">Nhóm</th><th style="width:31%">Công nghệ và phiên bản</th><th>Vai trò trong hệ thống</th></tr>
+  <tr><td>Nền tảng chạy ứng dụng</td><td>.NET 8 / ASP.NET Core 8 (C#)</td><td>Nền tảng của 9 microservice, Gateway và giao diện Blazor.</td></tr>
+  <tr><td>Web server</td><td>Kestrel; Nginx; Tomcat nhúng</td><td>Kestrel phục vụ mọi service ASP.NET Core, Gateway và Blazor DevServer; Nginx phục vụ giao diện Vue; Tomcat nhúng trong Spring Boot phục vụ Eureka.</td></tr>
+  <tr><td>Đóng gói và triển khai</td><td>Docker Engine (Docker Desktop, WSL 2), Docker Compose</td><td>Đóng gói toàn bộ thành 14 container Linux trên một mạng bridge; điều khiển thứ tự khởi động bằng <code>depends_on</code> + <code>healthcheck</code>.</td></tr>
+  <tr><td>API Gateway</td><td>Ocelot 23.3</td><td>Định tuyến, xác thực, kiểm tra claim, cache.</td></tr>
+  <tr><td>Service Registry</td><td>Netflix Eureka (Spring Boot 2.4, Java 8); Steeltoe 3.2 phía .NET</td><td>Đăng ký và tra cứu địa chỉ service theo tên.</td></tr>
+  <tr><td>Message Broker</td><td>RabbitMQ 3 (kèm trang quản trị); EasyNetQ 7.8</td><td>Bus sự kiện, exchange kiểu topic <code>lab-dotnet-micro</code>.</td></tr>
+  <tr><td>Cơ sở dữ liệu quan hệ / tài liệu</td><td>PostgreSQL 16; NHibernate 5.5, Marten 7.19, Npgsql</td><td>Bốn cơ sở dữ liệu tách riêng cho Policy, Pricing, Payment và Hangfire.</td></tr>
+  <tr><td>Máy tìm kiếm</td><td>Elasticsearch 8.9.2</td><td>Chỉ mục tìm kiếm hợp đồng và dữ liệu thống kê doanh số.</td></tr>
+  <tr><td>Bảo mật</td><td>JWT (HMAC-SHA256), JwtBearer, CORS</td><td>AuthService phát hành token; Gateway và ChatService kiểm tra token.</td></tr>
+  <tr><td>Thời gian thực</td><td>ASP.NET Core SignalR (WebSocket)</td><td>Hub <code>/agentsChat</code> cho chat và thông báo.</td></tr>
+  <tr><td>Điều phối trong service</td><td>MediatR 12</td><td>Tách Command/Query khỏi Controller (CQRS).</td></tr>
+  <tr><td>Chịu lỗi</td><td>Polly 8, RestEase</td><td>PolicyService gọi PricingService, tự thử lại 3 lần cách nhau 3 giây.</td></tr>
+  <tr><td>Tác vụ nền</td><td>Hangfire 1.8; <code>IHostedService</code></td><td>Job đọc tệp sao kê mỗi phút (Payment); luồng đẩy Outbox mỗi giây (Policy).</td></tr>
+  <tr><td>Tài liệu API, nhật ký</td><td>Swagger/OpenAPI (Swashbuckle), Serilog</td><td>Trang thử API của từng service; ghi log.</td></tr>
+  <tr><td>Kiểm thử và CI</td><td>xUnit, Testcontainers, GitHub Actions</td><td>Kiểm thử đơn vị và tích hợp; tự build và chạy test khi đẩy mã.</td></tr>
+  <tr><td>Giao diện</td><td>Blazor WebAssembly, Blazorise, Bootstrap 5; Vue.js 2, BootstrapVue</td><td>Hai bản giao diện một trang cho đại lý.</td></tr>
+</table>
+
+<h3>4.3. Các luồng liên kết chính trong sơ đồ</h3>
+<ol>
+  <li><b>Đăng nhập</b>: giao diện gọi thẳng AuthService để nhận JWT và lưu ở trình duyệt.</li>
+  <li><b>Nghiệp vụ đồng bộ</b>: giao diện gửi yêu cầu kèm JWT tới Gateway; Gateway tra Eureka rồi chuyển tới ProductService, PolicyService, PolicySearchService hoặc DashboardService. Khi lập báo giá, PolicyService gọi PricingService để tính phí.</li>
+  <li><b>Nghiệp vụ bất đồng bộ</b>: khi hợp đồng được tạo hoặc hủy, PolicyService phát sự kiện lên RabbitMQ; PolicySearch, Payment, Dashboard và Chat mỗi service có hàng đợi riêng và tự xử lý, không làm chậm thao tác của đại lý.</li>
+  <li><b>Thời gian thực</b>: giao diện giữ một kết nối WebSocket tới ChatService để nhận tin nhắn và thông báo.</li>
+</ol>
+
+<h2>5. Nhận xét khi review kiến trúc</h2>
+<ul>
+  <li><b>Điểm mạnh</b>: ranh giới service rõ theo nghiệp vụ; service ghi (Policy) và service đọc (Search, Dashboard) tách nhau nên có thể mở rộng độc lập; sự kiện giúp thêm service mới mà không sửa PolicyService; Outbox bảo đảm không mất sự kiện.</li>
+  <li><b>Điểm cần lưu ý</b>: AuthService, ChatService và PaymentService được gọi trực tiếp, không qua Gateway; ProductService và AuthService lưu trong bộ nhớ nên mất dữ liệu khi khởi động lại; Eureka, RabbitMQ, PostgreSQL và Elasticsearch đều chỉ có một bản chạy nên là điểm lỗi đơn; DocumentService chưa được triển khai.</li>
+  <li><b>Phạm vi của sơ đồ</b>: phản ánh bản triển khai một máy bằng Docker Compose dùng cho bài thực hành, chưa phải cấu hình sản xuất (chưa có HTTPS, cân bằng tải, giám sát tập trung).</li>
+</ul>
+
+</body>
+</html>

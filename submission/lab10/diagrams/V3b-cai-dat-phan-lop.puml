@@ -1,0 +1,46 @@
+@startuml
+!include _style.iuml
+title Khung nhìn Cài đặt (2/2) - Sơ đồ gói: cấu trúc mã nguồn bên trong một microservice (lấy PolicyService làm mẫu)
+
+package "PolicyService.Api  (hợp đồng công khai)" as api {
+  folder "Commands\n(CreateOfferCommand, CreatePolicyCommand,\nTerminatePolicyCommand + Result)" as apiCmd
+  folder "Queries\n(GetPolicyDetailsQuery + Dto)" as apiQry
+  folder "Events\n(PolicyCreated, PolicyTerminated)" as apiEvt
+}
+
+package "PolicyService  (tiến trình thực thi)" as svc {
+  folder "Program / Startup\n(cấu hình DI, Eureka, Swagger)" as boot
+  folder "Controllers\n(OfferController, PolicyController)\n<<ASP.NET Core MVC>>" as ctl
+  folder "Commands / Queries\n(các Handler của MediatR)" as handlers
+  folder "Domain\n(Offer, Policy, PolicyVersion, ...;\nIOfferRepository, IPolicyRepository,\nIUnitOfWork, IPricingService)" as domain
+  folder "DataAccess.NHibernate\n(OfferRepository, PolicyRepository,\nUnitOfWork, *.hbm.xml)" as data
+  folder "RestClients\n(PricingClient, PricingService)\n<<RestEase + Polly>>" as rest
+  folder "Messaging.RabbitMq\n(Outbox, OutboxEventPublisher,\nOutboxSendingService)\n<<EasyNetQ>>" as msg
+}
+
+package "Thư viện ngoài (NuGet)" as nuget {
+  folder "MediatR" as mediatr
+  folder "NHibernate + Npgsql" as nh
+  folder "EasyNetQ" as easynetq
+  folder "RestEase, Polly" as resil
+  folder "Steeltoe.Discovery.Eureka,\nSerilog, Swashbuckle" as misc
+}
+
+boot ..> ctl
+ctl ..> handlers : gửi Command/Query\nqua IMediator
+ctl ..> apiCmd
+handlers ..> apiCmd
+handlers ..> apiQry
+handlers ..> apiEvt : tạo sự kiện
+handlers ..> domain
+handlers ..> msg : IEventPublisher
+data ..|> domain : hiện thực\nrepository
+rest ..|> domain : hiện thực\nIPricingService
+msg ..> apiEvt
+handlers ..> mediatr
+data ..> nh
+msg ..> easynetq
+rest ..> resil
+boot ..> misc
+
+@enduml

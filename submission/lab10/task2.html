@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>BTH10 - Task 2 - Kiến trúc theo 4 khung nhìn</title>
+<link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<div class="cover">
+  <div class="school">Môn học: Kiến trúc và thiết kế phần mềm</div>
+  <div class="sub">Bài thực hành số 10 - Review lại kiến trúc của hệ thống trong Case Study</div>
+  <h1>TASK 2: KIẾN TRÚC HỆ THỐNG CỔNG BÁN BẢO HIỂM<br>THEO 4 KHUNG NHÌN (VIEWS) - KÝ PHÁP UML</h1>
+  <table class="meta">
+    <tr><td>Sinh viên</td><td>Trương Đắc Kiên</td></tr>
+    <tr><td>MSSV</td><td>2424802010029</td></tr>
+    <tr><td>Lớp</td><td>D24CNTT05</td></tr>
+    <tr><td>Mã nguồn</td><td>github.com/KienTD204/Microservices-InsurancePortal-2424802010029 (nhánh <code>student/lab10</code>)</td></tr>
+    <tr><td>Ngày nộp</td><td>15/11/2026</td></tr>
+  </table>
+</div>
+
+<h2>1. Giới thiệu</h2>
+<p>Tài liệu mô tả lại kiến trúc của hệ thống cổng bán bảo hiểm (kiến trúc microservices trên .NET 8, đã xây dựng và triển khai ở các bài thực hành 4 đến 9) theo bốn khung nhìn của mô hình "4+1" (Philippe Kruchten). Mỗi khung nhìn trả lời một câu hỏi khác nhau về cùng một hệ thống và phục vụ một nhóm người đọc khác nhau. Tất cả sơ đồ dùng ký pháp UML 2 và được vẽ bằng PlantUML; mã nguồn sơ đồ nằm trong <code>submission/lab10/diagrams</code>.</p>
+<p>Các sơ đồ được <b>khái quát từ hệ thống thật</b>: tên lớp, tên project, cổng, hàng đợi và container đều lấy từ mã nguồn và từ bản triển khai Docker Compose của Bài 9, không phải thiết kế giả định.</p>
+
+<table class="t">
+  <tr><th style="width:17%">Khung nhìn</th><th style="width:27%">Câu hỏi được trả lời</th><th style="width:22%">Người quan tâm</th><th>Sơ đồ UML sử dụng</th></tr>
+  <tr><td><b>Logic</b></td><td>Hệ thống cung cấp chức năng gì, gồm những khái niệm nghiệp vụ nào?</td><td>Người dùng cuối, người phân tích nghiệp vụ</td><td>Sơ đồ gói (Hình 1); sơ đồ lớp (Hình 2, 3, 4)</td></tr>
+  <tr><td><b>Tiến trình</b></td><td>Lúc chạy, các tiến trình phối hợp, đồng bộ và chạy song song ra sao?</td><td>Người tích hợp hệ thống, người lo hiệu năng</td><td>Sơ đồ tuần tự (Hình 5, 6); sơ đồ hoạt động (Hình 7)</td></tr>
+  <tr><td><b>Cài đặt</b></td><td>Mã nguồn được tổ chức thành những project, gói nào và phụ thuộc nhau thế nào?</td><td>Lập trình viên, người quản lý cấu hình</td><td>Sơ đồ thành phần (Hình 8); sơ đồ gói (Hình 9)</td></tr>
+  <tr><td><b>Triển khai</b></td><td>Phần mềm được đặt lên những nút nào, nối với nhau bằng giao thức gì?</td><td>Kỹ sư hệ thống, người vận hành</td><td>Sơ đồ triển khai (Hình 10)</td></tr>
+</table>
+
+<h2>2. Khung nhìn Logic</h2>
+<p>Khung nhìn Logic mô tả hệ thống ở mức chức năng. Hệ thống được chia thành chín phân hệ nghiệp vụ, mỗi phân hệ là một ngữ cảnh giới hạn (bounded context) và được hiện thực bằng đúng một microservice. Bên trong mỗi phân hệ là mô hình miền gồm các lớp thực thể, đối tượng giá trị và giao diện kho lưu trữ.</p>
+
+<section class="wide">
+  <h3>2.1. Sơ đồ gói các phân hệ nghiệp vụ</h3>
+  <figure>
+    <img src="diagrams/out/V1a-logic-goi.svg" alt="Sơ đồ gói">
+    <figcaption>Hình 1. Khung nhìn Logic - sơ đồ gói: các phân hệ nghiệp vụ và quan hệ phụ thuộc giữa chúng.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 1.</b> Giao diện phụ thuộc vào Cổng vào để dùng nghiệp vụ, và phụ thuộc trực tiếp vào Xác thực (đăng nhập) và Trao đổi trực tuyến (chat). Cổng vào định tuyến tới bốn phân hệ: Sản phẩm, Hợp đồng, Tìm kiếm hợp đồng và Thống kê. Phân hệ Hợp đồng là trung tâm: nó gọi Định giá để tính phí và công bố hai sự kiện <code>PolicyCreated</code>, <code>PolicyTerminated</code>. Bốn phân hệ Tìm kiếm, Thanh toán, Thống kê và Trao đổi chỉ phụ thuộc vào <i>hợp đồng dữ liệu</i> của sự kiện (gói <code>PolicyService.Api</code>), không phụ thuộc vào phần cài đặt của Hợp đồng; nhờ vậy có thể thêm phân hệ mới mà không sửa phân hệ Hợp đồng.</p>
+</section>
+
+<table class="t">
+  <tr><th style="width:24%">Phân hệ</th><th>Chức năng cung cấp cho người dùng</th><th style="width:30%">Khái niệm miền chính</th></tr>
+  <tr><td>Xác thực (AuthService)</td><td>Đăng nhập, cấp quyền theo loại người dùng, sản phẩm được phép bán.</td><td>InsuranceAgent, AuthResult</td></tr>
+  <tr><td>Sản phẩm (ProductService)</td><td>Xem danh mục sản phẩm, quyền lợi và bộ câu hỏi cần trả lời để tính phí.</td><td>Product, Cover, Question, Choice</td></tr>
+  <tr><td>Định giá (PricingService)</td><td>Tính phí theo sản phẩm, quyền lợi đã chọn và câu trả lời.</td><td>Tariff, Calculation, các luật tính phí</td></tr>
+  <tr><td>Hợp đồng (PolicyService)</td><td>Lập báo giá, mua (chuyển thành hợp đồng), xem và hủy hợp đồng.</td><td>Offer, Policy, PolicyVersion, PolicyHolder</td></tr>
+  <tr><td>Tìm kiếm (PolicySearchService)</td><td>Tìm hợp đồng theo số hợp đồng hoặc tên người mua.</td><td>Policy (bản đọc)</td></tr>
+  <tr><td>Thanh toán (PaymentService)</td><td>Mở tài khoản hợp đồng, ghi khoản phải thu, tiền về, tiền hoàn; xem số dư.</td><td>PolicyAccount, AccountingEntry</td></tr>
+  <tr><td>Thống kê (DashboardService)</td><td>Doanh số tổng, theo đại lý, theo thời gian.</td><td>PolicyDocument, SalesResult</td></tr>
+  <tr><td>Trao đổi (ChatService)</td><td>Chat giữa các đại lý, thông báo khi có hợp đồng mới.</td><td>AgentChatHub</td></tr>
+  <tr><td>Tài liệu (DocumentService)</td><td>Dự kiến sinh chứng chỉ PDF; hiện mới là khung.</td><td>-</td></tr>
+</table>
+
+<section class="wide">
+  <h3>2.2. Sơ đồ lớp của phân hệ Hợp đồng</h3>
+  <figure class="full">
+    <img src="diagrams/out/V1b-logic-lop-policy.svg" alt="Sơ đồ lớp PolicyService">
+    <figcaption>Hình 2. Khung nhìn Logic - sơ đồ lớp miền nghiệp vụ Hợp đồng (namespace <code>PolicyService.Domain</code>).</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 2.</b> Có hai gốc tập hợp (aggregate root). <code>Offer</code> (báo giá) chứa các quyền lợi đã định giá (<code>Cover</code>), các câu trả lời (<code>Answer</code> với ba lớp con theo kiểu câu hỏi) và thời hạn bảo hiểm; báo giá hết hạn sau 30 ngày. Thao tác <code>Offer.Buy()</code> tạo ra <code>Policy</code> (hợp đồng) và chuyển trạng thái báo giá sang <code>Converted</code>. <code>Policy</code> được quản lý theo phiên bản: mỗi lần thay đổi (ví dụ hủy) sinh thêm một <code>PolicyVersion</code> có thời gian hiệu lực riêng, nên luôn truy lại được trạng thái hợp đồng tại một ngày bất kỳ. Các giao diện <code>IOfferRepository</code>, <code>IPolicyRepository</code>, <code>IUnitOfWork</code> và <code>IPricingService</code> thuộc tầng miền; phần hiện thực (NHibernate, REST) nằm ở tầng hạ tầng, đúng nguyên tắc đảo ngược phụ thuộc.</p>
+</section>
+
+<section class="wide">
+  <h3>2.3. Sơ đồ lớp của phân hệ Sản phẩm và Định giá</h3>
+  <figure>
+    <img src="diagrams/out/V1c-logic-lop-san-pham-dinh-gia.svg" alt="Sơ đồ lớp Sản phẩm và Định giá">
+    <figcaption>Hình 3. Khung nhìn Logic - sơ đồ lớp miền của phân hệ Sản phẩm và Định giá.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 3.</b> <code>Product</code> là gốc tập hợp của danh mục: mỗi sản phẩm gồm các quyền lợi (<code>Cover</code>, bắt buộc hoặc tùy chọn, có số tiền bảo hiểm) và bộ câu hỏi đa hình (<code>ChoiceQuestion</code> kèm các <code>Choice</code>, <code>NumericQuestion</code>, <code>DateQuestion</code>); sản phẩm đi qua các trạng thái nháp, kích hoạt, ngừng bán. Ở phân hệ Định giá, mỗi sản phẩm có một <code>Tariff</code> giữ danh sách luật tính phí cơ bản (<code>BasePremiumCalculationRule</code>) và luật tăng/giảm (<code>DiscountMarkupRule</code>); <code>Tariff.CalculatePrice()</code> áp các luật lên một <code>Calculation</code> (sản phẩm, thời hạn, quyền lợi, câu trả lời) để ra phí từng quyền lợi và tổng phí. Hai phân hệ chỉ liên hệ với nhau qua mã sản phẩm, không dùng chung lớp.</p>
+</section>
+
+<section class="wide">
+  <h3>2.4. Sơ đồ lớp của phân hệ Thanh toán và Xác thực</h3>
+  <figure>
+    <img src="diagrams/out/V1d-logic-lop-thanh-toan-xac-thuc.svg" alt="Sơ đồ lớp Thanh toán và Xác thực">
+    <figcaption>Hình 4. Khung nhìn Logic - sơ đồ lớp miền của phân hệ Thanh toán và Xác thực.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 4.</b> <code>PolicyAccount</code> là sổ cái của một hợp đồng, có chủ tài khoản (<code>Owner</code>) và danh sách bút toán; ba loại bút toán <code>ExpectedPayment</code> (phải thu), <code>InPayment</code> (tiền về), <code>OutPayment</code> (tiền hoàn) cùng kế thừa <code>AccountingEntry</code>, và số dư tại một ngày được tính từ các bút toán có hiệu lực đến ngày đó. <code>InPaymentRegistrationService</code> là dịch vụ miền đọc <code>BankStatementFile</code> rồi ghi tiền về vào đúng tài khoản. Ở phân hệ Xác thực, <code>AuthService</code> tra đại lý qua giao diện <code>IInsuranceAgents</code>, so mật khẩu và tạo <code>AuthResult</code> chứa JWT cùng thời điểm hết hạn. Hai phân hệ Tìm kiếm và Thống kê chỉ là mô hình đọc (một lớp tài liệu trong Elasticsearch) nên không vẽ sơ đồ lớp riêng.</p>
+</section>
+
+<h2>3. Khung nhìn Tiến trình</h2>
+<p>Khung nhìn Tiến trình mô tả hệ thống lúc chạy: có những tiến trình và luồng nào, chúng trao đổi đồng bộ hay bất đồng bộ, phần nào chạy song song. Mỗi microservice là một tiến trình hệ điều hành riêng (một container); trong mỗi tiến trình ASP.NET Core, mỗi yêu cầu HTTP được xử lý trên một luồng của thread pool.</p>
+
+<table class="t">
+  <tr><th style="width:23%">Tiến trình</th><th style="width:37%">Luồng / tác vụ chạy bên trong</th><th>Cách giao tiếp với tiến trình khác</th></tr>
+  <tr><td>Trình duyệt (BlazorWasmClient)</td><td>Luồng giao diện WebAssembly; một kết nối SignalR thường trực.</td><td>HTTP/REST tới Gateway và AuthService; WebSocket tới ChatService.</td></tr>
+  <tr><td>AgentPortalApiGateway</td><td>Luồng xử lý request; tác vụ nền làm mới danh bạ Eureka.</td><td>HTTP đồng bộ tới các service; HTTP tới Eureka.</td></tr>
+  <tr><td>PolicyService</td><td>Luồng xử lý request; <code>OutboxSendingService</code> (IHostedService, timer 1 giây) đẩy sự kiện.</td><td>HTTP đồng bộ tới PricingService (thử lại 3 lần); AMQP publish; TCP tới PostgreSQL.</td></tr>
+  <tr><td>PricingService, ProductService, AuthService</td><td>Luồng xử lý request.</td><td>Chỉ nhận HTTP đồng bộ.</td></tr>
+  <tr><td>PolicySearchService, DashboardService</td><td>Luồng xử lý request; luồng tiêu thụ hàng đợi RabbitMQ.</td><td>AMQP subscribe; HTTP tới Elasticsearch.</td></tr>
+  <tr><td>PaymentService</td><td>Luồng xử lý request; luồng tiêu thụ hàng đợi; máy chủ Hangfire chạy job đọc tệp sao kê mỗi phút.</td><td>AMQP subscribe; TCP tới PostgreSQL.</td></tr>
+  <tr><td>ChatService</td><td>Luồng xử lý request; các kết nối SignalR; luồng tiêu thụ hàng đợi.</td><td>WebSocket tới trình duyệt; AMQP subscribe.</td></tr>
+  <tr><td>Eureka, RabbitMQ, PostgreSQL, Elasticsearch</td><td>Tiến trình hạ tầng độc lập.</td><td>Được các service gọi tới.</td></tr>
+</table>
+
+<section class="wide">
+  <h3>3.1. Kịch bản đồng bộ: đăng nhập và tạo báo giá</h3>
+  <figure>
+    <img src="diagrams/out/V2a-tien-trinh-bao-gia.svg" alt="Sơ đồ tuần tự tạo báo giá">
+    <figcaption>Hình 5. Khung nhìn Tiến trình - sơ đồ tuần tự của chuỗi gọi đồng bộ REST.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 5.</b> Đây là chuỗi gọi <i>đồng bộ</i>: đại lý phải chờ đến khi có giá. Yêu cầu đi qua bốn tiến trình (trình duyệt, Gateway, PolicyService, PricingService), nên thời gian phản hồi là tổng thời gian của cả chuỗi và lỗi ở PricingService sẽ lan ngược lên. Hệ thống giảm rủi ro này bằng chính sách thử lại của Polly (bước 13) và bằng việc Gateway lưu đệm danh bạ Eureka để không phải hỏi Eureka ở mỗi yêu cầu (bước 9).</p>
+</section>
+
+<section class="wide">
+  <h3>3.2. Kịch bản bất đồng bộ: tạo hợp đồng và lan truyền sự kiện</h3>
+  <figure>
+    <img src="diagrams/out/V2b-tien-trinh-hop-dong.svg" alt="Sơ đồ tuần tự tạo hợp đồng">
+    <figcaption>Hình 6. Khung nhìn Tiến trình - sơ đồ tuần tự của luồng hướng sự kiện qua RabbitMQ.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 6.</b> Đại lý nhận kết quả ngay sau bước 9; mọi việc phía sau chạy <i>bất đồng bộ</i>. Ở bước 6, hợp đồng và sự kiện được ghi trong cùng một giao dịch cơ sở dữ liệu (mẫu Transactional Outbox), nên không xảy ra trường hợp lưu hợp đồng mà mất sự kiện. Luồng nền <code>OutboxSendingService</code> đọc bảng Outbox mỗi giây và đẩy lên exchange <code>lab-dotnet-micro</code>. Bốn service nhận có hàng đợi riêng nên xử lý <i>song song và độc lập</i> (khung <code>par</code>): một service lỗi hay chậm không ảnh hưởng ba service còn lại, và thông điệp vẫn nằm trong hàng đợi chờ nó hoạt động lại. Hệ quả là dữ liệu tìm kiếm và thống kê <i>nhất quán sau cùng</i> (trễ khoảng một đến vài giây) chứ không tức thời.</p>
+</section>
+
+<section class="wide">
+  <h3>3.3. Quy trình bán bảo hiểm qua các tiến trình</h3>
+  <figure>
+    <img src="diagrams/out/V2c-tien-trinh-hoat-dong.svg" alt="Sơ đồ hoạt động">
+    <figcaption>Hình 7. Khung nhìn Tiến trình - sơ đồ hoạt động có làn bơi; mỗi làn là một tiến trình hoặc nhóm tiến trình.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 7.</b> Sơ đồ gộp hai kịch bản trên thành một quy trình liền mạch và cho thấy điểm rẽ nhánh (khách có mua hay không) cùng điểm phân luồng (fork) nơi bốn service xử lý sự kiện đồng thời.</p>
+</section>
+
+<section class="wide">
+<h2>4. Khung nhìn Cài đặt</h2>
+<p class="explain">Khung nhìn Cài đặt (còn gọi là khung nhìn Phát triển) mô tả cách tổ chức mã nguồn. Toàn bộ nằm trong một kho Git và một solution <code>DotNetMicroservicesPoc.sln</code>, nhưng mỗi service là một nhóm project riêng, build ra một tệp thực thi riêng.</p>
+  <h3>4.1. Sơ đồ thành phần các project trong solution</h3>
+  <figure class="short">
+    <img src="diagrams/out/V3a-cai-dat-thanh-phan.svg" alt="Sơ đồ thành phần">
+    <figcaption>Hình 8. Khung nhìn Cài đặt - sơ đồ thành phần: các project và quan hệ tham chiếu (<code>ProjectReference</code>).</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 8.</b> Mỗi service theo quy tắc ba project: <code>X</code> (tệp thực thi ASP.NET Core), <code>X.Api</code> (thư viện hợp đồng chứa Command, Query, Event, DTO) và <code>X.Test</code> (kiểm thử xUnit). Điểm quan trọng nhất của sơ đồ là <b>không có service thực thi nào tham chiếu service thực thi khác</b>: chúng chỉ tham chiếu các thư viện <code>.Api</code>. Ví dụ PolicyService tham chiếu <code>PricingService.Api</code> để biết cấu trúc lệnh tính phí; bốn service nhận sự kiện và giao diện Blazor tham chiếu <code>PolicyService.Api</code>. Nhờ đó các service chỉ ràng buộc với nhau ở mức hợp đồng dữ liệu và có thể build, kiểm thử, triển khai độc lập. Gateway không tham chiếu project nào; quy tắc định tuyến nằm trong tệp cấu hình <code>ocelot.json</code>.</p>
+</section>
+
+<section class="wide">
+  <h3>4.2. Sơ đồ gói bên trong một microservice</h3>
+  <figure>
+    <img src="diagrams/out/V3b-cai-dat-phan-lop.svg" alt="Sơ đồ gói bên trong service">
+    <figcaption>Hình 9. Khung nhìn Cài đặt - sơ đồ gói: cấu trúc thư mục/namespace của PolicyService và phụ thuộc vào thư viện ngoài.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 9.</b> Bên trong service, mã nguồn chia theo tầng. <code>Controllers</code> chỉ nhận HTTP rồi gửi Command/Query qua MediatR. Các <code>Handler</code> điều phối nghiệp vụ và chỉ làm việc với tầng <code>Domain</code>. <code>DataAccess</code>, <code>RestClients</code> và <code>Messaging</code> là tầng hạ tầng, <i>hiện thực</i> các giao diện do <code>Domain</code> định nghĩa (mũi tên hiện thực hướng vào Domain), nên tầng miền không phụ thuộc NHibernate, RabbitMQ hay REST. Các service khác theo cùng khuôn mẫu và chỉ thay công nghệ lưu trữ: Marten (Pricing, Payment), EF Core (Product), Elasticsearch (PolicySearch, Dashboard); service nhận sự kiện có thêm gói <code>Listeners</code> và <code>RabbitEventListener</code>.</p>
+</section>
+
+<table class="t">
+  <tr><th style="width:27%">Thành phần cài đặt</th><th style="width:25%">Sản phẩm sau khi build</th><th>Ghi chú</th></tr>
+  <tr><td>9 project service + Gateway</td><td><code>&lt;Tên&gt;.dll</code> (net8.0) + <code>appsettings*.json</code></td><td>Mỗi project có <code>Dockerfile</code> riêng; Bài 9 dùng một image chung <code>scripts/lab9.Dockerfile</code>.</td></tr>
+  <tr><td>7 project <code>.Api</code></td><td>Thư viện lớp <code>.dll</code></td><td>Được đóng gói kèm service tham chiếu tới nó.</td></tr>
+  <tr><td>BlazorWasmClient</td><td>Gói WebAssembly (<code>_framework</code>, tệp tĩnh)</td><td>Chạy trong trình duyệt.</td></tr>
+  <tr><td>Web (Vue)</td><td>Thư mục <code>dist</code> (npm build)</td><td>Phục vụ bằng Nginx.</td></tr>
+  <tr><td>eureka-server</td><td><code>eureka-server.jar</code> (Gradle)</td><td>Viết bằng Java, Spring Boot.</td></tr>
+  <tr><td>Các project <code>.Test</code></td><td>Bộ kiểm thử xUnit</td><td>Chạy trong GitHub Actions khi đẩy mã.</td></tr>
+  <tr><td><code>scripts/</code>, <code>postgres/</code></td><td>Tệp Compose, script kiểm tra, SQL khởi tạo</td><td>Hạ tầng dưới dạng mã.</td></tr>
+</table>
+
+<h2>5. Khung nhìn Triển khai</h2>
+<p>Khung nhìn Triển khai (khung nhìn Vật lý) cho biết phần mềm được đặt lên những nút nào và nối với nhau ra sao. Sơ đồ dưới đây mô tả đúng bản triển khai đã chạy và kiểm chứng ở Bài 9: một máy Windows 11 chạy Docker Desktop, 14 container Linux trên một mạng bridge do Docker Compose tạo.</p>
+
+<section class="wide">
+  <h3>5.1. Sơ đồ triển khai</h3>
+  <figure class="full">
+    <img src="diagrams/out/V4-trien-khai.svg" alt="Sơ đồ triển khai">
+    <figcaption>Hình 10. Khung nhìn Triển khai - sơ đồ triển khai UML: nút, môi trường thực thi, artifact và đường truyền.</figcaption>
+  </figure>
+<p class="explain"><b>Đọc Hình 10.</b> Có hai thiết bị: máy người dùng (trình duyệt tải và chạy ứng dụng WebAssembly) và máy chủ triển khai. Trên máy chủ, Docker Engine là môi trường thực thi chứa 14 container; mỗi container là một nút chạy đúng một artifact. Trình duyệt chỉ nối tới bốn container: <code>web</code> (tải ứng dụng), Gateway, AuthService và ChatService. Các đường nối còn lại nằm trong mạng Docker và dùng tên container làm tên máy.</p>
+</section>
+
+<table class="t">
+  <tr><th style="width:26%">Container</th><th style="width:22%">Image</th><th style="width:14%">Cổng công bố</th><th>Phụ thuộc khi khởi động</th></tr>
+  <tr><td>web</td><td>insurance-lab9</td><td>5081</td><td>Gateway, ChatService</td></tr>
+  <tr><td>dotnet-agent-portal-gateway</td><td>insurance-lab9</td><td>8099</td><td>Eureka, Product, Policy, PolicySearch, Payment, Dashboard</td></tr>
+  <tr><td>dotnet-auth-service</td><td>insurance-lab9</td><td>6060</td><td>-</td></tr>
+  <tr><td>dotnet-chat-service</td><td>insurance-lab9</td><td>4099</td><td>Eureka, RabbitMQ</td></tr>
+  <tr><td>dotnet-product-service</td><td>insurance-lab9</td><td>5030</td><td>Eureka</td></tr>
+  <tr><td>dotnet-pricing-service</td><td>insurance-lab9</td><td>không (5040 nội bộ)</td><td>Eureka, PostgreSQL</td></tr>
+  <tr><td>dotnet-policy-service</td><td>insurance-lab9</td><td>5050</td><td>Eureka, PostgreSQL, RabbitMQ, Pricing</td></tr>
+  <tr><td>dotnet-policy-search-service</td><td>insurance-lab9</td><td>5065</td><td>Eureka, Elasticsearch, RabbitMQ</td></tr>
+  <tr><td>dotnet-payment-service</td><td>insurance-lab9</td><td>5070</td><td>Eureka, PostgreSQL, RabbitMQ</td></tr>
+  <tr><td>dotnet-dashboard-service</td><td>insurance-lab9</td><td>5035</td><td>Eureka, Elasticsearch, RabbitMQ</td></tr>
+  <tr><td>eureka-server</td><td>lab-eureka-server (JRE 8)</td><td>8761</td><td>-</td></tr>
+  <tr><td>rabbit</td><td>rabbitmq:3-management</td><td>15672</td><td>-</td></tr>
+  <tr><td>postgres</td><td>lab-postgres:16</td><td>không (5432 nội bộ)</td><td>volume <code>lab9_pgdata</code></td></tr>
+  <tr><td>elasticsearch</td><td>elasticsearch:8.9.2</td><td>9200</td><td>volume <code>lab9_esdata</code></td></tr>
+</table>
+
+<ul>
+  <li>Mười container .NET dùng chung image <code>insurance-lab9:latest</code> (dựng từ <code>mcr.microsoft.com/dotnet/sdk:8.0.425</code>, build cả solution ở chế độ Release); mỗi container chạy một lệnh <code>dotnet &lt;Service&gt;.dll</code> với <code>ASPNETCORE_ENVIRONMENT=docker</code> để nạp <code>appsettings.docker.json</code>.</li>
+  <li>Cổng chỉ công bố trên <code>127.0.0.1</code> của máy chủ; PricingService và PostgreSQL không lộ ra ngoài mạng Docker.</li>
+  <li>Thứ tự khởi động do <code>depends_on</code> kết hợp <code>healthcheck</code> điều khiển; container lỗi được khởi động lại (<code>restart: on-failure</code>).</li>
+  <li>Dữ liệu bền vững nằm ở hai volume; ProductService và AuthService giữ dữ liệu trong bộ nhớ nên được nạp lại dữ liệu mẫu mỗi lần khởi động.</li>
+</ul>
+
+<h2 class="newpage">6. Liên hệ giữa các khung nhìn</h2>
+<p>Bốn khung nhìn mô tả cùng một hệ thống nên phải khớp nhau. Bảng dưới lần theo ba phần tử tiêu biểu qua cả bốn khung nhìn.</p>
+<table class="t">
+  <tr><th style="width:16%">Phần tử</th><th>Logic</th><th>Tiến trình</th><th>Cài đặt</th><th>Triển khai</th></tr>
+  <tr><td>Hợp đồng</td><td>Gói Hợp đồng; lớp Offer, Policy, PolicyVersion</td><td>Tiến trình PolicyService + luồng nền Outbox</td><td>Project PolicyService, PolicyService.Api, PolicyService.Test</td><td>Container dotnet-policy-service :5050, CSDL lab_netmicro_policy</td></tr>
+  <tr><td>Tìm kiếm hợp đồng</td><td>Gói Tìm kiếm hợp đồng (mô hình đọc)</td><td>Luồng tiêu thụ PolicyCreated, truy vấn Elasticsearch</td><td>Project PolicySearchService, PolicySearchService.Api</td><td>Container dotnet-policy-search-service :5065, elasticsearch</td></tr>
+  <tr><td>Sự kiện PolicyCreated</td><td>Quan hệ «publish» / «subscribe» giữa các gói</td><td>Thông điệp bất đồng bộ qua exchange lab-dotnet-micro</td><td>Lớp trong PolicyService.Api/Events</td><td>Đường truyền AMQP 5672 tới container rabbit</td></tr>
+</table>
+
+<div class="note"><b>Giới hạn của tài liệu.</b> Khung nhìn Triển khai mô tả bản chạy một máy cho bài thực hành, chưa phải cấu hình sản xuất (mỗi thành phần hạ tầng chỉ có một bản, chưa có HTTPS và cân bằng tải). DocumentService mới là project khung nên chỉ xuất hiện ở khung nhìn Logic và Cài đặt. Giao diện Vue (<code>Web</code>) có trong mã nguồn nhưng không nằm trong bản triển khai Bài 9 nên không có trong sơ đồ triển khai.</div>
+
+</body>
+</html>

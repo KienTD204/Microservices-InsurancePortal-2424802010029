@@ -1,0 +1,56 @@
+@startuml
+!include _style.iuml
+set namespaceSeparator none
+hide empty members
+title Khung nhìn Logic (3/4) - Sơ đồ lớp miền của Sản phẩm và Định giá
+
+package "ProductService.Domain" {
+  enum ProductStatus
+  class Product <<Aggregate Root>> {
+    +Code : string
+    +Name : string
+    +Status : ProductStatus
+    +MaxNumberOfInsured : int
+    +Activate()
+    +Discontinue()
+    +AddCover(...)
+    +AddQuestions(...)
+  }
+  class "Cover" as PCover
+  abstract class Question
+  class ChoiceQuestion
+  class NumericQuestion
+  class DateQuestion
+  class Choice
+  Product --> ProductStatus
+  Product "1" *-- "1..*" PCover
+  Product "1" *-- "0..*" Question
+  Question <|-- ChoiceQuestion
+  Question <|-- NumericQuestion
+  Question <|-- DateQuestion
+  ChoiceQuestion "1" *-- "1..*" Choice
+}
+
+package "PricingService.Domain" {
+  class Tariff <<Aggregate Root>> {
+    +Code : string
+    +CalculatePrice(c : Calculation) : Calculation
+  }
+  class Calculation {
+    +ProductCode : string
+    +PolicyFrom : DateTimeOffset
+    +PolicyTo : DateTimeOffset
+    +TotalPremium : decimal
+    +UpdateTotal()
+  }
+  class BasePremiumCalculationRule
+  abstract class DiscountMarkupRule
+  class PercentMarkupRule
+  class "Cover" as TCover
+  Tariff "1" *-- "0..*" BasePremiumCalculationRule
+  Tariff "1" *-- "0..*" DiscountMarkupRule
+  DiscountMarkupRule <|-- PercentMarkupRule
+  Tariff ..> Calculation
+  Calculation "1" *-- "0..*" TCover
+}
+@enduml

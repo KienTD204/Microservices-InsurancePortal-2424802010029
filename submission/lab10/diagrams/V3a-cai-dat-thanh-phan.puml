@@ -1,0 +1,67 @@
+@startuml
+!include _style.iuml
+left to right direction
+title Khung nhìn Cài đặt (1/2) - Sơ đồ thành phần: các project (assembly) trong DotNetMicroservicesPoc.sln và tham chiếu
+
+package "Giao diện" {
+  component "BlazorWasmClient\n<<Blazor WebAssembly>>" as blazor
+  component "Web\n<<Vue.js, npm>>" as vue
+}
+package "Cổng vào" {
+  component "AgentPortalApiGateway\n<<ASP.NET Core exe>>" as gw
+  artifact "ocelot.json" as ocelot
+}
+package "Service thực thi (ASP.NET Core exe, net8.0)" as exes {
+  component "AuthService" as auth
+  component "ProductService" as product
+  component "PricingService" as pricing
+  component "PolicyService" as policy
+  component "PolicySearchService" as search
+  component "PaymentService" as payment
+  component "DashboardService" as dashboard
+  component "ChatService" as chat
+  component "DocumentService" as document
+}
+package "Thư viện hợp đồng (class library): Command, Query, Event, DTO" as libs {
+  component "ProductService.Api" as productApi
+  component "PricingService.Api" as pricingApi
+  component "PolicyService.Api" as policyApi
+  component "PolicySearchService.Api" as searchApi
+  component "PaymentService.Api" as paymentApi
+  component "DashboardService.Api" as dashboardApi
+  component "ChatService.Api" as chatApi
+}
+package "Kiểm thử (xUnit)" as tests {
+  component "AuthService.Test" as authTest
+  component "ProductService.Test" as productTest
+  component "PricingService.Test\nPricingService.IntegrationTest" as pricingTest
+  component "PolicyService.Test" as policyTest
+  component "PaymentService.Test" as paymentTest
+  component "DashboardService.Test" as dashboardTest
+}
+
+gw ..> ocelot : <<read>>
+authTest ..> auth
+productTest ..> product
+pricingTest ..> pricing
+policyTest ..> policy
+paymentTest ..> payment
+dashboardTest ..> dashboard
+product ..> productApi
+pricing ..> pricingApi
+policy ..> policyApi
+policy ..> pricingApi
+search ..> searchApi
+search ..> policyApi
+payment ..> paymentApi
+payment ..> policyApi
+dashboard ..> dashboardApi
+dashboard ..> policyApi
+chat ..> chatApi
+chat ..> policyApi
+blazor ..> productApi
+blazor ..> policyApi
+blazor ..> pricingApi
+blazor ..> searchApi
+blazor ..> dashboardApi
+@enduml

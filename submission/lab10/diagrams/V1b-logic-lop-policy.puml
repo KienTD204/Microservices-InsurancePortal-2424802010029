@@ -1,0 +1,108 @@
+@startuml
+!include _style.iuml
+hide empty members
+title Khung nhìn Logic (2/4) - Sơ đồ lớp miền nghiệp vụ Hợp đồng (PolicyService.Domain)
+
+enum OfferStatus {
+  New
+  Converted
+  Rejected
+}
+enum PolicyStatus {
+  Active
+  Terminated
+}
+class Offer <<Aggregate Root>> {
+  +Number : string
+  +ProductCode : string
+  +TotalPrice : decimal
+  +Status : OfferStatus
+  +CreationDate : DateTime
+  +AgentLogin : string
+  +{static} ForPrice(...) : Offer
+  +{static} ForPriceAndAgent(...) : Offer
+  +Buy(customer : PolicyHolder) : Policy
+  +IsExpired(theDate : DateTime) : bool
+}
+class Policy <<Aggregate Root>> {
+  +Number : string
+  +ProductCode : string
+  +Status : PolicyStatus
+  +CreationDate : DateTime
+  +AgentLogin : string
+  +{static} FromOffer(holder, offer) : Policy
+  +Terminate(date : DateTime) : PolicyTerminationResult
+}
+class PolicyVersion <<Entity>> {
+  +VersionNumber : int
+  +TotalPremiumAmount : decimal
+  +IsEffectiveOn(theDate : DateTime) : bool
+  +EndOn(endDate : DateTime) : PolicyVersion
+}
+class PolicyCover <<Entity>> {
+  +EndOn(endDate : DateTime) : PolicyCover
+}
+class Cover <<Value Object>> {
+  +Code : string
+  +Price : decimal
+}
+class PolicyHolder <<Value Object>> {
+  +FirstName : string
+  +LastName : string
+  +Pesel : string
+}
+class Address <<Value Object>> {
+  +Country : string
+  +ZipCode : string
+  +City : string
+  +Street : string
+}
+class ValidityPeriod <<Value Object>> {
+  +ValidFrom : DateTime
+  +ValidTo : DateTime
+  +Days : int
+  +Contains(theDate) : bool
+  +EndOn(endDate) : ValidityPeriod
+}
+abstract class Answer {
+  +QuestionCode : string
+  +{abstract} GetAnswerValue() : object
+}
+class TextAnswer
+class NumericAnswer
+class ChoiceAnswer
+class Price <<Value Object>> {
+  +CoverPrices : Dictionary<string, decimal>
+}
+class PolicyTerminationResult <<Value Object>>
+interface IOfferRepository
+interface IPolicyRepository
+interface IUnitOfWork
+interface IPricingService {
+  +CalculatePrice(...) : Price
+}
+
+Offer --> OfferStatus
+Policy --> PolicyStatus
+Offer "1" *-- "1..*" Cover : covers
+Offer "1" *-- "0..*" Answer : answers
+Offer "1" *-- "1" ValidityPeriod : policyValidityPeriod
+Offer "1" o-- "0..1" PolicyHolder
+Policy "1" *-- "1..*" PolicyVersion : versions
+PolicyVersion "1" *-- "1..*" PolicyCover : covers
+PolicyVersion "1" *-- "1" PolicyHolder
+PolicyVersion "1" *-- "2" ValidityPeriod : coverPeriod,\nversionValidityPeriod
+PolicyCover "1" *-- "1" Cover
+PolicyCover "1" *-- "1" ValidityPeriod
+PolicyHolder "1" *-- "1" Address
+Answer <|-- TextAnswer
+Answer <|-- NumericAnswer
+Answer <|-- ChoiceAnswer
+Offer ..> Policy : <<create>>\nBuy()
+Policy ..> PolicyTerminationResult : <<create>>
+IUnitOfWork --> IOfferRepository
+IUnitOfWork --> IPolicyRepository
+IOfferRepository ..> Offer
+IPolicyRepository ..> Policy
+IPricingService ..> Price : <<create>>
+@enduml

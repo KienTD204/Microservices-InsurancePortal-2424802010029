@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1010" width="1400" height="1010" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495E"/></marker></defs>
+<rect width="1400" height="1010" fill="#FFFFFF"/>
+<rect x="560" y="14" width="280" height="44" rx="22" fill="#FFFFFF" stroke="#1F2D3D" stroke-width="1.4"/>
+<text x="700" y="33" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >Đại lý bảo hiểm (Sales Agent)</text>
+<text x="700" y="49" font-size="10.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" >Trình duyệt web: Chrome / Edge</text>
+<rect x="20" y="84" width="1360" height="112" rx="10" fill="#F4F6F8" stroke="#AEB6BF" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="32" y="100" font-size="11" font-weight="700" fill="#5D6D7E" text-anchor="start" letter-spacing="0.6">TẦNG GIAO DIỆN  ·  Single Page Application chạy trong trình duyệt</text>
+<rect x="250" y="108" width="400" height="78" rx="8" fill="#E8F6F3" stroke="#148F77" stroke-width="1.4"/>
+<text x="450.0" y="123" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«SPA · đang triển khai»</text>
+<text x="450.0" y="139" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >BlazorWasmClient  :5081</text>
+<text x="450.0" y="155" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Blazor WebAssembly (.NET 8) · Blazorise + Bootstrap 5 · SignalR Client</text>
+<text x="450.0" y="169" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >máy chủ tĩnh: Kestrel (WebAssembly DevServer)</text>
+<rect x="750" y="108" width="400" height="78" rx="8" fill="#E8F6F3" stroke="#148F77" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="950.0" y="123" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«SPA · có trong mã nguồn»</text>
+<text x="950.0" y="139" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >Web  :8080</text>
+<text x="950.0" y="155" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Vue.js 2 · BootstrapVue · axios · vue-router · @aspnet/signalr</text>
+<text x="950.0" y="169" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >máy chủ tĩnh + reverse proxy: Nginx (Web/Dockerfile)</text>
+<line x1="660" y1="58" x2="520" y2="106" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="740" y1="58" x2="880" y2="106" stroke="#34495E" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#ah)"/>
+<rect x="20" y="226" width="1360" height="118" rx="10" fill="#F4F6F8" stroke="#AEB6BF" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="32" y="242" font-size="11" font-weight="700" fill="#5D6D7E" text-anchor="start" letter-spacing="0.6">TẦNG CỔNG VÀO  ·  bảo mật và định tuyến</text>
+<rect x="40" y="252" width="770" height="80" rx="8" fill="#FEF5E7" stroke="#CA6F1E" stroke-width="1.4"/>
+<text x="425.0" y="267" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«API Gateway»</text>
+<text x="425.0" y="283" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >AgentPortalApiGateway  :8099</text>
+<text x="425.0" y="299" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Ocelot 23 trên Kestrel · xác thực JWT Bearer · kiểm tra claim userType=SALESMAN · cache 15 giây · CORS</text>
+<text x="425.0" y="313" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >định tuyến theo tên service qua Ocelot.Provider.Eureka + Steeltoe Discovery</text>
+<rect x="835" y="252" width="250" height="80" rx="8" fill="#FEF5E7" stroke="#CA6F1E" stroke-width="1.4"/>
+<text x="960.0" y="267" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="960.0" y="283" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >AuthService  :6060</text>
+<text x="960.0" y="299" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >ASP.NET Core Web API · phát hành JWT (HMAC-SHA256)</text>
+<text x="960.0" y="313" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >danh sách đại lý lưu trong bộ nhớ (In-memory)</text>
+<line x1="420" y1="186" x2="420" y2="250" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="367.4" y="204" width="105.19999999999999" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="420" y="215" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">REST / JSON + JWT</text>
+<line x1="780" y1="186" x2="780" y2="250" stroke="#34495E" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#ah)"/>
+<line x1="600" y1="186" x2="900" y2="250" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="712.2" y="204" width="155.6" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="790" y="215" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">POST /api/User (đăng nhập)</text>
+<rect x="20" y="374" width="1360" height="196" rx="10" fill="#F4F6F8" stroke="#AEB6BF" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1368" y="390" font-size="11" font-weight="700" fill="#5D6D7E" text-anchor="end" letter-spacing="0.6">TẦNG DỊCH VỤ NGHIỆP VỤ</text>
+<rect x="40" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="117.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="117.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >ProductService</text>
+<text x="117.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5030</text>
+<text x="117.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Danh mục sản phẩm</text>
+<text x="117.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >EF Core 8 · MediatR</text>
+<text x="117.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Ensure.That</text>
+<rect x="62.0" y="527" width="60.6" height="16" rx="8" fill="#BFC9CA" stroke="#00000022"/>
+<text x="92.3" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >In-memory</text>
+<rect x="127.6" y="527" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="149.8" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<rect x="209" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="286.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="286.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >PolicyService</text>
+<text x="286.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5050</text>
+<text x="286.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Báo giá và hợp đồng</text>
+<text x="286.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >NHibernate 5 · Outbox</text>
+<text x="286.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >RestEase · Polly · Serilog</text>
+<rect x="228.3" y="527" width="66.0" height="16" rx="8" fill="#F5B041" stroke="#00000022"/>
+<text x="261.3" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >PostgreSQL</text>
+<rect x="299.3" y="527" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="321.5" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<rect x="378" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="455.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="455.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >PricingService</text>
+<text x="455.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5040</text>
+<text x="455.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Tính phí bảo hiểm</text>
+<text x="455.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Marten 7 · Serilog</text>
+<text x="455.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >DynamicExpresso</text>
+<rect x="397.3" y="527" width="66.0" height="16" rx="8" fill="#F5B041" stroke="#00000022"/>
+<text x="430.3" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >PostgreSQL</text>
+<rect x="468.3" y="527" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="490.5" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<rect x="547" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="624.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="624.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >PolicySearchService</text>
+<text x="624.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5065</text>
+<text x="624.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Tìm kiếm hợp đồng</text>
+<text x="624.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Elastic.Clients</text>
+<text x="624.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >.Elasticsearch 8.9</text>
+<rect x="558.2" y="527" width="82.2" height="16" rx="8" fill="#58D68D" stroke="#00000022"/>
+<text x="599.3000000000001" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Elasticsearch</text>
+<rect x="645.4000000000001" y="527" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="667.6000000000001" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<rect x="716" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="793.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="793.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >DashboardService</text>
+<text x="793.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5035</text>
+<text x="793.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Thống kê doanh số</text>
+<text x="793.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Elastic.Clients</text>
+<text x="793.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >.Elasticsearch 8.9</text>
+<rect x="727.2" y="527" width="82.2" height="16" rx="8" fill="#58D68D" stroke="#00000022"/>
+<text x="768.3000000000001" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Elasticsearch</text>
+<rect x="814.4000000000001" y="527" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="836.6000000000001" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<rect x="885" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="962.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="962.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >PaymentService</text>
+<text x="962.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:5070</text>
+<text x="962.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Tài khoản hợp đồng</text>
+<text x="962.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Marten 7 · Dapper</text>
+<text x="962.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Hangfire (job nền)</text>
+<rect x="929.0" y="527" width="66.0" height="16" rx="8" fill="#F5B041" stroke="#00000022"/>
+<text x="962.0" y="538.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >PostgreSQL</text>
+<rect x="1054" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4"/>
+<text x="1131.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="1131.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >ChatService</text>
+<text x="1131.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >:4099</text>
+<text x="1131.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Chat và thông báo</text>
+<text x="1131.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >SignalR Hub /agentsChat</text>
+<text x="1131.0" y="491" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >JWT Bearer</text>
+<rect x="1223" y="402" width="154" height="148" rx="8" fill="#EAF2FB" stroke="#2E6DA4" stroke-width="1.4" stroke-dasharray="6 3"/>
+<text x="1300.0" y="417" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Microservice»</text>
+<text x="1300.0" y="433" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >DocumentService</text>
+<text x="1300.0" y="449" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Chứng chỉ PDF</text>
+<text x="1300.0" y="463" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >khung project,</text>
+<text x="1300.0" y="477" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >chưa triển khai JS Report</text>
+<line x1="117.0" y1="332" x2="117.0" y2="400" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="286.0" y1="332" x2="286.0" y2="400" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="624.0" y1="332" x2="624.0" y2="400" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="793.0" y1="332" x2="793.0" y2="400" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="75.6" y="355" width="82.8" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="117.0" y="366" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">/api/Products</text>
+<rect x="205.4" y="355" width="161.2" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="286.0" y="366" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">/api/Offers · /api/Policies</text>
+<rect x="571.4" y="355" width="105.19999999999999" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="624.0" y="366" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">/api/PolicySearch</text>
+<rect x="748.8" y="355" width="88.39999999999999" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="793.0" y="366" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">/api/Dashboard</text>
+<line x1="363" y1="464" x2="377" y2="464" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<polyline points="640,186 640,206 1160,206 1160,356 1131.0,356 1131.0,400" fill="none" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="1085.0" y="279" width="150.0" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="1160" y="290" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">WebSocket (SignalR) + JWT</text>
+<rect x="40" y="612" width="1320" height="46" rx="23" fill="#FDEDEC" stroke="#C0392B" stroke-width="1.4"/>
+<text x="700" y="631" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >RabbitMQ 3  ·  Event Bus (AMQP 5672 · trang quản trị 15672)  ·  thư viện EasyNetQ</text>
+<text x="700" y="648" font-size="10.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" >exchange kiểu topic «lab-dotnet-micro»  ·  sự kiện: PolicyCreated, PolicyTerminated  ·  mỗi service một hàng đợi riêng</text>
+<line x1="286.0" y1="550" x2="286.0" y2="610" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="222.2" y="575" width="127.6" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="286.0" y="586" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">phát sự kiện (Outbox)</text>
+<line x1="624.0" y1="612" x2="624.0" y2="552" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="793.0" y1="612" x2="793.0" y2="552" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="962.0" y1="612" x2="962.0" y2="552" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="1131.0" y1="612" x2="1131.0" y2="552" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="785.7" y="575" width="183.6" height="15" rx="3" fill="#FFFFFF" opacity="0.92"/>
+<text x="877.5" y="586" font-size="10" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">nhận sự kiện (đăng ký hàng đợi)</text>
+<rect x="20" y="676" width="1360" height="126" rx="10" fill="#F4F6F8" stroke="#AEB6BF" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="32" y="692" font-size="11" font-weight="700" fill="#5D6D7E" text-anchor="start" letter-spacing="0.6">TẦNG HẠ TẦNG DÙNG CHUNG  ·  nhãn màu trên mỗi service cho biết service đó dùng thành phần nào</text>
+<rect x="40" y="702" width="318" height="88" rx="8" fill="#FBFCFC" stroke="#AEB6BF" stroke-width="1.4"/>
+<rect x="40" y="702" width="10" height="88" rx="4" fill="#BB8FCE" stroke="#BB8FCE" stroke-width="1.4"/>
+<text x="204.0" y="718" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Service Registry»</text>
+<text x="204.0" y="736" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >Eureka Server  :8761</text>
+<text x="204.0" y="754" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Spring Boot 2.4 · Spring Cloud Netflix</text>
+<text x="204.0" y="769" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Java 8 (Temurin) · Tomcat nhúng · Gradle</text>
+<rect x="374" y="702" width="318" height="88" rx="8" fill="#FBFCFC" stroke="#AEB6BF" stroke-width="1.4"/>
+<rect x="374" y="702" width="10" height="88" rx="4" fill="#F5B041" stroke="#F5B041" stroke-width="1.4"/>
+<text x="538.0" y="718" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«RDBMS / Document DB»</text>
+<text x="538.0" y="736" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >PostgreSQL 16  :5432</text>
+<text x="538.0" y="754" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >lab_netmicro_policy · lab_netmicro_pricing</text>
+<text x="538.0" y="769" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >lab_netmicro_payments · lab_netmicro_jobs</text>
+<rect x="708" y="702" width="318" height="88" rx="8" fill="#FBFCFC" stroke="#AEB6BF" stroke-width="1.4"/>
+<rect x="708" y="702" width="10" height="88" rx="4" fill="#58D68D" stroke="#58D68D" stroke-width="1.4"/>
+<text x="872.0" y="718" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Search Engine»</text>
+<text x="872.0" y="736" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >Elasticsearch 8.9.2  :9200</text>
+<text x="872.0" y="754" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >chỉ mục lab_policies (tìm kiếm)</text>
+<text x="872.0" y="769" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >chỉ mục thống kê doanh số</text>
+<rect x="1042" y="702" width="318" height="88" rx="8" fill="#FBFCFC" stroke="#AEB6BF" stroke-width="1.4"/>
+<rect x="1042" y="702" width="10" height="88" rx="4" fill="#BFC9CA" stroke="#BFC9CA" stroke-width="1.4"/>
+<text x="1206.0" y="718" font-size="9.5" font-weight="normal" fill="#5D6D7E" text-anchor="middle" font-style="italic">«Lưu trong tiến trình»</text>
+<text x="1206.0" y="736" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >Bộ nhớ trong (In-memory)</text>
+<text x="1206.0" y="754" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >EF Core InMemory: danh mục sản phẩm</text>
+<text x="1206.0" y="769" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >danh sách đại lý của AuthService</text>
+<rect x="20" y="820" width="1360" height="84" rx="10" fill="#EBEDEF" stroke="#566573" stroke-width="1.4"/>
+<text x="700" y="842" font-size="13" font-weight="700" fill="#1F2D3D" text-anchor="middle" >NỀN TẢNG TRIỂN KHAI:  Docker Engine (Docker Desktop · WSL 2 trên Windows 11)  +  Docker Compose</text>
+<text x="700" y="862" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >14 container Linux trên một mạng bridge: 9 microservice + web từ image insurance-lab9 (mcr.microsoft.com/dotnet/sdk:8.0) · eureka-server · postgres · elasticsearch · rabbit</text>
+<text x="700" y="879" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Web server: Kestrel (mọi service ASP.NET Core 8 Web API, Gateway, Blazor DevServer) · Nginx (Web Vue) · Tomcat nhúng (Eureka) · mỗi service dùng MediatR (CQRS) + Swagger/OpenAPI</text>
+<text x="700" y="896" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >Cấu hình theo môi trường: appsettings.json / appsettings.docker.json / ocelot.json · healthcheck + depends_on trong scripts/lab9.docker.yml</text>
+<rect x="20" y="916" width="1360" height="40" rx="10" fill="#FFFFFF" stroke="#AEB6BF" stroke-width="1"/>
+<text x="700" y="933" font-size="10.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >NỀN TẢNG PHÁT TRIỂN VÀ KIỂM THỬ:  .NET SDK 8.0.425 · C# 12 · Visual Studio / VS Code · Node.js 10 + Vue CLI (Web) · Git · GitHub · GitHub Actions (CI)</text>
+<text x="700" y="948" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="middle" >xUnit · Testcontainers (PostgreSQL, Elasticsearch) · Swagger UI · PowerShell (scripts/verify-lab9.ps1)</text>
+<text x="30" y="984" font-size="10.5" font-weight="700" fill="#1F2D3D" text-anchor="start" >Chú giải:</text>
+<line x1="90" y1="980" x2="130" y2="980" stroke="#34495E" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="138" y="984" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="start" >lời gọi / luồng dữ liệu</text>
+<rect x="275" y="972" width="34" height="14" rx="3" fill="#FFFFFF" stroke="#2E6DA4" stroke-dasharray="6 3"/>
+<text x="316" y="984" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="start" >có trong mã nguồn nhưng không nằm trong bản triển khai Docker của Bài 9</text>
+<rect x="700" y="972" width="66.0" height="16" rx="8" fill="#F5B041" stroke="#00000022"/>
+<text x="733.0" y="983.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >PostgreSQL</text>
+<rect x="771.0" y="972" width="82.2" height="16" rx="8" fill="#58D68D" stroke="#00000022"/>
+<text x="812.1" y="983.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Elasticsearch</text>
+<rect x="858.2" y="972" width="60.6" height="16" rx="8" fill="#BFC9CA" stroke="#00000022"/>
+<text x="888.5" y="983.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >In-memory</text>
+<rect x="923.8000000000001" y="972" width="44.400000000000006" height="16" rx="8" fill="#BB8FCE" stroke="#00000022"/>
+<text x="946.0000000000001" y="983.5" font-size="9.5" font-weight="600" fill="#1F2D3D" text-anchor="middle" >Eureka</text>
+<text x="977.2" y="984" font-size="10.5" font-weight="normal" fill="#1F2D3D" text-anchor="start" >= service lưu dữ liệu ở đó / có đăng ký với Eureka</text>
+</svg>

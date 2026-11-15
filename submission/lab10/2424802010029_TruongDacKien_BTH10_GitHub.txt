@@ -1,0 +1,10 @@
+https://github.com/KienTD204/Microservices-InsurancePortal-2424802010029/tree/student/lab10
+
+Bai thuc hanh 10 - Review lai kien truc cua he thong
+Sinh vien: Truong Dac Kien
+MSSV: 2424802010029
+Lop: D24CNTT05
+Nhanh nop bai: student/lab10
+Task 1 (PDF): submission/lab10/BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf
+Task 2 (PDF): submission/lab10/BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf
+Huong dan va doi chieu task: README-LAB10.md
