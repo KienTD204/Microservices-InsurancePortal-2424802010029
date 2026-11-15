@@ -5,12 +5,12 @@
 - Nhánh `student/lab10`, kế thừa Bài 9 (`student/lab9`). Bài này không thay đổi mã nguồn của hệ thống.
 - Đề bài: [submission/lab10/provided](submission/lab10/provided).
 
-## File nộp (mỗi Task một PDF riêng)
+## File nộp (mỗi Task một file riêng, có cả PDF và Word)
 
 | Task | File nộp | Nội dung |
 | --- | --- | --- |
-| Task 1 - Kiến trúc tổng quát | [BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf](submission/lab10/BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf) (5 trang) | Một sơ đồ 5 tầng có đủ tên 12 thành phần (2 giao diện, Gateway, 9 service) và mọi công nghệ hỗ trợ: Docker/Docker Compose, web server (Kestrel, Nginx, Tomcat nhúng), Ocelot, Eureka, RabbitMQ, PostgreSQL, Elasticsearch, SignalR, JWT...; kèm bảng thành phần, bảng công nghệ và nhận xét review. |
-| Task 2 - Bốn khung nhìn | [BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf](submission/lab10/BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf) (16 trang) | 10 sơ đồ UML: Logic (sơ đồ gói + 3 sơ đồ lớp), Tiến trình (2 sơ đồ tuần tự + sơ đồ hoạt động), Cài đặt (sơ đồ thành phần + sơ đồ gói), Triển khai (sơ đồ triển khai); mỗi sơ đồ có phần giải thích. |
+| Task 1 - Kiến trúc tổng quát | [BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf](submission/lab10/BTH10-Task1-Kien-truc-tong-quat-2424802010029.pdf) · [.docx](submission/lab10/BTH10-Task1-Kien-truc-tong-quat-2424802010029.docx) (5 trang) | Một sơ đồ 5 tầng có đủ tên 12 thành phần (2 giao diện, Gateway, 9 service) và mọi công nghệ hỗ trợ: Docker/Docker Compose, web server (Kestrel, Nginx, Tomcat nhúng), Ocelot, Eureka, RabbitMQ, PostgreSQL, Elasticsearch, SignalR, JWT...; kèm bảng thành phần, bảng công nghệ và nhận xét review. |
+| Task 2 - Bốn khung nhìn | [BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf](submission/lab10/BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.pdf) · [.docx](submission/lab10/BTH10-Task2-Kien-truc-4-khung-nhin-2424802010029.docx) (16 trang) | 10 sơ đồ UML: Logic (sơ đồ gói + 3 sơ đồ lớp), Tiến trình (2 sơ đồ tuần tự + sơ đồ hoạt động), Cài đặt (sơ đồ thành phần + sơ đồ gói), Triển khai (sơ đồ triển khai); mỗi sơ đồ có phần giải thích. |
 
 ## Đối chiếu yêu cầu
 
@@ -37,3 +37,5 @@ bash submission/lab10/build.sh
 ```
 
 Script cần Python 3, Docker (dùng JRE trong image `lab-eureka-server` để chạy PlantUML, tệp `plantuml.jar` lấy từ extension PlantUML của VS Code) và Chrome hoặc Edge để in HTML ra PDF.
+
+Bản Word được dựng từ cùng hai tệp HTML bằng `python submission/lab10/build_docx.py` (cần `pip install python-docx beautifulsoup4 pillow`); sơ đồ được nhúng dạng PNG từ `diagrams/out`.
