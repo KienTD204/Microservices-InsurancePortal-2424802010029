@@ -1,0 +1,125 @@
+﻿{
+    "checkedAt":  "2026-11-15T14:14:15.0557305+07:00",
+    "result":  "PASS",
+    "error":  null,
+    "passed":  11,
+    "total":  11,
+    "checks":  [
+                   {
+                       "name":  "Eureka shows Product, Pricing, Policy, PolicySearch and Dashboard services UP",
+                       "passed":  true,
+                       "detail":  [
+                                      "PRODUCTSERVICE",
+                                      "DASHBOARDSERVICE",
+                                      "PRICINGSERVICE",
+                                      "POLICYSERVICE",
+                                      "POLICYSEARCHSERVICE"
+                                  ]
+                   },
+                   {
+                       "name":  "Gateway blocks anonymous requests (HTTP 401)",
+                       "passed":  true,
+                       "detail":  401
+                   },
+                   {
+                       "name":  "AuthService issues a JWT for jimmy.solid",
+                       "passed":  true,
+                       "detail":  null
+                   },
+                   {
+                       "name":  "Gateway -\u003e ProductService returns the product catalogue",
+                       "passed":  true,
+                       "detail":  "TRI,HSI,FAI,CAR"
+                   },
+                   {
+                       "name":  "Offer created and priced by PricingService",
+                       "passed":  true,
+                       "detail":  {
+                                      "offerNumber":  "490eb8f9-f38d-4bcb-9ec7-a0623e36643e",
+                                      "totalPrice":  108.00,
+                                      "coversPrices":  {
+                                                           "C2":  78.00,
+                                                           "C3":  30.00
+                                                       }
+                                  }
+                   },
+                   {
+                       "name":  "Policy created from the offer",
+                       "passed":  true,
+                       "detail":  "918dfa00-471b-43cd-bd84-c3cd38048d44"
+                   },
+                   {
+                       "name":  "Policy details can be read back through the gateway",
+                       "passed":  true,
+                       "detail":  {
+                                      "number":  "918dfa00-471b-43cd-bd84-c3cd38048d44",
+                                      "dateFrom":  "2026-11-16T00:00:00",
+                                      "dateTo":  "2026-11-23T00:00:00",
+                                      "policyHolder":  "Kien Lab903c8c159",
+                                      "totalPremium":  108.00000,
+                                      "productCode":  "TRI",
+                                      "accountNumber":  null,
+                                      "covers":  [
+                                                     "C2",
+                                                     "C3"
+                                                 ]
+                                  }
+                   },
+                   {
+                       "name":  "PolicySearchService indexed the new policy and finds it by policy holder",
+                       "passed":  true,
+                       "detail":  {
+                                      "policyNumber":  "918dfa00-471b-43cd-bd84-c3cd38048d44",
+                                      "policyStartDate":  "2026-11-16T00:00:00+00:00",
+                                      "policyEndDate":  "2026-11-23T00:00:00+00:00",
+                                      "productCode":  "TRI",
+                                      "policyHolder":  "Kien Lab903c8c159",
+                                      "premiumAmount":  108.00000
+                                  }
+                   },
+                   {
+                       "name":  "PaymentService opened a policy account for the new policy",
+                       "passed":  true,
+                       "detail":  {
+                                      "balance":  {
+                                                      "policyAccountNumber":  "77349f98-8c51-439a-9b58-4a790947852d",
+                                                      "policyNumber":  "918dfa00-471b-43cd-bd84-c3cd38048d44",
+                                                      "balance":  0.0
+                                                  }
+                                  }
+                   },
+                   {
+                       "name":  "DashboardService returns total sales",
+                       "passed":  true,
+                       "detail":  {
+                                      "total":  {
+                                                    "policiesCount":  940,
+                                                    "premiumAmount":  94008.0
+                                                },
+                                      "perProductTotal":  {
+                                                              "TRI":  {
+                                                                          "policiesCount":  258,
+                                                                          "premiumAmount":  25808.0
+                                                                      },
+                                                              "HSI":  {
+                                                                          "policiesCount":  253,
+                                                                          "premiumAmount":  25300.0
+                                                                      },
+                                                              "CAR":  {
+                                                                          "policiesCount":  228,
+                                                                          "premiumAmount":  22800.0
+                                                                      },
+                                                              "FAI":  {
+                                                                          "policiesCount":  201,
+                                                                          "premiumAmount":  20100.0
+                                                                      }
+                                                          }
+                                  }
+                   },
+                   {
+                       "name":  "ChatService SignalR hub: anonymous 401, JWT negotiation succeeds",
+                       "passed":  true,
+                       "detail":  401
+                   }
+               ]
+}

@@ -1,0 +1,14 @@
+dotnet-agent-portal-gateway	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:8099->8099/tcp
+dotnet-auth-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:6060->6060/tcp
+dotnet-chat-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:4099->4099/tcp
+dotnet-dashboard-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:5035->5035/tcp
+dotnet-payment-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:5070->5070/tcp
+dotnet-policy-search-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:5065->5065/tcp
+dotnet-policy-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:5050->5050/tcp
+dotnet-pricing-service	insurance-lab9:latest	Up 4 minutes (healthy)	
+dotnet-product-service	insurance-lab9:latest	Up 4 minutes (healthy)	127.0.0.1:5030->5030/tcp
+elasticsearch	docker.elastic.co/elasticsearch/elasticsearch:8.9.2	Up 4 minutes (healthy)	127.0.0.1:9200->9200/tcp
+eureka-server	lab-eureka-server	Up 4 minutes (healthy)	127.0.0.1:8761->8761/tcp
+postgres	lab-postgres:16	Up 4 minutes (healthy)	5432/tcp
+rabbit	rabbitmq:3-management	Up 4 minutes (healthy)	127.0.0.1:15672->15672/tcp
+web	insurance-lab9:latest	Up About a minute (healthy)	127.0.0.1:5081->5081/tcp

@@ -68,13 +68,25 @@ Tài khoản demo: `jimmy.solid / secret`, `danny.solid / secret`, `admin / admi
 
 Dừng hệ thống: `docker compose -p insurance-lab9 -f scripts/lab9.docker.yml down` (thêm `-v` để xóa luôn dữ liệu).
 
-### Trạng thái kiểm chứng
+### Kết quả kiểm chứng (15/11/2026)
 
-- Đã kiểm chứng: đối chiếu mã nguồn 97/97, build Windows 0 lỗi, 8/8 test PolicyService.
-- **Chưa kiểm chứng**: lần build image đầu tiên dừng ở bước xuất image vì ổ C: của máy làm bài hết dung lượng (0 MB trống), nên `lab9.docker.yml` và `verify-lab9.ps1` chưa được chạy trọn vẹn. Cần giải phóng dung lượng rồi chạy lại các lệnh trên; khi đó `runtime-verification.json` mới được tạo.
+- Đối chiếu mã nguồn 97/97, build Windows 0 lỗi, 8/8 test PolicyService.
+- Build image Linux thành công; **14/14 container `healthy`** ([docker-status.txt](submission/lab9/evidence/docker-status.txt)).
+- `verify-lab9.ps1`: **11/11 bước đạt** ([runtime-verification.json](submission/lab9/evidence/runtime-verification.json)).
+- Thử tay trên giao diện Blazor: đăng nhập, xem sản phẩm, tính giá (108.00 EUR), tạo hợp đồng, tìm hợp đồng theo tên người mua và gửi tin nhắn Chat đều chạy.
+
+### Lỗi đã sửa khi triển khai
+
+| Tệp | Lỗi và cách sửa |
+| --- | --- |
+| `BlazorWasmClient/Components/Auth/AuthResponse.cs` | AuthService trả hạn token ở trường `expiryTimeStamp`, còn client đọc thuộc tính `ExpiresIn`, nên hạn luôn là `DateTime.MinValue`: phiên bị coi là hết hạn, mọi lời gọi Gateway sau khi đăng nhập không kèm token và nhận **HTTP 401** (trang Products trắng). Thêm `[JsonPropertyName("expiryTimeStamp")]` để ánh xạ đúng trường. |
+
+Lưu ý: bản sửa này đã được build lại và chạy thử ngay trong container `web` đang chạy; do ổ đĩa của máy làm bài gần đầy nên image `insurance-lab9` chưa được build lại từ đầu sau khi sửa. Lần `up --build` kế tiếp sẽ đưa bản sửa vào image.
 
 ### Kịch bản quay video (ít nhất 2 chức năng)
 
 1. **Bán bảo hiểm và tìm kiếm hợp đồng** (PolicyService + PolicySearchService): đăng nhập `jimmy.solid` → *Products* → chọn sản phẩm → nhập tham số → tính giá → nhập thông tin người mua → tạo hợp đồng → *Policies* → tìm theo tên người mua vừa nhập.
 2. **Chat trực tuyến** (ChatService/SignalR): mở thêm một cửa sổ ẩn danh, đăng nhập `danny.solid`; cả hai vào *Chat* và nhắn qua lại. Khi một bên tạo hợp đồng mới, bên kia nhận thông báo tức thời.
+Lưu ý khi thao tác: ô ngày nhập theo dạng tháng/ngày/năm; sau khi bấm **Calculate price** phải bấm **Buy**, điền đủ 7 ô thông tin người mua rồi bấm **Confirm**. Ở trang *Policies*, gõ họ người mua vào ô **Policy holder** rồi bấm **Search**.
+
 3. (Tùy chọn) **Thanh toán**: mở `http://localhost:5070/api/Payment/accounts/<số hợp đồng>` để thấy tài khoản hợp đồng do PaymentService tạo từ sự kiện `PolicyCreated`.
